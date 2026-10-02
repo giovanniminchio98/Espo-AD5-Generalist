@@ -1,0 +1,1194 @@
+[
+ {
+  "id": "VR-026",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Transport",
+  "passage": "Between 2016 and 2023, a mid-sized city built 45 kilometres of cycle lanes physically separated from motor traffic. Before the programme, cycling accounted for 4% of trips made by residents; by 2023 the figure had reached 11%. Surveys suggest that most new cyclists previously travelled by car or bus over distances of between two and six kilometres, while walking trips declined only slightly.\n\nThe increase was uneven across the city. In neighbourhoods where separated lanes formed a continuous network linking homes, schools and the city centre, cycling rose much faster than in neighbourhoods where new lanes were isolated stretches interrupted by busy junctions. City planners concluded that the continuity of a network matters more than its total length, and they have since prioritised closing gaps over building new routes.\n\nThe programme was not universally popular. Some shopkeepers opposed the removal of parking spaces, arguing that customers arriving by car spend more per visit. A study commissioned by the city found that customers arriving by car did spend more per visit, but that cyclists visited more often, so that average spending per customer over a month was similar for both groups. Road safety data show that the number of cyclists injured rose in absolute terms over the period, although the number of injuries per kilometre cycled fell by about a third.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Although more cyclists were injured in total, cycling became safer per kilometre travelled.",
+    "note": "Correct: injuries rose in absolute terms but fell by about a third per kilometre cycled."
+   },
+   {
+    "key": "B",
+    "text": "Customers arriving by bicycle spend more per visit than those arriving by car.",
+    "trap": "reversed_relation",
+    "note": "Car customers spent more per visit; cyclists visited more often."
+   },
+   {
+    "key": "C",
+    "text": "Most new cyclists had previously walked to their destinations.",
+    "trap": "outside_knowledge",
+    "note": "Most new cyclists previously travelled by car or bus; walking declined only slightly."
+   },
+   {
+    "key": "D",
+    "text": "Building more kilometres of cycle lanes is the most effective way to increase cycling.",
+    "trap": "partially_true",
+    "note": "Planners concluded that continuity matters more than total length."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Road safety data show that the number of cyclists injured rose in absolute terms over the period, although the number of injuries per kilometre cycled fell by about a third."
+  ],
+  "explanation": {
+   "steps": [
+    "The last sentence separates absolute numbers (injuries rose) from rates (injuries per kilometre fell). A combines both correctly.",
+    "Questions often hinge on absolute versus relative figures: more cycling can mean more injuries in total while each kilometre is safer."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "outside_knowledge",
+   "partially_true"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-027",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Science",
+  "passage": "Many crops depend at least partly on insects to carry pollen from one flower to another. In a three-year field study, researchers compared apple orchards surrounded by strips of wild flowers with orchards bordered only by mown grass. The flower strips were sown along the edges of the orchards and left uncut from spring to late summer.\n\nOrchards with flower strips attracted roughly twice as many wild bees as orchards without them, and the number of bee species recorded was also higher. Honeybees, which were kept in hives near all the orchards, visited both types equally. Fruit set, meaning the share of flowers that developed into fruit, was on average 9% higher in orchards with flower strips. The researchers note that weather during flowering affected fruit set far more than the presence of strips did: in the coldest spring of the study, fruit set was low everywhere.\n\nThe strips had costs. Seed mixtures were expensive, and the strips took land that could otherwise have been planted with trees. However, the strips occupied less than 3% of the orchard area, and the growers who took part estimated that the additional fruit more than paid for them within two seasons. The researchers recommend sowing mixtures of native flowering plants, because some imported ornamental species provided little food for wild bees.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Flower strips doubled the number of honeybees visiting the orchards.",
+    "trap": "partially_true",
+    "note": "Wild bees roughly doubled; honeybees visited both types of orchard equally."
+   },
+   {
+    "key": "B",
+    "text": "Flower strips mattered more for fruit set than the weather during flowering.",
+    "trap": "reversed_relation",
+    "note": "Weather affected fruit set far more than the strips did."
+   },
+   {
+    "key": "C",
+    "text": "Imported ornamental plants are the best choice for flower strips.",
+    "trap": "reversed_relation",
+    "note": "The researchers recommend native plants; some ornamentals provided little food."
+   },
+   {
+    "key": "D",
+    "text": "The flower strips took up less than 3% of the orchard area.",
+    "note": "Correct: stated in the third paragraph."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "However, the strips occupied less than 3% of the orchard area, and the growers who took part estimated that the additional fruit more than paid for them within two seasons."
+  ],
+  "explanation": {
+   "steps": [
+    "The third paragraph states that the strips occupied less than 3% of the orchard area: D.",
+    "A mixes up two groups of insects: the strips attracted wild bees, not honeybees."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "reversed_relation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-028",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "EU policy",
+  "passage": "Patients who receive healthcare in another member state may, under certain conditions, be reimbursed by their home health system. To help patients understand these rules, every member state has set up at least one national contact point. A review of the contact points in 2023 found wide differences in how they work.\n\nSome contact points answered enquiries within two working days, while others took several weeks. Some published detailed lists of treatments requiring prior authorisation, whereas others referred patients to general legal texts. The review found that patients who received a clear written answer before travelling were much less likely to have their reimbursement claims refused afterwards.\n\nThe number of patients using cross-border care remains small. In the countries reviewed, fewer than one in a thousand residents claimed reimbursement for planned treatment abroad in a given year. Most claims concerned dental care, physiotherapy and minor surgery, often in a neighbouring country close to the patient’s home. Patients living in border regions were heavily over-represented.\n\nThe reviewers recommended that all contact points should publish the same basic information in the same format, offer answers in at least one language other than the national language, and record the reasons for refused claims, so that common problems could be identified and addressed.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Response times differed considerably between contact points.",
+    "trap": "overgeneralisation",
+    "note": "Supported: from two working days to several weeks."
+   },
+   {
+    "key": "B",
+    "text": "Most patients who use cross-border care travel to distant countries for major surgery.",
+    "note": "This is the statement that is not correct: most claims concerned dental care, physiotherapy and minor surgery, often in a neighbouring country."
+   },
+   {
+    "key": "C",
+    "text": "People in border regions use planned cross-border care more than their share of the population would suggest.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: they were heavily over-represented."
+   },
+   {
+    "key": "D",
+    "text": "The reviewers want contact points to keep records of why claims are refused.",
+    "trap": "partially_true",
+    "note": "Supported: this is one of the three recommendations."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "Most claims concerned dental care, physiotherapy and minor surgery, often in a neighbouring country close to the patient’s home."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage says most claims concerned dental care, physiotherapy and minor surgery near home. B says the opposite on both points.",
+    "C paraphrases “heavily over-represented” in plain words; a paraphrase can be correct even when no word is copied."
+   ]
+  },
+  "trap_tags": [
+   "overgeneralisation",
+   "wrong_quantifier",
+   "partially_true"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-029",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Economics",
+  "passage": "The spread of remote work since 2020 has changed where some people choose to live. In one country, the number of residents moving from the capital to towns between 50 and 150 kilometres away rose by about 40% between 2019 and 2022. Most of those who moved were in occupations that can be carried out largely online, such as software development, consulting and administration.\n\nThe effect on housing markets has been mixed. In the towns receiving newcomers, house prices rose faster than the national average, which benefited existing homeowners but made it harder for local young people on modest incomes to buy. In the capital itself, rents for small flats near business districts grew more slowly than before 2020, while demand for larger flats with a spare room for an office increased.\n\nWhether these shifts will last is uncertain. Some employers have since asked staff to return to the office for several days a week, and a survey of people who moved found that around one in five were considering moving back if such requirements became stricter. Economists note that past changes in commuting patterns, such as those following the construction of motorways, took a decade or more to show their full effect, so it may be too early to judge.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Remote work has permanently ended the dominance of the capital in the housing market.",
+    "trap": "extreme_wording",
+    "note": "The passage stresses that it is uncertain whether the shifts will last."
+   },
+   {
+    "key": "B",
+    "text": "Remote work has made housing cheaper in all parts of the country.",
+    "trap": "reversed_relation",
+    "note": "Prices rose faster than average in towns receiving newcomers."
+   },
+   {
+    "key": "C",
+    "text": "Remote work has shifted where some people live, with mixed effects on housing, but it is too early to know whether the change will last.",
+    "note": "Correct: this covers the movement, the mixed effects and the uncertainty."
+   },
+   {
+    "key": "D",
+    "text": "Employers’ return-to-office requirements have already reversed the move away from the capital.",
+    "trap": "time_shift",
+    "note": "Only one in five movers were considering moving back, and only if requirements became stricter."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "The effect on housing markets has been mixed.",
+   "Whether these shifts will last is uncertain."
+  ],
+  "explanation": {
+   "steps": [
+    "Paragraph 1 describes the movement, paragraph 2 the mixed effects on housing, paragraph 3 the uncertainty. C reflects all three.",
+    "A and D turn a cautious, open-ended passage into a firm conclusion in opposite directions."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "reversed_relation",
+   "time_shift"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-030",
+  "category": "verbal",
+  "subtype": "summary",
+  "difficulty": 2,
+  "mode": "reveal",
+  "topic": "Technology",
+  "passage": "Several public administrations have begun using machine translation to make information available in more languages. In one pilot, a tax authority used an automated system to translate its guidance pages into eight languages spoken by large groups of residents. Each translated page was then checked by a human translator before publication.\n\nThe authority found that the checking stage took, on average, about a third of the time that a full human translation would have required, so more pages could be published with the same budget. The quality of the raw machine output varied considerably. Translations into languages for which large amounts of training text exist needed few corrections, whereas translations into less widely used languages needed extensive revision, and in some cases translators found it quicker to start again.\n\nErrors were not evenly spread across content. General explanations were usually translated well, but specialised tax terms and references to legal deadlines were a frequent source of mistakes. Because an error in a deadline could lead a resident to pay a penalty, the authority decided that pages containing deadlines or amounts would always receive a second human check.\n\nThe authority has not used unchecked machine translation for any official page, and it states that it has no plans to do so.",
+  "polarity": "correct",
+  "prompt": "Summarise the passage in one sentence.",
+  "task": "Write one sentence that states only what the passage strictly claims, keeping its limits and adding nothing. Then reveal the model answer and compare.",
+  "correct": "In a tax authority’s pilot, machine translation followed by human checking let more guidance pages be translated for the same budget, but quality varied by language and specialised terms and deadlines caused frequent errors, so every page is checked by a human, with a second check for deadlines and amounts.",
+  "evidence": [
+   "The authority found that the checking stage took, on average, about a third of the time that a full human translation would have required, so more pages could be published with the same budget.",
+   "The authority has not used unchecked machine translation for any official page, and it states that it has no plans to do so."
+  ],
+  "explanation": {
+   "steps": [
+    "The key limit is that every page was checked by a human; a summary saying machine translation “replaced translators” would be wrong.",
+    "Keep the uneven quality (by language and by type of content) and the extra safeguard for deadlines and amounts."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-031",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Environment",
+  "passage": "Microplastics, fragments of plastic smaller than five millimetres, have been found in rivers across the continent. A monitoring project sampled water at forty points along one river, from its source in the mountains to its mouth, four times a year over two years. Concentrations were lowest near the source and generally increased downstream, with the sharpest increases recorded just below the outflows of the two largest wastewater treatment plants.\n\nThe treatment plants themselves remove most microplastics from the water passing through them; laboratory tests suggest that more than 90% of particles are retained in the sludge. Because the volume of wastewater is very large, however, even the remaining share amounts to a substantial quantity. Much of the retained sludge is later spread on farmland as fertiliser, which the researchers suspect may return some particles to the river through runoff, although the project did not measure this.\n\nConcentrations also varied with the seasons. They were highest after heavy rain, when water flowing over roads and fields carried particles into the river, and lowest during long dry periods. Tyre wear was identified as a major source of the particles found after rain.\n\nThe researchers emphasise that their results describe one river and that the methods used to count microplastics differ between studies, which makes comparisons with other rivers difficult.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Wastewater treatment plants are the main source of microplastics in the river.",
+    "trap": "causal_vs_correlation",
+    "note": "Sharp increases occurred below the plants, but the passage also points to runoff and tyre wear and never ranks the sources."
+   },
+   {
+    "key": "B",
+    "text": "The project showed that spreading sludge on farmland returns microplastics to the river.",
+    "trap": "cannot_be_determined",
+    "note": "The researchers only suspect this; the project did not measure it."
+   },
+   {
+    "key": "C",
+    "text": "This river contains more microplastics than most other rivers on the continent.",
+    "trap": "outside_knowledge",
+    "note": "The researchers say comparisons with other rivers are difficult."
+   },
+   {
+    "key": "D",
+    "text": "Even though the plants retain most particles, the quantity they release can still be large.",
+    "note": "Correct: more than 90% is retained, but because the volume of wastewater is very large, the remainder is substantial."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "Because the volume of wastewater is very large, however, even the remaining share amounts to a substantial quantity."
+  ],
+  "explanation": {
+   "steps": [
+    "The second paragraph says plants retain more than 90% of particles, yet the remaining share is a substantial quantity because volumes are large. D paraphrases this.",
+    "A and B both overstate: A turns a location of increases into “the main source”, B turns a suspicion into a finding."
+   ]
+  },
+  "trap_tags": [
+   "causal_vs_correlation",
+   "cannot_be_determined",
+   "outside_knowledge"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-032",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "History",
+  "passage": "In the late eighteenth century, a network of canals was built in one region to carry coal from inland mines to the coast. Before the canals, coal was transported by horse-drawn carts on unpaved roads, which became almost impassable in winter. A single horse pulling a barge on a canal could move roughly thirty times the load it could pull in a cart.\n\nThe first canal was financed by a mine owner who wanted to reduce his own transport costs. Its success led to a wave of investment: within thirty years, more than six hundred kilometres of canals had been dug, many of them by companies that sold shares to the public. Not all of these companies were profitable. Some canals were built through hilly terrain that required numerous locks, which made them expensive to build and slow to use.\n\nThe canals lowered the price of coal in coastal towns, which encouraged the growth of industries that used large amounts of fuel, such as brewing and glassmaking. Their dominance did not last long, however. From the 1840s, railways offered faster transport, and many canal companies were bought by railway companies, which sometimes allowed the canals to decline in order to reduce competition.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The first canal in the region was paid for by a mine owner.",
+    "note": "Correct: it was financed by a mine owner who wanted to cut his transport costs."
+   },
+   {
+    "key": "B",
+    "text": "All the canal companies made a profit.",
+    "trap": "extreme_wording",
+    "note": "The passage says not all of them were profitable."
+   },
+   {
+    "key": "C",
+    "text": "Canals remained the main means of transporting coal throughout the nineteenth century.",
+    "trap": "time_shift",
+    "note": "From the 1840s railways offered faster transport and canals declined."
+   },
+   {
+    "key": "D",
+    "text": "Canals with many locks were the cheapest to build.",
+    "trap": "reversed_relation",
+    "note": "Numerous locks made canals expensive to build and slow to use."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "The first canal was financed by a mine owner who wanted to reduce his own transport costs."
+  ],
+  "explanation": {
+   "steps": [
+    "The second paragraph opens by saying the first canal was financed by a mine owner: A.",
+    "C ignores the time limit set by the last paragraph (railways from the 1840s)."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "time_shift",
+   "reversed_relation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-033",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Health",
+  "passage": "Most of the salt people eat does not come from the salt shaker but from processed foods such as bread, cheese, ready meals and cured meats. In 2015 the health ministry of one country agreed voluntary targets with food manufacturers to reduce the salt content of these products gradually over eight years.\n\nBy 2023 the average salt content of bread sold in supermarkets had fallen by 18%, and that of ready meals by 12%. Progress was much slower for cheese and cured meats, where manufacturers argued that salt is needed for preservation and texture. Some smaller producers did not take part in the scheme at all, since it was voluntary.\n\nA national survey that measures salt intake through urine samples found that average daily consumption fell from 9.4 grams in 2014 to 8.6 grams in 2022. The ministry’s recommended maximum is 5 grams a day. The survey’s authors note that the fall was larger among people who eat ready meals frequently, which is consistent with the reformulation of these products, but they add that public information campaigns ran at the same time and may also have contributed.\n\nThe ministry is now considering whether to make some targets mandatory, particularly for product categories where voluntary progress has been limited.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Average salt intake in the country is now below the ministry’s recommended maximum.",
+    "trap": "time_shift",
+    "note": "Intake fell to 8.6 grams, still well above the 5-gram maximum."
+   },
+   {
+    "key": "B",
+    "text": "Salt reduction progressed less for cheese and cured meats than for bread.",
+    "note": "Correct: progress was much slower for cheese and cured meats, while bread fell by 18%."
+   },
+   {
+    "key": "C",
+    "text": "The reformulation of ready meals was the only reason why salt intake fell.",
+    "trap": "causal_vs_correlation",
+    "note": "Information campaigns may also have contributed."
+   },
+   {
+    "key": "D",
+    "text": "All food manufacturers in the country took part in the salt reduction scheme.",
+    "trap": "wrong_quantifier",
+    "note": "Some smaller producers did not take part."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "By 2023 the average salt content of bread sold in supermarkets had fallen by 18%, and that of ready meals by 12%.",
+   "Progress was much slower for cheese and cured meats, where manufacturers argued that salt is needed for preservation and texture."
+  ],
+  "explanation": {
+   "steps": [
+    "Bread fell by 18%, while progress for cheese and cured meats was “much slower”. B combines the two sentences.",
+    "C adds “only”: the authors explicitly mention another possible contributor."
+   ]
+  },
+  "trap_tags": [
+   "time_shift",
+   "causal_vs_correlation",
+   "wrong_quantifier"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-034",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Law",
+  "passage": "When consumers buy goods online from a trader, they generally have the right to withdraw from the contract within fourteen days without giving a reason. The period begins on the day the consumer receives the goods, not the day the order is placed. If the trader fails to inform the consumer of this right, the withdrawal period is extended by up to twelve months.\n\nThe right does not apply to every purchase. Goods made to the consumer’s specifications, perishable goods and sealed hygiene products that have been unsealed after delivery are among the exceptions. For digital content such as downloaded films, the right is lost once the download has begun, but only if the consumer expressly agreed to this and acknowledged losing the right.\n\nAfter withdrawal, the trader must refund all payments received, including the standard delivery cost, within fourteen days. The trader may, however, withhold the refund until the goods have been returned or the consumer has provided evidence of having sent them back. Unless the trader has agreed to bear them, the direct cost of returning the goods is paid by the consumer.\n\nConsumer organisations report that many disputes concern the condition of returned goods. Consumers may handle goods as they would in a shop, but if they use them beyond that, the trader can deduct an amount for the reduced value.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A consumer who was never informed of the right to withdraw may have considerably more than fourteen days to withdraw.",
+    "trap": "extreme_wording",
+    "note": "Supported: the period is extended by up to twelve months."
+   },
+   {
+    "key": "B",
+    "text": "A trader can wait to refund until there is evidence that the goods have been sent back.",
+    "trap": "partially_true",
+    "note": "Supported: the trader may withhold the refund until the goods are returned or evidence of sending is provided."
+   },
+   {
+    "key": "C",
+    "text": "Traders must always pay the cost of returning goods after a withdrawal.",
+    "note": "This is the statement that is not correct: unless the trader agreed to bear it, the consumer pays the direct cost of return."
+   },
+   {
+    "key": "D",
+    "text": "Starting a download does not by itself remove the right of withdrawal for digital content.",
+    "trap": "reversed_relation",
+    "note": "Supported: the right is lost only if the consumer also expressly agreed and acknowledged losing it."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Unless the trader has agreed to bear them, the direct cost of returning the goods is paid by the consumer."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage puts the cost of return on the consumer unless the trader agreed otherwise, so C’s “always” is wrong.",
+    "D is the hardest true statement: the right is lost only when the download has begun AND the consumer expressly agreed. A download alone is not enough."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "partially_true",
+   "reversed_relation"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-035",
+  "category": "verbal",
+  "subtype": "explain_non_inference",
+  "difficulty": 1,
+  "mode": "reveal",
+  "topic": "Culture",
+  "passage": "In 2019 a city council abolished entrance fees for the permanent collections of its five municipal museums. Temporary exhibitions remained subject to a charge. The council’s stated aim was to attract residents who rarely visited museums, in particular families and young people.\n\nIn the first year, the number of visits to the permanent collections rose by 60%. Visitor surveys showed that the share of visitors who lived in the city rose from 35% to 48%, and that the share of visitors aged under 25 also increased. However, the share of visitors from neighbourhoods with lower average incomes changed little, suggesting that cost had not been the main barrier for these residents.\n\nThe loss of ticket income was partly offset by higher spending in museum shops and cafés, and by an increase in paid visits to temporary exhibitions, which many visitors combined with a free visit to the permanent collection. The council nevertheless had to increase its annual grant to the museums.\n\nMuseum staff reported that the larger number of visitors made some galleries crowded at weekends, and two museums introduced free timed tickets for Sunday afternoons. The council has commissioned outreach work with schools and community centres in lower-income neighbourhoods.",
+  "polarity": "correct",
+  "prompt": "Statement: “Free entry attracted many more visitors from lower-income neighbourhoods.” Explain why this statement cannot be inferred from the passage.",
+  "task": "Write one or two sentences explaining why the statement cannot be inferred. Name the trap. Then reveal the model answer.",
+  "correct": "The passage says the opposite: the share of visitors from lower-income neighbourhoods changed little, which suggests cost was not the main barrier for them. Total visits rose by 60%, but that does not mean this group’s visits rose (trap: overgeneralisation from the overall increase).",
+  "evidence": [
+   "However, the share of visitors from neighbourhoods with lower average incomes changed little, suggesting that cost had not been the main barrier for these residents."
+  ],
+  "explanation": {
+   "steps": [
+    "An overall increase does not tell you about every subgroup. The passage gives a specific figure for this group, and it barely moved.",
+    "This is why the council now funds outreach work: free entry alone did not reach these residents."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-036",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Education",
+  "passage": "A region introduced free lunches for all primary school pupils in 2020, replacing a system in which only children from low-income families received free meals. Under the old system, about a fifth of eligible families did not apply, often because they found the forms complicated or felt embarrassed. Some families with incomes just above the limit also struggled to pay for meals.\n\nAn evaluation after three years found that the share of pupils eating a school lunch rose from 62% to 89%. Teachers reported that pupils were more attentive in afternoon lessons, although the evaluation could not measure this reliably. Schools also had to adapt: several needed larger kitchens or a second lunch sitting, and the region provided grants to cover these costs.\n\nThe main criticism concerned cost. Providing free meals to all pupils, including those from families who could easily pay, costs considerably more than a targeted scheme. Supporters respond that a universal scheme avoids the problem of eligible families not applying and removes any stigma attached to free meals. The region has decided to continue the scheme, but it has asked schools to reduce food waste, which the evaluation found to be higher than expected, before considering any extension to secondary schools.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Free lunches for all primary pupils greatly increased the number eating at school; despite its cost, the region is continuing the scheme.",
+    "note": "Correct: this covers the effect, the main criticism and the decision."
+   },
+   {
+    "key": "B",
+    "text": "Free school lunches have been proven to improve pupils’ concentration in the afternoon.",
+    "trap": "extreme_wording",
+    "note": "Teachers reported this, but the evaluation could not measure it reliably."
+   },
+   {
+    "key": "C",
+    "text": "The universal scheme is cheaper than giving free meals only to low-income families.",
+    "trap": "reversed_relation",
+    "note": "The passage says the universal scheme costs considerably more."
+   },
+   {
+    "key": "D",
+    "text": "The region will extend free lunches to secondary schools next year.",
+    "trap": "time_shift",
+    "note": "Any extension will only be considered after food waste has been reduced."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "An evaluation after three years found that the share of pupils eating a school lunch rose from 62% to 89%.",
+   "The region has decided to continue the scheme, but it has asked schools to reduce food waste, which the evaluation found to be higher than expected, before considering any extension to secondary schools."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage presents the scheme, its main result (62% to 89%), the cost debate and the decision to continue. A summarises this.",
+    "B upgrades teachers’ impressions into proof; D turns a possible future step into a plan."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "reversed_relation",
+   "time_shift"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-037",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Energy",
+  "passage": "District heating systems distribute hot water from a central source through underground pipes to heat many buildings. In one northern city, about 60% of homes are connected to such a network. Until 2015 the heat came mainly from a coal-fired plant; since then the city has replaced coal with a combination of waste incineration, large heat pumps and surplus heat from a data centre.\n\nThe change reduced the network’s carbon dioxide emissions by about 70%. Prices for connected households rose by 6% over the same period, which the operator attributes mainly to investment costs, although it notes that the price of coal had also been rising before the switch.\n\nThe operator faces a new challenge. Newly built homes are so well insulated that they need little heating, and some developers prefer to install individual heat pumps rather than connect to the network. Because the costs of the network are largely fixed, a falling number of connected homes would push up prices for those who remain connected.\n\nTo keep the network attractive, the operator has started offering lower connection charges for new buildings and plans to lower the temperature of the water it distributes. Lower temperatures reduce heat losses from the pipes and allow more use of heat pumps, but older buildings with small radiators may then need upgrades.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Switching away from coal caused heating prices for connected households to rise.",
+    "trap": "causal_vs_correlation",
+    "note": "Prices rose by 6%, but the operator points mainly to investment costs and notes that coal prices were rising anyway."
+   },
+   {
+    "key": "B",
+    "text": "Most new homes in the city are connected to the district heating network.",
+    "trap": "cannot_be_determined",
+    "note": "The passage says some developers prefer individual heat pumps; it gives no share for new homes."
+   },
+   {
+    "key": "C",
+    "text": "If fewer homes stay connected, the remaining customers are likely to pay more.",
+    "note": "Correct: because network costs are largely fixed, fewer connected homes would push up prices for the rest."
+   },
+   {
+    "key": "D",
+    "text": "Lowering the water temperature will benefit all connected buildings without any adjustment.",
+    "trap": "overgeneralisation",
+    "note": "Older buildings with small radiators may need upgrades."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Because the costs of the network are largely fixed, a falling number of connected homes would push up prices for those who remain connected."
+  ],
+  "explanation": {
+   "steps": [
+    "Fixed costs shared by fewer customers mean higher prices per customer; the passage states this mechanism directly. C follows.",
+    "A is the cause-versus-coincidence trap: two things happened in the same period, and the passage itself offers other explanations."
+   ]
+  },
+  "trap_tags": [
+   "causal_vs_correlation",
+   "cannot_be_determined",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-038",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Agriculture",
+  "passage": "Olive trees are well adapted to dry climates, and in many traditional groves they are not irrigated at all. Over the past twenty years, however, a growing share of new groves in one southern region have been planted at high density and irrigated with drip systems. These groves can produce three to four times more olives per hectare than traditional ones and can be harvested by machine.\n\nThe expansion of irrigated groves has increased pressure on groundwater. Regional water authorities report that the water table has fallen in several areas where irrigated groves are concentrated, and they have stopped issuing new extraction permits in the most affected zones. Farmers with existing permits may continue to irrigate, but they must install meters and report their consumption every year.\n\nTraditional groves face different problems. Because they produce less and must largely be harvested by hand, many are no longer profitable at current prices, and some have been abandoned. Abandoned groves are more vulnerable to fire and to the spread of plant diseases. At the same time, traditional groves on terraced hillsides help to prevent soil erosion and are valued as part of the landscape.\n\nRegional authorities are considering payments for owners who maintain traditional groves, on the grounds that they provide public benefits that are not reflected in the price of olive oil.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Traditional groves produce three to four times more olives per hectare than irrigated ones.",
+    "trap": "reversed_relation",
+    "note": "It is the high-density irrigated groves that produce three to four times more."
+   },
+   {
+    "key": "B",
+    "text": "Farmers in the most affected zones have had their existing permits withdrawn.",
+    "trap": "partially_true",
+    "note": "New permits have stopped; existing permit holders may continue but must meter and report."
+   },
+   {
+    "key": "C",
+    "text": "Regional authorities already pay owners to maintain traditional groves.",
+    "trap": "time_shift",
+    "note": "Such payments are only being considered."
+   },
+   {
+    "key": "D",
+    "text": "Farmers with existing permits must now report their water consumption every year.",
+    "note": "Correct: stated in the second paragraph."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "Farmers with existing permits may continue to irrigate, but they must install meters and report their consumption every year."
+  ],
+  "explanation": {
+   "steps": [
+    "The second paragraph states that farmers with existing permits must install meters and report consumption annually: D.",
+    "B blends two different measures: the halt on new permits and the conditions on existing ones."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "partially_true",
+   "time_shift"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-039",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Demography",
+  "passage": "National statistics offices estimate migration in different ways, which makes international comparisons difficult. Some count people when they register a change of address with local authorities, while others rely on surveys or on administrative data such as tax and social security records.\n\nRegistration-based figures can miss people who leave a country without deregistering, because they have little reason to inform the authorities of their departure. As a result, the number of emigrants is often underestimated, and the resident population is overestimated. One country that compared its population register with tax records found that around 2% of the people registered as residents had no recorded activity of any kind for at least three years, suggesting that many had in fact left.\n\nSurvey-based estimates avoid this problem but have others. Surveys reach only a sample of the population, and recent migrants are often less likely to respond, especially if they do not speak the national language well.\n\nTo improve consistency, several statistics offices now combine sources. A person is counted as resident only if they appear in the register and also show signs of activity, such as employment, studies or contact with health services, within a given period. Offices using this method have generally revised their population estimates downward.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Registration-based figures tend to overstate the resident population.",
+    "trap": "reversed_relation",
+    "note": "Supported: emigrants are underestimated and the resident population is overestimated."
+   },
+   {
+    "key": "B",
+    "text": "Survey-based estimates have no weaknesses compared with registration-based ones.",
+    "note": "This is the statement that is not correct: surveys reach only a sample, and recent migrants respond less often."
+   },
+   {
+    "key": "C",
+    "text": "Offices that combine sources have generally lowered their population estimates.",
+    "trap": "time_shift",
+    "note": "Supported: they have generally revised their estimates downward."
+   },
+   {
+    "key": "D",
+    "text": "In one country, about 2% of registered residents showed no recorded activity for at least three years.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: stated in the second paragraph."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "Survey-based estimates avoid this problem but have others."
+  ],
+  "explanation": {
+   "steps": [
+    "The third paragraph says surveys avoid the deregistration problem “but have others”, then lists them. B is therefore false.",
+    "A uses “overstate” for “overestimated”: a synonym, so it is supported."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "time_shift",
+   "wrong_quantifier"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-040",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Economics",
+  "passage": "In 2021 one country raised its national minimum wage by 12%, the largest increase in two decades. Because wages and prices differ considerably between regions, the effect of a single national minimum was expected to vary. In the capital region, where average wages are high, fewer than 5% of employees earned the minimum before the increase. In some rural regions the figure was above 20%.\n\nA study published two years later compared regions with high and low shares of minimum-wage workers. Employment in the sectors most affected, such as retail, cleaning and hospitality, grew more slowly in the high-share regions than in the low-share regions, but it did not fall. Average hours worked per employee declined slightly in the high-share regions, which the authors interpret as employers adjusting working time rather than cutting jobs.\n\nThe study also found that wages just above the minimum rose faster than usual, as employers sought to maintain differences between more and less experienced staff. Prices in restaurants and hairdressers rose somewhat faster in high-share regions, though the authors could not determine how much of this was due to the minimum wage and how much to general inflation.\n\nThe authors stress that the economy was recovering from a downturn during the period, which may have made it easier for employers to absorb higher costs than it would be in a weaker economy.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The increase affected wages not only at the minimum but also slightly above it.",
+    "note": "Correct: wages just above the minimum rose faster than usual."
+   },
+   {
+    "key": "B",
+    "text": "Employment in the most affected sectors fell in regions with many minimum-wage workers.",
+    "trap": "partially_true",
+    "note": "It grew more slowly than elsewhere, but it did not fall."
+   },
+   {
+    "key": "C",
+    "text": "The minimum wage increase was the main cause of faster price rises in restaurants.",
+    "trap": "causal_vs_correlation",
+    "note": "The authors could not separate the effect of the minimum wage from general inflation."
+   },
+   {
+    "key": "D",
+    "text": "A similar increase would have the same effects in a weaker economy.",
+    "trap": "overgeneralisation",
+    "note": "The authors warn that the recovering economy may have made the increase easier to absorb."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "The study also found that wages just above the minimum rose faster than usual, as employers sought to maintain differences between more and less experienced staff."
+  ],
+  "explanation": {
+   "steps": [
+    "The third paragraph reports that wages just above the minimum rose faster than usual, a spill-over effect: A.",
+    "B is the subtle trap: “grew more slowly” is not the same as “fell”. Read comparatives precisely."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "causal_vs_correlation",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-041",
+  "category": "verbal",
+  "subtype": "summary",
+  "difficulty": 3,
+  "mode": "reveal",
+  "topic": "Law",
+  "passage": "People who report wrongdoing in their workplace, often called whistleblowers, can face dismissal, demotion or harassment. A law adopted in one country in 2022 aims to protect them. It applies to employees in both the public and private sectors, and also to contractors, trainees and job applicants who obtain information during a recruitment process.\n\nThe law requires organisations with fifty or more employees to set up internal reporting channels and to acknowledge reports within seven days. Whistleblowers may, however, report directly to a designated public authority without first using the internal channel. Public disclosure, for example to journalists, is protected only in specific circumstances, such as when an internal or external report has received no appropriate response or when there is an imminent danger to the public interest.\n\nProtection does not depend on the report being proved correct. It is enough that the person had reasonable grounds to believe the information was true at the time of reporting. Knowingly reporting false information, on the other hand, is not protected and can be penalised.\n\nIn legal proceedings, if a whistleblower suffers a detriment after making a report, it is for the employer to prove that the detriment was not linked to the report, rather than for the whistleblower to prove that it was.",
+  "polarity": "correct",
+  "prompt": "Summarise the passage in one sentence.",
+  "task": "Write one sentence that states only what the passage strictly claims, keeping its limits and adding nothing. Then reveal the model answer and compare.",
+  "correct": "A 2022 law protects a wide range of people who report workplace wrongdoing in good faith, requires larger organisations to run internal channels while allowing direct reports to an authority, protects public disclosure only in specific cases, and makes employers prove that any detriment was unrelated to the report.",
+  "evidence": [
+   "Protection does not depend on the report being proved correct.",
+   "Public disclosure, for example to journalists, is protected only in specific circumstances, such as when an internal or external report has received no appropriate response or when there is an imminent danger to the public interest."
+  ],
+  "explanation": {
+   "steps": [
+    "The hardest limits to keep: public disclosure is protected only in specific circumstances, and protection depends on reasonable belief, not on proof.",
+    "Note the reversed burden of proof in the last paragraph; a summary that says “whistleblowers must prove retaliation” reverses the relation."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-042",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Technology",
+  "passage": "Satellite navigation receivers determine their position by measuring how long signals take to travel from several satellites. Because the signals travel at the speed of light, even a tiny timing error translates into a large error in position, so the satellites carry extremely precise atomic clocks.\n\nUnder open skies, a typical smartphone can determine its position to within a few metres. Accuracy is lower in dense city centres, where signals bounce off tall buildings before reaching the receiver, and it can be lost entirely in tunnels or underground car parks. To compensate, phones combine satellite signals with information from mobile networks, wireless internet access points and motion sensors.\n\nFor some uses, a few metres is not precise enough. Surveyors and automated farm machinery often use correction services, which compare satellite signals received at fixed reference stations with the stations’ known positions and broadcast the difference. With such corrections, positions can be determined to within a few centimetres.\n\nSatellite signals are weak by the time they reach the ground, which makes them vulnerable to interference. Deliberate jamming, although illegal in most countries, has been reported near airports and borders, and operators of critical infrastructure are advised not to rely on satellite navigation as their only source of timing or positioning.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Smartphones are most accurate in dense city centres.",
+    "trap": "reversed_relation",
+    "note": "Accuracy is lower in dense city centres because signals bounce off buildings."
+   },
+   {
+    "key": "B",
+    "text": "Satellite signals are strong enough to be immune to interference.",
+    "trap": "reversed_relation",
+    "note": "They are weak when they reach the ground and therefore vulnerable."
+   },
+   {
+    "key": "C",
+    "text": "Correction services can improve accuracy to within a few centimetres.",
+    "note": "Correct: stated in the third paragraph."
+   },
+   {
+    "key": "D",
+    "text": "Jamming satellite signals is legal in most countries.",
+    "trap": "partially_true",
+    "note": "Jamming has been reported, but it is illegal in most countries."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "With such corrections, positions can be determined to within a few centimetres."
+  ],
+  "explanation": {
+   "steps": [
+    "The third paragraph says that with corrections positions can be determined to within a few centimetres: C.",
+    "D takes a true fact (jamming happens) and attaches a false claim (that it is legal)."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "partially_true"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-043",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Public administration",
+  "passage": "Setting up a business used to require contacts with several public bodies in one country: the business register, the tax administration, the social security agency and, for some activities, a licensing office. In 2018 the government created a single online portal through which entrepreneurs can complete all these steps with one application.\n\nThe average time needed to register a new limited company fell from eleven working days to three. The cost also fell, mainly because the portal provides standard templates for company statutes, so many founders no longer pay a lawyer to draft them. Founders can still use their own statutes, but applications using non-standard statutes take longer to process because they must be checked individually.\n\nThe number of new companies registered each year rose by about 15% in the three years after the portal was launched. The government presents this as evidence of the portal’s success. An independent analysis is more cautious, noting that registrations also rose in neighbouring countries without such portals during the same period, partly because of low interest rates.\n\nUsers have generally rated the portal positively, but small business associations report that some licensing offices still ask applicants to submit documents on paper, which the portal was intended to make unnecessary.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The portal was responsible for the 15% rise in new company registrations.",
+    "trap": "causal_vs_correlation",
+    "note": "The independent analysis notes that registrations also rose in countries without such portals."
+   },
+   {
+    "key": "B",
+    "text": "Founders must now use the standard templates for company statutes.",
+    "trap": "extreme_wording",
+    "note": "Founders can still use their own statutes."
+   },
+   {
+    "key": "C",
+    "text": "All licensing offices now handle applications entirely online.",
+    "trap": "overgeneralisation",
+    "note": "Some licensing offices still ask for paper documents."
+   },
+   {
+    "key": "D",
+    "text": "A founder who wants registration to be as fast as possible would do well to use the standard statutes.",
+    "note": "Correct: non-standard statutes take longer because they must be checked individually."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "Founders can still use their own statutes, but applications using non-standard statutes take longer to process because they must be checked individually."
+  ],
+  "explanation": {
+   "steps": [
+    "If non-standard statutes take longer, the standard templates are the faster route. D is a direct inference.",
+    "A is the cause-versus-correlation trap the passage itself warns against."
+   ]
+  },
+  "trap_tags": [
+   "causal_vs_correlation",
+   "extreme_wording",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-044",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Science",
+  "passage": "Scientific findings are expected to be reproducible: if another team repeats an experiment carefully, it should obtain similar results. Over the past fifteen years, however, large projects that attempted to repeat published studies in fields such as psychology and medicine have often failed to confirm the original findings. In one project, fewer than half of a hundred selected studies produced results of similar strength when repeated.\n\nResearchers have proposed several explanations. Original studies were often based on small samples, which makes chance findings more likely. Journals have tended to publish striking positive results more readily than studies that found no effect, so the published record may overrepresent findings that are partly due to chance. In addition, researchers sometimes made many choices in analysing their data and reported only the analyses that produced clear results.\n\nA failure to replicate does not necessarily mean that the original finding was false. Small differences in the population studied or in the procedures used can change results, and the repeat study may itself be flawed. For this reason, many researchers argue that confidence should be based on several consistent studies rather than on any single one.\n\nReforms are under way. Some journals now accept studies for publication on the basis of their design, before the results are known, and many funders require data to be made available to other researchers.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Most published findings in psychology and medicine are false.",
+    "trap": "overgeneralisation",
+    "note": "The passage reports one project’s results and warns that a failure to replicate does not necessarily mean a finding was false."
+   },
+   {
+    "key": "B",
+    "text": "Many published findings have not been confirmed when repeated, for several identifiable reasons, which has prompted reforms and a preference for evidence from multiple studies.",
+    "note": "Correct: this covers the problem, its causes, the caution and the reforms."
+   },
+   {
+    "key": "C",
+    "text": "Replication studies are more reliable than original studies.",
+    "trap": "cannot_be_determined",
+    "note": "The passage says the repeat study may itself be flawed."
+   },
+   {
+    "key": "D",
+    "text": "The replication problem is caused mainly by researchers deliberately falsifying data.",
+    "trap": "outside_knowledge",
+    "note": "Falsification is never mentioned; the causes given are small samples, publication bias and selective analysis."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "In one project, fewer than half of a hundred selected studies produced results of similar strength when repeated.",
+   "For this reason, many researchers argue that confidence should be based on several consistent studies rather than on any single one."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage moves from the problem to its causes, adds a caution, and ends with reforms. B is the only option that keeps this balance.",
+    "A is tempting but goes much further than the passage, which explicitly says that a failed replication does not prove a finding false."
+   ]
+  },
+  "trap_tags": [
+   "overgeneralisation",
+   "cannot_be_determined",
+   "outside_knowledge"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-045",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Environment",
+  "passage": "The area burned by forest fires in one Mediterranean region has varied greatly from year to year, but the long-term pattern has changed. Over the past thirty years, the number of fires has fallen, while the average size of the largest fires has increased. Fire services attribute the fall in numbers to prevention campaigns and faster detection, and the increase in size partly to longer periods of drought and higher summer temperatures.\n\nChanges in land use also play a role. As farming has declined in mountain areas, abandoned fields have been colonised by shrubs and young trees, creating continuous areas of vegetation through which fire spreads easily. In the past, a patchwork of fields, pastures and woodland interrupted the spread of fire.\n\nThe region has started to support grazing by goats and sheep in strategic areas, which reduces the amount of vegetation that can burn, and to restore some firebreaks. It also requires owners of houses near forests to clear vegetation within fifty metres of their buildings, although inspections show that compliance is uneven.\n\nFire services warn that suppression alone cannot solve the problem. When a very large fire spreads under extreme weather conditions, there is often little firefighters can do until the weather changes, which is why they increasingly emphasise prevention and land management.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Over the past thirty years, both the number of fires and the size of the largest fires have increased.",
+    "note": "This is the statement that is not correct: the number of fires has fallen."
+   },
+   {
+    "key": "B",
+    "text": "The decline of mountain farming has made it easier for fire to spread.",
+    "trap": "causal_vs_correlation",
+    "note": "Supported: abandoned fields became continuous vegetation through which fire spreads easily."
+   },
+   {
+    "key": "C",
+    "text": "Not all owners of houses near forests clear vegetation as required.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: compliance is uneven."
+   },
+   {
+    "key": "D",
+    "text": "Firefighters can sometimes do little against very large fires in extreme weather.",
+    "trap": "extreme_wording",
+    "note": "Supported: stated in the last paragraph."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Over the past thirty years, the number of fires has fallen, while the average size of the largest fires has increased."
+  ],
+  "explanation": {
+   "steps": [
+    "The number of fires fell while the largest fires grew. A says both increased, so A is false.",
+    "B states a causal link, but here the passage itself makes the causal claim, so B is supported."
+   ]
+  },
+  "trap_tags": [
+   "causal_vs_correlation",
+   "wrong_quantifier",
+   "extreme_wording"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-046",
+  "category": "verbal",
+  "subtype": "explain_non_inference",
+  "difficulty": 2,
+  "mode": "reveal",
+  "topic": "Economics",
+  "passage": "In 2020 a historic city introduced a tourist tax of two euros per person per night, charged by hotels, guesthouses and short-term rental hosts. The revenue is earmarked for the maintenance of public spaces, waste collection in the historic centre and the restoration of monuments.\n\nIn the first full year after the pandemic, the tax raised about 14 million euros. The number of overnight stays was 8% lower than in 2019, but tourism across the country as a whole was also below pre-pandemic levels, and the city’s share of national overnight stays was almost unchanged. The council therefore concludes that the tax has not reduced the city’s attractiveness relative to other destinations.\n\nCollection has been more difficult for short-term rentals than for hotels. Many hosts rent out only one property occasionally, and some did not register at all. The council reached an agreement with the largest online rental platforms, which now collect the tax automatically and pass it on. Since then, revenue from short-term rentals has roughly doubled.\n\nSome residents argue that the tax should be higher in the busiest months to reduce crowding. The council has commissioned a study on seasonal rates but has not yet taken a decision.",
+  "polarity": "correct",
+  "prompt": "Statement: “The tourist tax caused the number of overnight stays to fall by 8%.” Explain why this statement cannot be inferred from the passage.",
+  "task": "Write one or two sentences explaining why the statement cannot be inferred. Name the trap. Then reveal the model answer.",
+  "correct": "The passage notes that tourism across the whole country was also below pre-pandemic levels and that the city’s share of national stays was almost unchanged, so the fall is better explained by the general situation; the council concludes that the tax did not reduce the city’s relative attractiveness (trap: cause vs correlation).",
+  "evidence": [
+   "The number of overnight stays was 8% lower than in 2019, but tourism across the country as a whole was also below pre-pandemic levels, and the city’s share of national overnight stays was almost unchanged."
+  ],
+  "explanation": {
+   "steps": [
+    "A fall that happens after a policy is introduced is not proof that the policy caused it. Look for the comparison the passage provides: the national trend.",
+    "An unchanged share of national stays means the city lost no ground relative to other places."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-047",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Culture",
+  "passage": "A regional minority language is spoken by about 80,000 people, most of them living in a mountainous border area. For decades, the only broadcasts in the language were a weekly half-hour radio programme. In 2017 a community radio station began broadcasting in the language for twelve hours a day, funded partly by the regional government and partly by local businesses and listeners.\n\nThe station’s audience surveys indicate that about a third of speakers listen at least once a week. Listeners are on average older than the population as a whole, but the station’s online podcasts, which include music and programmes for children, are used mainly by younger people. Several schools in the area use the children’s programmes in language lessons.\n\nThe station relies heavily on volunteers, who present most programmes outside working hours. Its director says that finding presenters who are fluent in the language and comfortable speaking on air is the main constraint on expanding the schedule.\n\nLinguists point out that the number of children learning the language at home has been falling for several decades. They welcome the station as a way of increasing the language’s presence in daily life, but caution that broadcasting alone is unlikely to reverse the decline unless more families pass the language on to their children.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Most speakers of the language listen to the station every day.",
+    "trap": "wrong_quantifier",
+    "note": "About a third listen at least once a week."
+   },
+   {
+    "key": "B",
+    "text": "The station is funded entirely by the regional government.",
+    "trap": "partially_true",
+    "note": "It is funded partly by the regional government and partly by businesses and listeners."
+   },
+   {
+    "key": "C",
+    "text": "The station’s podcasts reach a younger audience than its radio broadcasts do.",
+    "note": "Correct: radio listeners are on average older, while podcasts are used mainly by younger people."
+   },
+   {
+    "key": "D",
+    "text": "Linguists expect the station to reverse the decline of the language.",
+    "trap": "reversed_relation",
+    "note": "They caution that broadcasting alone is unlikely to reverse the decline."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Listeners are on average older than the population as a whole, but the station’s online podcasts, which include music and programmes for children, are used mainly by younger people."
+  ],
+  "explanation": {
+   "steps": [
+    "Radio listeners are on average older; podcasts are used mainly by younger people. C combines the two halves of that sentence.",
+    "B ignores the word “partly”, a small word that changes the meaning."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "partially_true",
+   "reversed_relation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-048",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Health",
+  "passage": "Bacteria that resist antibiotics are a growing concern for health systems, and the overuse of antibiotics is one of the factors that encourage resistance. In one country, a national programme launched in 2016 set out to reduce unnecessary prescriptions in primary care.\n\nThe programme had three elements. Doctors received quarterly reports comparing their prescribing rates with those of colleagues in similar practices. Rapid tests were made available that can show within minutes whether a throat infection is likely to be bacterial, in which case an antibiotic may help, or viral, in which case it will not. Finally, a public campaign explained that most coughs and colds clear up without antibiotics.\n\nBy 2022, antibiotic prescriptions in primary care had fallen by 23%. The largest reductions were for respiratory infections, which had previously accounted for most prescriptions. Hospital admissions for complications of respiratory infections did not increase, which the programme’s evaluators regard as evidence that the reduction did not harm patients.\n\nThe evaluators were unable to say which of the three elements contributed most, because they were introduced at the same time. They noted, however, that practices that used the rapid tests frequently reduced their prescribing more than practices that rarely used them, although these practices may have differed in other ways too.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The rapid tests were shown to be the most effective element of the programme.",
+    "trap": "causal_vs_correlation",
+    "note": "The evaluators could not say which element contributed most."
+   },
+   {
+    "key": "B",
+    "text": "Doctors were told every three months how their prescribing compared with that of similar practices.",
+    "note": "Correct: they received quarterly comparison reports."
+   },
+   {
+    "key": "C",
+    "text": "Hospital admissions for complications of respiratory infections rose after the programme began.",
+    "trap": "reversed_relation",
+    "note": "They did not increase."
+   },
+   {
+    "key": "D",
+    "text": "Antibiotics help with throat infections caused by viruses.",
+    "trap": "reversed_relation",
+    "note": "The passage says that for viral infections an antibiotic will not help."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "Doctors received quarterly reports comparing their prescribing rates with those of colleagues in similar practices."
+  ],
+  "explanation": {
+   "steps": [
+    "“Quarterly” means every three months, so B restates the first element of the programme.",
+    "A is attractive because frequent users of the tests cut prescribing more, but the evaluators say they cannot rank the elements."
+   ]
+  },
+  "trap_tags": [
+   "causal_vs_correlation",
+   "reversed_relation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-049",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Transport",
+  "passage": "Aviation is among the hardest sectors to decarbonise, because aircraft need fuels with a very high energy content relative to their weight. Batteries and hydrogen may power small aircraft on short routes in the coming decades, but for long-distance flights the main option under discussion is sustainable aviation fuel, which can be produced from waste oils, agricultural residues or, in the case of synthetic fuels, from hydrogen and captured carbon dioxide.\n\nThese fuels can be blended with conventional kerosene and used in existing aircraft and airports without modification, up to a certain share. Their main drawback is cost: in 2023, fuels made from waste oils cost two to three times as much as kerosene, and synthetic fuels cost considerably more. Supplies of waste oils are also limited, so they cannot meet more than a small fraction of total demand.\n\nOne government has introduced a mandate requiring fuel suppliers at its airports to blend a rising share of sustainable fuels: 2% in 2025, increasing in steps to 20% in 2035. From 2030, part of the mandated share must consist of synthetic fuels. Airlines have warned that the mandate will raise ticket prices, while producers argue that guaranteed demand is needed to justify building large production plants, which would in turn reduce costs over time.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Waste oils could eventually supply most of the fuel needed by aviation.",
+    "trap": "reversed_relation",
+    "note": "Supplies are limited to a small fraction of total demand."
+   },
+   {
+    "key": "B",
+    "text": "Using sustainable aviation fuel requires new aircraft designs.",
+    "trap": "outside_knowledge",
+    "note": "The fuels can be used in existing aircraft without modification, up to a certain share."
+   },
+   {
+    "key": "C",
+    "text": "The mandate will certainly make sustainable fuels cheaper than kerosene.",
+    "trap": "extreme_wording",
+    "note": "Producers only argue that larger plants would reduce costs over time; nothing says the fuels will become cheaper than kerosene."
+   },
+   {
+    "key": "D",
+    "text": "Under the mandate, synthetic fuels will be required even though they are the most expensive option mentioned.",
+    "note": "Correct: from 2030 part of the share must be synthetic, and synthetic fuels cost considerably more than waste-oil fuels, which already cost two to three times as much as kerosene."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "in 2023, fuels made from waste oils cost two to three times as much as kerosene, and synthetic fuels cost considerably more",
+   "From 2030, part of the mandated share must consist of synthetic fuels."
+  ],
+  "explanation": {
+   "steps": [
+    "Combine two facts: synthetic fuels cost more than waste-oil fuels (which cost more than kerosene), and from 2030 the mandate requires synthetic fuels. D follows.",
+    "C contains a hidden extreme: “certainly” and “cheaper than kerosene” go well beyond “reduce costs over time”."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "outside_knowledge",
+   "extreme_wording"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-050",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "EU policy",
+  "passage": "Public bodies in the European Union increasingly publish data that anyone can reuse, such as timetables, weather observations, company registers and statistics. Supporters argue that open data allows businesses to develop new services, improves transparency and helps public bodies themselves to share information more easily.\n\nA study of one national open data portal found that the most downloaded datasets were public transport timetables, maps and weather data. Datasets on public spending were downloaded much less often, though journalists and researchers made intensive use of them. Many datasets published on the portal had not been downloaded at all in the previous year.\n\nThe study identified several obstacles to reuse. Some datasets were published in formats that are difficult to process automatically, such as scanned documents. Others were updated irregularly, which made them unsuitable for services that need current information. Users also complained that the same type of data was published in different formats by different regions, so that combining them required considerable work.\n\nThe study recommends that public bodies concentrate first on datasets that are in high demand, publish them in machine-readable formats with regular updates, and agree on common standards across regions. It also suggests that portals should record how datasets are used, so that publishers can see which data are most valuable.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Datasets on public spending were among the most downloaded on the portal.",
+    "note": "This is the statement that is not correct: they were downloaded much less often than timetables, maps and weather data."
+   },
+   {
+    "key": "B",
+    "text": "Some datasets on the portal had not been downloaded at all in the previous year.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: many had not been downloaded."
+   },
+   {
+    "key": "C",
+    "text": "Differences in formats between regions made combining data harder.",
+    "trap": "causal_vs_correlation",
+    "note": "Supported: combining them required considerable work."
+   },
+   {
+    "key": "D",
+    "text": "The study recommends recording how datasets are used.",
+    "trap": "partially_true",
+    "note": "Supported: this is one of the suggestions."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Datasets on public spending were downloaded much less often, though journalists and researchers made intensive use of them."
+  ],
+  "explanation": {
+   "steps": [
+    "Spending data were downloaded much less often than the top datasets, so A is false. Intensive use by a small group does not make them “among the most downloaded”.",
+    "B says “some” where the passage says “many”: a weaker claim that is still supported."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "causal_vs_correlation",
+   "partially_true"
+  ],
+  "est_time_sec": 105
+ }
+]
