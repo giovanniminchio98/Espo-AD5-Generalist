@@ -1,0 +1,1218 @@
+[
+ {
+  "id": "VR-101",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "EU policy",
+  "passage": "Funding programmes for regional development are usually agreed for a period of seven years, but money is often spent slowly. In one member state, by the end of the fourth year of a programming period, projects had been paid for only about a quarter of the funds allocated for the whole period. Spending then accelerated sharply in the final years, as authorities tried to avoid losing funds that had not been used by the deadline.\n\nAn audit identified several reasons for the slow start. Programmes were approved later than planned, so calls for projects opened late. Many local authorities, particularly small municipalities, lacked staff with experience of preparing applications and managing procurement. In addition, the previous programming period overlapped with the new one, and authorities concentrated first on completing older projects.\n\nThe audit warned that the pressure to spend quickly at the end of a period can lead authorities to favour projects that are ready to start rather than those that would bring the greatest benefits, and it found examples of projects selected mainly because their paperwork was complete.\n\nThe member state has since created a technical assistance unit that helps small municipalities prepare applications, and it now requires managing authorities to publish quarterly progress reports. The audit recommended that project pipelines should be prepared before the start of each period, so that calls can open as soon as programmes are approved.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Most of the funds for the period had been spent by the end of the fourth year.",
+    "trap": "reversed_relation",
+    "note": "Only about a quarter had been paid by then."
+   },
+   {
+    "key": "B",
+    "text": "Large municipalities were the main source of delays because of staff shortages.",
+    "trap": "reversed_relation",
+    "note": "The audit points to small municipalities lacking experienced staff."
+   },
+   {
+    "key": "C",
+    "text": "Rushing to spend before the deadline can result in less beneficial projects being chosen.",
+    "note": "Correct: the audit warns that end-of-period pressure can favour ready projects over the most beneficial ones."
+   },
+   {
+    "key": "D",
+    "text": "The technical assistance unit has eliminated delays in spending.",
+    "trap": "cannot_be_determined",
+    "note": "The passage reports that the unit was created, not what effect it has had."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "The audit warned that the pressure to spend quickly at the end of a period can lead authorities to favour projects that are ready to start rather than those that would bring the greatest benefits, and it found examples of projects selected mainly because their paperwork was complete."
+  ],
+  "explanation": {
+   "steps": [
+    "The third paragraph states the risk directly: end-of-period pressure can favour ready projects over the most beneficial ones. C restates this risk.",
+    "D reports a result that the passage never gives; the unit’s creation is mentioned, not its effects."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "cannot_be_determined"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-102",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Environment",
+  "passage": "Rivers in one country are crossed by thousands of small barriers, such as weirs and old mill dams, many of which no longer serve any purpose. These structures prevent fish from moving up and down rivers to reach spawning and feeding areas, and they trap sediment that would otherwise be carried downstream.\n\nSince 2015, a national programme has removed or lowered more than 300 obsolete barriers. Where removal was not possible, for example because a barrier protected a bridge or supplied water to a canal, fish passes were built to allow fish to bypass it. Monitoring at a sample of sites found that several migratory species returned to upstream sections within a few years of a barrier’s removal. In some rivers, however, fish numbers recovered only slowly, because other problems, such as water pollution or high water temperatures, continued to affect them.\n\nRemovals sometimes meet local opposition. Some residents value old weirs as part of the landscape or use the ponds behind them for fishing or swimming, and some owners fear that changes in water levels could affect nearby buildings. The programme now carries out detailed studies of each site before removal and involves residents in deciding how the riverbanks will be landscaped afterwards.\n\nThe programme estimates that several thousand further barriers could be removed, but it has prioritised those blocking access to the longest stretches of suitable habitat.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Where a barrier could not be removed, fish passes were built so that fish could get around it.",
+    "note": "Correct: stated in the second paragraph."
+   },
+   {
+    "key": "B",
+    "text": "Fish numbers recovered quickly in every river after a barrier was removed.",
+    "trap": "overgeneralisation",
+    "note": "In some rivers recovery was slow because of other problems."
+   },
+   {
+    "key": "C",
+    "text": "The programme has removed all obsolete barriers in the country.",
+    "trap": "extreme_wording",
+    "note": "Several thousand further barriers could still be removed."
+   },
+   {
+    "key": "D",
+    "text": "Barriers help sediment move downstream.",
+    "trap": "reversed_relation",
+    "note": "Barriers trap sediment."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Where removal was not possible, for example because a barrier protected a bridge or supplied water to a canal, fish passes were built to allow fish to bypass it."
+  ],
+  "explanation": {
+   "steps": [
+    "The second paragraph says fish passes were built where removal was not possible: A.",
+    "B ignores the exception explained in the same paragraph."
+   ]
+  },
+  "trap_tags": [
+   "overgeneralisation",
+   "extreme_wording",
+   "reversed_relation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-103",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Health",
+  "passage": "Smartphone applications that offer support for mild anxiety and low mood have become widely available. A public health service tested one such application, which provides exercises based on cognitive behavioural therapy, with 1,200 adults who were on a waiting list for psychological treatment.\n\nParticipants were randomly assigned either to use the application for eight weeks or to continue waiting without it. At the end of the eight weeks, those who had used the application reported, on average, a modest reduction in symptoms compared with those who had not. The difference was larger among participants who completed at least half of the exercises. However, only about 40% of users did so; many stopped using the application within the first two weeks.\n\nThree months later, the difference between the groups had narrowed, and it was no longer statistically significant. The researchers suggest that the application may help people while they wait for treatment, but that it is not a substitute for therapy with a professional, particularly for people with more severe symptoms, who were excluded from the study.\n\nThe health service has decided to offer the application to people on waiting lists as an optional addition, together with regular telephone check-ins by a nurse, which it hopes will help more users to continue with the exercises.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Participants were randomly assigned to use the application or not.",
+    "trap": "cannot_be_determined",
+    "note": "Supported: stated in the second paragraph."
+   },
+   {
+    "key": "B",
+    "text": "Most users completed at least half of the exercises.",
+    "note": "This is the statement that is not correct: only about 40% did."
+   },
+   {
+    "key": "C",
+    "text": "The benefit of the application had become smaller after three months.",
+    "trap": "time_shift",
+    "note": "Supported: the difference had narrowed and was no longer significant."
+   },
+   {
+    "key": "D",
+    "text": "People with severe symptoms were not included in the study.",
+    "trap": "partially_true",
+    "note": "Supported: they were excluded."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "However, only about 40% of users did so; many stopped using the application within the first two weeks."
+  ],
+  "explanation": {
+   "steps": [
+    "About 40% completed at least half the exercises, which is less than half, so B is false.",
+    "C correctly describes the narrowing difference at three months."
+   ]
+  },
+  "trap_tags": [
+   "cannot_be_determined",
+   "time_shift",
+   "partially_true"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-104",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Technology",
+  "passage": "A digital identity wallet is an application on a smartphone that allows citizens to prove who they are online and to store official documents, such as a driving licence or a university diploma, in electronic form. Users decide which information to share in each situation. For example, someone proving that they are over eighteen could share only that fact, without revealing their exact date of birth or address.\n\nSupporters say that such wallets could make it easier to use public services and to open bank accounts or sign contracts across borders, since an identity issued in one country could be recognised in others. They also argue that sharing only the necessary information would improve privacy compared with showing a full identity card.\n\nSeveral concerns have been raised. Security experts warn that a wallet holding many documents would be an attractive target for criminals, so strong protection is essential. Others worry that people without smartphones, or who are not comfortable using them, could be excluded if services were offered only through the wallet. The legislation described here therefore states that the wallet must be free and voluntary, and that services must remain available by other means.\n\nPilot projects in several countries are testing the wallet for uses such as opening bank accounts, registering mobile phone contracts and receiving electronic prescriptions.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Digital identity wallets will soon replace all physical identity documents.",
+    "trap": "time_shift",
+    "note": "The wallet is voluntary and is being tested in pilots; other means must remain available."
+   },
+   {
+    "key": "B",
+    "text": "Digital identity wallets are too insecure to be used.",
+    "trap": "extreme_wording",
+    "note": "Security is raised as a concern requiring strong protection, not as a reason to abandon the wallet."
+   },
+   {
+    "key": "C",
+    "text": "Digital identity wallets will make public services available only to smartphone users.",
+    "trap": "reversed_relation",
+    "note": "The legislation requires services to remain available by other means."
+   },
+   {
+    "key": "D",
+    "text": "Digital identity wallets promise easier and more private identification, but raise security and inclusion concerns that the rules try to address.",
+    "note": "Correct: this covers the benefits, the concerns and the safeguards."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "Supporters say that such wallets could make it easier to use public services and to open bank accounts or sign contracts across borders, since an identity issued in one country could be recognised in others.",
+   "The legislation described here therefore states that the wallet must be free and voluntary, and that services must remain available by other means."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage explains what the wallet is, its benefits, the concerns, and the safeguards. D is the balanced summary.",
+    "C is the reverse of the safeguard written into the legislation."
+   ]
+  },
+  "trap_tags": [
+   "time_shift",
+   "extreme_wording",
+   "reversed_relation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-105",
+  "category": "verbal",
+  "subtype": "summary",
+  "difficulty": 2,
+  "mode": "reveal",
+  "topic": "Economics",
+  "passage": "Disruptions to international supply chains in recent years, caused by the pandemic, shipping bottlenecks and geopolitical tensions, have prompted many firms to reconsider where they source components. A survey of 800 manufacturing firms in one country found that about a third had moved some suppliers closer to home or planned to do so, most often to other countries in the same region rather than to their own country.\n\nThe main reason given was the reliability of deliveries rather than cost. Firms that had experienced the longest delays during the disruptions were the most likely to have changed suppliers. Most firms said that sourcing closer to home increased their costs, and many said they would pass at least part of the increase on to customers.\n\nRather than moving production entirely, many firms adopted other strategies to reduce risk. The most common was to use several suppliers for critical components instead of relying on a single one. Others increased their stocks of key parts, reversing a long-term trend towards holding as little inventory as possible.\n\nEconomists caution that surveys of intentions may overstate actual changes, since some plans are abandoned once disruptions ease. Trade data so far show only small shifts in the geographical pattern of imports, although they cover a relatively short period.",
+  "polarity": "correct",
+  "prompt": "Summarise the passage in one sentence.",
+  "task": "Write one sentence that states only what the passage strictly claims, keeping its limits and adding nothing. Then reveal the model answer and compare.",
+  "correct": "After recent supply disruptions, about a third of surveyed manufacturers have moved or plan to move some suppliers closer, mainly within their region and for reliability despite higher costs, while many more diversify suppliers or hold larger stocks, though trade data so far show only small shifts and stated plans may overstate real change.",
+  "evidence": [
+   "A survey of 800 manufacturing firms in one country found that about a third had moved some suppliers closer to home or planned to do so, most often to other countries in the same region rather than to their own country.",
+   "Economists caution that surveys of intentions may overstate actual changes, since some plans are abandoned once disruptions ease."
+  ],
+  "explanation": {
+   "steps": [
+    "Keep “about a third” and “moved or planned to”: these are survey intentions, not measured relocations.",
+    "Mention the alternatives (several suppliers, larger stocks) and the economists’ caution, which limits the conclusion."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-106",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Law",
+  "passage": "Public authorities and private organisations increasingly use automated systems to support decisions, for example to assess applications for social benefits or to detect possible fraud. Under the data protection rules applying in one country, a person has the right not to be subject to a decision based solely on automated processing that significantly affects them, unless the decision is authorised by law with appropriate safeguards, is necessary for a contract, or is based on the person’s explicit consent.\n\nWhere such decisions are allowed, the person must be informed that automated processing is used and must be given meaningful information about the logic involved. In most cases, they also have the right to obtain human intervention, to express their point of view and to contest the decision.\n\nThe rules apply only to decisions based solely on automated processing. If a human reviews the system’s output and makes the final decision, the specific right does not apply, although general data protection principles do. Regulators have stressed that the human involvement must be real: an official who routinely approves the system’s recommendations without examining them does not turn an automated decision into a human one.\n\nA review of benefit agencies found that several had adopted systems that scored applicants for fraud risk, with high-scoring cases referred to inspectors. The inspectors made the final decisions, but some of them reported that they rarely departed from the system’s score.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Automated decisions that significantly affect a person are prohibited in all circumstances.",
+    "trap": "extreme_wording",
+    "note": "They are allowed if authorised by law with safeguards, necessary for a contract or based on explicit consent."
+   },
+   {
+    "key": "B",
+    "text": "General data protection principles do not apply when a human makes the final decision.",
+    "trap": "reversed_relation",
+    "note": "The specific right does not apply, but general principles do."
+   },
+   {
+    "key": "C",
+    "text": "The benefit agencies reviewed were found to have broken the rules on automated decisions.",
+    "trap": "cannot_be_determined",
+    "note": "The review describes the systems and inspectors’ behaviour but reports no finding of a breach."
+   },
+   {
+    "key": "D",
+    "text": "If inspectors merely rubber-stamp a system’s fraud scores, the decisions could be treated as solely automated.",
+    "note": "Correct: regulators say routine approval without examination does not make a decision human."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "Regulators have stressed that the human involvement must be real: an official who routinely approves the system’s recommendations without examining them does not turn an automated decision into a human one."
+  ],
+  "explanation": {
+   "steps": [
+    "Regulators say that routine approval without examination does not turn an automated decision into a human one. Applied to inspectors who simply follow the score, the decision could be treated as automated: D.",
+    "C goes a step further than the passage, which only reports that some inspectors rarely depart from the score."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "reversed_relation",
+   "cannot_be_determined"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-107",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Culture",
+  "passage": "Amateur choirs are one of the most common forms of cultural participation in one country, with an estimated 400,000 members singing in around 12,000 choirs. Most are run by volunteers and funded by members’ fees, concerts and small grants from municipalities.\n\nA survey of choir members found that the most frequently cited reasons for joining were enjoyment of music and the social contact with other members. About two thirds said they had made close friends through their choir. Members were on average older than the population as a whole, and women outnumbered men by about two to one, which leads many choirs to struggle to find enough male singers, especially for the lower voices.\n\nChoirs for children and young people form a separate network, often linked to music schools. Their numbers have been stable, but conductors report that it is increasingly difficult to schedule regular rehearsals because of pupils’ other activities and longer school days.\n\nDuring the pandemic, when singing together was restricted, many choirs moved rehearsals online. Members found this a poor substitute, mainly because delays in internet connections made it impossible to sing together in time. Most choirs have since returned to meeting in person, although some have kept online sessions for learning new music individually.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Men outnumber women in the country’s choirs.",
+    "trap": "reversed_relation",
+    "note": "Women outnumber men by about two to one."
+   },
+   {
+    "key": "B",
+    "text": "Choir members are on average younger than the population as a whole.",
+    "trap": "reversed_relation",
+    "note": "They are on average older."
+   },
+   {
+    "key": "C",
+    "text": "About two thirds of members surveyed said they had made close friends through their choir.",
+    "note": "Correct: stated in the second paragraph."
+   },
+   {
+    "key": "D",
+    "text": "Choirs have stopped using online sessions entirely.",
+    "trap": "extreme_wording",
+    "note": "Some have kept online sessions for learning new music."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "About two thirds said they had made close friends through their choir."
+  ],
+  "explanation": {
+   "steps": [
+    "The second paragraph states the two-thirds figure: C.",
+    "D ignores the last clause: some choirs kept online sessions."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "extreme_wording"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-108",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Transport",
+  "passage": "Moving goods by rail produces considerably less carbon dioxide per tonne-kilometre than moving them by road, and governments in many countries want more freight to travel by train. In one country, however, rail’s share of freight transport has remained at around 18% for the past decade.\n\nRail operators point to several obstacles. Rail is most competitive over long distances and for heavy goods that are shipped regularly in large quantities, such as coal, steel and containers from ports. For short distances, or for goods that must be collected from and delivered to many different locations, lorries are usually faster and more flexible, because most factories and warehouses are not connected directly to the rail network. Transferring goods between lorries and trains at terminals adds cost and time.\n\nCapacity is another problem. Freight trains share tracks with passenger trains, which usually have priority, so freight trains are often scheduled at night or must wait for passenger services to pass. Some sections of the network are close to their maximum capacity at busy times.\n\nThe government has funded new terminals and longer passing loops that allow freight trains to wait without blocking the line. It is also considering a road charge for heavy lorries based on distance travelled, which rail operators support and road haulage companies oppose, arguing that their customers would face higher prices.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Rail’s share of freight transport has risen steadily over the past decade.",
+    "trap": "time_shift",
+    "note": "It has remained at around 18%."
+   },
+   {
+    "key": "B",
+    "text": "A firm sending small loads to many scattered customers over short distances would probably find road transport more practical than rail.",
+    "note": "Correct: for short distances and many delivery points, lorries are usually faster and more flexible."
+   },
+   {
+    "key": "C",
+    "text": "Freight trains usually have priority over passenger trains.",
+    "trap": "reversed_relation",
+    "note": "Passenger trains usually have priority."
+   },
+   {
+    "key": "D",
+    "text": "The distance-based road charge for lorries has already been introduced.",
+    "trap": "time_shift",
+    "note": "The government is only considering it."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "For short distances, or for goods that must be collected from and delivered to many different locations, lorries are usually faster and more flexible, because most factories and warehouses are not connected directly to the rail network."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage says lorries are usually better for short distances and for goods delivered to many locations. A firm with both features fits that description: B.",
+    "Two distractors use time shifts: a stable share presented as rising (A), and a proposal presented as adopted (D)."
+   ]
+  },
+  "trap_tags": [
+   "time_shift",
+   "reversed_relation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-109",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Science",
+  "passage": "Scientists have long known that many birds migrate thousands of kilometres between breeding and wintering areas, but the details of their journeys were difficult to study. Miniature tracking devices weighing less than a gram now allow researchers to follow individual birds, even small songbirds, throughout the year.\n\nOne study tracked 60 birds of a small songbird species that breeds in northern Europe and winters in Africa. The birds did not fly directly. Most made several long stops of one to three weeks at particular sites, where they fed intensively to build up fat reserves before continuing. Crossing the desert, by contrast, they flew for up to forty hours without stopping. Birds from the same breeding area did not all follow the same route or use the same stopover sites, although most passed through one of two main corridors.\n\nThe results matter for conservation. Populations of the species have declined by about a third over thirty years, and the causes have been unclear. The study suggests that the loss or degradation of a small number of key stopover sites could affect a large share of the population, since many birds depend on them. The researchers caution, however, that their sample was small and drawn from only two breeding areas, and that conditions on the breeding and wintering grounds may also contribute to the decline.\n\nThe tracking devices must be recovered to read the data, so only birds that return to their breeding sites can be included.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Data could only be obtained from birds that survived the journey and returned to their breeding sites.",
+    "trap": "cannot_be_determined",
+    "note": "Supported: devices must be recovered, so only returning birds are included."
+   },
+   {
+    "key": "B",
+    "text": "Birds from the same breeding area did not all use the same stopover sites.",
+    "trap": "overgeneralisation",
+    "note": "Supported: stated in the second paragraph."
+   },
+   {
+    "key": "C",
+    "text": "The birds flew for up to forty hours without stopping when crossing the desert.",
+    "trap": "extreme_wording",
+    "note": "Supported: stated in the second paragraph."
+   },
+   {
+    "key": "D",
+    "text": "The study established that the loss of stopover sites is the main cause of the species’ decline.",
+    "note": "This is the statement that is not correct: the study only suggests that losing key sites could affect many birds, and the researchers note other possible causes."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "The study suggests that the loss or degradation of a small number of key stopover sites could affect a large share of the population, since many birds depend on them.",
+   "The researchers caution, however, that their sample was small and drawn from only two breeding areas, and that conditions on the breeding and wintering grounds may also contribute to the decline."
+  ],
+  "explanation": {
+   "steps": [
+    "The study “suggests” a vulnerability and the researchers name other possible causes. D (“established … the main cause”) is not correct.",
+    "A is an inference from the final sentence: if devices must be recovered, only returning birds supply data. That makes it supported."
+   ]
+  },
+  "trap_tags": [
+   "cannot_be_determined",
+   "overgeneralisation",
+   "extreme_wording"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-110",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "History",
+  "passage": "In the nineteenth century, the population of many European cities grew rapidly as people moved from the countryside to work in new factories. In one industrial city, the population increased roughly fivefold between 1830 and 1900. Housing construction could not keep pace, and many workers lived in overcrowded buildings without running water or proper sanitation.\n\nThe consequences for health were severe. Death rates in the city’s poorest districts were far higher than in rural areas, and outbreaks of waterborne diseases occurred repeatedly. For much of the century, there was disagreement about the causes of these diseases: many doctors and officials believed they were spread by foul air rather than by contaminated water.\n\nChange came gradually. Detailed investigations linking disease outbreaks to particular water sources strengthened the case for public investment. From the 1860s, the city built a system of sewers and a supply of filtered water, financed by loans and local taxes. Building regulations introduced minimum standards for light, ventilation and space in new housing.\n\nDeath rates fell substantially in the following decades. Historians note that rising wages and better nutrition also contributed, and that improvements were uneven: some districts were connected to the new systems much later than others, and older housing remained overcrowded long after the new regulations were introduced.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Rapid industrial growth created severe health problems in the city, which were gradually reduced through public investment in sanitation and housing standards, alongside other improvements.",
+    "note": "Correct: this covers the problem, the response and the qualified outcome."
+   },
+   {
+    "key": "B",
+    "text": "Sewers and filtered water were the only reason why death rates fell.",
+    "trap": "extreme_wording",
+    "note": "Historians note that wages and nutrition also contributed."
+   },
+   {
+    "key": "C",
+    "text": "Doctors in the nineteenth century correctly identified contaminated water as the cause of disease from the start.",
+    "trap": "reversed_relation",
+    "note": "Many believed diseases were spread by foul air."
+   },
+   {
+    "key": "D",
+    "text": "All districts benefited equally and at the same time from the new systems.",
+    "trap": "overgeneralisation",
+    "note": "Some districts were connected much later than others."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "From the 1860s, the city built a system of sewers and a supply of filtered water, financed by loans and local taxes.",
+   "Historians note that rising wages and better nutrition also contributed, and that improvements were uneven: some districts were connected to the new systems much later than others, and older housing remained overcrowded long after the new regulations were introduced."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage moves from growth and its health effects, through the debate on causes, to public works and a qualified improvement. A summarises this arc.",
+    "B reduces a multi-cause explanation to a single cause."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "reversed_relation",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-111",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Education",
+  "passage": "Whether homework improves pupils’ learning has long been debated. A study in one country examined data on 15,000 secondary school pupils, comparing the time they reported spending on homework with their results in national mathematics tests.\n\nPupils who spent up to about an hour a day on homework tended to achieve higher results than those who did none. Beyond about ninety minutes a day, however, additional homework was not associated with better results, and pupils who reported more than three hours a day did slightly worse on average. The researchers note that pupils who struggle with a subject may need more time to complete the same tasks, which could partly explain the lower results of those spending the most time.\n\nThe type of homework also mattered. Pupils whose teachers gave short, regular tasks linked to the lesson and checked them in class achieved better results than pupils who received long assignments that were rarely discussed. Teachers in the survey said that marking homework took a significant part of their working time.\n\nThe researchers recommend that schools coordinate homework between subjects so that the total amount remains reasonable, and that teachers give feedback on the work set. They emphasise that their data show associations and cannot prove that homework itself causes better results.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The more homework pupils do, the better their results.",
+    "trap": "overgeneralisation",
+    "note": "Beyond about ninety minutes, more homework was not associated with better results."
+   },
+   {
+    "key": "B",
+    "text": "The study proved that homework causes better results.",
+    "trap": "causal_vs_correlation",
+    "note": "The researchers emphasise that their data show associations only."
+   },
+   {
+    "key": "C",
+    "text": "Pupils whose homework was regularly checked in class tended to achieve better results.",
+    "note": "Correct: short regular tasks checked in class were linked to better results."
+   },
+   {
+    "key": "D",
+    "text": "Pupils who did no homework achieved the highest results.",
+    "trap": "reversed_relation",
+    "note": "Pupils doing up to an hour a day did better than those doing none."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Pupils whose teachers gave short, regular tasks linked to the lesson and checked them in class achieved better results than pupils who received long assignments that were rarely discussed."
+  ],
+  "explanation": {
+   "steps": [
+    "The third paragraph links short, regular, checked homework to better results: C, which only claims a tendency.",
+    "B is the cause-versus-correlation trap the researchers themselves warn about."
+   ]
+  },
+  "trap_tags": [
+   "overgeneralisation",
+   "causal_vs_correlation",
+   "reversed_relation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-112",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Agriculture",
+  "passage": "Vertical farms grow plants indoors on shelves stacked several metres high, under artificial lighting and with carefully controlled temperature, humidity and nutrients. Because conditions are constant, crops can be grown all year round, and yields per square metre of floor space can be many times higher than in open fields. Most vertical farms use no soil and recirculate water, so their water use per kilogram of produce is low.\n\nThe main disadvantage is energy. Lighting and climate control require large amounts of electricity, and energy accounts for a substantial share of operating costs. When electricity prices rose sharply, several vertical farms in one country reduced production or closed. The carbon footprint of the produce depends heavily on how the electricity is generated: it is low where electricity comes mainly from renewable sources and considerably higher where it comes from fossil fuels.\n\nFor these reasons, vertical farms have so far concentrated on crops that grow quickly, are relatively light, and sell at high prices, such as leafy salads and herbs. Staple crops such as wheat or potatoes would require far more energy relative to their market value and are not grown commercially in this way.\n\nSupporters argue that vertical farms located in or near cities can supply fresh produce with short transport distances and little waste, and that falling costs of efficient lighting will improve their economics over time.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Wheat and potatoes are commonly grown commercially in vertical farms.",
+    "trap": "reversed_relation",
+    "note": "They are not grown commercially in this way."
+   },
+   {
+    "key": "B",
+    "text": "Vertical farms always have a lower carbon footprint than open-field farming.",
+    "trap": "extreme_wording",
+    "note": "Their footprint depends heavily on how the electricity is generated."
+   },
+   {
+    "key": "C",
+    "text": "Vertical farms use more water per kilogram of produce than conventional farms.",
+    "trap": "reversed_relation",
+    "note": "Their water use per kilogram is low because water is recirculated."
+   },
+   {
+    "key": "D",
+    "text": "Some vertical farms reduced production or closed when electricity prices rose sharply.",
+    "note": "Correct: stated in the second paragraph."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "When electricity prices rose sharply, several vertical farms in one country reduced production or closed."
+  ],
+  "explanation": {
+   "steps": [
+    "The second paragraph says several vertical farms reduced production or closed when electricity prices rose: D.",
+    "B adds “always” to a conditional statement."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "extreme_wording"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-113",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Energy",
+  "passage": "The number of homes in one country with solar panels on their roofs has grown rapidly, from about 200,000 in 2015 to more than 1.5 million in 2023. Falling prices for panels and a scheme that allows households to sell surplus electricity to the grid have encouraged installation.\n\nUnder the scheme, households were originally paid the same price for electricity they supplied to the grid as they paid for electricity they took from it. As the number of installations grew, the government concluded that this was too generous, because households with panels were contributing less to the cost of maintaining the grid, which they still relied on at night and in winter. Since 2024, new installations receive a lower price for electricity supplied to the grid, while existing installations keep the original terms for fifteen years.\n\nThe change has encouraged households to use more of their own electricity, for example by running appliances during the day or installing home batteries. Sales of home batteries have risen, although they remain expensive and are mainly bought by households with higher incomes.\n\nGrid operators report that on sunny days, solar generation in some residential areas now exceeds local demand, causing voltage problems in local networks. They are upgrading equipment in the most affected areas and have asked the regulator for permission to limit output from installations temporarily when necessary.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Since 2024, all households with solar panels receive a lower price for the electricity they supply to the grid.",
+    "note": "This is the statement that is not correct: existing installations keep the original terms for fifteen years."
+   },
+   {
+    "key": "B",
+    "text": "More than 1.5 million homes had solar panels in 2023.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: stated in the first paragraph."
+   },
+   {
+    "key": "C",
+    "text": "Home batteries are mainly bought by households with higher incomes.",
+    "trap": "causal_vs_correlation",
+    "note": "Supported: stated in the third paragraph."
+   },
+   {
+    "key": "D",
+    "text": "Solar generation sometimes exceeds local demand in some residential areas.",
+    "trap": "partially_true",
+    "note": "Supported: on sunny days in some areas."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Since 2024, new installations receive a lower price for electricity supplied to the grid, while existing installations keep the original terms for fifteen years."
+  ],
+  "explanation": {
+   "steps": [
+    "The lower price applies to new installations only, so A (“all households”) is false.",
+    "B, C and D each restate a sentence from the passage."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "causal_vs_correlation",
+   "partially_true"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-114",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Economics",
+  "passage": "Public pension systems in which current workers’ contributions pay for current pensions face pressure as populations age. In one country, there were about 3.5 people of working age for every person aged 65 or over in 2000; by 2050 the figure is projected to fall to about 1.7.\n\nGovernments can respond in several ways: by raising contributions, reducing pensions relative to wages, raising the pension age, or increasing the number of people in work. Each option has different effects on different groups. Higher contributions fall mainly on current workers, lower pensions on current and future retirees, and a higher pension age on people approaching retirement, particularly those in physically demanding jobs who may find it hard to keep working.\n\nThe country has chosen a combination of measures. The pension age will rise gradually from 65 to 67 by 2035 and will then be linked to life expectancy, so that the share of adult life spent in retirement remains roughly constant. Pensions will continue to rise each year, but in line with prices rather than wages, which means that they will grow more slowly than average earnings if real wages rise.\n\nThe government’s projections assume that the employment rate of people aged 55 to 64 will continue to increase. Analysts point out that if it does not, the remaining gap in financing would have to be closed by other means, such as higher contributions or transfers from the general budget.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The pension age is projected to stay at 67 permanently after 2035.",
+    "trap": "time_shift",
+    "note": "After 2035 it will be linked to life expectancy."
+   },
+   {
+    "key": "B",
+    "text": "Linking pensions to prices guarantees that pensioners’ purchasing power will fall.",
+    "trap": "reversed_relation",
+    "note": "Price indexation preserves purchasing power; pensions only grow more slowly than earnings if real wages rise."
+   },
+   {
+    "key": "C",
+    "text": "If real wages rise, pensioners’ incomes are likely to fall behind those of people in work over time.",
+    "note": "Correct: pensions will rise with prices, not wages, so they grow more slowly than earnings when real wages rise."
+   },
+   {
+    "key": "D",
+    "text": "The government’s projections assume that older people’s employment rate will stay at its current level.",
+    "trap": "partially_true",
+    "note": "They assume it will continue to increase."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Pensions will continue to rise each year, but in line with prices rather than wages, which means that they will grow more slowly than average earnings if real wages rise."
+  ],
+  "explanation": {
+   "steps": [
+    "Pensions indexed to prices grow more slowly than earnings when real wages rise. So pensioners fall behind workers in relative terms: C.",
+    "B confuses relative and absolute: indexing to prices protects purchasing power; it is the comparison with wages that worsens."
+   ]
+  },
+  "trap_tags": [
+   "time_shift",
+   "reversed_relation",
+   "partially_true"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-115",
+  "category": "verbal",
+  "subtype": "summary",
+  "difficulty": 1,
+  "mode": "reveal",
+  "topic": "Culture",
+  "passage": "The historic centre of a medium-sized town contains many buildings from the sixteenth to the eighteenth centuries. By the 1990s, many of them were in poor condition: owners could not afford repairs, shops had moved to new commercial areas on the edge of town, and the number of residents in the centre had fallen by almost half since 1960.\n\nIn 2000 the town launched a restoration programme. It offered grants covering up to 40% of the cost of restoring facades and roofs, on condition that owners followed guidelines on traditional materials and methods. It also converted several empty public buildings into a library, a music school and housing for students, and it restricted car traffic in the narrowest streets.\n\nTwenty years later, most of the buildings in the centre had been restored, and the number of residents had risen again, although it remained below the level of 1960. New cafés, galleries and small shops had opened. Visitor numbers increased substantially, which supported local businesses but also led to complaints from some residents about noise and the conversion of flats into holiday rentals.\n\nThe town has since limited the number of days per year that a flat may be let to tourists and is encouraging the use of upper floors above shops as housing, which had often stood empty.",
+  "polarity": "correct",
+  "prompt": "Summarise the passage in one sentence.",
+  "task": "Write one sentence that states only what the passage strictly claims, keeping its limits and adding nothing. Then reveal the model answer and compare.",
+  "correct": "A restoration programme begun in 2000, combining grants, new public uses for empty buildings and traffic limits, revived the town’s declining historic centre, with most buildings restored and residents partly returning, but rising tourism created new pressures that the town is now addressing with limits on holiday rentals.",
+  "evidence": [
+   "Twenty years later, most of the buildings in the centre had been restored, and the number of residents had risen again, although it remained below the level of 1960."
+  ],
+  "explanation": {
+   "steps": [
+    "Keep the limit on the population recovery: residents rose again but stayed below the 1960 level.",
+    "A complete summary also mentions the side effect (tourism pressures) and the response."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-116",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Health",
+  "passage": "Skin cancer has become more common over recent decades, and exposure to ultraviolet radiation from the sun and from sunbeds is the main avoidable cause. Health authorities in one country advise people to seek shade in the middle of the day, to wear clothing and hats that cover the skin, and to use sunscreen on parts of the body that cannot be covered.\n\nSurveys show that knowledge of these recommendations is widespread, but behaviour often does not follow. Around 80% of adults knew that sunscreen should be reapplied after swimming, yet fewer than half said they usually did so. Young adults were the group most likely to report having been sunburnt in the previous year, and many said they wanted to have a tan.\n\nChildren are a particular focus, because sunburn in childhood is thought to increase the risk of skin cancer later in life. Many primary schools now provide shaded areas in playgrounds and ask pupils to wear hats during outdoor activities in summer. Some schools also allow staff to apply sunscreen to younger children, after obtaining parents’ consent.\n\nThe use of sunbeds by people under eighteen has been prohibited since 2012. Operators must display warnings about health risks, and their premises are inspected by local authorities.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Most adults usually reapply sunscreen after swimming.",
+    "trap": "wrong_quantifier",
+    "note": "Fewer than half said they usually did so."
+   },
+   {
+    "key": "B",
+    "text": "People under eighteen have been prohibited from using sunbeds since 2012.",
+    "note": "Correct: stated in the last paragraph."
+   },
+   {
+    "key": "C",
+    "text": "Older adults were the group most likely to report recent sunburn.",
+    "trap": "reversed_relation",
+    "note": "Young adults were the most likely group."
+   },
+   {
+    "key": "D",
+    "text": "All primary schools require staff to apply sunscreen to pupils.",
+    "trap": "extreme_wording",
+    "note": "Some schools allow staff to do so, with parents’ consent."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "The use of sunbeds by people under eighteen has been prohibited since 2012."
+  ],
+  "explanation": {
+   "steps": [
+    "The last paragraph states the 2012 prohibition for under-eighteens: B.",
+    "A confuses knowing the advice (80%) with following it (fewer than half)."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "reversed_relation",
+   "extreme_wording"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-117",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Demography",
+  "passage": "Commuting patterns in one country have changed considerably over the past two decades. The average one-way distance between home and work rose from 14 kilometres in 2002 to 18 kilometres in 2022, while the average commuting time increased only slightly, from 26 to 28 minutes. Over the same period, the share of commuters using rail rose, particularly for journeys to the largest cities.\n\nResearchers attribute the longer distances mainly to housing costs. As prices in and around the largest cities rose faster than incomes, many households, especially families with children, moved further out, often to towns with a direct rail connection. Improvements to the rail network, including faster regional trains, allowed some of these households to travel further without spending much more time.\n\nThe effects of remote work since 2020 are still being studied. Commuters who now work from home two or three days a week travel to work less often, and surveys indicate that some of them would accept a longer journey on the remaining days. If this pattern continues, the researchers expect the average distance between home and work to increase further, even if the total distance travelled for work each week falls.\n\nLonger commuting distances have implications for transport planning, since demand on regional rail lines is concentrated at peak hours, when trains are already crowded.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Commuters travelled faster on average in 2022 than in 2002.",
+    "note": "Correct: distance rose by about 29% (14 to 18 km) while time rose by only about 8% (26 to 28 minutes), so average speed increased."
+   },
+   {
+    "key": "B",
+    "text": "Remote work has already reduced the average distance between home and work.",
+    "trap": "reversed_relation",
+    "note": "Researchers expect the distance to increase further if the pattern continues."
+   },
+   {
+    "key": "C",
+    "text": "Most commuters now travel to work by rail.",
+    "trap": "wrong_quantifier",
+    "note": "The rail share rose; the passage does not say it is a majority."
+   },
+   {
+    "key": "D",
+    "text": "Families with children moved further out mainly because of better schools.",
+    "trap": "outside_knowledge",
+    "note": "The passage attributes the moves mainly to housing costs."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "The average one-way distance between home and work rose from 14 kilometres in 2002 to 18 kilometres in 2022, while the average commuting time increased only slightly, from 26 to 28 minutes."
+  ],
+  "explanation": {
+   "steps": [
+    "Speed is distance divided by time. 14 km in 26 minutes ≈ 0.54 km/min; 18 km in 28 minutes ≈ 0.64 km/min. Average speed rose: A.",
+    "B reverses the researchers’ expectation: fewer trips per week, but longer distances per trip."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "wrong_quantifier",
+   "outside_knowledge"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-118",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Science",
+  "passage": "Computer models are used to make projections about complex systems, such as the climate, the spread of infectious diseases or the economy. They represent the system through equations based on scientific understanding and observations, and they are tested by checking whether they can reproduce past events.\n\nModels are often criticised when their projections turn out to differ from what later happens. Such differences do not necessarily mean a model was wrong. Many projections are conditional: they describe what would happen under particular assumptions, for example about future emissions or about how people will change their behaviour. If those assumptions do not hold, perhaps because a projection prompted action that changed the outcome, the model may still have represented the system correctly.\n\nModels nonetheless have genuine limitations. Some processes are not well understood or occur on scales too small to represent directly and must be approximated. Different models can therefore produce different results even with the same assumptions. Researchers often compare many models and present a range of outcomes, and they regard results on which most models agree as more reliable than those on which they differ.\n\nCommunicating this uncertainty is difficult. A single figure is easier to report than a range, but it can give a false impression of precision. Researchers increasingly present projections as scenarios with explicit assumptions and ranges, so that decision-makers can see how outcomes depend on choices still to be made.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Computer models are unreliable because their projections often differ from what actually happens.",
+    "trap": "reversed_relation",
+    "note": "The passage argues that such differences do not necessarily mean a model was wrong."
+   },
+   {
+    "key": "B",
+    "text": "When most models agree, their results are certain to be correct.",
+    "trap": "extreme_wording",
+    "note": "Agreement makes results more reliable, not certain."
+   },
+   {
+    "key": "C",
+    "text": "Model projections should be judged with their assumptions and genuine limitations in mind, which is why researchers present them as scenarios and ranges.",
+    "note": "Correct: this captures the argument about conditionality, limitations and communication."
+   },
+   {
+    "key": "D",
+    "text": "Reporting a single figure is the best way to communicate projections.",
+    "trap": "reversed_relation",
+    "note": "A single figure can give a false impression of precision."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Many projections are conditional: they describe what would happen under particular assumptions, for example about future emissions or about how people will change their behaviour.",
+   "Researchers increasingly present projections as scenarios with explicit assumptions and ranges, so that decision-makers can see how outcomes depend on choices still to be made."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage defends models against naive criticism (projections are conditional), admits real limits, and ends on how to communicate them. C reflects this argument.",
+    "A restates the criticism that the passage sets out to qualify."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "extreme_wording"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-119",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Public administration",
+  "passage": "A citizens’ assembly brings together a group of randomly selected residents to learn about a policy question, hear from experts and people with different views, deliberate, and make recommendations. In 2022 a regional government convened an assembly of 100 residents to consider how the region should reduce its greenhouse gas emissions.\n\nParticipants were chosen by lot from among residents who responded to an invitation, with the selection adjusted so that the assembly reflected the region’s population in terms of age, gender, education and place of residence. They met over six weekends and were paid a fee for their time. Experts presented evidence, and participants worked in small groups with trained facilitators before voting on recommendations.\n\nThe assembly adopted 45 recommendations, most of them by large majorities. They included measures on public transport, building insulation and land use, and some proposals that went further than the government’s existing plans. The government committed in advance to respond publicly to each recommendation, explaining whether it would be implemented and, if not, why. A year later, it had accepted about half of the recommendations in full or in part.\n\nSurveys found that most participants felt the process had been fair and that their views had been taken seriously, although some were disappointed by the government’s response to proposals it rejected.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Participants received payment for taking part.",
+    "trap": "cannot_be_determined",
+    "note": "Supported: they were paid a fee for their time."
+   },
+   {
+    "key": "B",
+    "text": "The government accepted all of the assembly’s recommendations.",
+    "note": "This is the statement that is not correct: it accepted about half, in full or in part."
+   },
+   {
+    "key": "C",
+    "text": "The selection was adjusted so that the assembly reflected the region’s population.",
+    "trap": "partially_true",
+    "note": "Supported: by age, gender, education and place of residence."
+   },
+   {
+    "key": "D",
+    "text": "Some recommendations went further than the government’s existing plans.",
+    "trap": "extreme_wording",
+    "note": "Supported: stated in the third paragraph."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "A year later, it had accepted about half of the recommendations in full or in part."
+  ],
+  "explanation": {
+   "steps": [
+    "About half accepted is not all, so B is false.",
+    "The government committed to respond to every recommendation, which is not the same as accepting them."
+   ]
+  },
+  "trap_tags": [
+   "cannot_be_determined",
+   "partially_true",
+   "extreme_wording"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-120",
+  "category": "verbal",
+  "subtype": "explain_non_inference",
+  "difficulty": 2,
+  "mode": "reveal",
+  "topic": "Environment",
+  "passage": "Invasive alien species are plants and animals introduced, deliberately or accidentally, into areas outside their natural range, where they spread and harm native species, ecosystems or human activities. In one country, a national survey identified around 1,200 non-native species established in the wild, of which about 80 were classified as invasive.\n\nOnce an invasive species is widespread, eradicating it is usually impossible or extremely expensive. Authorities therefore focus on prevention and early detection. Imports of certain species are banned, and ports and airports carry out inspections. Members of the public can report sightings through an online platform, which has helped to detect several new arrivals while their populations were still small.\n\nOne example is a species of freshwater crayfish introduced from another continent decades ago for farming. It escaped into rivers, where it competes with the native crayfish and carries a disease to which the native species has no resistance. The native crayfish has disappeared from most rivers in the country and now survives mainly in isolated streams, where conservation groups try to keep the invasive species out with barriers.\n\nControl measures can be controversial. Proposals to cull some invasive mammals have met opposition from animal welfare organisations, and authorities have sometimes chosen alternatives such as sterilisation, which are slower and more expensive.",
+  "polarity": "correct",
+  "prompt": "Statement: “All 1,200 non-native species in the country harm native wildlife.” Explain why this statement cannot be inferred from the passage.",
+  "task": "Write one or two sentences explaining why the statement cannot be inferred. Name the trap. Then reveal the model answer.",
+  "correct": "Of about 1,200 established non-native species, only about 80 are classified as invasive, meaning they spread and cause harm. Nothing in the passage suggests the others harm native wildlife (trap: overgeneralisation / wrong quantifier).",
+  "evidence": [
+   "In one country, a national survey identified around 1,200 non-native species established in the wild, of which about 80 were classified as invasive."
+  ],
+  "explanation": {
+   "steps": [
+    "Distinguish the categories: “non-native” (about 1,200) is not the same as “invasive” (about 80).",
+    "Turning a property of a subgroup into a property of the whole group is a classic overgeneralisation."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-121",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Technology",
+  "passage": "Discarded electrical and electronic equipment, such as old phones, computers and household appliances, is one of the fastest-growing types of waste. It contains valuable materials, including copper, gold and rare metals, as well as hazardous substances that must be handled safely.\n\nIn one country, retailers selling electronic goods must take back old equipment free of charge when a customer buys a similar new product, and large shops must also accept small items such as phones without a purchase. Municipalities run collection points for larger items. In 2022, about 45% of the electronic equipment placed on the market in the previous three years was collected for recycling, below the national target of 65%.\n\nA study tried to find out where the rest went. It estimated that a large share of small devices, especially old phones, remained unused in people’s homes, often because owners worried about the personal data stored on them or thought the devices might still be useful. Some equipment was thrown away with household waste, and some was exported, legally or illegally, as second-hand goods.\n\nThe government has launched a campaign explaining how to delete personal data from devices before returning them, and it is considering a small refundable deposit on new phones, which would be returned when the old device is handed in.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The country met its collection target for electronic waste in 2022.",
+    "trap": "reversed_relation",
+    "note": "45% was collected, below the 65% target."
+   },
+   {
+    "key": "B",
+    "text": "Large shops may refuse to accept old phones unless a new one is bought.",
+    "trap": "reversed_relation",
+    "note": "Large shops must accept small items such as phones without a purchase."
+   },
+   {
+    "key": "C",
+    "text": "A deposit system for new phones is already in place.",
+    "trap": "time_shift",
+    "note": "It is only being considered."
+   },
+   {
+    "key": "D",
+    "text": "Concerns about personal data are one reason why old phones are not returned.",
+    "note": "Correct: owners worried about the personal data stored on them."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "It estimated that a large share of small devices, especially old phones, remained unused in people’s homes, often because owners worried about the personal data stored on them or thought the devices might still be useful."
+  ],
+  "explanation": {
+   "steps": [
+    "The study found that phones often stay at home because owners worry about personal data: D.",
+    "This also explains the campaign on deleting personal data before returning devices."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "time_shift"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-122",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Law",
+  "passage": "When consumers buy goods that turn out to be faulty, the seller is liable for defects that existed at the time of delivery and become apparent within two years. For the first year after delivery, a defect is presumed to have existed at the time of delivery unless the seller proves otherwise; after that, the consumer may have to show that the defect was present from the start.\n\nThe consumer can first choose between repair and replacement, unless the chosen option is impossible or would be disproportionately expensive for the seller compared with the other. Only if repair or replacement is not carried out within a reasonable time, or if the defect reappears, may the consumer ask for a price reduction or end the contract and obtain a refund.\n\nTo encourage repair rather than replacement, new rules introduced in one country extend the seller’s liability by one year when the consumer chooses repair. Manufacturers of certain products, such as washing machines and smartphones, must also make spare parts available for a minimum number of years and may not use techniques that prevent independent repairers from working on their products.\n\nThe legal guarantee is separate from any commercial guarantee that a manufacturer may offer voluntarily. A commercial guarantee may give additional rights but cannot reduce the consumer’s rights under the legal guarantee.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A consumer can immediately demand a refund as soon as a defect appears.",
+    "trap": "partially_true",
+    "note": "A refund is possible only if repair or replacement is not carried out in a reasonable time, or the defect reappears."
+   },
+   {
+    "key": "B",
+    "text": "A commercial guarantee can replace the rights given by the legal guarantee.",
+    "trap": "reversed_relation",
+    "note": "A commercial guarantee cannot reduce the legal rights."
+   },
+   {
+    "key": "C",
+    "text": "Under the new rules, choosing repair extends the seller’s liability by one year.",
+    "note": "Correct: stated in the third paragraph."
+   },
+   {
+    "key": "D",
+    "text": "In the second year after delivery, defects are presumed to have existed at delivery.",
+    "trap": "time_shift",
+    "note": "The presumption applies only in the first year."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "To encourage repair rather than replacement, new rules introduced in one country extend the seller’s liability by one year when the consumer chooses repair."
+  ],
+  "explanation": {
+   "steps": [
+    "The third paragraph says liability is extended by one year when the consumer chooses repair: C.",
+    "D shifts the presumption from the first year into the second."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "reversed_relation",
+   "time_shift"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-123",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Culture",
+  "passage": "Video games have become one of the largest cultural industries in terms of revenue. In one country, the sector employs about 12,000 people, mostly in small studios with fewer than twenty employees. A handful of larger companies account for a large share of revenue.\n\nDeveloping a game can take several years and require large investments before any income is earned. Small studios often find it difficult to obtain bank loans, because banks are unfamiliar with the sector and games are risky: most commercial releases do not recover their development costs, while a few succeed spectacularly.\n\nSince 2018, the government has offered a tax credit covering 25% of eligible development costs for games that pass a cultural test, which awards points for elements such as a story set in the country’s history or culture, the use of the national language, or innovative artistic design. Supporters argue that games are a form of cultural expression comparable to film, which already receives similar support. Critics question whether public money should support a profitable industry and point out that some of the supported games were produced by subsidiaries of large international companies.\n\nAn evaluation found that the number of games developed in the country rose after the tax credit was introduced, but it could not determine how many of these projects would have gone ahead without it, since the sector was growing internationally at the same time.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Most commercially released games recover their development costs.",
+    "trap": "reversed_relation",
+    "note": "Most do not."
+   },
+   {
+    "key": "B",
+    "text": "A game does not have to be set in the country’s history to qualify for the tax credit.",
+    "note": "Correct: the cultural test awards points for several elements, of which a historical setting is only one."
+   },
+   {
+    "key": "C",
+    "text": "The tax credit caused the rise in the number of games developed in the country.",
+    "trap": "causal_vs_correlation",
+    "note": "The evaluation could not determine how many projects would have gone ahead anyway."
+   },
+   {
+    "key": "D",
+    "text": "Large companies employ most of the people working in the sector.",
+    "trap": "partially_true",
+    "note": "Large companies account for much of the revenue, but most employment is in small studios."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "Since 2018, the government has offered a tax credit covering 25% of eligible development costs for games that pass a cultural test, which awards points for elements such as a story set in the country’s history or culture, the use of the national language, or innovative artistic design."
+  ],
+  "explanation": {
+   "steps": [
+    "A points-based test with several possible elements means no single element is compulsory. A historical setting is one option among several: B.",
+    "D swaps revenue and employment: large firms dominate revenue, while small studios employ most people."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "causal_vs_correlation",
+   "partially_true"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-124",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Economics",
+  "passage": "Central banks in many countries are independent: governments set their objectives, usually price stability, but do not instruct them on how to use their policy tools. The argument for independence is that politicians facing elections may be tempted to keep interest rates low to stimulate the economy in the short term, at the risk of higher inflation later. An independent central bank can take a longer view, and its commitment to low inflation is more credible.\n\nStudies comparing countries have found that greater central bank independence is associated with lower average inflation, although economists debate how much of this reflects independence itself and how much reflects other features of countries that choose to make their central banks independent, such as a broad public preference for stable prices.\n\nIndependence also raises questions of accountability, since central bank officials are not elected. Independent central banks therefore typically explain their decisions publicly, publish forecasts and minutes of their meetings, and appear before parliamentary committees. Their mandates are set by law, and parliaments can change them.\n\nIn recent years, central banks have taken on a larger role, buying government bonds on a large scale and, in some cases, considering climate risks in their operations. Some observers argue that these broader activities have distributional effects and political implications that make the case for independence less clear-cut than when central banks focused narrowly on interest rates.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Cross-country studies have shown that independence on its own causes lower inflation.",
+    "note": "This is the statement that is not correct: economists debate how much of the association reflects independence and how much other features of those countries."
+   },
+   {
+    "key": "B",
+    "text": "Parliaments can change central banks’ mandates.",
+    "trap": "reversed_relation",
+    "note": "Supported: mandates are set by law and parliaments can change them."
+   },
+   {
+    "key": "C",
+    "text": "Governments usually set the objectives of independent central banks.",
+    "trap": "partially_true",
+    "note": "Supported: governments set objectives but do not instruct on the use of tools."
+   },
+   {
+    "key": "D",
+    "text": "Some observers think central banks’ wider activities weaken the case for independence.",
+    "trap": "cannot_be_determined",
+    "note": "Supported: they say the case becomes less clear-cut."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Studies comparing countries have found that greater central bank independence is associated with lower average inflation, although economists debate how much of this reflects independence itself and how much reflects other features of countries that choose to make their central banks independent, such as a broad public preference for stable prices."
+  ],
+  "explanation": {
+   "steps": [
+    "The studies show an association, and the passage explicitly says economists debate the cause. A presents it as proven causation, so A is not correct.",
+    "C is the subtle true statement: setting objectives is different from instructing on tools."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "partially_true",
+   "cannot_be_determined"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-125",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Health",
+  "passage": "Many hospitals face shortages of nurses, and the problem is expected to grow as populations age and more nurses reach retirement. In one country, about one in five nursing posts in hospitals was vacant in 2023, and surveys indicated that a significant share of nurses were considering leaving the profession within five years.\n\nThe reasons nurses give for wanting to leave are mainly related to working conditions rather than pay alone: heavy workloads, irregular shifts that make family life difficult, and a feeling of not having enough time to care for patients properly. Shortages can create a vicious circle, since vacant posts increase the workload of the remaining staff, which in turn leads more of them to leave.\n\nHospitals have tried several approaches. Some have introduced more predictable schedules and allowed nurses greater say over their shifts. Others have hired assistants to take over tasks such as transporting patients or ordering supplies, so that nurses can concentrate on care. Recruitment from abroad has filled some posts but raises concerns about taking nurses from countries that also need them, and newly recruited nurses often need language training.\n\nThe government has increased the number of training places, but newly trained nurses will take three years to qualify. Health economists argue that retaining existing staff is likely to be quicker and cheaper than training or recruiting new ones, which is why many hospitals now focus on improving working conditions.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Nurse shortages are caused mainly by low pay, so salary increases are the only solution.",
+    "trap": "outside_knowledge",
+    "note": "The reasons given are mainly working conditions rather than pay alone."
+   },
+   {
+    "key": "B",
+    "text": "Recruiting nurses from abroad has solved the shortage.",
+    "trap": "overgeneralisation",
+    "note": "It filled some posts and raises concerns."
+   },
+   {
+    "key": "C",
+    "text": "Training more nurses will end the shortage within a year.",
+    "trap": "time_shift",
+    "note": "Newly trained nurses take three years to qualify."
+   },
+   {
+    "key": "D",
+    "text": "Hospitals face serious nurse shortages driven largely by working conditions, so improving those conditions to keep existing staff is seen as the quickest response.",
+    "note": "Correct: this captures the problem, its causes and the preferred response."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "The reasons nurses give for wanting to leave are mainly related to working conditions rather than pay alone: heavy workloads, irregular shifts that make family life difficult, and a feeling of not having enough time to care for patients properly.",
+   "Health economists argue that retaining existing staff is likely to be quicker and cheaper than training or recruiting new ones, which is why many hospitals now focus on improving working conditions."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage identifies the problem, explains it by working conditions, reviews responses, and concludes that retention is quickest. D summarises this.",
+    "A contradicts the passage’s explicit statement that pay alone is not the main reason."
+   ]
+  },
+  "trap_tags": [
+   "outside_knowledge",
+   "overgeneralisation",
+   "time_shift"
+  ],
+  "est_time_sec": 105
+ }
+]

@@ -1,0 +1,1220 @@
+[
+ {
+  "id": "VR-126",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "EU policy",
+  "passage": "Professionals who obtained their qualifications in one member state and wish to work in another may need to have them recognised. For a number of professions, including doctors, nurses, pharmacists, dentists, midwives, architects and veterinary surgeons, minimum training requirements have been harmonised, and qualifications meeting them are recognised automatically. For most other regulated professions, the host country compares the applicant’s training with its own requirements and may require an aptitude test or an adaptation period if there are substantial differences.\n\nA study of applications in one member state found that automatic recognition was usually granted within three months, while decisions requiring a comparison of training took longer, sometimes more than a year. Applicants most often cited the time needed to obtain certified translations and documents from authorities in their home country as the main source of delay.\n\nThe study also found large differences in how many professions each country regulates. A profession that requires a specific qualification in one country, such as tour guide or estate agent, may be open to anyone in another. Where the host country does not regulate a profession, no recognition is needed, and professionals can start working under the same conditions as nationals.\n\nAn electronic procedure now allows applicants for some professions to submit documents online and track their applications, which applicants who used it rated positively.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "An architect’s qualification meeting the harmonised requirements must still pass an aptitude test in the host country.",
+    "trap": "reversed_relation",
+    "note": "Qualifications in harmonised professions are recognised automatically."
+   },
+   {
+    "key": "B",
+    "text": "A tour guide moving to a country where the profession is not regulated would not need their qualification recognised to work there.",
+    "note": "Correct: where the host country does not regulate a profession, no recognition is needed."
+   },
+   {
+    "key": "C",
+    "text": "Decisions on all applications are made within three months.",
+    "trap": "overgeneralisation",
+    "note": "Comparisons of training sometimes took more than a year."
+   },
+   {
+    "key": "D",
+    "text": "The main source of delay was the slowness of the host country’s own authorities.",
+    "trap": "partially_true",
+    "note": "Applicants cited obtaining translations and documents from their home country."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "Where the host country does not regulate a profession, no recognition is needed, and professionals can start working under the same conditions as nationals."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage gives tour guide as an example of a profession regulated in some countries and not in others, and says that where the host country does not regulate it, no recognition is needed: B.",
+    "D shifts the delay to the wrong country’s authorities."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "overgeneralisation",
+   "partially_true"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-127",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Science",
+  "passage": "Honey is one of the foods most frequently found to be adulterated, for example by adding cheaper sugar syrups to increase the volume. Detecting such fraud is difficult, because the syrups used are designed to resemble the natural sugars in honey and can pass simple tests.\n\nIn a coordinated testing exercise, food inspectors in several countries collected samples of honey imported into the European Union and sent them to laboratories using a range of analytical methods. Close to half of the samples were found to be suspicious of adulteration, meaning that the results were inconsistent with genuine honey, although the authors stressed that suspicion is not the same as proof and that some methods are still being validated.\n\nThe results varied by origin. Honey from some exporting countries was suspicious far more often than honey from others, and honey that had been blended from several sources was suspicious more often than single-origin honey. Many beekeepers in the EU argue that cheap adulterated honey depresses prices and makes it hard for them to compete.\n\nThe authorities responded by proposing clearer labelling, so that the countries of origin of blended honey must be listed, together with stricter checks at the border and the development of a shared database of the characteristics of genuine honey from different regions, against which suspicious samples can be compared.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Close to half of the samples were proven to be adulterated.",
+    "trap": "extreme_wording",
+    "note": "They were suspicious; the authors stress that suspicion is not proof."
+   },
+   {
+    "key": "B",
+    "text": "Single-origin honey was suspicious more often than blended honey.",
+    "trap": "reversed_relation",
+    "note": "Blended honey was suspicious more often."
+   },
+   {
+    "key": "C",
+    "text": "Simple tests reliably detect added sugar syrups.",
+    "trap": "reversed_relation",
+    "note": "The syrups can pass simple tests."
+   },
+   {
+    "key": "D",
+    "text": "The authorities proposed that the countries of origin of blended honey should be listed on the label.",
+    "note": "Correct: stated in the last paragraph."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "The authorities responded by proposing clearer labelling, so that the countries of origin of blended honey must be listed, together with stricter checks at the border and the development of a shared database of the characteristics of genuine honey from different regions, against which suspicious samples can be compared."
+  ],
+  "explanation": {
+   "steps": [
+    "The final paragraph describes the labelling proposal for blended honey: D.",
+    "A ignores the explicit caveat that “suspicious” does not mean “proven”."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "reversed_relation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-128",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Environment",
+  "passage": "In 2015 one country introduced a mandatory charge of 20 cents for each lightweight plastic carrier bag provided in shops. The charge applied to all retailers, and shops were required to report the number of bags they sold each year. Revenue from the charge went to the retailers, who were encouraged, but not required, to donate it to environmental causes.\n\nWithin two years, the number of lightweight bags sold by large retailers fell by more than 80%. Sales of heavier reusable bags, which were not covered by the charge, increased. Some of these were reused many times, but surveys suggested that many customers forgot to bring them and bought new ones regularly, which reduced the environmental benefit, since a heavier bag requires more material to produce.\n\nLitter surveys on beaches recorded fewer plastic bags in the years after the charge was introduced, although the total amount of plastic litter changed little, because other items, such as food packaging and bottles, made up most of it.\n\nIn 2021 the government raised the charge to 30 cents and extended it to the heavier reusable bags. It also asked researchers to examine whether paper bags, whose sales had also grown, should be covered, since producing them requires more energy and water than producing a plastic bag.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "After the charge was introduced, the total amount of plastic litter on beaches fell sharply.",
+    "note": "This is the statement that is not correct: fewer bags were found, but the total amount of plastic litter changed little."
+   },
+   {
+    "key": "B",
+    "text": "Retailers were not obliged to donate the revenue from the charge.",
+    "trap": "reversed_relation",
+    "note": "Supported: they were encouraged but not required."
+   },
+   {
+    "key": "C",
+    "text": "Heavier reusable bags became subject to a charge in 2021.",
+    "trap": "time_shift",
+    "note": "Supported: the charge was extended to them in 2021."
+   },
+   {
+    "key": "D",
+    "text": "Sales of lightweight bags by large retailers fell by more than four fifths within two years.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: more than 80%."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Litter surveys on beaches recorded fewer plastic bags in the years after the charge was introduced, although the total amount of plastic litter changed little, because other items, such as food packaging and bottles, made up most of it."
+  ],
+  "explanation": {
+   "steps": [
+    "Bags on beaches fell, but total plastic litter “changed little”. A is false.",
+    "D converts 80% into four fifths: an exact equivalent."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "time_shift",
+   "wrong_quantifier"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-129",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Technology",
+  "passage": "Large online platforms remove millions of posts each year that break the law or their own rules, such as content inciting violence, fraudulent advertisements or copyright infringements. Because of the volume involved, most content is first assessed by automated systems, which flag or remove items; human moderators review some of these decisions, particularly in difficult cases.\n\nAutomated systems are fast but make errors in both directions. They may fail to detect harmful content that is phrased in unusual ways or in less widely spoken languages, and they may remove legitimate content, for example news reports that quote extremist statements in order to criticise them. Human moderators can judge context better, but reviewing large amounts of disturbing material can harm their wellbeing, and platforms employ fewer moderators for some languages than for others.\n\nNew rules require the largest platforms to explain to users why their content was removed, to provide a way to appeal, and to publish regular reports on their moderation, including the number of decisions taken by automated means and the number overturned on appeal. Independent auditors must also assess how the platforms manage risks such as the spread of illegal content.\n\nSome observers welcome the greater transparency, while others warn that pressure to remove illegal content quickly could lead platforms to remove more legitimate content to be on the safe side.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Automated systems moderate content more accurately than human moderators.",
+    "trap": "outside_knowledge",
+    "note": "The passage says automated systems are fast but error-prone, and humans judge context better."
+   },
+   {
+    "key": "B",
+    "text": "New rules have solved the problem of errors in content moderation.",
+    "trap": "extreme_wording",
+    "note": "The rules require transparency and appeals; observers still warn of risks."
+   },
+   {
+    "key": "C",
+    "text": "Content moderation relies heavily on imperfect automated systems, and new rules seek more transparency and accountability, though their effects are debated.",
+    "note": "Correct: this covers the method, its weaknesses, the rules and the debate."
+   },
+   {
+    "key": "D",
+    "text": "Platforms employ the same number of moderators for every language.",
+    "trap": "reversed_relation",
+    "note": "They employ fewer moderators for some languages than for others."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Automated systems are fast but make errors in both directions.",
+   "New rules require the largest platforms to explain to users why their content was removed, to provide a way to appeal, and to publish regular reports on their moderation, including the number of decisions taken by automated means and the number overturned on appeal."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage covers how moderation works, its errors, the new rules and a mixed reaction. C summarises all four.",
+    "B overstates the effect of the rules; the final paragraph shows the debate is still open."
+   ]
+  },
+  "trap_tags": [
+   "outside_knowledge",
+   "extreme_wording",
+   "reversed_relation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-130",
+  "category": "verbal",
+  "subtype": "summary",
+  "difficulty": 2,
+  "mode": "reveal",
+  "topic": "History",
+  "passage": "At the beginning of the nineteenth century, goods transported within one region made up of many small states had to pass numerous customs borders, each with its own tariffs, currencies and weights and measures. A merchant sending goods a few hundred kilometres might have to pay duties several times and deal with different rules at each border.\n\nFrom the 1820s, some of the states began to form customs unions, abolishing duties between members and applying a common tariff to goods from outside. In 1834 the largest of these unions was formed, eventually covering most of the region. Revenue from the common external tariff was shared among the members according to their population.\n\nHistorians generally agree that the union encouraged trade within the region and contributed to the development of a regional market, particularly once railways were built in the following decades. They disagree about how important it was for economic growth compared with other factors, such as the railways themselves, the growth of population and technical change in industry.\n\nThe union also had political consequences. Because the largest state dominated it, some historians argue that it prepared the way for later political unification under that state’s leadership. Others point out that several members of the customs union later fought on opposite sides in a war, which suggests that economic integration did not automatically produce political unity.",
+  "polarity": "correct",
+  "prompt": "Summarise the passage in one sentence.",
+  "task": "Write one sentence that states only what the passage strictly claims, keeping its limits and adding nothing. Then reveal the model answer and compare.",
+  "correct": "Customs unions, above all the large union of 1834, removed internal duties among many small states and fostered a regional market, but historians debate how much they contributed to growth compared with railways, population and technology, and whether they led to political unification.",
+  "evidence": [
+   "Historians generally agree that the union encouraged trade within the region and contributed to the development of a regional market, particularly once railways were built in the following decades.",
+   "They disagree about how important it was for economic growth compared with other factors, such as the railways themselves, the growth of population and technical change in industry."
+  ],
+  "explanation": {
+   "steps": [
+    "Separate the point of agreement (trade and a regional market) from the points of debate (importance for growth; political effects).",
+    "A summary that says the union “caused unification” takes one side of a debate the passage leaves open."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-131",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Law",
+  "passage": "In one country, judges are appointed by the head of state on the proposal of a judicial council. The council has fifteen members: nine judges elected by their peers, four lawyers or legal academics chosen by parliament with a two-thirds majority, and two members appointed by the government. Its decisions on appointments require a majority of its members.\n\nThe composition of the council is intended to protect judicial independence while giving elected bodies a role. Because judges elected by their peers form a majority, the government and parliament cannot by themselves decide who is appointed. The requirement of a two-thirds majority in parliament means that the four members it chooses usually reflect agreement between governing and opposition parties.\n\nA reform proposed in 2023 would change the rules so that the judicial members are elected by parliament rather than by other judges, while keeping the total number of members the same. Supporters argue that this would increase democratic legitimacy. Critics, including associations of judges, argue that it would allow the parliamentary majority to control the council, especially if the two-thirds requirement were also replaced by a simple majority, as some members of the governing coalition have suggested.\n\nInternational bodies that assess the rule of law have recommended that at least half of the members of such councils be judges chosen by their peers.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Under the current rules, the government can secure the appointment of a judge using its own appointees alone.",
+    "trap": "reversed_relation",
+    "note": "The government appoints only two of fifteen members, and decisions need a majority of members."
+   },
+   {
+    "key": "B",
+    "text": "The 2023 reform would reduce the number of members of the council.",
+    "trap": "partially_true",
+    "note": "The total number of members would stay the same."
+   },
+   {
+    "key": "C",
+    "text": "The reform has already replaced the two-thirds majority with a simple majority.",
+    "trap": "time_shift",
+    "note": "This has only been suggested by some members of the coalition."
+   },
+   {
+    "key": "D",
+    "text": "If the reform were adopted as proposed, the council would no longer meet the international bodies’ recommendation.",
+    "note": "Correct: no members would then be judges chosen by their peers, while the recommendation is that at least half should be."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "A reform proposed in 2023 would change the rules so that the judicial members are elected by parliament rather than by other judges, while keeping the total number of members the same.",
+   "International bodies that assess the rule of law have recommended that at least half of the members of such councils be judges chosen by their peers."
+  ],
+  "explanation": {
+   "steps": [
+    "Under the reform, the judicial members would be elected by parliament, so none would be chosen by their peers. The recommendation asks for at least half chosen by peers, so the reformed council would not meet it: D.",
+    "A ignores the arithmetic: two government appointees out of fifteen cannot form a majority."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "partially_true",
+   "time_shift"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-132",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Transport",
+  "passage": "A large container port has automated part of its operations. At its newest terminal, cranes that move containers between stacks in the storage yard are operated by computer, and driverless vehicles carry containers between the quay and the yard. The cranes that load and unload ships are still controlled by operators, but from an office building rather than from cabins high above the quay.\n\nThe port authority reports that the automated terminal handles containers more consistently, with fewer delays caused by changes of shift, and that it uses less energy because the vehicles are electric and routes are optimised. However, automation required large investments, and during the first year technical problems with the software caused serious delays, leading some shipping lines to send vessels to other terminals temporarily.\n\nThe number of jobs at the new terminal is lower than at a conventional terminal of similar size, although new jobs have been created in maintenance and information technology. Trade unions negotiated an agreement under which no existing employees were made redundant; workers whose jobs disappeared were retrained or moved to other terminals in the port.\n\nAutomated terminals are also more vulnerable to cyberattacks, and the port has invested in security systems and in procedures to continue operating manually if necessary.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The cranes that load and unload ships are now fully automated.",
+    "trap": "reversed_relation",
+    "note": "They are still controlled by operators, from an office building."
+   },
+   {
+    "key": "B",
+    "text": "No existing employees were made redundant as a result of the automation.",
+    "note": "Correct: this was agreed with the trade unions."
+   },
+   {
+    "key": "C",
+    "text": "The automated terminal worked without problems from the start.",
+    "trap": "time_shift",
+    "note": "Software problems caused serious delays in the first year."
+   },
+   {
+    "key": "D",
+    "text": "The new terminal employs more people than a conventional terminal of similar size.",
+    "trap": "reversed_relation",
+    "note": "The number of jobs is lower."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "Trade unions negotiated an agreement under which no existing employees were made redundant; workers whose jobs disappeared were retrained or moved to other terminals in the port."
+  ],
+  "explanation": {
+   "steps": [
+    "The third paragraph states that no existing employees were made redundant: B.",
+    "A is a near miss: the ship cranes are operated remotely, not automatically."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "time_shift"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-133",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Economics",
+  "passage": "The use of cash for everyday payments has declined in many countries, as more people pay by card or mobile phone. In one country, cash was used for about 70% of payments in shops in 2012 but for less than 25% in 2022. The fall accelerated during the pandemic, when many shops asked customers to pay by card for hygiene reasons.\n\nCash nevertheless remains important for some groups. Surveys show that older people, people on low incomes and residents of rural areas are more likely to rely on it. Some people use cash to keep track of their spending more easily, and a minority do not have a bank account or a card.\n\nAs cash use falls, the infrastructure that supports it becomes more expensive to maintain per transaction. Banks have closed many branches and cash machines, especially in rural areas, and some shops have stopped accepting cash. In parts of the country, residents now have to travel more than fifteen kilometres to withdraw cash.\n\nThe government has asked banks to ensure that cash remains accessible, and it is preparing legislation that would require shops selling essential goods, such as food and medicines, to accept cash payments. The central bank supports these measures, arguing that cash provides a backup if electronic payment systems fail, as happened during a nationwide outage of card payments lasting several hours in 2021.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The decline in cash use could make it harder for older rural residents to manage their everyday payments.",
+    "note": "Correct: older and rural people rely more on cash, and branches and cash machines are closing especially in rural areas."
+   },
+   {
+    "key": "B",
+    "text": "Cash is used for most payments in shops today.",
+    "trap": "time_shift",
+    "note": "That was true in 2012; by 2022 cash was used for less than 25% of payments."
+   },
+   {
+    "key": "C",
+    "text": "The law requiring shops selling essential goods to accept cash is already in force.",
+    "trap": "time_shift",
+    "note": "The legislation is being prepared."
+   },
+   {
+    "key": "D",
+    "text": "The pandemic was the only cause of the decline in cash use.",
+    "trap": "extreme_wording",
+    "note": "The fall began before the pandemic, which only accelerated it."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Surveys show that older people, people on low incomes and residents of rural areas are more likely to rely on it.",
+   "Banks have closed many branches and cash machines, especially in rural areas, and some shops have stopped accepting cash."
+  ],
+  "explanation": {
+   "steps": [
+    "Combine two facts: these groups rely more on cash, and access to cash is shrinking, especially in rural areas. A cautiously draws the consequence (“could make it harder”).",
+    "D overlooks that the decline was already under way before the pandemic accelerated it."
+   ]
+  },
+  "trap_tags": [
+   "time_shift",
+   "extreme_wording"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-134",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Health",
+  "passage": "Air pollution from traffic and other sources is associated with a range of health problems, including asthma in children. A study in one city followed 3,000 children from birth to the age of ten and estimated their exposure to nitrogen dioxide, a pollutant produced mainly by road traffic, based on the location of their homes and schools.\n\nChildren with the highest estimated exposure were about 30% more likely to develop asthma than those with the lowest exposure, after the researchers took into account factors such as family income, parental smoking and a family history of asthma. The association was stronger for children who lived within fifty metres of a main road.\n\nThe researchers note several limitations. Exposure was estimated rather than measured individually, and children spend time in places other than home and school. Families living near main roads might differ in ways not captured by the data. Nevertheless, they argue that their findings are consistent with laboratory studies showing that nitrogen dioxide can irritate the airways, which strengthens the case that the association is at least partly causal.\n\nThe city has since introduced a low-emission zone that restricts older diesel vehicles in the centre. Measurements show that nitrogen dioxide concentrations in the zone fell by about a fifth in the first two years. It is too early to know whether asthma rates among children will change as a result.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Children’s exposure to nitrogen dioxide in the study was estimated rather than measured individually.",
+    "trap": "cannot_be_determined",
+    "note": "Supported: this is one of the limitations noted."
+   },
+   {
+    "key": "B",
+    "text": "The researchers took family income into account when comparing children.",
+    "trap": "partially_true",
+    "note": "Supported: along with parental smoking and family history."
+   },
+   {
+    "key": "C",
+    "text": "The low-emission zone has already reduced asthma rates among children in the city.",
+    "note": "This is the statement that is not correct: it is too early to know whether asthma rates will change."
+   },
+   {
+    "key": "D",
+    "text": "The researchers believe the link between nitrogen dioxide and asthma is likely to be at least partly causal.",
+    "trap": "causal_vs_correlation",
+    "note": "Supported: they argue that laboratory evidence strengthens this case."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "It is too early to know whether asthma rates among children will change as a result."
+  ],
+  "explanation": {
+   "steps": [
+    "Pollution in the zone fell, but the passage says it is too early to know about asthma. C presents an unknown outcome as achieved, so it is not correct.",
+    "D looks like a cause-versus-correlation trap, but the researchers themselves make this cautious causal claim, so D is supported."
+   ]
+  },
+  "trap_tags": [
+   "cannot_be_determined",
+   "partially_true",
+   "causal_vs_correlation"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-135",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Culture",
+  "passage": "Surveys of reading habits in one country show that the share of adults who read at least one book a year has fallen slightly over the past fifteen years, from about 70% to about 64%. The decline is concentrated among young men; reading among women and older adults has remained fairly stable.\n\nThe way people read has also changed. E-books and audiobooks now account for a growing share of reading, and many readers use more than one format. Audiobooks in particular have attracted people who say they have little time to sit down with a book, since they can listen while commuting, exercising or doing housework. Some researchers question whether listening should be counted as reading, while others argue that comprehension of a story is similar whether it is read or heard.\n\nLibraries and schools have tried to encourage reading for pleasure among young people, for example through book clubs, author visits and collections of comics and graphic novels. Evaluations of such programmes are limited, but teachers report that pupils are more willing to read when they can choose their own books.\n\nPublishers report that overall book sales have been relatively stable in value, partly because prices have risen, while the number of new titles published each year has increased.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Reading has collapsed among all groups in the country.",
+    "trap": "extreme_wording",
+    "note": "The decline is slight and concentrated among young men."
+   },
+   {
+    "key": "B",
+    "text": "Audiobooks have replaced printed books for most readers.",
+    "trap": "overgeneralisation",
+    "note": "They account for a growing share, and many readers use several formats."
+   },
+   {
+    "key": "C",
+    "text": "Programmes for young readers have been proven to increase reading.",
+    "trap": "cannot_be_determined",
+    "note": "Evaluations are limited; teachers report impressions only."
+   },
+   {
+    "key": "D",
+    "text": "Reading has declined slightly, mainly among young men, while the formats people use have diversified and efforts are being made to encourage young readers.",
+    "note": "Correct: this captures the trend, the change in formats and the response."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "Surveys of reading habits in one country show that the share of adults who read at least one book a year has fallen slightly over the past fifteen years, from about 70% to about 64%.",
+   "The decline is concentrated among young men; reading among women and older adults has remained fairly stable."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage reports a slight decline concentrated in one group, a shift in formats and initiatives for young readers. D summarises all three.",
+    "A exaggerates both the size and the spread of the decline."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "overgeneralisation",
+   "cannot_be_determined"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-136",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Agriculture",
+  "passage": "Over the past century, farmers in many countries have replaced traditional local crop varieties with a smaller number of high-yielding modern varieties. This has increased harvests but reduced the genetic diversity of crops. Genetic diversity matters because traits found in traditional varieties, such as resistance to particular diseases or tolerance of drought, can be used by plant breeders to develop new varieties as conditions change.\n\nTo preserve this diversity, seed banks store samples of seeds at low temperatures and humidity, which allows many seeds to remain viable for decades. One national seed bank holds about 60,000 samples, including traditional varieties collected from farmers, wild relatives of crops and older commercial varieties no longer on the market. Samples must be tested regularly and, when their ability to germinate declines, grown again in fields to produce fresh seed.\n\nSeed banks have limitations. Seeds of some species, including several tropical fruit trees, cannot survive drying and freezing and must be kept as living plants or by other methods. Varieties kept in storage also do not continue to adapt to changing conditions, as they would in farmers’ fields.\n\nFor this reason, some programmes also support farmers who continue to grow traditional varieties, for example through payments or by helping them find markets for their produce, so that diversity is maintained both in storage and in use.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "All plant species can be preserved by drying and freezing their seeds.",
+    "trap": "overgeneralisation",
+    "note": "Seeds of some species cannot survive drying and freezing."
+   },
+   {
+    "key": "B",
+    "text": "Supporting farmers who grow traditional varieties addresses a limitation that seed banks cannot overcome.",
+    "note": "Correct: stored varieties do not continue to adapt, whereas varieties grown in fields do."
+   },
+   {
+    "key": "C",
+    "text": "Seeds in seed banks remain viable indefinitely without any further action.",
+    "trap": "extreme_wording",
+    "note": "Samples must be tested and regrown when germination declines."
+   },
+   {
+    "key": "D",
+    "text": "Modern varieties have increased the genetic diversity of crops.",
+    "trap": "reversed_relation",
+    "note": "They have reduced it."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "Varieties kept in storage also do not continue to adapt to changing conditions, as they would in farmers’ fields.",
+   "For this reason, some programmes also support farmers who continue to grow traditional varieties, for example through payments or by helping them find markets for their produce, so that diversity is maintained both in storage and in use."
+  ],
+  "explanation": {
+   "steps": [
+    "Stored varieties stop adapting, and “for this reason” programmes support farmers who grow them in the field. So that support addresses a limitation of storage: B.",
+    "C ignores the need for regular testing and regrowing."
+   ]
+  },
+  "trap_tags": [
+   "overgeneralisation",
+   "extreme_wording",
+   "reversed_relation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-137",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Energy",
+  "passage": "Steel production is a major source of carbon dioxide emissions, because the conventional process uses coal both as a fuel and to remove oxygen from iron ore. An alternative process uses hydrogen instead of coal to remove the oxygen, producing water vapour rather than carbon dioxide. The resulting iron is then melted in electric furnaces, which can be powered by renewable electricity.\n\nA steel company has built a demonstration plant using this process. If the hydrogen is produced by splitting water with renewable electricity, emissions from the process can be reduced by more than 90% compared with the conventional route. However, producing hydrogen in this way requires very large amounts of electricity: the company estimates that converting all of its production would require roughly as much electricity as a medium-sized city uses.\n\nCosts are currently higher than for conventional steel. The company expects the difference to narrow as the cost of renewable electricity and of equipment for producing hydrogen falls, and as the price of emitting carbon dioxide under emissions trading rises. Some customers, particularly car manufacturers, have signed agreements to buy low-emission steel at a premium.\n\nThe company plans to convert its plants gradually over the next fifteen years, starting with the one that is due for major renovation first, since replacing equipment at the end of its life is cheaper than replacing it early.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Low-emission steel is already cheaper to produce than conventional steel.",
+    "trap": "time_shift",
+    "note": "Costs are currently higher; the company expects the gap to narrow."
+   },
+   {
+    "key": "B",
+    "text": "The hydrogen process emits more carbon dioxide than the conventional process.",
+    "trap": "reversed_relation",
+    "note": "It produces water vapour rather than carbon dioxide."
+   },
+   {
+    "key": "C",
+    "text": "Some car manufacturers have agreed to pay a premium for low-emission steel.",
+    "note": "Correct: stated in the third paragraph."
+   },
+   {
+    "key": "D",
+    "text": "The company will convert all its plants at the same time.",
+    "trap": "reversed_relation",
+    "note": "It plans to convert them gradually over fifteen years."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Some customers, particularly car manufacturers, have signed agreements to buy low-emission steel at a premium."
+  ],
+  "explanation": {
+   "steps": [
+    "The third paragraph states that car manufacturers have agreed to buy low-emission steel at a premium: C.",
+    "A turns an expected future narrowing of costs into a present advantage."
+   ]
+  },
+  "trap_tags": [
+   "time_shift",
+   "reversed_relation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-138",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Education",
+  "passage": "Teenagers’ sleep patterns change during adolescence: their internal clocks shift so that they tend to feel sleepy later in the evening and to wake later in the morning. When school starts early, many teenagers do not get the amount of sleep that doctors recommend.\n\nIn 2019 a group of secondary schools in one region moved the start of the school day from 7:45 to 8:30 for a trial period of two years, while comparable schools in the same region kept their usual times. Pupils at the trial schools slept on average about thirty minutes longer on school nights, according to sleep diaries and activity trackers. They also reported feeling less tired during morning lessons, and absences in the first lesson of the day fell.\n\nAcademic results improved slightly at the trial schools compared with the other schools, but the difference was small and not consistent across subjects. The researchers suggest that a longer period may be needed to see clear effects on results.\n\nThe later start created practical difficulties. Some parents found it harder to combine the school timetable with their working hours, and the end of the school day moved later, which affected sports and other afternoon activities. Bus companies had to change their schedules. After the trial, most of the schools decided to keep the later start.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Pupils at the trial schools slept about thirty minutes longer on school nights.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: stated in the second paragraph."
+   },
+   {
+    "key": "B",
+    "text": "Absences in the first lesson of the day fell at the trial schools.",
+    "trap": "causal_vs_correlation",
+    "note": "Supported: stated in the second paragraph."
+   },
+   {
+    "key": "C",
+    "text": "Most trial schools kept the later start after the trial.",
+    "trap": "time_shift",
+    "note": "Supported: stated in the last sentence."
+   },
+   {
+    "key": "D",
+    "text": "Academic results improved markedly in every subject at the trial schools.",
+    "note": "This is the statement that is not correct: the improvement was small and not consistent across subjects."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "Academic results improved slightly at the trial schools compared with the other schools, but the difference was small and not consistent across subjects."
+  ],
+  "explanation": {
+   "steps": [
+    "Results improved slightly and inconsistently, which contradicts “markedly in every subject”. D is false.",
+    "A, B and C restate the passage."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "causal_vs_correlation",
+   "time_shift"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-139",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Public administration",
+  "passage": "In participatory budgeting, residents decide directly how part of a public budget is spent. A city introduced the practice in 2018, setting aside 2% of its annual investment budget. Residents submit project proposals, which city officials check for technical feasibility, legality and cost; eligible projects are then put to a public vote, and the most popular are funded until the money runs out.\n\nIn the first five years, more than 300 projects were funded, most of them small investments such as playgrounds, cycle racks, tree planting and improvements to community centres. Turnout in the votes rose from 6% of eligible residents in the first year to 11% in the fifth.\n\nAn evaluation found that participation was uneven. Residents of wealthier neighbourhoods and those with higher education were more likely to submit proposals and to vote, so that, in the first two years, a disproportionate share of funded projects were located in these neighbourhoods. From the third year, the city divided the budget between districts in proportion to population, with additional weight for districts with lower average incomes, and it organised workshops to help residents prepare proposals. The share of projects in lower-income districts increased afterwards.\n\nThe evaluation also noted that some funded projects created maintenance costs that had not been included in their budgets, which the city must now cover from its regular spending.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Most of the city’s investment budget is now decided by residents.",
+    "trap": "wrong_quantifier",
+    "note": "Only 2% of the investment budget is set aside."
+   },
+   {
+    "key": "B",
+    "text": "Under the rules applied since the third year, a lower-income district can receive a larger share of the budget than its share of the population alone would give it.",
+    "note": "Correct: budgets are divided by population with additional weight for lower-income districts."
+   },
+   {
+    "key": "C",
+    "text": "The workshops were the sole reason why more projects were funded in lower-income districts.",
+    "trap": "causal_vs_correlation",
+    "note": "The budget rules changed at the same time, so the increase cannot be attributed to the workshops alone."
+   },
+   {
+    "key": "D",
+    "text": "A majority of eligible residents voted in the fifth year.",
+    "trap": "wrong_quantifier",
+    "note": "Turnout was 11%."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "From the third year, the city divided the budget between districts in proportion to population, with additional weight for districts with lower average incomes, and it organised workshops to help residents prepare proposals."
+  ],
+  "explanation": {
+   "steps": [
+    "Allocation in proportion to population plus extra weight for lower incomes means a lower-income district can receive more than its population share: B.",
+    "C is a cause-versus-correlation trap: two changes were introduced together, so neither can be credited alone."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "causal_vs_correlation"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-140",
+  "category": "verbal",
+  "subtype": "summary",
+  "difficulty": 3,
+  "mode": "reveal",
+  "topic": "Science",
+  "passage": "Most classes of antibiotics in use today were discovered between the 1940s and the 1980s, many of them by screening soil microorganisms for substances that kill bacteria. Since then, relatively few new classes have reached the market, even as resistance to existing antibiotics has grown.\n\nThe scientific challenge is considerable. Many promising compounds kill bacteria in the laboratory but are toxic to human cells or cannot reach the site of infection in the body. Bacteria with a double outer membrane are particularly difficult to target, because the membrane blocks many substances from entering.\n\nThe economic challenge is equally serious. Developing a new antibiotic can take more than a decade and cost hundreds of millions of euros, but new antibiotics are likely to be used sparingly, kept in reserve for infections that do not respond to existing drugs, in order to slow the development of resistance. As a result, sales are low, and several small companies that brought new antibiotics to market have gone bankrupt. Most large pharmaceutical companies have left the field.\n\nGovernments are experimenting with new ways of paying for antibiotics. In one country, the health service pays companies a fixed annual fee for access to selected new antibiotics, regardless of how much is used, in the hope that a predictable income will encourage investment. It is too early to say whether such schemes will lead to more new antibiotics.",
+  "polarity": "correct",
+  "prompt": "Summarise the passage in one sentence.",
+  "task": "Write one sentence that states only what the passage strictly claims, keeping its limits and adding nothing. Then reveal the model answer and compare.",
+  "correct": "Few new classes of antibiotics have appeared since the 1980s because new compounds are scientifically hard to find and, since new antibiotics are kept in reserve and sell little, commercially unattractive, so governments are trying fixed-fee payment models whose effect is not yet known.",
+  "evidence": [
+   "As a result, sales are low, and several small companies that brought new antibiotics to market have gone bankrupt.",
+   "It is too early to say whether such schemes will lead to more new antibiotics."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage gives two causes (scientific and economic) and one response whose results are unknown. A good summary keeps all three, with the final caveat.",
+    "Avoid “fixed fees have revived antibiotic research”: that would be a time-shift error."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-141",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Environment",
+  "passage": "Beekeeping in cities has become popular in recent years, with hives placed on rooftops, balconies and in community gardens. In one city, the number of registered hives rose from about 300 in 2010 to more than 2,000 in 2022.\n\nUrban beekeeping is often presented as a way of helping bees. However, the honeybees kept in hives are a domesticated species, and conservation biologists point out that the bees most at risk are wild species, including many solitary bees and bumblebees. A study in the city found that areas with many hives had fewer wild bees visiting flowers, which the researchers attribute to competition for nectar and pollen, although they note that other differences between the areas could also play a role.\n\nThe researchers recommend that the city should focus on increasing the amount of food available to all pollinators, for example by planting more flowering plants, leaving some areas of grass unmown and reducing the use of pesticides in parks. They also suggest that the density of honeybee hives should be monitored and, where it is very high, new hives should be discouraged.\n\nThe city’s beekeepers’ association agrees that more flowers would benefit both honeybees and wild bees, but questions whether hives should be limited, arguing that the evidence of competition is not yet conclusive.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The number of registered hives in the city rose from about 300 in 2010 to more than 2,000 in 2022.",
+    "note": "Correct: stated in the first paragraph."
+   },
+   {
+    "key": "B",
+    "text": "Honeybees are the bee species most at risk.",
+    "trap": "reversed_relation",
+    "note": "Conservation biologists say wild species are most at risk."
+   },
+   {
+    "key": "C",
+    "text": "The study proved that honeybee hives drive away wild bees.",
+    "trap": "causal_vs_correlation",
+    "note": "The researchers note that other differences between areas could play a role."
+   },
+   {
+    "key": "D",
+    "text": "The beekeepers’ association supports limiting the number of hives.",
+    "trap": "reversed_relation",
+    "note": "It questions whether hives should be limited."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "In one city, the number of registered hives rose from about 300 in 2010 to more than 2,000 in 2022."
+  ],
+  "explanation": {
+   "steps": [
+    "The first paragraph gives the figures in A directly.",
+    "C turns an association with a stated caveat into proof."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "causal_vs_correlation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-142",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Demography",
+  "passage": "The share of young adults aged 25 to 34 living with their parents differs widely between European countries. In one country, it rose from 18% in 2008 to 27% in 2022. Young men were more likely than young women to live with their parents, a pattern found in most countries.\n\nSurveys suggest that the main reasons are economic. Rents and house prices rose faster than the incomes of young adults over the period, and a growing share of young people worked on temporary contracts, which made it harder to obtain a mortgage or to persuade landlords to rent to them. Longer periods of study also played a role.\n\nLiving with parents is not always a sign of hardship. Some young adults choose to do so to save money for a deposit on a home, and in some families it is a matter of culture or preference. However, in the surveys, a majority of those living with their parents said they would prefer to live independently if they could afford to.\n\nThe government has introduced a housing allowance for people under 35 with low incomes and has funded the construction of rental housing for young people. Researchers note that it may take several years for these measures to show any effect on the share of young adults living with their parents.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Young women were more likely than young men to live with their parents.",
+    "trap": "reversed_relation",
+    "note": "Young men were more likely to do so."
+   },
+   {
+    "key": "B",
+    "text": "All young adults who live with their parents do so because they cannot afford to leave.",
+    "trap": "extreme_wording",
+    "note": "Some choose to, for saving, culture or preference."
+   },
+   {
+    "key": "C",
+    "text": "More than one in four people aged 25 to 34 lived with their parents in 2022.",
+    "note": "Correct: 27% is more than one in four (25%)."
+   },
+   {
+    "key": "D",
+    "text": "The housing allowance has already reduced the share of young adults living with parents.",
+    "trap": "time_shift",
+    "note": "Researchers say effects may take several years to appear."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "In one country, it rose from 18% in 2008 to 27% in 2022."
+  ],
+  "explanation": {
+   "steps": [
+    "27% is more than 25%, i.e. more than one in four: C.",
+    "B overgeneralises a majority preference into a universal cause."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "extreme_wording",
+   "time_shift"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-143",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Economics",
+  "passage": "Labour productivity, the amount of output produced per hour worked, is the main source of long-term growth in living standards. In many advanced economies, productivity growth has been noticeably slower since the mid-2000s than in earlier decades, despite rapid advances in digital technologies. Economists have proposed several explanations, none of which is generally accepted as sufficient on its own.\n\nOne explanation is measurement. Many digital services, such as search engines and online maps, are free to users, so their value is not fully captured in output statistics. Studies that attempt to estimate this missing value, however, generally find that it is too small to account for most of the slowdown.\n\nA second explanation emphasises the gap between leading firms and the rest. Data from several countries show that productivity at the most productive firms in each sector has continued to grow strongly, while it has stagnated at many others. This may indicate that new technologies are spreading more slowly from leaders to other firms, perhaps because using them effectively requires skills, organisational changes and investment in intangible assets such as software and data that many firms lack.\n\nOthers point to weak investment after the financial crisis, or to the possibility that recent innovations simply have a smaller economic impact than earlier ones such as electricity. Some economists expect productivity to pick up as firms learn to use technologies such as artificial intelligence, noting that earlier general-purpose technologies took decades to show their full effect.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The productivity slowdown is explained mainly by the failure to measure free digital services.",
+    "trap": "partially_true",
+    "note": "Measurement is one explanation, but studies find it too small to account for most of the slowdown."
+   },
+   {
+    "key": "B",
+    "text": "Productivity growth has slowed despite digital advances, and economists offer several partial explanations, with some expecting a later pick-up.",
+    "note": "Correct: this captures the puzzle, the competing explanations and the open outlook."
+   },
+   {
+    "key": "C",
+    "text": "Artificial intelligence has already ended the productivity slowdown.",
+    "trap": "time_shift",
+    "note": "Some economists only expect productivity to pick up in the future."
+   },
+   {
+    "key": "D",
+    "text": "Productivity has stagnated at all firms, including the most productive.",
+    "trap": "reversed_relation",
+    "note": "Productivity at leading firms has continued to grow strongly."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "Economists have proposed several explanations, none of which is generally accepted as sufficient on its own."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage presents a puzzle and reviews explanations without endorsing one, ending with a possible future recovery. B reflects that structure.",
+    "A picks one explanation, the one the passage itself says is too small to account for most of the slowdown."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "time_shift",
+   "reversed_relation"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-144",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Technology",
+  "passage": "Data centres, which house the computer servers behind online services, consume large amounts of electricity, both to run the servers and to cool them. In one country, data centres accounted for about 3% of national electricity consumption in 2022, and the grid operator expects the share to roughly double by 2030 as demand for cloud computing and artificial intelligence grows.\n\nEnergy efficiency has improved considerably. Newer data centres use less energy for cooling relative to the energy used by servers, partly by using outside air in cool climates instead of mechanical refrigeration. Some also use water for cooling, which reduces electricity use but can strain local water supplies during dry periods.\n\nSeveral data centres sell their waste heat to district heating networks, which use it to warm nearby homes. Operators say this is only practical where a heating network exists close to the data centre and where demand for heat is high enough to make the investment worthwhile.\n\nThe government has introduced rules requiring data centres above a certain size to report their energy and water use and the share of renewable electricity they use. It is also considering requiring new data centres to use their waste heat where a suitable network is available. Some municipalities have temporarily stopped approving new data centres because the local grid lacks capacity to supply them.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Using water for cooling can reduce electricity use but put pressure on local water supplies.",
+    "trap": "partially_true",
+    "note": "Supported: stated in the second paragraph."
+   },
+   {
+    "key": "B",
+    "text": "Some municipalities have paused approvals of new data centres because of grid capacity.",
+    "trap": "causal_vs_correlation",
+    "note": "Supported: stated in the last sentence."
+   },
+   {
+    "key": "C",
+    "text": "Large data centres must report their energy and water use.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: data centres above a certain size must report."
+   },
+   {
+    "key": "D",
+    "text": "All new data centres are already required to supply their waste heat to heating networks.",
+    "note": "This is the statement that is not correct: the government is only considering such a requirement, and only where a suitable network is available."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "It is also considering requiring new data centres to use their waste heat where a suitable network is available."
+  ],
+  "explanation": {
+   "steps": [
+    "The requirement is only being considered and would apply only where a suitable network exists. D is false on both counts.",
+    "C uses “large” for “above a certain size”, a reasonable paraphrase."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "causal_vs_correlation",
+   "wrong_quantifier"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-145",
+  "category": "verbal",
+  "subtype": "explain_non_inference",
+  "difficulty": 1,
+  "mode": "reveal",
+  "topic": "Health",
+  "passage": "A large study followed 200,000 adults in one country for ten years and recorded how much coffee they drank. Participants who drank two to three cups a day had a somewhat lower risk of dying during the study period than those who drank no coffee, after the researchers took into account age, smoking, alcohol consumption, body weight and several other factors.\n\nThe researchers emphasise that their study is observational: they did not assign participants to drink coffee or not, but recorded their existing habits. People who drink moderate amounts of coffee may differ from non-drinkers in ways that were not measured, such as their general health or their working conditions. Some people stop drinking coffee because they are already ill, which could make non-drinkers appear less healthy.\n\nThe association was similar for caffeinated and decaffeinated coffee, which the researchers suggest may indicate that substances in coffee other than caffeine are involved, if the association is causal. People with certain conditions, such as uncontrolled high blood pressure, and pregnant women are generally advised by doctors to limit caffeine.\n\nThe authors conclude that their findings provide reassurance that moderate coffee drinking is not harmful for most adults, but that they do not justify recommending that non-drinkers start drinking coffee for health reasons.",
+  "polarity": "correct",
+  "prompt": "Statement: “Drinking two to three cups of coffee a day makes people live longer.” Explain why this statement cannot be inferred from the passage.",
+  "task": "Write one or two sentences explaining why the statement cannot be inferred. Name the trap. Then reveal the model answer.",
+  "correct": "The study is observational: coffee drinkers may differ from non-drinkers in unmeasured ways, and some non-drinkers may have stopped because they were already ill. It shows an association with lower risk of death, not that coffee causes longer life, and the authors explicitly refuse to recommend coffee for health (trap: cause vs correlation).",
+  "evidence": [
+   "The researchers emphasise that their study is observational: they did not assign participants to drink coffee or not, but recorded their existing habits."
+  ],
+  "explanation": {
+   "steps": [
+    "Look for how the data were obtained: recorded habits, not assigned treatment. That only supports an association.",
+    "The authors’ own conclusion (reassurance, but no recommendation) confirms that a causal claim goes too far."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-146",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Transport",
+  "passage": "Speed cameras are used in many countries to encourage drivers to respect speed limits. In one country, fixed cameras have been installed at about 2,500 locations, chosen mainly because of their record of serious accidents. An analysis compared the number of accidents at these locations in the three years before and the three years after cameras were installed.\n\nAccidents causing death or serious injury fell by about 40% at camera sites. The analysts caution, however, that part of this fall would probably have happened anyway. Sites are chosen after an unusually bad period, and accident numbers at any location tend to fluctuate, so a period with many accidents is often followed by a period with fewer, even without any intervention. After adjusting for this effect, the analysts estimate that the cameras reduced serious accidents at the sites by about 20 to 25%.\n\nThe analysts also examined whether drivers simply slowed down near the cameras and sped up afterwards. They found that speeds returned to their previous levels within about a kilometre of fixed cameras. Average-speed cameras, which measure the time taken to travel between two points several kilometres apart, produced more consistent reductions in speed over the whole section.\n\nThe government plans to install more average-speed systems on rural roads with high accident rates.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Comparing accidents before and after installation overstates the effect of the cameras.",
+    "note": "Correct: the raw fall was about 40%, but after adjusting for fluctuations the estimated effect is about 20 to 25%."
+   },
+   {
+    "key": "B",
+    "text": "The cameras reduced serious accidents at the sites by about 40%.",
+    "trap": "causal_vs_correlation",
+    "note": "That is the raw fall; part of it would probably have happened anyway."
+   },
+   {
+    "key": "C",
+    "text": "Fixed cameras reduce speeds consistently along the whole road.",
+    "trap": "overgeneralisation",
+    "note": "Speeds returned to previous levels within about a kilometre."
+   },
+   {
+    "key": "D",
+    "text": "Camera sites were chosen at random.",
+    "trap": "reversed_relation",
+    "note": "They were chosen mainly because of their accident record."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "After adjusting for this effect, the analysts estimate that the cameras reduced serious accidents at the sites by about 20 to 25%."
+  ],
+  "explanation": {
+   "steps": [
+    "The simple before-and-after comparison gives about 40%, while the adjusted estimate is about 20–25%. So the simple comparison overstates the effect: A.",
+    "B repeats the raw figure as if it were the effect of the cameras, which is the very error the analysts warn about."
+   ]
+  },
+  "trap_tags": [
+   "causal_vs_correlation",
+   "overgeneralisation",
+   "reversed_relation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-147",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Culture",
+  "passage": "A national archive holds millions of documents, from medieval charters to twentieth-century government files. Since 2010 it has been digitising parts of its collections so that they can be consulted online. By 2023, about 8% of its holdings had been digitised, concentrating on the documents most often requested by visitors, such as census returns, parish registers and military records.\n\nDigitisation has changed who uses the archive. The number of visits to the reading room has fallen, while online consultations have grown to several million a year. Many online users are people researching their family history, often from abroad. Researchers have also used the digitised records in new ways, for example by analysing large numbers of documents with computer programs to study patterns of migration.\n\nDigitising documents is slow and costly. Fragile items must be handled by trained staff, and handwritten documents cannot yet be searched reliably by computer, although handwriting recognition software is improving. Images must also be stored securely and in formats that will remain readable as technology changes.\n\nThe archive has formed partnerships with commercial genealogy companies, which digitise some collections at their own cost in exchange for the right to offer them exclusively to their subscribers for a limited period, after which the images become freely available on the archive’s website.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Most of the archive’s holdings have been digitised.",
+    "trap": "wrong_quantifier",
+    "note": "About 8% had been digitised by 2023."
+   },
+   {
+    "key": "B",
+    "text": "Images digitised by genealogy companies become freely available on the archive’s website after a limited period.",
+    "note": "Correct: stated in the last paragraph."
+   },
+   {
+    "key": "C",
+    "text": "Visits to the reading room have increased since digitisation began.",
+    "trap": "reversed_relation",
+    "note": "Visits to the reading room have fallen."
+   },
+   {
+    "key": "D",
+    "text": "Handwritten documents can now be searched reliably by computer.",
+    "trap": "time_shift",
+    "note": "They cannot yet be searched reliably, although software is improving."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "The archive has formed partnerships with commercial genealogy companies, which digitise some collections at their own cost in exchange for the right to offer them exclusively to their subscribers for a limited period, after which the images become freely available on the archive’s website."
+  ],
+  "explanation": {
+   "steps": [
+    "The final paragraph says images become freely available after the exclusive period: B.",
+    "D treats an improving technology as if it were already reliable."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "reversed_relation",
+   "time_shift"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-148",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Law",
+  "passage": "Separating couples who disagree about arrangements for their children can ask a court to decide. In one country, since 2020, parents must attend an information meeting about mediation before they can start most court proceedings concerning children. Mediation involves a trained, neutral mediator helping the parents to reach their own agreement. Attending the information meeting is compulsory, but taking part in mediation itself remains voluntary.\n\nThe requirement does not apply in cases involving domestic violence or child abuse, or where there is an urgent risk to a child, because mediation may be unsafe or inappropriate when one parent fears the other.\n\nIn the first three years, about half of the parents who attended an information meeting went on to try mediation, and about two thirds of those reached a full or partial agreement. Agreements reached through mediation were less likely than court orders to be brought back to court for enforcement or variation within two years. The evaluators note, however, that parents who choose mediation may already be more willing to cooperate than those who do not.\n\nThe government covers the cost of the information meeting and of mediation for parents with low incomes. Court fees for parents who did not attend an information meeting without a valid exemption are not refunded if their application is rejected for this reason.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Parents must take part in mediation before going to court.",
+    "trap": "partially_true",
+    "note": "Only the information meeting is compulsory; mediation itself is voluntary."
+   },
+   {
+    "key": "B",
+    "text": "Mediation causes parents to keep their agreements better than court orders do.",
+    "trap": "causal_vs_correlation",
+    "note": "Parents who choose mediation may already be more cooperative."
+   },
+   {
+    "key": "C",
+    "text": "A parent who fears violence from the other parent must still attend an information meeting.",
+    "trap": "reversed_relation",
+    "note": "The requirement does not apply in cases involving domestic violence."
+   },
+   {
+    "key": "D",
+    "text": "Roughly a third of parents who attended an information meeting reached at least a partial agreement through mediation.",
+    "note": "Correct: about half tried mediation, and about two thirds of those reached agreement, so about one third overall."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "In the first three years, about half of the parents who attended an information meeting went on to try mediation, and about two thirds of those reached a full or partial agreement."
+  ],
+  "explanation": {
+   "steps": [
+    "Half × two thirds = one third. D applies the two proportions in sequence.",
+    "A confuses the compulsory meeting with voluntary mediation."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "causal_vs_correlation",
+   "reversed_relation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-149",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "EU policy",
+  "passage": "Consumers increasingly want to know where their food comes from. Under the rules described here, the country of origin must be shown for certain foods, including fresh beef, pork, poultry, fish, fresh fruit and vegetables, honey and olive oil. For most processed foods, origin labelling is voluntary, unless leaving it out would mislead consumers, for example if a product’s packaging suggests an origin that differs from the real one.\n\nWhen a label states the origin of a food, but the main ingredient comes from somewhere else, the origin of that ingredient must also be indicated, or it must be stated that it does not come from the country shown. For instance, a pasta sauce labelled as made in one country but using tomatoes from another must indicate this.\n\nSome member states have introduced national rules requiring origin labelling for additional products, such as milk used in dairy products, on a trial basis. Studies in these countries found that many consumers said origin information influenced their choices, but data on actual purchases showed smaller effects than surveys suggested.\n\nFood manufacturers argue that mandatory origin labelling for processed foods would raise costs, because they often change suppliers depending on availability and price, and would have to change their labels each time. Consumer organisations reply that this information is important to many consumers and that labels could indicate several possible origins.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The origin of fresh fruit and vegetables must be shown.",
+    "trap": "cannot_be_determined",
+    "note": "Supported: they are among the foods requiring origin labelling."
+   },
+   {
+    "key": "B",
+    "text": "Purchase data showed smaller effects of origin labelling than consumer surveys suggested.",
+    "trap": "reversed_relation",
+    "note": "Supported: stated in the third paragraph."
+   },
+   {
+    "key": "C",
+    "text": "Origin labelling is mandatory for all processed foods under the rules described.",
+    "note": "This is the statement that is not correct: for most processed foods it is voluntary, unless omission would mislead."
+   },
+   {
+    "key": "D",
+    "text": "If a label shows a country of origin but the main ingredient comes from elsewhere, this must be indicated.",
+    "trap": "partially_true",
+    "note": "Supported: either the ingredient’s origin or the fact that it is different must be stated."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "For most processed foods, origin labelling is voluntary, unless leaving it out would mislead consumers, for example if a product’s packaging suggests an origin that differs from the real one."
+  ],
+  "explanation": {
+   "steps": [
+    "For most processed foods origin labelling is voluntary, so C (“mandatory for all”) is false.",
+    "D summarises the main-ingredient rule correctly, including its either/or form."
+   ]
+  },
+  "trap_tags": [
+   "cannot_be_determined",
+   "reversed_relation",
+   "partially_true"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-150",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Public administration",
+  "passage": "Governments increasingly test policies before introducing them widely, for example by offering a new service in some areas but not others and comparing the results. Supporters argue that such trials help avoid spending public money on measures that do not work and provide evidence for decisions that might otherwise rely on assumptions or political preference.\n\nTrials have produced some surprising results. In one country, a programme offering intensive job-search coaching to unemployed people was expected to shorten unemployment substantially. A trial found that it did so only slightly for most participants, and not at all for those who had been unemployed for more than two years, prompting the government to redesign it. In another case, sending simple text-message reminders to people with unpaid fines increased payments considerably at very low cost.\n\nTrials also have limitations. They can show what happened in a particular place and period, but results do not always carry over to other contexts. Some questions cannot be tested ethically or practically, and trials take time, which may not suit governments that need to act quickly. Critics also warn that a focus on what can be easily measured may lead governments to neglect outcomes that are harder to quantify.\n\nMany researchers therefore recommend combining trials with other forms of evidence, such as qualitative research and the experience of practitioners, and repeating trials in different settings before drawing general conclusions.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Policy trials can provide valuable, sometimes unexpected evidence, but they have limits and are best combined with other kinds of evidence.",
+    "note": "Correct: this captures the benefits, the examples, the limits and the recommendation."
+   },
+   {
+    "key": "B",
+    "text": "Policy trials always show that new programmes are less effective than expected.",
+    "trap": "overgeneralisation",
+    "note": "One trial showed a smaller effect, another a large effect at low cost."
+   },
+   {
+    "key": "C",
+    "text": "Governments should introduce policies only after they have been tested in trials.",
+    "trap": "extreme_wording",
+    "note": "The passage notes that some questions cannot be tested and that trials take time."
+   },
+   {
+    "key": "D",
+    "text": "The results of a trial in one place can be applied everywhere.",
+    "trap": "reversed_relation",
+    "note": "Results do not always carry over to other contexts."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Trials also have limitations.",
+   "Many researchers therefore recommend combining trials with other forms of evidence, such as qualitative research and the experience of practitioners, and repeating trials in different settings before drawing general conclusions."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage presents the case for trials, two contrasting examples, the limitations and a recommendation to combine evidence. A summarises all of this.",
+    "B generalises from one example and ignores the other; C ignores the stated limitations."
+   ]
+  },
+  "trap_tags": [
+   "overgeneralisation",
+   "extreme_wording",
+   "reversed_relation"
+  ],
+  "est_time_sec": 120
+ }
+]
