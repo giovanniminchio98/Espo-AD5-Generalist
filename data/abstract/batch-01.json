@@ -1,0 +1,9318 @@
+[
+ {
+  "id": "AR-001",
+  "category": "abstract",
+  "subtype": "three_rules",
+  "difficulty": 3,
+  "seed": 700026,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 4,
+     "rotation": 315,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 1,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "dots",
+     "shape": "pips",
+     "cell": 2,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 2
+    },
+    {
+     "id": "e3",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 5,
+     "rotation": 180,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 7
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "cycle",
+    "el": "e1",
+    "attr": "size",
+    "values": [
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "type": "count",
+    "el": "e2",
+    "delta": 1
+   },
+   {
+    "type": "add_remove",
+    "el": "e3",
+    "delta": -1
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   },
+   {
+    "type": "static",
+    "el": "e3"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 1,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 2,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 2
+     },
+     {
+      "id": "e3",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 7
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 2,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 3
+     },
+     {
+      "id": "e3",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 6
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 2,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 4
+     },
+     {
+      "id": "e3",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 5
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 1,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 2,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 5
+     },
+     {
+      "id": "e3",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 4
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 2,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 6
+     },
+     {
+      "id": "e3",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 3
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 4,
+     "rotation": 315,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "dots",
+     "shape": "pips",
+     "cell": 2,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 7
+    },
+    {
+     "id": "e3",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 5,
+     "rotation": 180,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 2
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 80,
+  "mode": "reveal",
+  "task": "Before looking at any options, write down every rule that governs this series (what changes, how, and what stays the same). Then reveal the solution.",
+  "correct": "The L-shape's size cycles small → medium → large, then starts again. The number of dots increases by 1 at each step. One line is removed from the star of lines at each step, always the most clockwise one.",
+  "explanation": {
+   "steps": [
+    "The L-shape's size cycles small → medium → large, then starts again.",
+    "The number of dots increases by 1 at each step.",
+    "One line is removed from the star of lines at each step, always the most clockwise one.",
+    "Applying every rule to figure 5 gives the figure shown as the answer."
+   ],
+   "shortcut": "Track one element at a time across all five figures before looking at the options."
+  },
+  "trap_tags": []
+ },
+ {
+  "id": "AR-002",
+  "category": "abstract",
+  "subtype": "two_rules",
+  "difficulty": 2,
+  "seed": 600442,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "cross",
+     "shape": "cross",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 1,
+     "rotation": 180,
+     "fill": "empty",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "cycle",
+    "el": "e1",
+    "attr": "fill",
+    "values": [
+     "solid",
+     "empty",
+     "striped"
+    ]
+   },
+   {
+    "type": "rotate",
+    "el": "e2",
+    "step": 135
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "cross",
+      "shape": "cross",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 1,
+      "rotation": 180,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "cross",
+      "shape": "cross",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 1,
+      "rotation": 315,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "cross",
+      "shape": "cross",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 1,
+      "rotation": 90,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "cross",
+      "shape": "cross",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 1,
+      "rotation": 225,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "cross",
+      "shape": "cross",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 1,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "cross",
+     "shape": "cross",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 1,
+     "rotation": 135,
+     "fill": "empty",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 60,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "cross",
+       "shape": "cross",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 1,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_rotation",
+    "note": "The arrow has not rotated since figure 5; it should turn 135° clockwise again."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "cross",
+       "shape": "cross",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 1,
+       "rotation": 135,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_cycle",
+    "note": "The cross's fill should be striped (it cycles), not solid."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "cross",
+       "shape": "cross",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 1,
+       "rotation": 135,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 2,
+    "trap": "breaks_static",
+    "note": "The cross's size has changed, but it never changes in the series."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "cross",
+       "shape": "cross",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 1,
+       "rotation": 270,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_rotation",
+    "note": "The arrow has rotated two steps instead of one."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "cross",
+       "shape": "cross",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 1,
+       "rotation": 135,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   }
+  ],
+  "correct": "E",
+  "explanation": {
+   "steps": [
+    "The cross's fill cycles solid → white (empty) → striped, then starts again.",
+    "The arrow rotates 135° clockwise at each step.",
+    "Applying every rule to figure 5 gives option E."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_cycle",
+   "breaks_rotation",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-003",
+  "category": "abstract",
+  "subtype": "three_rules",
+  "difficulty": 3,
+  "seed": 1433259,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 0,
+     "rotation": 315,
+     "fill": "striped",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 6
+    },
+    {
+     "id": "e3",
+     "label": "wedge",
+     "shape": "wedge",
+     "cell": 6,
+     "rotation": 0,
+     "fill": "empty",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "cycle",
+    "el": "e1",
+    "attr": "size",
+    "values": [
+     2,
+     3,
+     1
+    ]
+   },
+   {
+    "type": "add_remove",
+    "el": "e2",
+    "delta": -1
+   },
+   {
+    "type": "move",
+    "el": "e1",
+    "path": "perimeter_cw",
+    "step": 1
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   },
+   {
+    "type": "static",
+    "el": "e3"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 0,
+      "rotation": 315,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 6
+     },
+     {
+      "id": "e3",
+      "label": "wedge",
+      "shape": "wedge",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 1,
+      "rotation": 315,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 5
+     },
+     {
+      "id": "e3",
+      "label": "wedge",
+      "shape": "wedge",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 2,
+      "rotation": 315,
+      "fill": "striped",
+      "colour": "black",
+      "size": 1,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 4
+     },
+     {
+      "id": "e3",
+      "label": "wedge",
+      "shape": "wedge",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 5,
+      "rotation": 315,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 3
+     },
+     {
+      "id": "e3",
+      "label": "wedge",
+      "shape": "wedge",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 8,
+      "rotation": 315,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 2
+     },
+     {
+      "id": "e3",
+      "label": "wedge",
+      "shape": "wedge",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 7,
+     "rotation": 315,
+     "fill": "striped",
+     "colour": "black",
+     "size": 1,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e3",
+     "label": "wedge",
+     "shape": "wedge",
+     "cell": 6,
+     "rotation": 0,
+     "fill": "empty",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 80,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 7,
+       "rotation": 315,
+       "fill": "striped",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "wedge",
+       "shape": "wedge",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_cycle",
+    "note": "The arrow's size should be small (it cycles), not medium."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 7,
+       "rotation": 315,
+       "fill": "striped",
+       "colour": "black",
+       "size": 1,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "wedge",
+       "shape": "wedge",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 8,
+       "rotation": 315,
+       "fill": "striped",
+       "colour": "black",
+       "size": 1,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "wedge",
+       "shape": "wedge",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 2,
+    "trap": "breaks_movement",
+    "note": "The arrow has stayed where it was in figure 5."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 7,
+       "rotation": 315,
+       "fill": "striped",
+       "colour": "black",
+       "size": 1,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "wedge",
+       "shape": "wedge",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 5,
+    "trap": "breaks_static",
+    "note": "The wedge's fill has changed, but it never changes in the series."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 7,
+       "rotation": 315,
+       "fill": "striped",
+       "colour": "black",
+       "size": 1,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 2
+      },
+      {
+       "id": "e3",
+       "label": "wedge",
+       "shape": "wedge",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_add_remove",
+    "note": "There should be 1 line, not 2."
+   }
+  ],
+  "correct": "B",
+  "explanation": {
+   "steps": [
+    "The arrow's size cycles medium → large → small, then starts again.",
+    "One line is removed from the star of lines at each step, always the most clockwise one.",
+    "The arrow moves 1 cell clockwise around the outer ring of cells at each step.",
+    "The wedge stays exactly the same in every figure.",
+    "Applying every rule to figure 5 gives option B."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_cycle",
+   "breaks_add_remove",
+   "breaks_movement",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-004",
+  "category": "abstract",
+  "subtype": "two_rules",
+  "difficulty": 2,
+  "seed": 600052,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "hexagon",
+     "shape": "hexagon",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "black",
+     "size": 1,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 2,
+     "rotation": 180,
+     "fill": "empty",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "cycle",
+    "el": "e1",
+    "attr": "size",
+    "values": [
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "type": "rotate",
+    "el": "e2",
+    "step": 90
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 1,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 2,
+      "rotation": 180,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 2,
+      "rotation": 270,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 2,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 1,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 2,
+      "rotation": 90,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 2,
+      "rotation": 180,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "hexagon",
+     "shape": "hexagon",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 2,
+     "rotation": 270,
+     "fill": "empty",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 60,
+  "mode": "reveal",
+  "task": "Before looking at any options, write down every rule that governs this series (what changes, how, and what stays the same). Then reveal the solution.",
+  "correct": "The hexagon's size cycles small → medium → large, then starts again. The arrow rotates 90° clockwise at each step.",
+  "explanation": {
+   "steps": [
+    "The hexagon's size cycles small → medium → large, then starts again.",
+    "The arrow rotates 90° clockwise at each step.",
+    "Applying every rule to figure 5 gives the figure shown as the answer."
+   ],
+   "shortcut": "Track one element at a time across all five figures before looking at the options."
+  },
+  "trap_tags": []
+ },
+ {
+  "id": "AR-005",
+  "category": "abstract",
+  "subtype": "three_rules",
+  "difficulty": 3,
+  "seed": 804820,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 7,
+     "rotation": 0,
+     "fill": "empty",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "hexagon",
+     "shape": "hexagon",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "cycle",
+    "el": "e1",
+    "attr": "fill",
+    "values": [
+     "empty",
+     "solid",
+     "striped"
+    ]
+   },
+   {
+    "type": "move",
+    "el": "e1",
+    "path": "perimeter_cw",
+    "step": 2
+   },
+   {
+    "type": "alternate",
+    "el": "e2",
+    "attr": "colour",
+    "values": [
+     "grey",
+     "black"
+    ]
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 7,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 1,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 5,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 7,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 3,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "hexagon",
+     "shape": "hexagon",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 80,
+  "mode": "reveal",
+  "task": "Before looking at any options, write down every rule that governs this series (what changes, how, and what stays the same). Then reveal the solution.",
+  "correct": "The L-shape's fill cycles white (empty) → solid → striped, then starts again. The L-shape moves 2 cells clockwise around the outer ring of cells at each step. The hexagon's colour alternates between grey and black.",
+  "explanation": {
+   "steps": [
+    "The L-shape's fill cycles white (empty) → solid → striped, then starts again.",
+    "The L-shape moves 2 cells clockwise around the outer ring of cells at each step.",
+    "The hexagon's colour alternates between grey and black.",
+    "Applying every rule to figure 5 gives the figure shown as the answer."
+   ],
+   "shortcut": "Track one element at a time across all five figures before looking at the options."
+  },
+  "trap_tags": []
+ },
+ {
+  "id": "AR-006",
+  "category": "abstract",
+  "subtype": "three_rules",
+  "difficulty": 3,
+  "seed": 700195,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "dots",
+     "shape": "pips",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 7
+    },
+    {
+     "id": "e2",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 1,
+     "rotation": 315,
+     "fill": "striped",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "count",
+    "el": "e1",
+    "delta": -1
+   },
+   {
+    "type": "cycle",
+    "el": "e2",
+    "attr": "size",
+    "values": [
+     3,
+     2,
+     1
+    ]
+   },
+   {
+    "type": "rotate",
+    "el": "e2",
+    "step": 135
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 7
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 1,
+      "rotation": 315,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 6
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 1,
+      "rotation": 90,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 5
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 1,
+      "rotation": 225,
+      "fill": "striped",
+      "colour": "black",
+      "size": 1,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 4
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 1,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 3
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 1,
+      "rotation": 135,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "dots",
+     "shape": "pips",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 2
+    },
+    {
+     "id": "e2",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 1,
+     "rotation": 270,
+     "fill": "striped",
+     "colour": "black",
+     "size": 1,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 80,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 2
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 1,
+       "rotation": 270,
+       "fill": "striped",
+       "colour": "black",
+       "size": 1,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 2
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 1,
+       "rotation": 270,
+       "fill": "striped",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_cycle",
+    "note": "The L-shape's size should be small (it cycles), not large."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 2
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 1,
+       "rotation": 135,
+       "fill": "striped",
+       "colour": "black",
+       "size": 1,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 2,
+    "trap": "breaks_rotation",
+    "note": "The L-shape has not rotated since figure 5; it should turn 135° clockwise again."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 2
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 1,
+       "rotation": 270,
+       "fill": "striped",
+       "colour": "black",
+       "size": 1,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 3,
+    "trap": "breaks_static",
+    "note": "The dots should not change colour."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 3
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 1,
+       "rotation": 270,
+       "fill": "striped",
+       "colour": "black",
+       "size": 1,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_count",
+    "note": "There should be 2 dots, not 3."
+   }
+  ],
+  "correct": "A",
+  "explanation": {
+   "steps": [
+    "The number of dots decreases by 1 at each step.",
+    "The L-shape's size cycles large → medium → small, then starts again.",
+    "The L-shape rotates 135° clockwise at each step.",
+    "Applying every rule to figure 5 gives option A."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_count",
+   "breaks_cycle",
+   "breaks_rotation",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-007",
+  "category": "abstract",
+  "subtype": "two_rules",
+  "difficulty": 2,
+  "seed": 600429,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 4,
+     "rotation": 90,
+     "fill": "empty",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "hexagon",
+     "shape": "hexagon",
+     "cell": 3,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "rotate",
+    "el": "e1",
+    "step": 135
+   },
+   {
+    "type": "alternate",
+    "el": "e1",
+    "attr": "fill",
+    "values": [
+     "empty",
+     "striped"
+    ]
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 4,
+      "rotation": 90,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 4,
+      "rotation": 225,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 4,
+      "rotation": 135,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 4,
+      "rotation": 270,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 4,
+     "rotation": 45,
+     "fill": "striped",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "hexagon",
+     "shape": "hexagon",
+     "cell": 3,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 60,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 4,
+       "rotation": 45,
+       "fill": "empty",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 3,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_alternation",
+    "note": "The arrow's fill should be striped (it alternates), not white (empty)."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 4,
+       "rotation": 45,
+       "fill": "striped",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 3,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 3,
+    "trap": "breaks_static",
+    "note": "The hexagon's fill has changed, but it never changes in the series."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 4,
+       "rotation": 270,
+       "fill": "striped",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 3,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_rotation",
+    "note": "The arrow has not rotated since figure 5; it should turn 135° clockwise again."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 4,
+       "rotation": 45,
+       "fill": "striped",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 3,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 4,
+       "rotation": 180,
+       "fill": "striped",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 3,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_rotation",
+    "note": "The arrow has rotated two steps instead of one."
+   }
+  ],
+  "correct": "D",
+  "explanation": {
+   "steps": [
+    "The arrow rotates 135° clockwise at each step.",
+    "The arrow's fill alternates between white (empty) and striped.",
+    "The hexagon stays exactly the same in every figure.",
+    "Applying every rule to figure 5 gives option D."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_rotation",
+   "breaks_alternation",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-008",
+  "category": "abstract",
+  "subtype": "two_rules",
+  "difficulty": 2,
+  "seed": 600351,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 5,
+     "rotation": 315,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 7
+    },
+    {
+     "id": "e2",
+     "label": "shape",
+     "shape": "hexagon",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e3",
+     "label": "triangle",
+     "shape": "triangle",
+     "cell": 2,
+     "rotation": 0,
+     "fill": "empty",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "add_remove",
+    "el": "e1",
+    "delta": -1
+   },
+   {
+    "type": "alternate",
+    "el": "e2",
+    "attr": "shape",
+    "values": [
+     "hexagon",
+     "cross"
+    ]
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   },
+   {
+    "type": "static",
+    "el": "e3"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 7
+     },
+     {
+      "id": "e2",
+      "label": "shape",
+      "shape": "hexagon",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 2,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 6
+     },
+     {
+      "id": "e2",
+      "label": "shape",
+      "shape": "cross",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 2,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 5
+     },
+     {
+      "id": "e2",
+      "label": "shape",
+      "shape": "hexagon",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 2,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 4
+     },
+     {
+      "id": "e2",
+      "label": "shape",
+      "shape": "cross",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 2,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 3
+     },
+     {
+      "id": "e2",
+      "label": "shape",
+      "shape": "hexagon",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 2,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 5,
+     "rotation": 315,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 2
+    },
+    {
+     "id": "e2",
+     "label": "shape",
+     "shape": "cross",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e3",
+     "label": "triangle",
+     "shape": "triangle",
+     "cell": 2,
+     "rotation": 0,
+     "fill": "empty",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 60,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 5,
+       "rotation": 315,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 3
+      },
+      {
+       "id": "e2",
+       "label": "shape",
+       "shape": "cross",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 2,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_add_remove",
+    "note": "There should be 2 lines, not 3."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 5,
+       "rotation": 315,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 2
+      },
+      {
+       "id": "e2",
+       "label": "shape",
+       "shape": "hexagon",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 2,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_alternation",
+    "note": "The shape's shape should be cross (it alternates), not hexagon."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 5,
+       "rotation": 315,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 2
+      },
+      {
+       "id": "e2",
+       "label": "shape",
+       "shape": "cross",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 2,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 5,
+       "rotation": 315,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 2
+      },
+      {
+       "id": "e2",
+       "label": "shape",
+       "shape": "circle",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 2,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_alternation",
+    "note": "The shape's shape should be cross (it alternates), not circle."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 5,
+       "rotation": 315,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 2
+      },
+      {
+       "id": "e2",
+       "label": "shape",
+       "shape": "cross",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 2,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 4,
+    "trap": "breaks_static",
+    "note": "The triangle's fill has changed, but it never changes in the series."
+   }
+  ],
+  "correct": "C",
+  "explanation": {
+   "steps": [
+    "One line is removed from the star of lines at each step, always the most clockwise one.",
+    "The shape's shape alternates between hexagon and cross.",
+    "The triangle stays exactly the same in every figure.",
+    "Applying every rule to figure 5 gives option C."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_add_remove",
+   "breaks_alternation",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-009",
+  "category": "abstract",
+  "subtype": "two_rules",
+  "difficulty": 2,
+  "seed": 600026,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 4,
+     "rotation": 225,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 1,
+     "rotation": 135,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 8
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "rotate",
+    "el": "e1",
+    "step": -135
+   },
+   {
+    "type": "add_remove",
+    "el": "e2",
+    "delta": -1
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 4,
+      "rotation": 225,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 1,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 8
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 4,
+      "rotation": 90,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 1,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 7
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 4,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 1,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 6
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 4,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 1,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 5
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 4,
+      "rotation": 45,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 1,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 4
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 4,
+     "rotation": 270,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 1,
+     "rotation": 135,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 3
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 60,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 4,
+       "rotation": 270,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 1,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 4
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_add_remove",
+    "note": "There should be 3 lines, not 4."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 4,
+       "rotation": 270,
+       "fill": "empty",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 1,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 3
+      }
+     ]
+    },
+    "breaks": 2,
+    "trap": "breaks_static",
+    "note": "The arrow's fill has changed, but it never changes in the series."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 4,
+       "rotation": 45,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 1,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 3
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_rotation",
+    "note": "The arrow has not rotated since figure 5; it should turn 135° anticlockwise again."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 4,
+       "rotation": 270,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 1,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 2
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_add_remove",
+    "note": "There should be 3 lines, not 2."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 4,
+       "rotation": 270,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 1,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 3
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   }
+  ],
+  "correct": "E",
+  "explanation": {
+   "steps": [
+    "The arrow rotates 135° anticlockwise at each step.",
+    "One line is removed from the star of lines at each step, always the most clockwise one.",
+    "Applying every rule to figure 5 gives option E."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_rotation",
+   "breaks_add_remove",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-010",
+  "category": "abstract",
+  "subtype": "rotation",
+  "difficulty": 1,
+  "seed": 500078,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 4,
+     "rotation": 315,
+     "fill": "empty",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "hexagon",
+     "shape": "hexagon",
+     "cell": 8,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "rotate",
+    "el": "e1",
+    "step": 90
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 315,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 8,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 45,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 8,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 135,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 8,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 225,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 8,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 315,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 8,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 4,
+     "rotation": 45,
+     "fill": "empty",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "hexagon",
+     "shape": "hexagon",
+     "cell": 8,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 45,
+  "mode": "reveal",
+  "task": "Before looking at any options, write down every rule that governs this series (what changes, how, and what stays the same). Then reveal the solution.",
+  "correct": "The L-shape rotates 90° clockwise at each step. The hexagon stays exactly the same in every figure.",
+  "explanation": {
+   "steps": [
+    "The L-shape rotates 90° clockwise at each step.",
+    "The hexagon stays exactly the same in every figure.",
+    "Applying every rule to figure 5 gives the figure shown as the answer."
+   ],
+   "shortcut": "Track one element at a time across all five figures before looking at the options."
+  },
+  "trap_tags": []
+ },
+ {
+  "id": "AR-011",
+  "category": "abstract",
+  "subtype": "two_rules",
+  "difficulty": 2,
+  "seed": 1229050,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 6,
+     "rotation": 225,
+     "fill": "striped",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "alternate",
+    "el": "e1",
+    "attr": "size",
+    "values": [
+     2,
+     1
+    ]
+   },
+   {
+    "type": "move",
+    "el": "e1",
+    "path": "perimeter_ccw",
+    "step": 2
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 6,
+      "rotation": 225,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 8,
+      "rotation": 225,
+      "fill": "striped",
+      "colour": "black",
+      "size": 1,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 2,
+      "rotation": 225,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 0,
+      "rotation": 225,
+      "fill": "striped",
+      "colour": "black",
+      "size": 1,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 6,
+      "rotation": 225,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 8,
+     "rotation": 225,
+     "fill": "striped",
+     "colour": "black",
+     "size": 1,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 60,
+  "mode": "reveal",
+  "task": "Before looking at any options, write down every rule that governs this series (what changes, how, and what stays the same). Then reveal the solution.",
+  "correct": "The arrow's size alternates between medium and small. The arrow moves 2 cells anticlockwise around the outer ring of cells at each step.",
+  "explanation": {
+   "steps": [
+    "The arrow's size alternates between medium and small.",
+    "The arrow moves 2 cells anticlockwise around the outer ring of cells at each step.",
+    "Applying every rule to figure 5 gives the figure shown as the answer."
+   ],
+   "shortcut": "Track one element at a time across all five figures before looking at the options."
+  },
+  "trap_tags": []
+ },
+ {
+  "id": "AR-012",
+  "category": "abstract",
+  "subtype": "two_rules",
+  "difficulty": 2,
+  "seed": 600039,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "wedge",
+     "shape": "wedge",
+     "cell": 6,
+     "rotation": 315,
+     "fill": "striped",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 4,
+     "rotation": 135,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e3",
+     "label": "cross",
+     "shape": "cross",
+     "cell": 8,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "alternate",
+    "el": "e1",
+    "attr": "fill",
+    "values": [
+     "striped",
+     "solid"
+    ]
+   },
+   {
+    "type": "rotate",
+    "el": "e2",
+    "step": 45
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   },
+   {
+    "type": "static",
+    "el": "e3"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "wedge",
+      "shape": "wedge",
+      "cell": 6,
+      "rotation": 315,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "cross",
+      "shape": "cross",
+      "cell": 8,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "wedge",
+      "shape": "wedge",
+      "cell": 6,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "cross",
+      "shape": "cross",
+      "cell": 8,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "wedge",
+      "shape": "wedge",
+      "cell": 6,
+      "rotation": 315,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 225,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "cross",
+      "shape": "cross",
+      "cell": 8,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "wedge",
+      "shape": "wedge",
+      "cell": 6,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 270,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "cross",
+      "shape": "cross",
+      "cell": 8,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "wedge",
+      "shape": "wedge",
+      "cell": 6,
+      "rotation": 315,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "cross",
+      "shape": "cross",
+      "cell": 8,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "wedge",
+     "shape": "wedge",
+     "cell": 6,
+     "rotation": 315,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e3",
+     "label": "cross",
+     "shape": "cross",
+     "cell": 8,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 60,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "wedge",
+       "shape": "wedge",
+       "cell": 6,
+       "rotation": 315,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "cross",
+       "shape": "cross",
+       "cell": 8,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "wedge",
+       "shape": "wedge",
+       "cell": 6,
+       "rotation": 315,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 45,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "cross",
+       "shape": "cross",
+       "cell": 8,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_rotation",
+    "note": "The L-shape has rotated two steps instead of one."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "wedge",
+       "shape": "wedge",
+       "cell": 6,
+       "rotation": 315,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "cross",
+       "shape": "cross",
+       "cell": 8,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 4,
+    "trap": "breaks_static",
+    "note": "The cross's fill has changed, but it never changes in the series."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "wedge",
+       "shape": "wedge",
+       "cell": 6,
+       "rotation": 315,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 315,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "cross",
+       "shape": "cross",
+       "cell": 8,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_rotation",
+    "note": "The L-shape has not rotated since figure 5; it should turn 45° clockwise again."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "wedge",
+       "shape": "wedge",
+       "cell": 6,
+       "rotation": 315,
+       "fill": "striped",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "cross",
+       "shape": "cross",
+       "cell": 8,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_alternation",
+    "note": "The wedge's fill should be solid (it alternates), not striped."
+   }
+  ],
+  "correct": "A",
+  "explanation": {
+   "steps": [
+    "The wedge's fill alternates between striped and solid.",
+    "The L-shape rotates 45° clockwise at each step.",
+    "The cross stays exactly the same in every figure.",
+    "Applying every rule to figure 5 gives option A."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_alternation",
+   "breaks_rotation",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-013",
+  "category": "abstract",
+  "subtype": "two_rules",
+  "difficulty": 2,
+  "seed": 809731,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 4,
+     "rotation": 135,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 0
+    },
+    {
+     "id": "e2",
+     "label": "triangle",
+     "shape": "triangle",
+     "cell": 3,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "add_remove",
+    "el": "e1",
+    "delta": 1
+   },
+   {
+    "type": "move",
+    "el": "e2",
+    "path": "perimeter_ccw",
+    "step": 2
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 0
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 7,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 2
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 5,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 3
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 1,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 4
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 4,
+     "rotation": 135,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 5
+    },
+    {
+     "id": "e2",
+     "label": "triangle",
+     "shape": "triangle",
+     "cell": 7,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 60,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 5
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 5,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_movement",
+    "note": "The triangle has moved one step too far."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 5
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 7,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 5
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 7,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 2,
+    "trap": "breaks_static",
+    "note": "The star of lines should not change colour."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 4
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 7,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_add_remove",
+    "note": "There should be 5 lines, not 4."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 5
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 3,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_movement",
+    "note": "The triangle has stayed where it was in figure 5."
+   }
+  ],
+  "correct": "B",
+  "explanation": {
+   "steps": [
+    "One line is added to the star of lines at each step, always on the clockwise side.",
+    "The triangle moves 2 cells anticlockwise around the outer ring of cells at each step.",
+    "Applying every rule to figure 5 gives option B."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_add_remove",
+   "breaks_movement",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-014",
+  "category": "abstract",
+  "subtype": "two_rules",
+  "difficulty": 2,
+  "seed": 705028,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "triangle",
+     "shape": "triangle",
+     "cell": 7,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 4,
+     "rotation": 315,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "move",
+    "el": "e1",
+    "path": "perimeter_ccw",
+    "step": 1
+   },
+   {
+    "type": "cycle",
+    "el": "e1",
+    "attr": "fill",
+    "values": [
+     "solid",
+     "empty",
+     "striped"
+    ]
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 7,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 8,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 5,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 2,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 1,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 315,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "triangle",
+     "shape": "triangle",
+     "cell": 0,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 4,
+     "rotation": 315,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 60,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 0,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 315,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_cycle",
+    "note": "The triangle's fill should be striped (it cycles), not solid."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 0,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 315,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_cycle",
+    "note": "The triangle's fill should be striped (it cycles), not white (empty)."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 0,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 315,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 3,
+    "trap": "breaks_static",
+    "note": "The L-shape's fill has changed, but it never changes in the series."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 0,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 315,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 1,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 315,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_movement",
+    "note": "The triangle has stayed where it was in figure 5."
+   }
+  ],
+  "correct": "D",
+  "explanation": {
+   "steps": [
+    "The triangle moves 1 cell anticlockwise around the outer ring of cells at each step.",
+    "The triangle's fill cycles solid → white (empty) → striped, then starts again.",
+    "The L-shape stays exactly the same in every figure.",
+    "Applying every rule to figure 5 gives option D."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_movement",
+   "breaks_cycle",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-015",
+  "category": "abstract",
+  "subtype": "two_rules",
+  "difficulty": 2,
+  "seed": 600156,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 4,
+     "rotation": 180,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 6
+    },
+    {
+     "id": "e2",
+     "label": "circle",
+     "shape": "circle",
+     "cell": 6,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 1,
+     "count": 1
+    },
+    {
+     "id": "e3",
+     "label": "hexagon",
+     "shape": "hexagon",
+     "cell": 5,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "add_remove",
+    "el": "e1",
+    "delta": -1
+   },
+   {
+    "type": "alternate",
+    "el": "e2",
+    "attr": "size",
+    "values": [
+     1,
+     2
+    ]
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   },
+   {
+    "type": "static",
+    "el": "e3"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 6
+     },
+     {
+      "id": "e2",
+      "label": "circle",
+      "shape": "circle",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 1,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 5,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 5
+     },
+     {
+      "id": "e2",
+      "label": "circle",
+      "shape": "circle",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 5,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 4
+     },
+     {
+      "id": "e2",
+      "label": "circle",
+      "shape": "circle",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 1,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 5,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 3
+     },
+     {
+      "id": "e2",
+      "label": "circle",
+      "shape": "circle",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 5,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 2
+     },
+     {
+      "id": "e2",
+      "label": "circle",
+      "shape": "circle",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 1,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 5,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 4,
+     "rotation": 180,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "circle",
+     "shape": "circle",
+     "cell": 6,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e3",
+     "label": "hexagon",
+     "shape": "hexagon",
+     "cell": 5,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 60,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 2
+      },
+      {
+       "id": "e2",
+       "label": "circle",
+       "shape": "circle",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 5,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_add_remove",
+    "note": "There should be 1 line, not 2."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "circle",
+       "shape": "circle",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 5,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 4,
+    "trap": "breaks_static",
+    "note": "The hexagon's fill has changed, but it never changes in the series."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "circle",
+       "shape": "circle",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 5,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 0
+      },
+      {
+       "id": "e2",
+       "label": "circle",
+       "shape": "circle",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 5,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_add_remove",
+    "note": "There should be 1 line, not 0."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 4,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "circle",
+       "shape": "circle",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 1,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 5,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_alternation",
+    "note": "The circle's size should be medium (it alternates), not small."
+   }
+  ],
+  "correct": "C",
+  "explanation": {
+   "steps": [
+    "One line is removed from the star of lines at each step, always the most clockwise one.",
+    "The circle's size alternates between small and medium.",
+    "The hexagon stays exactly the same in every figure.",
+    "Applying every rule to figure 5 gives option C."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_add_remove",
+   "breaks_alternation",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-016",
+  "category": "abstract",
+  "subtype": "add_remove",
+  "difficulty": 1,
+  "seed": 500195,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 5,
+     "rotation": 45,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 8
+    },
+    {
+     "id": "e2",
+     "label": "square",
+     "shape": "square",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "add_remove",
+    "el": "e1",
+    "delta": -1
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 45,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 8
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 45,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 7
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 45,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 6
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 45,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 5
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 45,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 4
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 5,
+     "rotation": 45,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 3
+    },
+    {
+     "id": "e2",
+     "label": "square",
+     "shape": "square",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 45,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 5,
+       "rotation": 45,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 3
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 5,
+       "rotation": 45,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 4
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_add_remove",
+    "note": "There should be 3 lines, not 4."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 5,
+       "rotation": 45,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 3
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 2,
+    "trap": "breaks_static",
+    "note": "The square's fill has changed, but it never changes in the series."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 5,
+       "rotation": 45,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 2
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_add_remove",
+    "note": "There should be 3 lines, not 2."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 5,
+       "rotation": 90,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 3
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_add_remove",
+    "note": "The wrong line has been removed (the first one instead of the most clockwise one)."
+   }
+  ],
+  "correct": "A",
+  "explanation": {
+   "steps": [
+    "One line is removed from the star of lines at each step, always the most clockwise one.",
+    "The square stays exactly the same in every figure.",
+    "Applying every rule to figure 5 gives option A."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_add_remove",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-017",
+  "category": "abstract",
+  "subtype": "two_rules",
+  "difficulty": 2,
+  "seed": 810121,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 5,
+     "rotation": 135,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 0
+    },
+    {
+     "id": "e2",
+     "label": "triangle",
+     "shape": "triangle",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "add_remove",
+    "el": "e1",
+    "delta": 1
+   },
+   {
+    "type": "move",
+    "el": "e1",
+    "path": "perimeter_cw",
+    "step": 1
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 5,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 0
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 8,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 7,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 2
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 6,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 3
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 3,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 4
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 0,
+     "rotation": 135,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 5
+    },
+    {
+     "id": "e2",
+     "label": "triangle",
+     "shape": "triangle",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 60,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 3,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 5
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_movement",
+    "note": "The star of lines has stayed where it was in figure 5."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 1,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 5
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_movement",
+    "note": "The star of lines has moved one step too far."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 0,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 4
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_add_remove",
+    "note": "There should be 5 lines, not 4."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 0,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 5
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 3,
+    "trap": "breaks_static",
+    "note": "The triangle's fill has changed, but it never changes in the series."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "star of lines",
+       "shape": "spokes",
+       "cell": 0,
+       "rotation": 135,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 5
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   }
+  ],
+  "correct": "E",
+  "explanation": {
+   "steps": [
+    "One line is added to the star of lines at each step, always on the clockwise side.",
+    "The star of lines moves 1 cell clockwise around the outer ring of cells at each step.",
+    "The triangle stays exactly the same in every figure.",
+    "Applying every rule to figure 5 gives option E."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_add_remove",
+   "breaks_movement",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-018",
+  "category": "abstract",
+  "subtype": "three_rules",
+  "difficulty": 3,
+  "seed": 700338,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "hexagon",
+     "shape": "hexagon",
+     "cell": 1,
+     "rotation": 0,
+     "fill": "empty",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 8,
+     "rotation": 45,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e3",
+     "label": "dots",
+     "shape": "pips",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 9
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "move",
+    "el": "e1",
+    "path": "perimeter_ccw",
+    "step": 3
+   },
+   {
+    "type": "add_remove",
+    "el": "e2",
+    "delta": 1
+   },
+   {
+    "type": "count",
+    "el": "e3",
+    "delta": -1
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   },
+   {
+    "type": "static",
+    "el": "e3"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 1,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 8,
+      "rotation": 45,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 9
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 8,
+      "rotation": 45,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 2
+     },
+     {
+      "id": "e3",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 8
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 5,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 8,
+      "rotation": 45,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 3
+     },
+     {
+      "id": "e3",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 7
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 0,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 8,
+      "rotation": 45,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 4
+     },
+     {
+      "id": "e3",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 6
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 7,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 8,
+      "rotation": 45,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 5
+     },
+     {
+      "id": "e3",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 5
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "hexagon",
+     "shape": "hexagon",
+     "cell": 2,
+     "rotation": 0,
+     "fill": "empty",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 8,
+     "rotation": 45,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 6
+    },
+    {
+     "id": "e3",
+     "label": "dots",
+     "shape": "pips",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 4
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 80,
+  "mode": "reveal",
+  "task": "Before looking at any options, write down every rule that governs this series (what changes, how, and what stays the same). Then reveal the solution.",
+  "correct": "The hexagon moves 3 cells anticlockwise around the outer ring of cells at each step. One line is added to the star of lines at each step, always on the clockwise side. The number of dots decreases by 1 at each step.",
+  "explanation": {
+   "steps": [
+    "The hexagon moves 3 cells anticlockwise around the outer ring of cells at each step.",
+    "One line is added to the star of lines at each step, always on the clockwise side.",
+    "The number of dots decreases by 1 at each step.",
+    "Applying every rule to figure 5 gives the figure shown as the answer."
+   ],
+   "shortcut": "Track one element at a time across all five figures before looking at the options."
+  },
+  "trap_tags": []
+ },
+ {
+  "id": "AR-019",
+  "category": "abstract",
+  "subtype": "add_remove",
+  "difficulty": 1,
+  "seed": 500117,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 4,
+     "rotation": 135,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 2
+    },
+    {
+     "id": "e2",
+     "label": "triangle",
+     "shape": "triangle",
+     "cell": 3,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "add_remove",
+    "el": "e1",
+    "delta": 1
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 2
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 3
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 4
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 5
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "star of lines",
+      "shape": "spokes",
+      "cell": 4,
+      "rotation": 135,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 6
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "star of lines",
+     "shape": "spokes",
+     "cell": 4,
+     "rotation": 135,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 7
+    },
+    {
+     "id": "e2",
+     "label": "triangle",
+     "shape": "triangle",
+     "cell": 3,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 45,
+  "mode": "reveal",
+  "task": "Before looking at any options, write down every rule that governs this series (what changes, how, and what stays the same). Then reveal the solution.",
+  "correct": "One line is added to the star of lines at each step, always on the clockwise side. The triangle stays exactly the same in every figure.",
+  "explanation": {
+   "steps": [
+    "One line is added to the star of lines at each step, always on the clockwise side.",
+    "The triangle stays exactly the same in every figure.",
+    "Applying every rule to figure 5 gives the figure shown as the answer."
+   ],
+   "shortcut": "Track one element at a time across all five figures before looking at the options."
+  },
+  "trap_tags": []
+ },
+ {
+  "id": "AR-020",
+  "category": "abstract",
+  "subtype": "two_rules",
+  "difficulty": 2,
+  "seed": 600000,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 2,
+     "rotation": 135,
+     "fill": "striped",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "rotate",
+    "el": "e1",
+    "step": -135
+   },
+   {
+    "type": "move",
+    "el": "e1",
+    "path": "perimeter_cw",
+    "step": 1
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 2,
+      "rotation": 135,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 5,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 8,
+      "rotation": 225,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 7,
+      "rotation": 90,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 6,
+      "rotation": 315,
+      "fill": "striped",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 3,
+     "rotation": 180,
+     "fill": "striped",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 60,
+  "mode": "reveal",
+  "task": "Before looking at any options, write down every rule that governs this series (what changes, how, and what stays the same). Then reveal the solution.",
+  "correct": "The arrow rotates 135° anticlockwise at each step. The arrow moves 1 cell clockwise around the outer ring of cells at each step.",
+  "explanation": {
+   "steps": [
+    "The arrow rotates 135° anticlockwise at each step.",
+    "The arrow moves 1 cell clockwise around the outer ring of cells at each step.",
+    "Applying every rule to figure 5 gives the figure shown as the answer."
+   ],
+   "shortcut": "Track one element at a time across all five figures before looking at the options."
+  },
+  "trap_tags": []
+ },
+ {
+  "id": "AR-021",
+  "category": "abstract",
+  "subtype": "cycle",
+  "difficulty": 1,
+  "seed": 500065,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 4,
+     "rotation": 90,
+     "fill": "empty",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "square",
+     "shape": "square",
+     "cell": 6,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "cycle",
+    "el": "e1",
+    "attr": "size",
+    "values": [
+     3,
+     2,
+     1
+    ]
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 90,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 90,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 90,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 1,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 90,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 4,
+      "rotation": 90,
+      "fill": "empty",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 4,
+     "rotation": 90,
+     "fill": "empty",
+     "colour": "grey",
+     "size": 1,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "square",
+     "shape": "square",
+     "cell": 6,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 45,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 90,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 1,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_static",
+    "note": "The L-shape's fill has changed, but it never changes in the series."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 90,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_cycle",
+    "note": "The L-shape's size should be small (it cycles), not large."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 90,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 1,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 2,
+    "trap": "breaks_static",
+    "note": "The square's fill has changed, but it never changes in the series."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 90,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 1,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 4,
+       "rotation": 90,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_cycle",
+    "note": "The L-shape's size should be small (it cycles), not medium."
+   }
+  ],
+  "correct": "D",
+  "explanation": {
+   "steps": [
+    "The L-shape's size cycles large → medium → small, then starts again.",
+    "The square stays exactly the same in every figure.",
+    "Applying every rule to figure 5 gives option D."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_cycle",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-022",
+  "category": "abstract",
+  "subtype": "two_rules",
+  "difficulty": 2,
+  "seed": 600091,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "triangle",
+     "shape": "triangle",
+     "cell": 6,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "square",
+     "shape": "square",
+     "cell": 7,
+     "rotation": 0,
+     "fill": "empty",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "alternate",
+    "el": "e1",
+    "attr": "colour",
+    "values": [
+     "grey",
+     "black"
+    ]
+   },
+   {
+    "type": "move",
+    "el": "e2",
+    "path": "perimeter_cw",
+    "step": 2
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 7,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 1,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 5,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 6,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "square",
+      "shape": "square",
+      "cell": 7,
+      "rotation": 0,
+      "fill": "empty",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "triangle",
+     "shape": "triangle",
+     "cell": 6,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "square",
+     "shape": "square",
+     "cell": 3,
+     "rotation": 0,
+     "fill": "empty",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 60,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 1,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_movement",
+    "note": "The square has moved one step too far."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 3,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 3,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 3,
+    "trap": "breaks_static",
+    "note": "The square's fill has changed, but it never changes in the series."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 3,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_alternation",
+    "note": "The triangle's colour should be black (it alternates), not grey."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 6,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "square",
+       "shape": "square",
+       "cell": 7,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_movement",
+    "note": "The square has stayed where it was in figure 5."
+   }
+  ],
+  "correct": "B",
+  "explanation": {
+   "steps": [
+    "The triangle's colour alternates between grey and black.",
+    "The square moves 2 cells clockwise around the outer ring of cells at each step.",
+    "Applying every rule to figure 5 gives option B."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_alternation",
+   "breaks_movement",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-023",
+  "category": "abstract",
+  "subtype": "three_rules",
+  "difficulty": 3,
+  "seed": 700286,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 6,
+     "rotation": 270,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "triangle",
+     "shape": "triangle",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "black",
+     "size": 3,
+     "count": 1
+    },
+    {
+     "id": "e3",
+     "label": "hexagon",
+     "shape": "hexagon",
+     "cell": 7,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "move",
+    "el": "e1",
+    "path": "perimeter_cw",
+    "step": 2
+   },
+   {
+    "type": "rotate",
+    "el": "e1",
+    "step": -90
+   },
+   {
+    "type": "cycle",
+    "el": "e2",
+    "attr": "size",
+    "values": [
+     3,
+     1,
+     2
+    ]
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   },
+   {
+    "type": "static",
+    "el": "e3"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 6,
+      "rotation": 270,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 7,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 0,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 1,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 7,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 2,
+      "rotation": 90,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 7,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 8,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 3,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 7,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 6,
+      "rotation": 270,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "triangle",
+      "shape": "triangle",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 1,
+      "count": 1
+     },
+     {
+      "id": "e3",
+      "label": "hexagon",
+      "shape": "hexagon",
+      "cell": 7,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 3,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 0,
+     "rotation": 180,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "triangle",
+     "shape": "triangle",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e3",
+     "label": "hexagon",
+     "shape": "hexagon",
+     "cell": 7,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 3,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 80,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 6,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 7,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_movement",
+    "note": "The arrow has stayed where it was in figure 5."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 0,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 7,
+       "rotation": 0,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 5,
+    "trap": "breaks_static",
+    "note": "The hexagon's fill has changed, but it never changes in the series."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 0,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 7,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 0,
+       "rotation": 270,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 7,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_rotation",
+    "note": "The arrow has not rotated since figure 5; it should turn 90° anticlockwise again."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 0,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "triangle",
+       "shape": "triangle",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 3,
+       "count": 1
+      },
+      {
+       "id": "e3",
+       "label": "hexagon",
+       "shape": "hexagon",
+       "cell": 7,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 3,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 2,
+    "trap": "breaks_cycle",
+    "note": "The triangle's size should be medium (it cycles), not large."
+   }
+  ],
+  "correct": "C",
+  "explanation": {
+   "steps": [
+    "The arrow moves 2 cells clockwise around the outer ring of cells at each step.",
+    "The arrow rotates 90° anticlockwise at each step.",
+    "The triangle's size cycles large → small → medium, then starts again.",
+    "The hexagon stays exactly the same in every figure.",
+    "Applying every rule to figure 5 gives option C."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_movement",
+   "breaks_rotation",
+   "breaks_cycle",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-024",
+  "category": "abstract",
+  "subtype": "count",
+  "difficulty": 1,
+  "seed": 500026,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "dots",
+     "shape": "pips",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 3
+    },
+    {
+     "id": "e2",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 0,
+     "rotation": 180,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "count",
+    "el": "e1",
+    "delta": 1
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 3
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 0,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 4
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 0,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 5
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 0,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 6
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 0,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 7
+     },
+     {
+      "id": "e2",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 0,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "dots",
+     "shape": "pips",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 8
+    },
+    {
+     "id": "e2",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 0,
+     "rotation": 180,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 45,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 7
+      },
+      {
+       "id": "e2",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 0,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_count",
+    "note": "There should be 8 dots, not 7."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 9
+      },
+      {
+       "id": "e2",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 0,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_count",
+    "note": "There should be 8 dots, not 9."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 8
+      },
+      {
+       "id": "e2",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 0,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 8
+      },
+      {
+       "id": "e2",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 0,
+       "rotation": 180,
+       "fill": "empty",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 2,
+    "trap": "breaks_static",
+    "note": "The arrow's fill has changed, but it never changes in the series."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 6
+      },
+      {
+       "id": "e2",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 0,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_count",
+    "note": "There should be 8 dots, not 6."
+   }
+  ],
+  "correct": "C",
+  "explanation": {
+   "steps": [
+    "The number of dots increases by 1 at each step.",
+    "The arrow stays exactly the same in every figure.",
+    "Applying every rule to figure 5 gives option C."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_count",
+   "breaks_static"
+  ]
+ },
+ {
+  "id": "AR-025",
+  "category": "abstract",
+  "subtype": "two_rules",
+  "difficulty": 2,
+  "seed": 600650,
+  "base": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 3,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "dots",
+     "shape": "pips",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 9
+    },
+    {
+     "id": "e3",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 6,
+     "rotation": 180,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "rules": [
+   {
+    "type": "move",
+    "el": "e1",
+    "path": "perimeter_cw",
+    "step": 1
+   },
+   {
+    "type": "count",
+    "el": "e2",
+    "delta": -1
+   },
+   {
+    "type": "static",
+    "el": "e1"
+   },
+   {
+    "type": "static",
+    "el": "e2"
+   },
+   {
+    "type": "static",
+    "el": "e3"
+   }
+  ],
+  "series": [
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 3,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 9
+     },
+     {
+      "id": "e3",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 6,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 0,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 8
+     },
+     {
+      "id": "e3",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 6,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 1,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 7
+     },
+     {
+      "id": "e3",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 6,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 2,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 6
+     },
+     {
+      "id": "e3",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 6,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   },
+   {
+    "elements": [
+     {
+      "id": "e1",
+      "label": "L-shape",
+      "shape": "lshape",
+      "cell": 5,
+      "rotation": 0,
+      "fill": "striped",
+      "colour": "black",
+      "size": 2,
+      "count": 1
+     },
+     {
+      "id": "e2",
+      "label": "dots",
+      "shape": "pips",
+      "cell": 4,
+      "rotation": 0,
+      "fill": "solid",
+      "colour": "black",
+      "size": 2,
+      "count": 5
+     },
+     {
+      "id": "e3",
+      "label": "arrow",
+      "shape": "arrow",
+      "cell": 6,
+      "rotation": 180,
+      "fill": "solid",
+      "colour": "grey",
+      "size": 2,
+      "count": 1
+     }
+    ]
+   }
+  ],
+  "answer": {
+   "elements": [
+    {
+     "id": "e1",
+     "label": "L-shape",
+     "shape": "lshape",
+     "cell": 8,
+     "rotation": 0,
+     "fill": "striped",
+     "colour": "black",
+     "size": 2,
+     "count": 1
+    },
+    {
+     "id": "e2",
+     "label": "dots",
+     "shape": "pips",
+     "cell": 4,
+     "rotation": 0,
+     "fill": "solid",
+     "colour": "black",
+     "size": 2,
+     "count": 4
+    },
+    {
+     "id": "e3",
+     "label": "arrow",
+     "shape": "arrow",
+     "cell": 6,
+     "rotation": 180,
+     "fill": "solid",
+     "colour": "grey",
+     "size": 2,
+     "count": 1
+    }
+   ]
+  },
+  "prompt": "Which figure comes next in the series?",
+  "est_time_sec": 60,
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 8,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 4
+      },
+      {
+       "id": "e3",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 6,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "note": "Follows every rule."
+   },
+   {
+    "key": "B",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 5,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 4
+      },
+      {
+       "id": "e3",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 6,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 0,
+    "trap": "breaks_movement",
+    "note": "The L-shape has stayed where it was in figure 5."
+   },
+   {
+    "key": "C",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 8,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 5
+      },
+      {
+       "id": "e3",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 6,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_count",
+    "note": "There should be 4 dots, not 5."
+   },
+   {
+    "key": "D",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 8,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 3
+      },
+      {
+       "id": "e3",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 6,
+       "rotation": 180,
+       "fill": "solid",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 1,
+    "trap": "breaks_count",
+    "note": "There should be 4 dots, not 3."
+   },
+   {
+    "key": "E",
+    "figure": {
+     "elements": [
+      {
+       "id": "e1",
+       "label": "L-shape",
+       "shape": "lshape",
+       "cell": 8,
+       "rotation": 0,
+       "fill": "striped",
+       "colour": "black",
+       "size": 2,
+       "count": 1
+      },
+      {
+       "id": "e2",
+       "label": "dots",
+       "shape": "pips",
+       "cell": 4,
+       "rotation": 0,
+       "fill": "solid",
+       "colour": "black",
+       "size": 2,
+       "count": 4
+      },
+      {
+       "id": "e3",
+       "label": "arrow",
+       "shape": "arrow",
+       "cell": 6,
+       "rotation": 180,
+       "fill": "empty",
+       "colour": "grey",
+       "size": 2,
+       "count": 1
+      }
+     ]
+    },
+    "breaks": 4,
+    "trap": "breaks_static",
+    "note": "The arrow's fill has changed, but it never changes in the series."
+   }
+  ],
+  "correct": "A",
+  "explanation": {
+   "steps": [
+    "The L-shape moves 1 cell clockwise around the outer ring of cells at each step.",
+    "The number of dots decreases by 1 at each step.",
+    "The arrow stays exactly the same in every figure.",
+    "Applying every rule to figure 5 gives option A."
+   ],
+   "shortcut": "Pick one rule, eliminate every option that breaks it, then move to the next rule. Each wrong option breaks exactly one rule."
+  },
+  "trap_tags": [
+   "breaks_movement",
+   "breaks_count",
+   "breaks_static"
+  ]
+ }
+]

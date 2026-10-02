@@ -1,0 +1,2679 @@
+[
+ {
+  "id": "NR-001",
+  "category": "numerical",
+  "subtype": "chart_reading",
+  "difficulty": 3,
+  "source": {
+   "kind": "bar",
+   "caption": "Onshore: wind power capacity installed, 2016–2022 (GW; fictional figures)",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Onshore",
+     "values": [
+      33,
+      37,
+      47,
+      43,
+      51,
+      62,
+      72
+     ]
+    }
+   ],
+   "unit": "GW"
+  },
+  "recipe": {
+   "name": "chart",
+   "seed": 510202,
+   "params": {
+    "q": "max_pct_increase",
+    "a": "Onshore",
+    "fmt": {
+     "t": "text"
+    }
+   }
+  },
+  "answer_value": "2018",
+  "answer_text": "2018",
+  "prompt": "In which year was the percentage increase on the previous year the largest?",
+  "mode": "reveal",
+  "task": "Estimate the answer to within 10% in under 30 seconds, without the calculator. Write your estimate, then reveal the solution.",
+  "correct": "Quick estimate: Eyeball the chart for the steepest step; here it is 2018. Exact answer: 2018. Your estimate counts if it is within 10% of this.",
+  "explanation": {
+   "steps": [
+    "Percentage change on the previous year: 2017: 12.1%; 2018: 27.0%; 2019: −8.5%; 2020: 18.6%; 2021: 21.6%; 2022: 16.1%.",
+    "The largest is 27.0% in 2018. A bigger absolute rise from a higher base can be a smaller percentage."
+   ],
+   "shortcut": "For percentage growth, compare rise ÷ starting value; a rise from a low bar is worth more."
+  },
+  "trap_tags": [],
+  "est_time_sec": 30
+ },
+ {
+  "id": "NR-002",
+  "category": "numerical",
+  "subtype": "ratio",
+  "difficulty": 2,
+  "source": {
+   "kind": "table",
+   "caption": "Staff by category (staff; fictional figures)",
+   "columns": [
+    "Directorate",
+    "Administrators",
+    "Assistants",
+    "Contract staff",
+    "Trainees"
+   ],
+   "rows": [
+    [
+     "Directorate A",
+     128,
+     80,
+     80,
+     128
+    ],
+    [
+     "Directorate C",
+     40,
+     50,
+     10,
+     90
+    ],
+    [
+     "Directorate E",
+     12,
+     36,
+     72,
+     108
+    ],
+    [
+     "Directorate F",
+     65,
+     117,
+     91,
+     26
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "ratio",
+   "seed": 102222,
+   "params": {
+    "rows": [
+     "Directorate C"
+    ],
+    "num": [
+     "Assistants",
+     "Administrators"
+    ],
+    "den": [
+     "Contract staff"
+    ],
+    "fmt": {
+     "t": "text"
+    }
+   }
+  },
+  "answer_value": "9 : 1",
+  "answer_text": "9 : 1",
+  "prompt": "In Directorate C, what was the ratio of assistants and administrators combined to contract staff?",
+  "mode": "reveal",
+  "task": "Estimate the answer to within 10% in under 30 seconds, without the calculator. Write your estimate, then reveal the solution.",
+  "correct": "Quick estimate: Divide the first figure by the second; 9 : 1 gives 9.00. Exact answer: 9 : 1. Your estimate counts if it is within 10% of this.",
+  "explanation": {
+   "steps": [
+    "Assistants + Administrators in Directorate C: 50 + 40 = 90.",
+    "Ratio to Contract staff (10): 90 : 10, which simplifies to 9 : 1."
+   ],
+   "shortcut": "Check the options before simplifying: the right one must give the same value when you divide its two numbers as when you divide the two figures from the table."
+  },
+  "trap_tags": [],
+  "est_time_sec": 30
+ },
+ {
+  "id": "NR-003",
+  "category": "numerical",
+  "subtype": "survey_percentages",
+  "difficulty": 2,
+  "source": {
+   "kind": "table",
+   "caption": "Survey: “Remote work should remain an option for public-sector staff.” (% of respondents; fictional figures)",
+   "columns": [
+    "Response",
+    "2022 (%)",
+    "2023 (%)"
+   ],
+   "rows": [
+    [
+     "Strongly agree",
+     28,
+     19
+    ],
+    [
+     "Agree",
+     18,
+     18
+    ],
+    [
+     "Neither agree nor disagree",
+     11,
+     24
+    ],
+    [
+     "Disagree",
+     13,
+     22
+    ],
+    [
+     "Strongly disagree",
+     30,
+     17
+    ],
+    [
+     "Number of respondents",
+     2300,
+     3400
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "survey",
+   "seed": 109222,
+   "params": {
+    "q": "diff",
+    "rows": [
+     "Disagree",
+     "Strongly disagree"
+    ],
+    "fmt": {
+     "t": "num",
+     "dp": 0,
+     "unit": "respondents"
+    }
+   }
+  },
+  "answer_value": 337,
+  "answer_text": "337 respondents",
+  "prompt": "How many more (or fewer) respondents disagreed (disagree or strongly disagree) in 2023 than in 2022? (A negative answer means fewer.)",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "337 respondents",
+    "note": "Correct."
+   },
+   {
+    "key": "B",
+    "text": "−92 respondents",
+    "trap": "added_percentages",
+    "note": "Subtracts the percentages first and applies the difference to 2022's sample only."
+   },
+   {
+    "key": "C",
+    "text": "−136 respondents",
+    "trap": "added_percentages",
+    "note": "Subtracts the percentages first and applies the difference to 2023's sample only."
+   },
+   {
+    "key": "D",
+    "text": "−337 respondents",
+    "trap": "reversed_operation",
+    "note": "Subtracts in the wrong order."
+   },
+   {
+    "key": "E",
+    "text": "−112 respondents",
+    "trap": "misread_row",
+    "note": "Counts only “Strongly disagree”."
+   }
+  ],
+  "correct": "A",
+  "explanation": {
+   "steps": [
+    "2022: 43% of 2,300 = 989.",
+    "2023: 39% of 3,400 = 1,326.",
+    "Difference: 1,326 − 989 = 337."
+   ],
+   "shortcut": "Percentages from samples of different sizes cannot be added or averaged directly; convert to head counts first."
+  },
+  "trap_tags": [
+   "added_percentages",
+   "misread_row",
+   "reversed_operation"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-004",
+  "category": "numerical",
+  "subtype": "chart_reading",
+  "difficulty": 2,
+  "source": {
+   "kind": "line",
+   "caption": "Goods exported by rail, 2016–2022 (million tonnes; fictional figures)",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Corridor 1",
+     "values": [
+      63,
+      61,
+      61,
+      68,
+      67,
+      60,
+      54
+     ]
+    },
+    {
+     "name": "Corridor 2",
+     "values": [
+      74,
+      83,
+      103,
+      120,
+      156,
+      172,
+      144
+     ]
+    }
+   ],
+   "unit": "million tonnes"
+  },
+  "recipe": {
+   "name": "chart",
+   "seed": 209243,
+   "params": {
+    "q": "max_gap",
+    "a": "Corridor 1",
+    "b": "Corridor 2",
+    "fmt": {
+     "t": "text"
+    }
+   }
+  },
+  "answer_value": "2021",
+  "answer_text": "2021",
+  "prompt": "In which year was the gap between Corridor 1 and Corridor 2 the largest?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "2016",
+    "trap": "reversed_operation",
+    "note": "The year with the smallest gap."
+   },
+   {
+    "key": "B",
+    "text": "2019",
+    "trap": "misread_row",
+    "note": "The year when Corridor 1 peaked, not when the gap was largest."
+   },
+   {
+    "key": "C",
+    "text": "2020",
+    "trap": "wrong_period",
+    "note": "Off by one year."
+   },
+   {
+    "key": "D",
+    "text": "2021",
+    "note": "Correct."
+   },
+   {
+    "key": "E",
+    "text": "2022",
+    "trap": "rounding_trap",
+    "note": "The second-largest gap (90 vs 112)."
+   }
+  ],
+  "correct": "D",
+  "explanation": {
+   "steps": [
+    "Gap each year: 2016: 11; 2017: 22; 2018: 42; 2019: 52; 2020: 89; 2021: 112; 2022: 90.",
+    "The largest is 112 in 2021."
+   ],
+   "shortcut": "Scan the labelled values pairwise; only the top two or three candidates need exact subtraction."
+  },
+  "trap_tags": [
+   "misread_row",
+   "reversed_operation",
+   "rounding_trap",
+   "wrong_period"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-005",
+  "category": "numerical",
+  "subtype": "percentage_change",
+  "difficulty": 2,
+  "source": {
+   "kind": "table",
+   "caption": "Renewable electricity generation, 2020–2023 (TWh; fictional figures)",
+   "columns": [
+    "Country",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "rows": [
+    [
+     "Croatia",
+     124.8,
+     148.2,
+     175.9,
+     212.5
+    ],
+    [
+     "Lithuania",
+     106.2,
+     126,
+     128.9,
+     144.6
+    ],
+    [
+     "Luxembourg",
+     26.5,
+     29.8,
+     36.7,
+     32.8
+    ],
+    [
+     "Netherlands",
+     138.5,
+     167.2,
+     177.5,
+     162.1
+    ],
+    [
+     "Spain",
+     55.1,
+     57.1,
+     64.9,
+     78.3
+    ]
+   ],
+   "dp": [
+    0,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "recipe": {
+   "name": "pct_change",
+   "seed": 108067,
+   "params": {
+    "rows": [
+     "Netherlands"
+    ],
+    "from": "2020",
+    "to": "2022",
+    "fmt": {
+     "t": "spct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 28.158845,
+  "answer_text": "+28.2%",
+  "prompt": "By what percentage did renewable electricity generation in the Netherlands change between 2020 and 2022?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "+38.5%",
+    "trap": "misread_row",
+    "note": "Reads the Luxembourg row instead of Netherlands."
+   },
+   {
+    "key": "B",
+    "text": "+20.7%",
+    "trap": "wrong_period",
+    "note": "Uses 2021 instead of 2022 as the end year."
+   },
+   {
+    "key": "C",
+    "text": "+22.0%",
+    "trap": "wrong_base",
+    "note": "Divides the change by the 2022 value instead of the 2020 value."
+   },
+   {
+    "key": "D",
+    "text": "−28.2%",
+    "trap": "reversed_operation",
+    "note": "Subtracts in the wrong order, so the sign of the change is reversed."
+   },
+   {
+    "key": "E",
+    "text": "+28.2%",
+    "note": "Correct."
+   }
+  ],
+  "correct": "E",
+  "explanation": {
+   "steps": [
+    "Read Netherlands: 2020 = 138.5, 2022 = 177.5.",
+    "Change = 177.5 − 138.5 = 39.0.",
+    "Percentage change = 39.0 ÷ 138.5 × 100 = +28.2%."
+   ],
+   "shortcut": "Divide new by old: 177.5 ÷ 138.5 = 1.282; subtract 1 and read it as a percentage (+28.2%)."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "reversed_operation",
+   "wrong_period",
+   "misread_row"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-006",
+  "category": "numerical",
+  "subtype": "chart_reading",
+  "difficulty": 2,
+  "source": {
+   "kind": "line",
+   "caption": "Visitors to EU-funded heritage sites, 2017–2023 (thousand; fictional figures)",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Northern region",
+     "values": [
+      348,
+      440,
+      561,
+      591,
+      541,
+      583,
+      575
+     ]
+    },
+    {
+     "name": "Southern region",
+     "values": [
+      392,
+      354,
+      416,
+      453,
+      572,
+      686,
+      861
+     ]
+    }
+   ],
+   "unit": "thousand"
+  },
+  "recipe": {
+   "name": "chart",
+   "seed": 137935,
+   "params": {
+    "q": "max_gap",
+    "a": "Northern region",
+    "b": "Southern region",
+    "fmt": {
+     "t": "text"
+    }
+   }
+  },
+  "answer_value": "2023",
+  "answer_text": "2023",
+  "prompt": "In which year was the gap between Northern region and Southern region the largest?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "2020",
+    "trap": "misread_row",
+    "note": "The year when Northern region peaked, not when the gap was largest."
+   },
+   {
+    "key": "B",
+    "text": "2023",
+    "note": "Correct."
+   },
+   {
+    "key": "C",
+    "text": "2019",
+    "trap": "rounding_trap",
+    "note": "The second-largest gap (145 vs 286)."
+   },
+   {
+    "key": "D",
+    "text": "2021",
+    "trap": "reversed_operation",
+    "note": "The year with the smallest gap."
+   },
+   {
+    "key": "E",
+    "text": "2022",
+    "trap": "wrong_period",
+    "note": "Off by one year."
+   }
+  ],
+  "correct": "B",
+  "explanation": {
+   "steps": [
+    "Gap each year: 2017: 44; 2018: 86; 2019: 145; 2020: 138; 2021: 31; 2022: 103; 2023: 286.",
+    "The largest is 286 in 2023."
+   ],
+   "shortcut": "Scan the labelled values pairwise; only the top two or three candidates need exact subtraction."
+  },
+  "trap_tags": [
+   "misread_row",
+   "reversed_operation",
+   "rounding_trap",
+   "wrong_period"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-007",
+  "category": "numerical",
+  "subtype": "percentage_change",
+  "difficulty": 3,
+  "source": {
+   "kind": "table",
+   "caption": "Rail freight transported, 2021–2024 (million tonnes; fictional figures)",
+   "columns": [
+    "Country",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "rows": [
+    [
+     "Finland",
+     85.3,
+     88.6,
+     89.3,
+     88.2
+    ],
+    [
+     "France",
+     92.8,
+     96.5,
+     105.4,
+     88.7
+    ],
+    [
+     "Ireland",
+     94,
+     105.3,
+     93.1,
+     96.6
+    ],
+    [
+     "Malta",
+     87.1,
+     77.9,
+     97.6,
+     111
+    ],
+    [
+     "Slovakia",
+     16.2,
+     16.9,
+     19.8,
+     19.5
+    ]
+   ],
+   "dp": [
+    0,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "recipe": {
+   "name": "pct_change",
+   "seed": 100370,
+   "params": {
+    "rows": [
+     "Finland",
+     "Malta"
+    ],
+    "from": "2021",
+    "to": "2023",
+    "fmt": {
+     "t": "spct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 8.410673,
+  "answer_text": "+8.4%",
+  "prompt": "By what percentage did the combined rail freight transported of Finland and Malta change between 2021 and 2023?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "+7.8%",
+    "trap": "wrong_base",
+    "note": "Divides the change by the 2023 value instead of the 2021 value."
+   },
+   {
+    "key": "B",
+    "text": "−3.4%",
+    "trap": "wrong_period",
+    "note": "Uses 2022 instead of 2023 as the end year."
+   },
+   {
+    "key": "C",
+    "text": "+8.4%",
+    "note": "Correct."
+   },
+   {
+    "key": "D",
+    "text": "−8.4%",
+    "trap": "reversed_operation",
+    "note": "Subtracts in the wrong order, so the sign of the change is reversed."
+   },
+   {
+    "key": "E",
+    "text": "+16.7%",
+    "trap": "added_percentages",
+    "note": "Adds the two countries’ percentage changes instead of using their combined totals."
+   }
+  ],
+  "correct": "C",
+  "explanation": {
+   "steps": [
+    "Add the two countries: 2021: 85.3 + 87.1 = 172.4; 2023: 89.3 + 97.6 = 186.9.",
+    "Change = 186.9 − 172.4 = 14.5.",
+    "Percentage change = 14.5 ÷ 172.4 × 100 = +8.4%."
+   ],
+   "shortcut": "Divide new by old: 186.9 ÷ 172.4 = 1.084; subtract 1 and read it as a percentage (+8.4%)."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "reversed_operation",
+   "wrong_period",
+   "added_percentages"
+  ],
+  "est_time_sec": 150
+ },
+ {
+  "id": "NR-008",
+  "category": "numerical",
+  "subtype": "survey_percentages",
+  "difficulty": 2,
+  "source": {
+   "kind": "table",
+   "caption": "Survey: “Public transport in my city meets my needs.” (% of respondents; fictional figures)",
+   "columns": [
+    "Response",
+    "2021 (%)",
+    "2022 (%)"
+   ],
+   "rows": [
+    [
+     "Strongly agree",
+     18,
+     22
+    ],
+    [
+     "Agree",
+     16,
+     10
+    ],
+    [
+     "Neither agree nor disagree",
+     27,
+     21
+    ],
+    [
+     "Disagree",
+     28,
+     24
+    ],
+    [
+     "Strongly disagree",
+     11,
+     23
+    ],
+    [
+     "Number of respondents",
+     4200,
+     2200
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "survey",
+   "seed": 109111,
+   "params": {
+    "q": "diff",
+    "rows": [
+     "Disagree",
+     "Strongly disagree"
+    ],
+    "fmt": {
+     "t": "num",
+     "dp": 0,
+     "unit": "respondents"
+    }
+   }
+  },
+  "answer_value": -604,
+  "answer_text": "−604 respondents",
+  "prompt": "How many more (or fewer) respondents disagreed (disagree or strongly disagree) in 2022 than in 2021? (A negative answer means fewer.)",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "44 respondents",
+    "trap": "misread_row",
+    "note": "Counts only “Strongly disagree”."
+   },
+   {
+    "key": "B",
+    "text": "604 respondents",
+    "trap": "reversed_operation",
+    "note": "Subtracts in the wrong order."
+   },
+   {
+    "key": "C",
+    "text": "176 respondents",
+    "trap": "added_percentages",
+    "note": "Subtracts the percentages first and applies the difference to 2022's sample only."
+   },
+   {
+    "key": "D",
+    "text": "336 respondents",
+    "trap": "added_percentages",
+    "note": "Subtracts the percentages first and applies the difference to 2021's sample only."
+   },
+   {
+    "key": "E",
+    "text": "−604 respondents",
+    "note": "Correct."
+   }
+  ],
+  "correct": "E",
+  "explanation": {
+   "steps": [
+    "2021: 39% of 4,200 = 1,638.",
+    "2022: 47% of 2,200 = 1,034.",
+    "Difference: 1,034 − 1,638 = -604."
+   ],
+   "shortcut": "Percentages from samples of different sizes cannot be added or averaged directly; convert to head counts first."
+  },
+  "trap_tags": [
+   "added_percentages",
+   "misread_row",
+   "reversed_operation"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-009",
+  "category": "numerical",
+  "subtype": "currency_conversion",
+  "difficulty": 3,
+  "source": {
+   "kind": "table",
+   "caption": "Reference exchange rates on the day of payment (units of currency per €1; fictional rates)",
+   "columns": [
+    "Currency",
+    "Units per €1"
+   ],
+   "rows": [
+    [
+     "Czech koruna (CZK)",
+     24.34
+    ],
+    [
+     "Hungarian forint (HUF)",
+     373.7
+    ],
+    [
+     "Romanian leu (RON)",
+     5.131
+    ],
+    [
+     "Swedish krona (SEK)",
+     11.72
+    ],
+    [
+     "US dollar (USD)",
+     1.104
+    ]
+   ]
+  },
+  "recipe": {
+   "name": "currency",
+   "seed": 104370,
+   "params": {
+    "dir": "cross",
+    "amount": 256500,
+    "cur": "Romanian leu (RON)",
+    "to": "US dollar (USD)",
+    "fee": 5,
+    "fmt": {
+     "t": "num",
+     "dp": 0,
+     "unit": "USD"
+    }
+   }
+  },
+  "answer_value": 52429.77977,
+  "answer_text": "52,430 USD",
+  "prompt": "A payment of 256,500 RON is converted into euros, a 5.0% conversion fee is deducted from the euro amount, and the rest is converted into USD. How many USD are received?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "556,592 USD",
+    "trap": "misread_row",
+    "note": "Uses the wrong target-currency rate."
+   },
+   {
+    "key": "B",
+    "text": "57,949 USD",
+    "trap": "reversed_operation",
+    "note": "Adds the fee instead of deducting it."
+   },
+   {
+    "key": "C",
+    "text": "52,430 USD",
+    "note": "Correct."
+   },
+   {
+    "key": "D",
+    "text": "55,189 USD",
+    "trap": "wrong_base",
+    "note": "Forgets to deduct the bank fee."
+   },
+   {
+    "key": "E",
+    "text": "1,132,515 USD",
+    "trap": "reversed_operation",
+    "note": "Uses both rates the wrong way round."
+   }
+  ],
+  "correct": "C",
+  "explanation": {
+   "steps": [
+    "To euros: 256,500 ÷ 5.131 = €49,990.26.",
+    "Deduct the 5.0% fee: × 0.950 = €47,490.74.",
+    "To USD: × 1.104 = 52,430 USD."
+   ],
+   "shortcut": "Rates are quoted per €1: going INTO the foreign currency you multiply, coming BACK to euros you divide. Check the answer is the right size for the currency."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "reversed_operation",
+   "misread_row"
+  ],
+  "est_time_sec": 150
+ },
+ {
+  "id": "NR-010",
+  "category": "numerical",
+  "subtype": "survey_percentages",
+  "difficulty": 3,
+  "source": {
+   "kind": "table",
+   "caption": "Survey: “I trust the information published by public authorities.” (% of respondents; fictional figures)",
+   "columns": [
+    "Response",
+    "2021 (%)",
+    "2022 (%)"
+   ],
+   "rows": [
+    [
+     "Strongly agree",
+     26,
+     20
+    ],
+    [
+     "Agree",
+     14,
+     26
+    ],
+    [
+     "Neither agree nor disagree",
+     30,
+     17
+    ],
+    [
+     "Disagree",
+     14,
+     14
+    ],
+    [
+     "Strongly disagree",
+     16,
+     23
+    ],
+    [
+     "Number of respondents",
+     4300,
+     3200
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "survey",
+   "seed": 117252,
+   "params": {
+    "q": "pooled",
+    "rows": [
+     "Neither agree nor disagree"
+    ],
+    "fmt": {
+     "t": "pct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 24.453333,
+  "answer_text": "24.5%",
+  "prompt": "Taking both survey years together, what percentage of all respondents answered “Neither agree nor disagree”?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "24.5%",
+    "note": "Correct."
+   },
+   {
+    "key": "B",
+    "text": "47.0%",
+    "trap": "added_percentages",
+    "note": "Adds the two percentages."
+   },
+   {
+    "key": "C",
+    "text": "19.1%",
+    "trap": "misread_row",
+    "note": "Reads the “Agree” row."
+   },
+   {
+    "key": "D",
+    "text": "23.5%",
+    "trap": "added_percentages",
+    "note": "Averages the two percentages, ignoring the different sample sizes."
+   },
+   {
+    "key": "E",
+    "text": "57.3%",
+    "trap": "wrong_base",
+    "note": "Divides by 2022's respondents only."
+   }
+  ],
+  "correct": "A",
+  "explanation": {
+   "steps": [
+    "Respondents answering “Neither agree nor disagree”: 30% × 4,300 = 1,290; 17% × 3,200 = 544.",
+    "Total: 1,834 out of 7,500 = 24.5%."
+   ],
+   "shortcut": "Percentages from samples of different sizes cannot be added or averaged directly; convert to head counts first."
+  },
+  "trap_tags": [
+   "added_percentages",
+   "misread_row",
+   "wrong_base"
+  ],
+  "est_time_sec": 150
+ },
+ {
+  "id": "NR-011",
+  "category": "numerical",
+  "subtype": "average",
+  "difficulty": 1,
+  "source": {
+   "kind": "table",
+   "caption": "Public research grants awarded, 2020–2024 (grants; fictional figures)",
+   "columns": [
+    "Country",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "rows": [
+    [
+     "Estonia",
+     853,
+     916,
+     775,
+     737,
+     864
+    ],
+    [
+     "Finland",
+     957,
+     895,
+     1001,
+     967,
+     1167
+    ],
+    [
+     "Italy",
+     707,
+     707,
+     755,
+     872,
+     1039
+    ],
+    [
+     "Latvia",
+     159,
+     150,
+     164,
+     178,
+     193
+    ],
+    [
+     "Portugal",
+     756,
+     871,
+     873,
+     967,
+     812
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "average",
+   "seed": 103111,
+   "params": {
+    "rows": [
+     "Estonia",
+     "Finland",
+     "Italy",
+     "Latvia",
+     "Portugal"
+    ],
+    "cols": [
+     "2022"
+    ],
+    "fmt": {
+     "t": "num",
+     "dp": 1,
+     "unit": "grants"
+    }
+   }
+  },
+  "answer_value": 713.6,
+  "answer_text": "713.6 grants",
+  "prompt": "Across the five countries, what was the average value in 2022?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "641.8 grants",
+    "trap": "misread_row",
+    "note": "Leaves out the highest country."
+   },
+   {
+    "key": "B",
+    "text": "713.6 grants",
+    "note": "Correct."
+   },
+   {
+    "key": "C",
+    "text": "892.0 grants",
+    "trap": "wrong_base",
+    "note": "Divides the total by 4 instead of 5."
+   },
+   {
+    "key": "D",
+    "text": "582.5 grants",
+    "trap": "wrong_base",
+    "note": "Averages only the highest and lowest values."
+   },
+   {
+    "key": "E",
+    "text": "775.0 grants",
+    "trap": "wrong_base",
+    "note": "Takes the middle value (median) instead of the mean."
+   }
+  ],
+  "correct": "B",
+  "explanation": {
+   "steps": [
+    "Add the 2022 column: 775 + 1,001 + 755 + 164 + 873 = 3,568.",
+    "Divide by 5: 713.6 grants."
+   ],
+   "shortcut": "Pick a round baseline near the values, average the differences from it, then add the baseline back."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "misread_row"
+  ],
+  "est_time_sec": 80
+ },
+ {
+  "id": "NR-012",
+  "category": "numerical",
+  "subtype": "percentage_change",
+  "difficulty": 1,
+  "source": {
+   "kind": "table",
+   "caption": "Patent applications filed, 2021–2024 (applications; fictional figures)",
+   "columns": [
+    "Country",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "rows": [
+    [
+     "Belgium",
+     10022,
+     12042,
+     13198,
+     14369
+    ],
+    [
+     "Germany",
+     5004,
+     6203,
+     7478,
+     8258
+    ],
+    [
+     "Slovakia",
+     7103,
+     6072,
+     5839,
+     6933
+    ],
+    [
+     "Spain",
+     10655,
+     11825,
+     10519,
+     9389
+    ],
+    [
+     "Sweden",
+     3661,
+     4475,
+     4383,
+     3816
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "pct_change",
+   "seed": 100074,
+   "params": {
+    "rows": [
+     "Germany"
+    ],
+    "from": "2023",
+    "to": "2024",
+    "fmt": {
+     "t": "spct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 10.430596,
+  "answer_text": "+10.4%",
+  "prompt": "By what percentage did patent applications filed in Germany change between 2023 and 2024?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "−33.1%",
+    "trap": "wrong_period",
+    "note": "Uses 2021 instead of 2024 as the end year."
+   },
+   {
+    "key": "B",
+    "text": "+8.9%",
+    "trap": "misread_row",
+    "note": "Reads the Belgium row instead of Germany."
+   },
+   {
+    "key": "C",
+    "text": "+9.4%",
+    "trap": "wrong_base",
+    "note": "Divides the change by the 2024 value instead of the 2023 value."
+   },
+   {
+    "key": "D",
+    "text": "+10.4%",
+    "note": "Correct."
+   },
+   {
+    "key": "E",
+    "text": "−10.4%",
+    "trap": "reversed_operation",
+    "note": "Subtracts in the wrong order, so the sign of the change is reversed."
+   }
+  ],
+  "correct": "D",
+  "explanation": {
+   "steps": [
+    "Read Germany: 2023 = 7,478, 2024 = 8,258.",
+    "Change = 8,258 − 7,478 = 780.",
+    "Percentage change = 780 ÷ 7,478 × 100 = +10.4%."
+   ],
+   "shortcut": "Divide new by old: 8,258 ÷ 7,478 = 1.104; subtract 1 and read it as a percentage (+10.4%)."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "reversed_operation",
+   "wrong_period",
+   "misread_row"
+  ],
+  "est_time_sec": 80
+ },
+ {
+  "id": "NR-013",
+  "category": "numerical",
+  "subtype": "ratio",
+  "difficulty": 3,
+  "source": {
+   "kind": "table",
+   "caption": "Staff by category (staff; fictional figures)",
+   "columns": [
+    "Directorate",
+    "Administrators",
+    "Assistants",
+    "Contract staff",
+    "Trainees"
+   ],
+   "rows": [
+    [
+     "Directorate B",
+     81,
+     27,
+     81,
+     81
+    ],
+    [
+     "Directorate C",
+     4,
+     4,
+     24,
+     28
+    ],
+    [
+     "Directorate D",
+     96,
+     84,
+     108,
+     84
+    ],
+    [
+     "Directorate E",
+     24,
+     12,
+     24,
+     72
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "ratio",
+   "seed": 118171,
+   "params": {
+    "rows": [
+     "Directorate B",
+     "Directorate E"
+    ],
+    "num": [
+     "Assistants"
+    ],
+    "den": [
+     "Administrators"
+    ],
+    "fmt": {
+     "t": "text"
+    }
+   }
+  },
+  "answer_value": "13 : 35",
+  "answer_text": "13 : 35",
+  "prompt": "Taking Directorate B and Directorate E together, what was the ratio of assistants to administrators?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "13 : 35",
+    "note": "Correct."
+   },
+   {
+    "key": "B",
+    "text": "1 : 3",
+    "trap": "misread_row",
+    "note": "Uses Directorate B only."
+   },
+   {
+    "key": "C",
+    "text": "1 : 2",
+    "trap": "misread_row",
+    "note": "Uses Directorate E only."
+   },
+   {
+    "key": "D",
+    "text": "5 : 12",
+    "trap": "added_percentages",
+    "note": "Averages the two separate ratios instead of combining the underlying figures."
+   },
+   {
+    "key": "E",
+    "text": "35 : 13",
+    "trap": "reversed_operation",
+    "note": "The ratio is the wrong way round."
+   }
+  ],
+  "correct": "A",
+  "explanation": {
+   "steps": [
+    "Assistants: 27 + 12 = 39. Administrators: 81 + 24 = 105.",
+    "Ratio 39 : 105 simplifies to 13 : 35."
+   ],
+   "shortcut": "Check the options before simplifying: the right one must give the same value when you divide its two numbers as when you divide the two figures from the table."
+  },
+  "trap_tags": [
+   "reversed_operation",
+   "misread_row",
+   "added_percentages"
+  ],
+  "est_time_sec": 150
+ },
+ {
+  "id": "NR-014",
+  "category": "numerical",
+  "subtype": "per_capita",
+  "difficulty": 2,
+  "source": {
+   "kind": "table",
+   "caption": "Municipal waste and population (fictional figures)",
+   "columns": [
+    "Country",
+    "Municipal waste (thousand tonnes)",
+    "Population (million)",
+    "Households (million)"
+   ],
+   "rows": [
+    [
+     "Croatia",
+     600.6,
+     3.3,
+     0.5
+    ],
+    [
+     "Ireland",
+     9908.6,
+     18.8,
+     5.7
+    ],
+    [
+     "Malta",
+     6439.6,
+     14.2,
+     2.4
+    ],
+    [
+     "Netherlands",
+     8336.1,
+     11.7,
+     1.8
+    ],
+    [
+     "Romania",
+     1115.6,
+     1.9,
+     0.3
+    ]
+   ],
+   "dp": [
+    0,
+    1,
+    1,
+    1
+   ]
+  },
+  "recipe": {
+   "name": "per_capita",
+   "seed": 123023,
+   "params": {
+    "q": "max",
+    "total": "Municipal waste (thousand tonnes)",
+    "pop": "Population (million)",
+    "factor": 1,
+    "fmt": {
+     "t": "text"
+    }
+   }
+  },
+  "answer_value": "Netherlands",
+  "answer_text": "Netherlands",
+  "prompt": "Which country had the highest municipal waste per person (kg)?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "Romania",
+    "trap": "rounding_trap",
+    "note": "Second highest (587 kg vs 712 kg)."
+   },
+   {
+    "key": "B",
+    "text": "Malta",
+    "trap": "misread_row",
+    "note": "Malta: 453 kg per person."
+   },
+   {
+    "key": "C",
+    "text": "Ireland",
+    "trap": "wrong_base",
+    "note": "Has the largest total, not the largest amount per person."
+   },
+   {
+    "key": "D",
+    "text": "Croatia",
+    "trap": "reversed_operation",
+    "note": "Has the lowest value per person."
+   },
+   {
+    "key": "E",
+    "text": "Netherlands",
+    "note": "Correct."
+   }
+  ],
+  "correct": "E",
+  "explanation": {
+   "steps": [
+    "Divide each total by its population: Croatia 182 kg; Ireland 527 kg; Malta 453 kg; Netherlands 712 kg; Romania 587 kg.",
+    "Highest: Netherlands."
+   ],
+   "shortcut": "Settle the units once (billion ÷ million = thousand) and compare per-person values only; totals and populations alone are traps."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "reversed_operation",
+   "rounding_trap",
+   "misread_row"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-015",
+  "category": "numerical",
+  "subtype": "multi_period_growth",
+  "difficulty": 1,
+  "source": {
+   "kind": "text",
+   "caption": "Fictional figures",
+   "body": "The operating budget of a regional development agency was €444.9 million in 2021. It rose by 16% in 2022 and rose by 5% in 2023.",
+   "facts": {
+    "base": 444.9,
+    "year0": 2021,
+    "g1": 16,
+    "g2": 5
+   }
+  },
+  "recipe": {
+   "name": "growth",
+   "seed": 128757,
+   "params": {
+    "fmt": {
+     "t": "num",
+     "dp": 1,
+     "prefix": "€",
+     "unit": "million"
+    },
+    "n": 2
+   }
+  },
+  "answer_value": 541.8882,
+  "answer_text": "€541.9 million",
+  "prompt": "What was the figure at the end of 2023?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "€516.1 million",
+    "trap": "wrong_period",
+    "note": "Stops at 2022 and leaves out the last change."
+   },
+   {
+    "key": "B",
+    "text": "€467.1 million",
+    "trap": "wrong_period",
+    "note": "Applies only the 2023 change."
+   },
+   {
+    "key": "C",
+    "text": "€97.0 million",
+    "trap": "wrong_base",
+    "note": "Gives the change in value rather than the final value."
+   },
+   {
+    "key": "D",
+    "text": "€541.9 million",
+    "note": "Correct."
+   },
+   {
+    "key": "E",
+    "text": "€490.3 million",
+    "trap": "reversed_operation",
+    "note": "Treats the 2023 rise as a fall."
+   }
+  ],
+  "correct": "D",
+  "explanation": {
+   "steps": [
+    "Turn each change into a multiplier: 1.16, 1.05.",
+    "Apply them in turn: 444.9 × 1.16 × 1.05 = €541.9 million."
+   ],
+   "shortcut": "Successive percentage changes multiply, they never add. Combine the multipliers first, then do one multiplication or division."
+  },
+  "trap_tags": [
+   "wrong_period",
+   "wrong_base",
+   "reversed_operation"
+  ],
+  "est_time_sec": 80
+ },
+ {
+  "id": "NR-016",
+  "category": "numerical",
+  "subtype": "ratio",
+  "difficulty": 3,
+  "source": {
+   "kind": "table",
+   "caption": "Electricity generation by source (GWh; fictional figures)",
+   "columns": [
+    "Country",
+    "Wind",
+    "Solar",
+    "Hydro",
+    "Biomass"
+   ],
+   "rows": [
+    [
+     "Belgium",
+     603,
+     201,
+     201,
+     804
+    ],
+    [
+     "Denmark",
+     225,
+     375,
+     75,
+     375
+    ],
+    [
+     "Hungary",
+     338,
+     1352,
+     1521,
+     1521
+    ],
+    [
+     "Romania",
+     855,
+     684,
+     171,
+     855
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "ratio",
+   "seed": 134046,
+   "params": {
+    "rows": [
+     "Denmark",
+     "Romania"
+    ],
+    "num": [
+     "Biomass"
+    ],
+    "den": [
+     "Wind"
+    ],
+    "fmt": {
+     "t": "text"
+    }
+   }
+  },
+  "answer_value": "41 : 36",
+  "answer_text": "41 : 36",
+  "prompt": "Taking Denmark and Romania together, what was the ratio of biomass to wind?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "1 : 1",
+    "trap": "misread_row",
+    "note": "Uses Romania only."
+   },
+   {
+    "key": "B",
+    "text": "5 : 3",
+    "trap": "misread_row",
+    "note": "Uses Denmark only."
+   },
+   {
+    "key": "C",
+    "text": "41 : 36",
+    "note": "Correct."
+   },
+   {
+    "key": "D",
+    "text": "4 : 3",
+    "trap": "added_percentages",
+    "note": "Averages the two separate ratios instead of combining the underlying figures."
+   },
+   {
+    "key": "E",
+    "text": "36 : 41",
+    "trap": "reversed_operation",
+    "note": "The ratio is the wrong way round."
+   }
+  ],
+  "correct": "C",
+  "explanation": {
+   "steps": [
+    "Biomass: 375 + 855 = 1,230. Wind: 225 + 855 = 1,080.",
+    "Ratio 1,230 : 1,080 simplifies to 41 : 36."
+   ],
+   "shortcut": "Check the options before simplifying: the right one must give the same value when you divide its two numbers as when you divide the two figures from the table."
+  },
+  "trap_tags": [
+   "reversed_operation",
+   "misread_row",
+   "added_percentages"
+  ],
+  "est_time_sec": 150
+ },
+ {
+  "id": "NR-017",
+  "category": "numerical",
+  "subtype": "multi_period_growth",
+  "difficulty": 3,
+  "source": {
+   "kind": "text",
+   "caption": "Fictional figures",
+   "body": "The number of registered electric vans in one member state rose by 15% in 2020, rose by 16% in 2021 and fell by 18% in 2022, reaching 115.6 thousand vans at the end of 2022.",
+   "facts": {
+    "year0": 2019,
+    "g1": 15,
+    "g2": 16,
+    "g3": -18,
+    "final": 115.6
+   }
+  },
+  "recipe": {
+   "name": "growth",
+   "seed": 1206111,
+   "params": {
+    "fmt": {
+     "t": "num",
+     "dp": 1,
+     "prefix": "",
+     "unit": "thousand vans"
+    },
+    "n": 3
+   }
+  },
+  "answer_value": 105.678868,
+  "answer_text": "105.7 thousand vans",
+  "prompt": "What was the figure in 2019, before these changes?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "126.5 thousand vans",
+    "trap": "reversed_operation",
+    "note": "Applies the changes forwards again instead of undoing them."
+   },
+   {
+    "key": "B",
+    "text": "105.7 thousand vans",
+    "note": "Correct."
+   },
+   {
+    "key": "C",
+    "text": "100.6 thousand vans",
+    "trap": "added_percentages",
+    "note": "Subtracts the summed percentages from the final value; percentages of the final value are not percentages of the start."
+   },
+   {
+    "key": "D",
+    "text": "121.5 thousand vans",
+    "trap": "wrong_period",
+    "note": "Undoes only the last 2 changes."
+   },
+   {
+    "key": "E",
+    "text": "97.4 thousand vans",
+    "trap": "wrong_base",
+    "note": "Reverses each change by applying the opposite percentage, which uses the wrong base."
+   }
+  ],
+  "correct": "B",
+  "explanation": {
+   "steps": [
+    "Turn each change into a multiplier: 1.15, 1.16, 0.82; combined: 1.0939.",
+    "Undo them by dividing: 115.6 ÷ 1.0939 = 105.7 thousand vans."
+   ],
+   "shortcut": "Successive percentage changes multiply, they never add. Combine the multipliers first, then do one multiplication or division."
+  },
+  "trap_tags": [
+   "added_percentages",
+   "wrong_base",
+   "wrong_period",
+   "reversed_operation"
+  ],
+  "est_time_sec": 150
+ },
+ {
+  "id": "NR-018",
+  "category": "numerical",
+  "subtype": "ratio",
+  "difficulty": 2,
+  "source": {
+   "kind": "table",
+   "caption": "Electricity generation by source (GWh; fictional figures)",
+   "columns": [
+    "Country",
+    "Wind",
+    "Solar",
+    "Hydro",
+    "Biomass"
+   ],
+   "rows": [
+    [
+     "Czechia",
+     3555,
+     790,
+     2765,
+     3160
+    ],
+    [
+     "Estonia",
+     1269,
+     423,
+     1128,
+     282
+    ],
+    [
+     "Germany",
+     1320,
+     528,
+     2376,
+     528
+    ],
+    [
+     "Ireland",
+     376,
+     752,
+     2256,
+     376
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "ratio",
+   "seed": 102296,
+   "params": {
+    "rows": [
+     "Estonia"
+    ],
+    "num": [
+     "Solar",
+     "Hydro"
+    ],
+    "den": [
+     "Biomass"
+    ],
+    "fmt": {
+     "t": "text"
+    }
+   }
+  },
+  "answer_value": "11 : 2",
+  "answer_text": "11 : 2",
+  "prompt": "In Estonia, what was the ratio of solar and hydro combined to biomass?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "11 : 2",
+    "note": "Correct."
+   },
+   {
+    "key": "B",
+    "text": "9 : 8",
+    "trap": "misread_row",
+    "note": "Reads the Czechia row."
+   },
+   {
+    "key": "C",
+    "text": "3 : 2",
+    "trap": "misread_row",
+    "note": "Uses solar only and forgets to add hydro."
+   },
+   {
+    "key": "D",
+    "text": "2 : 11",
+    "trap": "reversed_operation",
+    "note": "The ratio is the wrong way round."
+   },
+   {
+    "key": "E",
+    "text": "11 : 13",
+    "trap": "wrong_base",
+    "note": "Compares the combined figure with the total of all three columns."
+   }
+  ],
+  "correct": "A",
+  "explanation": {
+   "steps": [
+    "Solar + Hydro in Estonia: 423 + 1,128 = 1,551.",
+    "Ratio to Biomass (282): 1,551 : 282, which simplifies to 11 : 2."
+   ],
+   "shortcut": "Check the options before simplifying: the right one must give the same value when you divide its two numbers as when you divide the two figures from the table."
+  },
+  "trap_tags": [
+   "reversed_operation",
+   "misread_row",
+   "wrong_base"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-019",
+  "category": "numerical",
+  "subtype": "combined_units",
+  "difficulty": 3,
+  "source": {
+   "kind": "text",
+   "caption": "Fictional figures",
+   "body": "A solar park has an installed capacity of 94 MW. Over a year (8,760 hours) it produces on average 15% of its maximum possible output. The electricity is sold at €90 per MWh. An average household uses 2,700 kWh of electricity a year.",
+   "facts": {
+    "mw": 94,
+    "cf": 15,
+    "price": 90,
+    "kwh_home": 2700
+   }
+  },
+  "recipe": {
+   "name": "combined",
+   "seed": 108333,
+   "params": {
+    "q": "solar_homes",
+    "fmt": {
+     "t": "num",
+     "dp": 0,
+     "unit": "households"
+    }
+   }
+  },
+  "answer_value": 45746,
+  "answer_text": "45,746 households",
+  "prompt": "How many average households could the park supply for a full year (whole households)?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "45 households",
+    "trap": "unit_slip",
+    "note": "Forgets to convert MWh to kWh (× 1,000)."
+   },
+   {
+    "key": "B",
+    "text": "304,977 households",
+    "trap": "wrong_base",
+    "note": "Ignores the capacity factor."
+   },
+   {
+    "key": "C",
+    "text": "45,746 households",
+    "note": "Correct."
+   },
+   {
+    "key": "D",
+    "text": "457,460 households",
+    "trap": "unit_slip",
+    "note": "Unit slip: a factor of 10."
+   },
+   {
+    "key": "E",
+    "text": "259,231 households",
+    "trap": "reversed_operation",
+    "note": "Uses the share of time NOT producing."
+   }
+  ],
+  "correct": "C",
+  "explanation": {
+   "steps": [
+    "Output: 94 × 8,760 × 15% = 123,516 MWh = 123,516,000 kWh.",
+    "Households: 123,516,000 ÷ 2,700 = 45,746.7, so 45,746 whole households."
+   ],
+   "shortcut": "MW × hours = MWh. Apply the capacity factor once, and convert MWh to kWh (× 1,000) only when comparing with household use."
+  },
+  "trap_tags": [
+   "unit_slip",
+   "wrong_base",
+   "reversed_operation"
+  ],
+  "est_time_sec": 150
+ },
+ {
+  "id": "NR-020",
+  "category": "numerical",
+  "subtype": "percentage_change",
+  "difficulty": 2,
+  "source": {
+   "kind": "table",
+   "caption": "Rail freight transported, 2021–2024 (million tonnes; fictional figures)",
+   "columns": [
+    "Country",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "rows": [
+    [
+     "Bulgaria",
+     119.7,
+     125.7,
+     140.1,
+     124
+    ],
+    [
+     "Italy",
+     96,
+     95.4,
+     115.7,
+     110.1
+    ],
+    [
+     "Slovakia",
+     96.7,
+     85.9,
+     77.7,
+     79.2
+    ],
+    [
+     "Spain",
+     63.4,
+     68.3,
+     61.6,
+     58
+    ],
+    [
+     "Sweden",
+     114.2,
+     140.7,
+     142,
+     167.8
+    ]
+   ],
+   "dp": [
+    0,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "recipe": {
+   "name": "pct_change",
+   "seed": 100296,
+   "params": {
+    "rows": [
+     "Italy"
+    ],
+    "from": "2022",
+    "to": "2024",
+    "fmt": {
+     "t": "spct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 15.408805,
+  "answer_text": "+15.4%",
+  "prompt": "By what percentage did rail freight transported in Italy change between 2022 and 2024?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "−1.4%",
+    "trap": "misread_row",
+    "note": "Reads the Bulgaria row instead of Italy."
+   },
+   {
+    "key": "B",
+    "text": "+15.4%",
+    "note": "Correct."
+   },
+   {
+    "key": "C",
+    "text": "−15.4%",
+    "trap": "reversed_operation",
+    "note": "Subtracts in the wrong order, so the sign of the change is reversed."
+   },
+   {
+    "key": "D",
+    "text": "+0.6%",
+    "trap": "wrong_period",
+    "note": "Uses 2021 instead of 2024 as the end year."
+   },
+   {
+    "key": "E",
+    "text": "+13.4%",
+    "trap": "wrong_base",
+    "note": "Divides the change by the 2024 value instead of the 2022 value."
+   }
+  ],
+  "correct": "B",
+  "explanation": {
+   "steps": [
+    "Read Italy: 2022 = 95.4, 2024 = 110.1.",
+    "Change = 110.1 − 95.4 = 14.7.",
+    "Percentage change = 14.7 ÷ 95.4 × 100 = +15.4%."
+   ],
+   "shortcut": "Divide new by old: 110.1 ÷ 95.4 = 1.154; subtract 1 and read it as a percentage (+15.4%)."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "reversed_operation",
+   "wrong_period",
+   "misread_row"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-021",
+  "category": "numerical",
+  "subtype": "currency_conversion",
+  "difficulty": 1,
+  "source": {
+   "kind": "table",
+   "caption": "Reference exchange rates on the day of payment (units of currency per €1; fictional rates)",
+   "columns": [
+    "Currency",
+    "Units per €1"
+   ],
+   "rows": [
+    [
+     "Czech koruna (CZK)",
+     25.94
+    ],
+    [
+     "Danish krone (DKK)",
+     7.671
+    ],
+    [
+     "Hungarian forint (HUF)",
+     407.4
+    ],
+    [
+     "Icelandic krona (ISK)",
+     148.9
+    ],
+    [
+     "Polish zloty (PLN)",
+     4.173
+    ]
+   ]
+  },
+  "recipe": {
+   "name": "currency",
+   "seed": 111919,
+   "params": {
+    "dir": "from_eur",
+    "amount": 2850,
+    "cur": "Hungarian forint (HUF)",
+    "fmt": {
+     "t": "num",
+     "dp": 0,
+     "unit": "HUF"
+    }
+   }
+  },
+  "answer_value": 1161090,
+  "answer_text": "1,161,090 HUF",
+  "prompt": "A supplier is owed €2,850. How much is this in HUF?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "7 HUF",
+    "trap": "reversed_operation",
+    "note": "Divides by the rate instead of multiplying."
+   },
+   {
+    "key": "B",
+    "text": "11,610,900 HUF",
+    "trap": "unit_slip",
+    "note": "Decimal point slipped by one place."
+   },
+   {
+    "key": "C",
+    "text": "21,862 HUF",
+    "trap": "misread_row",
+    "note": "Uses the DKK rate."
+   },
+   {
+    "key": "D",
+    "text": "116,109 HUF",
+    "trap": "unit_slip",
+    "note": "Decimal point slipped by one place."
+   },
+   {
+    "key": "E",
+    "text": "1,161,090 HUF",
+    "note": "Correct."
+   }
+  ],
+  "correct": "E",
+  "explanation": {
+   "steps": [
+    "1 euro buys 407.4 HUF, so multiply: 2,850 × 407.4 = 1,161,090 HUF."
+   ],
+   "shortcut": "Rates are quoted per €1: going INTO the foreign currency you multiply, coming BACK to euros you divide. Check the answer is the right size for the currency."
+  },
+  "trap_tags": [
+   "reversed_operation",
+   "misread_row",
+   "unit_slip"
+  ],
+  "est_time_sec": 80
+ },
+ {
+  "id": "NR-022",
+  "category": "numerical",
+  "subtype": "survey_percentages",
+  "difficulty": 2,
+  "source": {
+   "kind": "table",
+   "caption": "Survey: “I feel well informed about my rights as a consumer.” (% of respondents; fictional figures)",
+   "columns": [
+    "Response",
+    "2022 (%)",
+    "2023 (%)"
+   ],
+   "rows": [
+    [
+     "Strongly agree",
+     24,
+     26
+    ],
+    [
+     "Agree",
+     23,
+     17
+    ],
+    [
+     "Neither agree nor disagree",
+     12,
+     25
+    ],
+    [
+     "Disagree",
+     24,
+     16
+    ],
+    [
+     "Strongly disagree",
+     17,
+     16
+    ],
+    [
+     "Number of respondents",
+     2800,
+     3700
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "survey",
+   "seed": 109148,
+   "params": {
+    "q": "diff",
+    "rows": [
+     "Disagree",
+     "Strongly disagree"
+    ],
+    "fmt": {
+     "t": "num",
+     "dp": 0,
+     "unit": "respondents"
+    }
+   }
+  },
+  "answer_value": 36,
+  "answer_text": "36 respondents",
+  "prompt": "How many more (or fewer) respondents disagreed (disagree or strongly disagree) in 2023 than in 2022? (A negative answer means fewer.)",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "116 respondents",
+    "trap": "misread_row",
+    "note": "Counts only “Strongly disagree”."
+   },
+   {
+    "key": "B",
+    "text": "−36 respondents",
+    "trap": "reversed_operation",
+    "note": "Subtracts in the wrong order."
+   },
+   {
+    "key": "C",
+    "text": "−252 respondents",
+    "trap": "added_percentages",
+    "note": "Subtracts the percentages first and applies the difference to 2022's sample only."
+   },
+   {
+    "key": "D",
+    "text": "36 respondents",
+    "note": "Correct."
+   },
+   {
+    "key": "E",
+    "text": "−333 respondents",
+    "trap": "added_percentages",
+    "note": "Subtracts the percentages first and applies the difference to 2023's sample only."
+   }
+  ],
+  "correct": "D",
+  "explanation": {
+   "steps": [
+    "2022: 41% of 2,800 = 1,148.",
+    "2023: 32% of 3,700 = 1,184.",
+    "Difference: 1,184 − 1,148 = 36."
+   ],
+   "shortcut": "Percentages from samples of different sizes cannot be added or averaged directly; convert to head counts first."
+  },
+  "trap_tags": [
+   "added_percentages",
+   "misread_row",
+   "reversed_operation"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-023",
+  "category": "numerical",
+  "subtype": "multi_period_growth",
+  "difficulty": 1,
+  "source": {
+   "kind": "text",
+   "caption": "Fictional figures",
+   "body": "The operating budget of a regional development agency was €721.7 million in 2020. It rose by 4% in 2021 and rose by 18% in 2022.",
+   "facts": {
+    "base": 721.7,
+    "year0": 2020,
+    "g1": 4,
+    "g2": 18
+   }
+  },
+  "recipe": {
+   "name": "growth",
+   "seed": 144632,
+   "params": {
+    "fmt": {
+     "t": "num",
+     "dp": 1,
+     "prefix": "€",
+     "unit": "million"
+    },
+    "n": 2
+   }
+  },
+  "answer_value": 885.67024,
+  "answer_text": "€885.7 million",
+  "prompt": "What was the figure at the end of 2022?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "€851.6 million",
+    "trap": "wrong_period",
+    "note": "Applies only the 2022 change."
+   },
+   {
+    "key": "B",
+    "text": "€615.5 million",
+    "trap": "reversed_operation",
+    "note": "Treats the 2022 rise as a fall."
+   },
+   {
+    "key": "C",
+    "text": "€885.7 million",
+    "note": "Correct."
+   },
+   {
+    "key": "D",
+    "text": "€750.6 million",
+    "trap": "wrong_period",
+    "note": "Stops at 2021 and leaves out the last change."
+   },
+   {
+    "key": "E",
+    "text": "€164.0 million",
+    "trap": "wrong_base",
+    "note": "Gives the change in value rather than the final value."
+   }
+  ],
+  "correct": "C",
+  "explanation": {
+   "steps": [
+    "Turn each change into a multiplier: 1.04, 1.18.",
+    "Apply them in turn: 721.7 × 1.04 × 1.18 = €885.7 million."
+   ],
+   "shortcut": "Successive percentage changes multiply, they never add. Combine the multipliers first, then do one multiplication or division."
+  },
+  "trap_tags": [
+   "wrong_period",
+   "wrong_base",
+   "reversed_operation"
+  ],
+  "est_time_sec": 80
+ },
+ {
+  "id": "NR-024",
+  "category": "numerical",
+  "subtype": "per_capita",
+  "difficulty": 2,
+  "source": {
+   "kind": "table",
+   "caption": "Municipal waste and population (fictional figures)",
+   "columns": [
+    "Country",
+    "Municipal waste (thousand tonnes)",
+    "Population (million)",
+    "Households (million)"
+   ],
+   "rows": [
+    [
+     "Croatia",
+     4724,
+     11.9,
+     2.7
+    ],
+    [
+     "Denmark",
+     6589,
+     24,
+     4
+    ],
+    [
+     "Greece",
+     2680.9,
+     4.9,
+     1.2
+    ],
+    [
+     "Malta",
+     3614.3,
+     14,
+     3.4
+    ],
+    [
+     "Slovakia",
+     4210.4,
+     15.1,
+     5.6
+    ]
+   ],
+   "dp": [
+    0,
+    1,
+    1,
+    1
+   ]
+  },
+  "recipe": {
+   "name": "per_capita",
+   "seed": 107259,
+   "params": {
+    "q": "max",
+    "total": "Municipal waste (thousand tonnes)",
+    "pop": "Population (million)",
+    "factor": 1,
+    "fmt": {
+     "t": "text"
+    }
+   }
+  },
+  "answer_value": "Greece",
+  "answer_text": "Greece",
+  "prompt": "Which country had the highest municipal waste per person (kg)?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "Slovakia",
+    "trap": "misread_row",
+    "note": "Slovakia: 279 kg per person."
+   },
+   {
+    "key": "B",
+    "text": "Croatia",
+    "trap": "rounding_trap",
+    "note": "Second highest (397 kg vs 547 kg)."
+   },
+   {
+    "key": "C",
+    "text": "Malta",
+    "trap": "reversed_operation",
+    "note": "Has the lowest value per person."
+   },
+   {
+    "key": "D",
+    "text": "Greece",
+    "note": "Correct."
+   },
+   {
+    "key": "E",
+    "text": "Denmark",
+    "trap": "wrong_base",
+    "note": "Has the largest total, not the largest amount per person."
+   }
+  ],
+  "correct": "D",
+  "explanation": {
+   "steps": [
+    "Divide each total by its population: Croatia 397 kg; Denmark 275 kg; Greece 547 kg; Malta 258 kg; Slovakia 279 kg.",
+    "Highest: Greece."
+   ],
+   "shortcut": "Settle the units once (billion ÷ million = thousand) and compare per-person values only; totals and populations alone are traps."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "reversed_operation",
+   "rounding_trap",
+   "misread_row"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-025",
+  "category": "numerical",
+  "subtype": "combined_units",
+  "difficulty": 2,
+  "source": {
+   "kind": "text",
+   "caption": "Fictional figures",
+   "body": "A municipal transport company runs 42 diesel buses. Each bus covers 56,000 km a year and uses on average 30 litres of diesel per 100 km. Diesel costs €1.79 per litre; petrol costs €1.65 per litre.",
+   "facts": {
+    "buses": 42,
+    "km": 56000,
+    "l100": 30,
+    "diesel": 1.79,
+    "petrol": 1.65,
+    "saving": 10,
+    "diesel2": 2.04
+   }
+  },
+  "recipe": {
+   "name": "combined",
+   "seed": 108222,
+   "params": {
+    "q": "fleet_cost",
+    "fmt": {
+     "t": "num",
+     "dp": 1,
+     "prefix": "€",
+     "unit": "thousand"
+    }
+   }
+  },
+  "answer_value": 1263.024,
+  "answer_text": "€1,263.0 thousand",
+  "prompt": "What is the annual diesel bill for the whole fleet (in € thousand)?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "€12,630.2 thousand",
+    "trap": "unit_slip",
+    "note": "Divides by 100 instead of 1,000 when converting to thousands (a factor of 10 too large)."
+   },
+   {
+    "key": "B",
+    "text": "€1,263.0 thousand",
+    "note": "Correct."
+   },
+   {
+    "key": "C",
+    "text": "€30.1 thousand",
+    "trap": "misread_row",
+    "note": "Gives the cost of one bus only."
+   },
+   {
+    "key": "D",
+    "text": "€1,164.2 thousand",
+    "trap": "misread_row",
+    "note": "Uses the petrol price."
+   },
+   {
+    "key": "E",
+    "text": "€126.3 thousand",
+    "trap": "unit_slip",
+    "note": "Unit slip: a factor of 10 too small."
+   }
+  ],
+  "correct": "B",
+  "explanation": {
+   "steps": [
+    "One bus: 56,000 × 30 ÷ 100 = 16,800 L a year.",
+    "Fleet: 16,800 × 42 = 705,600 L; × €1.79 = €1,263,024 = €1,263.0 thousand."
+   ],
+   "shortcut": "Write the units next to each number (km × L/100 km × €/L = €) and cancel them; it shows at once where the ÷100 belongs."
+  },
+  "trap_tags": [
+   "misread_row",
+   "unit_slip"
+  ],
+  "est_time_sec": 115
+ }
+]

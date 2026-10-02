@@ -1,0 +1,32 @@
+{
+  "name": "epso-ad5-reasoning-trainer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Unofficial trainer for the EPSO AD5 Part 1 reasoning tests (verbal, numerical, abstract).",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "generate": "npm run gen:numerical && npm run gen:abstract",
+    "gen:numerical": "tsx scripts/gen-numerical.ts",
+    "gen:abstract": "tsx scripts/gen-abstract.ts",
+    "validate": "tsx scripts/validate.ts",
+    "qa": "tsx scripts/qa-report.ts"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.12.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.2"
+  }
+}

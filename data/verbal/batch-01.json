@@ -1,0 +1,1201 @@
+[
+ {
+  "id": "VR-001",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Environment",
+  "passage": "Municipal authorities across several member states have expanded urban tree planting over the past decade, often citing the cooling effect of canopy cover during heatwaves. A three-year monitoring programme in eleven medium-sized cities offers a more detailed picture. Researchers placed temperature sensors in streets with dense canopy, in streets with young or sparse trees, and in streets with no trees at all. On the hottest afternoons, streets with dense canopy were on average 2.8 °C cooler at pedestrian level than streets without trees. Streets with young trees showed almost no measurable difference, since saplings planted within the previous five years provided little shade.\n\nThe programme also recorded maintenance costs. Mature trees required pruning and occasional root management, but the cost per tree fell as the number of trees in a street increased, because crews could treat a whole street in a single visit. By contrast, isolated trees in paved squares were the most expensive to maintain, largely because their roots damaged the surrounding paving.\n\nThe researchers caution that their findings apply to cities with a temperate climate and moderate rainfall. They did not study coastal cities, where sea breezes already lower afternoon temperatures, and they note that the cooling benefit depends on keeping trees alive through dry summers, which in some streets required irrigation.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Planting young trees is the quickest way for a city to reduce street temperatures during heatwaves.",
+    "trap": "reversed_relation",
+    "note": "The passage says streets with young trees showed almost no measurable difference."
+   },
+   {
+    "key": "B",
+    "text": "Trees lower afternoon temperatures in all European cities by around 2.8 °C.",
+    "trap": "overgeneralisation",
+    "note": "The 2.8 °C figure applies to dense canopy in eleven temperate cities only; the researchers warn against wider conclusions."
+   },
+   {
+    "key": "C",
+    "text": "In the streets studied, maintaining trees cost less per tree where a street had many trees than where it had few.",
+    "note": "Correct: the cost per tree fell as the number of trees in a street increased."
+   },
+   {
+    "key": "D",
+    "text": "Coastal cities gain less from tree planting because sea breezes already cool them.",
+    "trap": "cannot_be_determined",
+    "note": "Coastal cities were not studied, so the passage cannot tell us how much they gain."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Mature trees required pruning and occasional root management, but the cost per tree fell as the number of trees in a street increased, because crews could treat a whole street in a single visit."
+  ],
+  "explanation": {
+   "steps": [
+    "The second paragraph states that the cost per tree fell as the number of trees in a street increased. Statement C is a restatement of that finding.",
+    "Each distractor goes beyond the passage: it reverses the finding on young trees (A), stretches a local average to all of Europe (B), or draws a conclusion about coastal cities, which were explicitly not studied (D)."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "overgeneralisation",
+   "cannot_be_determined"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-002",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "EU policy",
+  "passage": "In 2021 a European agency responsible for chemical safety revised the way it consults stakeholders before issuing technical guidance. Under the previous procedure, a draft was published for six weeks and anyone could submit written comments. The agency found that most responses came from large industry associations, while small firms and consumer organisations rarely took part, often because they learned of the consultation too late.\n\nThe revised procedure keeps the written consultation but extends it to ten weeks. It also adds an earlier stage: before any draft is written, the agency now publishes a short note setting out the problem it intends to address and invites suggestions on the scope of the guidance. In addition, the agency sends notices directly to a register of small-business and consumer networks, which any organisation can join free of charge.\n\nAn internal review of the first two years found that the number of responses rose by roughly a third. Responses from small firms increased more than those from any other group, although industry associations still submitted the largest number. The review also noted that the longer procedure delayed the publication of guidance by an average of five weeks, a cost the agency considered acceptable given the improved quality of comments.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Under the revised procedure, written comments can be submitted over a longer period than before.",
+    "note": "Correct: the written consultation now lasts ten weeks instead of six."
+   },
+   {
+    "key": "B",
+    "text": "Since the revision, small firms submit more responses than industry associations.",
+    "trap": "partially_true",
+    "note": "Responses from small firms grew the most, but industry associations still submitted the largest number."
+   },
+   {
+    "key": "C",
+    "text": "The revised procedure replaced written consultation with direct meetings with stakeholders.",
+    "trap": "outside_knowledge",
+    "note": "The written consultation was kept; meetings are never mentioned."
+   },
+   {
+    "key": "D",
+    "text": "The agency judged that the delay caused by the new procedure outweighed its benefits.",
+    "trap": "reversed_relation",
+    "note": "The agency considered the delay acceptable given the better comments."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Under the previous procedure, a draft was published for six weeks and anyone could submit written comments.",
+   "The revised procedure keeps the written consultation but extends it to ten weeks."
+  ],
+  "explanation": {
+   "steps": [
+    "The previous procedure allowed six weeks for written comments; the revised one keeps written comments and extends the period to ten weeks. A follows directly.",
+    "B is the classic half-truth: it takes the true part (small firms increased most) and adds a false comparison."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "outside_knowledge",
+   "reversed_relation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-003",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Economics",
+  "passage": "A regional development bank surveyed 1,200 small and medium-sized enterprises in 2023 to understand how they finance investment. Bank loans remained the most common source: 58% of firms that had invested in the previous year had used one. Retained earnings came second, used by 41%, while leasing was used by 19%. Only 4% had raised money by selling shares, and almost all of these were firms with more than fifty employees.\n\nWhen asked about obstacles, firms most often cited the collateral demanded by banks rather than the interest rate. Younger firms reported this problem far more often than established ones, which the bank attributes to their shorter credit history and fewer fixed assets. Firms in manufacturing were more likely than service firms to have invested at all, but service firms that did invest were more likely to rely on retained earnings.\n\nThe bank has since launched a guarantee scheme under which it covers up to 70% of a loan’s value if the borrower defaults. It hopes the scheme will make commercial banks more willing to lend to young firms without demanding additional collateral. The survey will be repeated in 2025 to assess whether the share of young firms obtaining loans has changed.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Fewer than one in twenty of the firms that had invested raised money by selling shares.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: 4% is fewer than one in twenty (5%)."
+   },
+   {
+    "key": "B",
+    "text": "Firms saw collateral requirements as an obstacle more often than interest rates.",
+    "trap": "reversed_relation",
+    "note": "Supported: firms most often cited collateral rather than the interest rate."
+   },
+   {
+    "key": "C",
+    "text": "Among firms that invested, service firms relied on retained earnings more than manufacturing firms did.",
+    "trap": "overgeneralisation",
+    "note": "Supported: service firms that did invest were more likely to rely on retained earnings."
+   },
+   {
+    "key": "D",
+    "text": "The guarantee scheme has increased the share of young firms obtaining bank loans.",
+    "note": "This is the statement that is not supported: the effect will only be assessed when the survey is repeated in 2025."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "It hopes the scheme will make commercial banks more willing to lend to young firms without demanding additional collateral.",
+   "The survey will be repeated in 2025 to assess whether the share of young firms obtaining loans has changed."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage only says the bank hopes the scheme will help and will check in 2025. It gives no result yet, so D presents a hope as an achieved fact (a time-shift trap).",
+    "A, B and C are paraphrases of figures and comparisons that are stated in the passage, so they are all correct."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "reversed_relation",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-004",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "History",
+  "passage": "Between the twelfth and fourteenth centuries, a series of seasonal trade fairs held in one inland region became the main meeting point for merchants travelling between northern and southern Europe. The fairs rotated between four towns, so that some fair was in progress for most of the year. Their success did not rest on geography alone: other regions lay on similar routes but never attracted comparable trade.\n\nHistorians point instead to the guarantees offered by the local rulers. Merchants travelling to the fairs received safe-conduct, and disputes arising during a fair were settled by special courts that applied the same rules to local and foreign traders. Debts contracted at one fair could be settled at the next, which allowed merchants to buy without carrying large amounts of coin. Because these arrangements were enforced consistently, merchants were willing to travel long distances and to trade with partners they had never met.\n\nThe decline of the fairs in the fourteenth century is usually linked to changes that weakened these guarantees. When the region came under the control of a larger kingdom, the new authorities imposed heavier taxes and were less willing to protect foreign merchants. At the same time, the growth of permanent trading houses with agents in several cities reduced the need for merchants to meet in person. The fairs continued for some decades, but on a much smaller scale.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The fairs flourished mainly because they lay on the most important trade route in Europe.",
+    "trap": "partially_true",
+    "note": "The fairs were on a trade route, but the passage says their success did not rest on geography alone."
+   },
+   {
+    "key": "B",
+    "text": "The fairs prospered because local rulers provided reliable legal and financial guarantees, and declined when those guarantees weakened.",
+    "note": "Correct: this links the two central claims of the passage."
+   },
+   {
+    "key": "C",
+    "text": "Permanent trading houses were the sole reason why the fairs declined.",
+    "trap": "extreme_wording",
+    "note": "The passage names two causes of decline (heavier taxes and less protection, and trading houses)."
+   },
+   {
+    "key": "D",
+    "text": "The fairs show that medieval merchants preferred trading with partners they already knew.",
+    "trap": "reversed_relation",
+    "note": "The guarantees made merchants willing to trade with partners they had never met."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "Historians point instead to the guarantees offered by the local rulers.",
+   "The decline of the fairs in the fourteenth century is usually linked to changes that weakened these guarantees."
+  ],
+  "explanation": {
+   "steps": [
+    "Paragraph 2 explains the success by the rulers’ guarantees; paragraph 3 explains the decline by the weakening of those guarantees. B captures both.",
+    "A main-idea answer must cover the whole passage. C covers only one cause of the decline and adds “sole”; A contradicts the first paragraph."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "extreme_wording",
+   "reversed_relation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-005",
+  "category": "verbal",
+  "subtype": "summary",
+  "difficulty": 2,
+  "mode": "reveal",
+  "topic": "Science",
+  "passage": "A university research group tested whether a short daytime nap helps people remember new information. Ninety adult volunteers learned sixty pairs of unrelated words in the late morning. Half were then allowed to sleep for up to ninety minutes in a quiet room, while the other half watched a documentary. All participants were tested on the word pairs in the early evening.\n\nOn average, volunteers who had napped recalled 12% more word pairs than those who had stayed awake. The difference was largest for pairs that participants had found hardest to learn in the morning. Brain recordings taken during the nap showed that the volunteers who recalled the most had spent longer in a particular phase of deep sleep, although the researchers stress that this association does not show that the phase itself caused the improvement.\n\nThe group also tested a second set of volunteers one week later and found that the advantage had largely disappeared: nappers and non-nappers recalled similar numbers of pairs. The researchers conclude that a nap may help people retain new material over the same day, but that their study provides no evidence of a lasting benefit. They add that all participants were healthy adults under forty, and that the results may not apply to older people or to people with sleep disorders.",
+  "polarity": "correct",
+  "prompt": "Summarise the passage in one sentence.",
+  "task": "Write one sentence that states only what the passage strictly claims, keeping its limits and adding nothing. Then reveal the model answer and compare.",
+  "correct": "In one study of healthy adults under forty, a daytime nap was followed by better same-day recall of new word pairs (especially the hardest ones), but the advantage had largely gone after a week, so the study shows no lasting benefit and does not prove that a particular sleep phase caused the effect.",
+  "evidence": [
+   "On average, volunteers who had napped recalled 12% more word pairs than those who had stayed awake.",
+   "The researchers conclude that a nap may help people retain new material over the same day, but that their study provides no evidence of a lasting benefit."
+  ],
+  "explanation": {
+   "steps": [
+    "A strict summary keeps three limits: one study, healthy adults under forty, and a same-day effect only.",
+    "Typical errors: “naps improve memory” (overgeneralisation), “deep sleep causes better recall” (cause vs correlation), or forgetting that the effect disappeared after a week (time shift)."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-006",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Law",
+  "passage": "Under a national law adopted in 2019, telecommunications providers must keep records of the date, time and duration of calls for twelve months, but they may not store the content of calls. Records may be handed to investigators only on the order of a judge, and only in cases involving offences punishable by at least three years’ imprisonment. Providers that keep records for longer than twelve months face fines, as do those that release records without a court order.\n\nIn 2022 the country’s constitutional court reviewed the law after a complaint by a civil liberties association. The court did not strike the law down. It held, however, that keeping the records of the entire population was justified only because the law strictly limited who could access them and for what purpose. It also ruled that people whose records had been accessed must be informed once the investigation no longer risked being compromised, a requirement that the original law did not contain. Parliament amended the law accordingly in 2023.\n\nSome providers had argued that a notification duty would be burdensome, since they hold the contact details of their customers but are not told when an investigation ends. The amended law therefore places the duty to inform on the investigating authority rather than on the providers.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Before 2023, the law did not require people to be told that their call records had been accessed.",
+    "note": "Correct: the court added a notification requirement that the original law did not contain, and Parliament amended the law in 2023."
+   },
+   {
+    "key": "B",
+    "text": "The constitutional court found that keeping the call records of the whole population is unlawful.",
+    "trap": "reversed_relation",
+    "note": "The court did not strike the law down; it held the retention justified because access is strictly limited."
+   },
+   {
+    "key": "C",
+    "text": "Telecommunications providers must now inform customers when an investigation using their records has ended.",
+    "trap": "partially_true",
+    "note": "A notification duty exists, but the amended law places it on the investigating authority, not the providers."
+   },
+   {
+    "key": "D",
+    "text": "Investigators may obtain call records for any criminal offence if a judge agrees.",
+    "trap": "wrong_quantifier",
+    "note": "Only for offences punishable by at least three years’ imprisonment, not any offence."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "It also ruled that people whose records had been accessed must be informed once the investigation no longer risked being compromised, a requirement that the original law did not contain.",
+   "Parliament amended the law accordingly in 2023."
+  ],
+  "explanation": {
+   "steps": [
+    "The notification requirement was introduced by the court and written into the law in 2023; the original 2019 law “did not contain” it. So before 2023 there was no such duty: A.",
+    "C is the hardest trap: it is right about the duty but wrong about who carries it. Always check who does what."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "partially_true",
+   "wrong_quantifier"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-007",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Technology",
+  "passage": "Lithium-ion batteries from electric vehicles usually lose about a fifth of their storage capacity after eight to ten years of driving. At that point they are often no longer suitable for vehicles, but they can still store energy for less demanding uses. A pilot project run by a regional energy company has installed 300 such batteries in a warehouse, where they store surplus electricity from nearby solar panels and release it in the evening.\n\nThe company estimates that a second-life battery costs about 40% less than a new one of the same capacity, although it must be tested and repackaged before use. Over the first three years of the pilot, the batteries lost capacity more slowly than engineers had expected, which the company attributes to the gentle, predictable pattern of charging and discharging in stationary use.\n\nEventually every battery will need to be recycled. Current recycling plants can recover most of the cobalt, nickel and copper in a battery, but lithium is harder to recover economically. The company has signed an agreement with a recycling firm that will take back the batteries at the end of the pilot, and it plans to publish the recovery rates achieved, so that other operators can judge whether the second-life model is worthwhile overall.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Second-life batteries cost about 40% more than new batteries once testing is included.",
+    "trap": "reversed_relation",
+    "note": "They cost about 40% less; the passage gives no figure for testing costs."
+   },
+   {
+    "key": "B",
+    "text": "Recycling plants can currently recover almost all the lithium in a battery.",
+    "trap": "extreme_wording",
+    "note": "The passage says lithium is harder to recover economically."
+   },
+   {
+    "key": "C",
+    "text": "In the pilot, the batteries lost capacity more slowly than engineers had predicted.",
+    "note": "Correct: stated in the second paragraph."
+   },
+   {
+    "key": "D",
+    "text": "Electric vehicle batteries become unusable for any purpose after ten years.",
+    "trap": "overgeneralisation",
+    "note": "They are often unsuitable for vehicles but can still be used for less demanding purposes."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Over the first three years of the pilot, the batteries lost capacity more slowly than engineers had expected, which the company attributes to the gentle, predictable pattern of charging and discharging in stationary use."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage states directly that the batteries lost capacity more slowly than engineers had expected: C.",
+    "Easy items still use traps: reversing a comparison (A), turning “harder” into “almost all” (B) and stretching “unsuitable for vehicles” into “unusable for any purpose” (D)."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "extreme_wording",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-008",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Culture",
+  "passage": "Public libraries in one country have changed considerably over the past twenty years. The number of books borrowed fell by 35% between 2005 and 2024, yet the number of visits to libraries fell by only 8% over the same period. Library managers explain the difference by the growing range of activities on offer: language cafés, help with online public services, children’s reading clubs and quiet study spaces now account for a large share of visits.\n\nFunding has not followed the same pattern everywhere. Libraries are financed mainly by municipalities, and about one in seven municipalities reduced library opening hours during the period, usually to save money. In those municipalities, visits fell much more sharply than the national average. The national library association argues that opening hours, rather than the size of a library’s collection, are now the main factor determining how much a library is used, although it acknowledges that its data cannot separate the effect of opening hours from that of other local changes.\n\nDigital lending has grown rapidly from a low base. E-books and audiobooks accounted for 3% of loans in 2015 and 16% in 2024. Because publishers charge libraries higher prices for digital licences than for printed copies, several libraries have limited the number of digital titles each member can borrow per month.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Reducing opening hours caused the sharper fall in visits in some municipalities.",
+    "trap": "causal_vs_correlation",
+    "note": "The association admits its data cannot separate the effect of opening hours from other local changes."
+   },
+   {
+    "key": "B",
+    "text": "Most visits to libraries are now made to attend language cafés.",
+    "trap": "wrong_quantifier",
+    "note": "Language cafés are one of several activities that together account for a large share of visits."
+   },
+   {
+    "key": "C",
+    "text": "Digital lending grew because publishers lowered the price of digital licences.",
+    "trap": "reversed_relation",
+    "note": "Publishers charge more for digital licences, which has led libraries to limit digital loans."
+   },
+   {
+    "key": "D",
+    "text": "Between 2005 and 2024, book loans fell more steeply than library visits.",
+    "note": "Correct: loans fell by 35%, visits by only 8%."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "The number of books borrowed fell by 35% between 2005 and 2024, yet the number of visits to libraries fell by only 8% over the same period."
+  ],
+  "explanation": {
+   "steps": [
+    "Loans fell by 35% and visits by 8% over the same period, so loans fell more steeply: D.",
+    "A is the cause-versus-correlation trap: the passage reports that visits fell more where hours were cut, but explicitly says the data cannot isolate that cause."
+   ]
+  },
+  "trap_tags": [
+   "causal_vs_correlation",
+   "wrong_quantifier",
+   "reversed_relation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-009",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Health",
+  "passage": "In autumn 2023 a regional health authority ran a campaign to raise influenza vaccination among people aged 65 and over. Previous campaigns had relied on posters and radio announcements. This time the authority also sent personal letters to every resident in the age group, naming a local pharmacy where the vaccine could be obtained without an appointment.\n\nVaccination coverage in the age group rose from 48% the previous winter to 57%. The increase was largest among residents living more than five kilometres from their family doctor, which the authority interprets as evidence that convenient access matters as much as information. Coverage among residents living in care homes, where vaccination is organised by staff, was already high and changed little.\n\nAn evaluation commissioned by the authority compared the region with a neighbouring region of similar size and age structure that did not send letters. Coverage there rose from 47% to 50%. The evaluators conclude that the letters probably account for a substantial part of the increase, but they warn that the two regions also differed in the timing of their campaigns, since the neighbouring region started three weeks later. The authority plans to repeat the letters in 2024 and to extend them to adults under 65 who have chronic illnesses.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Vaccination coverage among people aged 65 and over in the region rose by nine percentage points.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: from 48% to 57% is nine percentage points."
+   },
+   {
+    "key": "B",
+    "text": "The evaluation proved that the personal letters caused the entire rise in coverage.",
+    "note": "This is the statement that is not supported: the evaluators say the letters probably account for a substantial part, and they point to a difference in campaign timing."
+   },
+   {
+    "key": "C",
+    "text": "The comparison region began its campaign later than the region that sent letters.",
+    "trap": "time_shift",
+    "note": "Supported: the neighbouring region started three weeks later."
+   },
+   {
+    "key": "D",
+    "text": "Residents living far from their family doctor showed the largest increase in coverage.",
+    "trap": "cannot_be_determined",
+    "note": "Supported: the increase was largest among those living more than five kilometres away."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "The evaluators conclude that the letters probably account for a substantial part of the increase, but they warn that the two regions also differed in the timing of their campaigns, since the neighbouring region started three weeks later."
+  ],
+  "explanation": {
+   "steps": [
+    "The evaluators use cautious language (“probably”, “a substantial part”) and name a second difference between the regions. B turns this into proof of the entire effect, so B is not correct.",
+    "A needs care: 48% to 57% is a rise of nine percentage points (not nine per cent), which is exactly what A says."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "time_shift",
+   "cannot_be_determined"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-010",
+  "category": "verbal",
+  "subtype": "explain_non_inference",
+  "difficulty": 2,
+  "mode": "reveal",
+  "topic": "Transport",
+  "passage": "After decades of decline, overnight rail services are being reintroduced on several international routes. Operators argue that a train leaving in the evening and arriving the next morning can compete with air travel on journeys of 800 to 1,500 kilometres, because passengers save the cost of a hotel night and arrive in city centres.\n\nRunning night trains is nevertheless expensive. Sleeping cars carry fewer passengers than seated carriages, rolling stock is used for only one journey per day, and track access charges differ from country to country. On one route launched in 2022, the operator reported that tickets covered about 70% of operating costs, with the rest paid by the two governments that commissioned the service.\n\nDemand has been strongest in summer and during school holidays, when trains on the route were often fully booked weeks in advance. In winter, occupancy fell to around half. The operator has responded by offering cheaper seats in reclining carriages alongside more expensive private compartments, hoping to attract younger travellers and business travellers alike.\n\nA survey of passengers found that environmental concerns were the reason most often given for choosing the night train, followed by the wish to avoid airport security checks. Fewer than one in five respondents said price was their main reason.",
+  "polarity": "correct",
+  "prompt": "Statement: “In summer, the night train on the route is more profitable than flights on the same route.” Explain why this statement cannot be inferred from the passage.",
+  "task": "Write one or two sentences explaining why the statement cannot be inferred. Name the trap. Then reveal the model answer.",
+  "correct": "The passage gives no information at all about the costs or profits of flights, and it does not even say that the train is profitable: tickets cover only about 70% of its operating costs. It says only that summer demand is high. The comparison needs outside knowledge (trap: outside knowledge / cannot be determined).",
+  "evidence": [
+   "On one route launched in 2022, the operator reported that tickets covered about 70% of operating costs, with the rest paid by the two governments that commissioned the service.",
+   "Demand has been strongest in summer and during school holidays, when trains on the route were often fully booked weeks in advance."
+  ],
+  "explanation": {
+   "steps": [
+    "Check every element of the statement against the passage: “profitable” is not supported (tickets cover 70% of costs), and “flights” are never quantified.",
+    "High demand is not the same as profit. Treating a strong summer as proof of profitability is an inference the passage does not allow."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-011",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Agriculture",
+  "passage": "Cover crops are plants sown between two main harvests, not to be sold but to protect and improve the soil. In a five-year trial on forty farms, fields planted with cover crops during the winter lost far less soil to erosion than fields left bare, and they held more water during dry spells the following summer. Yields of the main crop were similar on both types of field in the first two years and slightly higher on fields with cover crops in the last three years.\n\nThe trial also identified drawbacks. Sowing a cover crop adds costs for seed, fuel and labour, and in wet autumns some farmers could not sow in time. On a minority of farms, cover crops left in the ground too long competed with the following main crop for water.\n\nThe farmers who took part generally judged that the benefits outweighed the costs, but most said they would not have started without the advice and the partial funding provided by the trial. The organisers therefore recommend that support schemes should combine payments with practical advice, particularly during the first years, when the benefits for yields are not yet visible.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Cover crops always increase the yield of the following main crop.",
+    "trap": "extreme_wording",
+    "note": "Yields were similar in the first two years and only slightly higher afterwards."
+   },
+   {
+    "key": "B",
+    "text": "Most farmers in the trial found cover crops too costly to continue.",
+    "trap": "reversed_relation",
+    "note": "The farmers generally judged that the benefits outweighed the costs."
+   },
+   {
+    "key": "C",
+    "text": "Cover crops brought clear benefits for the soil in the trial, but farmers need advice and financial support to adopt them, especially at first.",
+    "note": "Correct: this combines the trial’s results with the organisers’ recommendation."
+   },
+   {
+    "key": "D",
+    "text": "Cover crops should be sown only in regions with dry autumns.",
+    "trap": "overgeneralisation",
+    "note": "Wet autumns caused sowing problems on some farms, but the passage makes no recommendation about regions."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "In a five-year trial on forty farms, fields planted with cover crops during the winter lost far less soil to erosion than fields left bare, and they held more water during dry spells the following summer.",
+   "The organisers therefore recommend that support schemes should combine payments with practical advice, particularly during the first years, when the benefits for yields are not yet visible."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage moves from results (less erosion, more water, later slightly higher yields) to drawbacks and then to a recommendation for advice plus funding. Only C covers this whole arc.",
+    "A and D take one detail and turn it into a rule that the passage never states."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "reversed_relation",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-012",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Demography",
+  "passage": "Rural districts in many parts of Europe are ageing faster than cities. In one country, the share of residents aged 65 and over in rural districts rose from 19% in 2004 to 27% in 2024, while in cities it rose from 16% to 20%. The main reason is not that older people move to the countryside; on the contrary, a small but steady number of older rural residents move to towns to be closer to hospitals. The gap arises because young adults leave rural districts to study or work and relatively few return.\n\nSome rural districts have nevertheless stabilised their populations. A study of twelve such districts found that each had at least one secondary school and a regular bus or train connection to a larger town within forty-five minutes. The study does not claim that schools and transport alone explain the difference, since the districts also tended to have a more varied local economy than districts whose population declined.\n\nLocal authorities have tried several approaches to attract younger residents, including subsidised housing for families and grants for people who set up businesses. Evaluations have so far been limited, but the authors of one review note that schemes lasting fewer than three years rarely produced measurable effects.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Older people moving to the countryside are the main cause of rural ageing.",
+    "trap": "reversed_relation",
+    "note": "The passage says this is not the reason; some older residents actually move to towns."
+   },
+   {
+    "key": "B",
+    "text": "Between 2004 and 2024, the share of people aged 65 and over grew by more percentage points in rural districts than in cities.",
+    "note": "Correct: 8 points (19% to 27%) against 4 points (16% to 20%)."
+   },
+   {
+    "key": "C",
+    "text": "Having a secondary school is enough to stop a rural district’s population from declining.",
+    "trap": "causal_vs_correlation",
+    "note": "Schools were found in stable districts, but the study says they do not explain the difference alone."
+   },
+   {
+    "key": "D",
+    "text": "Housing subsidies have been shown to attract young families to rural districts.",
+    "trap": "cannot_be_determined",
+    "note": "Evaluations have been limited; no such result is reported."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "In one country, the share of residents aged 65 and over in rural districts rose from 19% in 2004 to 27% in 2024, while in cities it rose from 16% to 20%."
+  ],
+  "explanation": {
+   "steps": [
+    "Rural districts: 27 − 19 = 8 percentage points. Cities: 20 − 16 = 4 points. B follows from the figures.",
+    "C turns a feature shared by stable districts into a sufficient cause, which the study explicitly refuses to do."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "causal_vs_correlation",
+   "cannot_be_determined"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-013",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Energy",
+  "passage": "Heat pumps extract heat from outside air, the ground or water and use electricity to raise it to a temperature suitable for heating buildings. Their efficiency is usually expressed as the ratio between the heat delivered and the electricity consumed. In a monitoring study of 600 homes, air-source heat pumps delivered on average 3.1 units of heat for each unit of electricity over a full year, while ground-source models delivered 3.9 units.\n\nEfficiency varied considerably between homes with the same equipment. The study found that the most important factor was the temperature of the water circulating in the heating system: homes with large radiators or underfloor heating, which can work with cooler water, achieved markedly better results than homes with small radiators. Poor installation, such as incorrectly set controls, also reduced efficiency, in some cases by more than a fifth.\n\nThe authors point out that the annual figure hides seasonal differences. During the coldest weeks, air-source heat pumps delivered less than two units of heat per unit of electricity, because extracting heat from very cold air requires more work. Ground-source systems were less affected, since the ground several metres below the surface stays at a fairly stable temperature throughout the year.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Over a whole year, the ground-source heat pumps in the study were more efficient on average than the air-source ones.",
+    "note": "Correct: 3.9 against 3.1 units of heat per unit of electricity."
+   },
+   {
+    "key": "B",
+    "text": "Air-source heat pumps delivered at least three units of heat per unit of electricity in every week of the year.",
+    "trap": "overgeneralisation",
+    "note": "3.1 is an annual average; in the coldest weeks it fell below two."
+   },
+   {
+    "key": "C",
+    "text": "The brand of heat pump was the main factor explaining differences in efficiency.",
+    "trap": "outside_knowledge",
+    "note": "Brands are never mentioned; the main factor was the temperature of the circulating water."
+   },
+   {
+    "key": "D",
+    "text": "Incorrect installation reduced efficiency by more than a fifth in most homes.",
+    "trap": "wrong_quantifier",
+    "note": "The passage says “in some cases”, not in most homes."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "In a monitoring study of 600 homes, air-source heat pumps delivered on average 3.1 units of heat for each unit of electricity over a full year, while ground-source models delivered 3.9 units."
+  ],
+  "explanation": {
+   "steps": [
+    "The first paragraph gives annual averages of 3.1 (air) and 3.9 (ground). Higher is more efficient, so A is correct.",
+    "B applies an annual average to every single week, which the third paragraph contradicts."
+   ]
+  },
+  "trap_tags": [
+   "overgeneralisation",
+   "outside_knowledge",
+   "wrong_quantifier"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-014",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Education",
+  "passage": "A national education ministry introduced foreign-language lessons for all pupils aged six in 2018; previously, language teaching had started at the age of nine. Five years later, an evaluation compared pupils who had started at six with pupils from earlier years who had started at nine, testing both groups at the age of eleven.\n\nThe early starters scored higher in listening comprehension and pronunciation. In reading and writing, however, the two groups performed almost equally. The evaluators suggest that young children learn mainly through songs, games and spoken interaction, which develops oral skills more than written ones.\n\nThe evaluation also found large differences between schools. Pupils taught by teachers with specific training in teaching languages to young children made much more progress than pupils whose teachers had not received such training. At the time of the reform, only about half of primary teachers had this training, and the ministry has since funded additional courses.\n\nThe evaluators recommend that the ministry should not judge the reform only by reading and writing scores, and that it should continue to monitor the same pupils into secondary school to see whether the early advantage in oral skills persists.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Before 2018, language lessons began at the age of nine.",
+    "trap": "time_shift",
+    "note": "Supported: previously, teaching started at nine."
+   },
+   {
+    "key": "B",
+    "text": "Both groups of pupils were tested at the same age.",
+    "trap": "cannot_be_determined",
+    "note": "Supported: both groups were tested at eleven."
+   },
+   {
+    "key": "C",
+    "text": "Teacher training was linked to how much progress pupils made.",
+    "trap": "causal_vs_correlation",
+    "note": "Supported: pupils of trained teachers made much more progress. The statement claims only a link, not a cause."
+   },
+   {
+    "key": "D",
+    "text": "Pupils who started at six outperformed later starters in every language skill tested.",
+    "note": "This is the statement that is not correct: in reading and writing the two groups performed almost equally."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "In reading and writing, however, the two groups performed almost equally."
+  ],
+  "explanation": {
+   "steps": [
+    "The early starters did better in listening and pronunciation only; reading and writing were about equal. D’s “every language skill” is therefore false.",
+    "C is worded carefully (“linked to”), so it matches the passage even though the passage does not prove causation."
+   ]
+  },
+  "trap_tags": [
+   "time_shift",
+   "cannot_be_determined",
+   "causal_vs_correlation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-015",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Public administration",
+  "passage": "Since 2020, all public bodies in one member state have been required to run tenders above a certain value through a single electronic procurement platform. Before the change, each body used its own procedures, and many tenders were advertised only on the body’s website or in local newspapers.\n\nA review of the first three years found that the average number of bids per tender rose from 3.2 to 4.6. The increase was concentrated in tenders for goods and simple services; for complex construction projects, the number of bids hardly changed. The reviewers suggest that the platform mainly helped smaller firms, which previously had difficulty finding out about tenders, whereas the firms able to carry out large construction projects were few and already well informed.\n\nPrices paid also fell slightly for standard goods such as office supplies and vehicles, by between 4% and 7% depending on the category. The reviewers caution that general price trends over the period make it difficult to attribute all of this fall to the platform.\n\nThe review identified one unintended effect. Some public bodies split large contracts into several smaller ones to stay below the value threshold, avoiding the platform. The government has since introduced a rule requiring bodies to add up the value of related contracts when deciding whether the threshold is exceeded.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The platform reduced the prices of standard goods by between 4% and 7%.",
+    "trap": "causal_vs_correlation",
+    "note": "Prices fell by that much, but the reviewers say general price trends make it hard to attribute the whole fall to the platform."
+   },
+   {
+    "key": "B",
+    "text": "The platform increased competition for all types of public contract.",
+    "trap": "overgeneralisation",
+    "note": "For complex construction projects the number of bids hardly changed."
+   },
+   {
+    "key": "C",
+    "text": "Before the rule on related contracts, some public bodies could avoid the platform by dividing contracts.",
+    "note": "Correct: some bodies split large contracts to stay below the threshold, which led to the new rule."
+   },
+   {
+    "key": "D",
+    "text": "Firms able to carry out large construction projects were unaware of public tenders before 2020.",
+    "trap": "reversed_relation",
+    "note": "The reviewers say these firms were already well informed."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Some public bodies split large contracts into several smaller ones to stay below the value threshold, avoiding the platform.",
+   "The government has since introduced a rule requiring bodies to add up the value of related contracts when deciding whether the threshold is exceeded."
+  ],
+  "explanation": {
+   "steps": [
+    "The last paragraph says some bodies split contracts to avoid the platform, and that the government then introduced a rule on related contracts. C states exactly this sequence.",
+    "A is attractive because the 4–7% figure is in the passage, but the passage attributes the fall only partly, and uncertainly, to the platform."
+   ]
+  },
+  "trap_tags": [
+   "causal_vs_correlation",
+   "overgeneralisation",
+   "reversed_relation"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-016",
+  "category": "verbal",
+  "subtype": "summary",
+  "difficulty": 1,
+  "mode": "reveal",
+  "topic": "Environment",
+  "passage": "Wetlands such as marshes, bogs and floodplains cover a small share of the land in the river basin studied, but they play a disproportionate role in managing water. During heavy rain they absorb and store water, releasing it slowly afterwards, which reduces the height of flood peaks downstream. They also filter nutrients from agricultural runoff before it reaches the river.\n\nOver the past century, about two thirds of the basin’s wetlands were drained, mostly to create farmland. A restoration programme started in 2015 has so far re-flooded around 1,800 hectares, chosen because they were close to the river and of relatively low value for agriculture. Monitoring stations downstream recorded lower nutrient concentrations after restoration, though the programme managers note that farming practices in the basin also changed over the same period.\n\nRestoration is not without conflict. Some farmers whose land borders restored areas report that their fields are wetter for longer in spring, delaying sowing. The programme now offers compensation in such cases and consults landowners before selecting new sites. Its managers argue that, over time, fewer and smaller floods will benefit the same farmers, but they acknowledge that this benefit is harder to see than the immediate cost.",
+  "polarity": "correct",
+  "prompt": "Summarise the passage in one sentence.",
+  "task": "Write one sentence that states only what the passage strictly claims, keeping its limits and adding nothing. Then reveal the model answer and compare.",
+  "correct": "Wetlands in the basin reduce flood peaks and filter nutrients, so a programme is re-flooding drained land; early monitoring is encouraging but not conclusive, and wetter neighbouring fields have caused conflicts that the programme now addresses through compensation and consultation.",
+  "evidence": [
+   "During heavy rain they absorb and store water, releasing it slowly afterwards, which reduces the height of flood peaks downstream.",
+   "Monitoring stations downstream recorded lower nutrient concentrations after restoration, though the programme managers note that farming practices in the basin also changed over the same period."
+  ],
+  "explanation": {
+   "steps": [
+    "Keep the hedge: lower nutrient levels were recorded after restoration, but farming also changed, so the passage does not say restoration caused the improvement.",
+    "Include the conflict and the response (compensation, consultation); a summary that mentions only the benefits is incomplete."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-017",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Science",
+  "passage": "Hydrothermal vents are openings in the sea floor through which heated, mineral-rich water flows out of the Earth’s crust. Many are found more than two kilometres below the surface, where no sunlight penetrates. Despite the darkness, the high pressure and water temperatures that can exceed 350 °C at the opening, the areas around the vents support dense communities of animals.\n\nThe basis of these communities is not photosynthesis but chemosynthesis: certain bacteria obtain energy from chemical compounds in the vent water, such as hydrogen sulphide, and use it to produce organic matter. Some animals feed on the bacteria directly, while others, such as certain tube worms, host them inside their bodies and depend on them entirely for food.\n\nVents are not permanent. Individual openings may stop flowing after years or decades, and the communities around them then die out unless their larvae reach another active vent. How larvae travel between vents, which can be many kilometres apart, is still poorly understood. Researchers have proposed that deep ocean currents carry them, but direct observations are rare because of the cost of deep-sea expeditions.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Animals living near the vents depend on sunlight reaching the sea floor.",
+    "trap": "reversed_relation",
+    "note": "No sunlight reaches these depths; the communities are based on chemosynthesis."
+   },
+   {
+    "key": "B",
+    "text": "Some tube worms rely entirely on bacteria living inside their bodies for food.",
+    "note": "Correct: stated in the second paragraph."
+   },
+   {
+    "key": "C",
+    "text": "Scientists have shown that ocean currents carry larvae from one vent to another.",
+    "trap": "cannot_be_determined",
+    "note": "This is only a proposal; direct observations are rare."
+   },
+   {
+    "key": "D",
+    "text": "All hydrothermal vents are more than two kilometres below the surface.",
+    "trap": "wrong_quantifier",
+    "note": "The passage says “many”, not all."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "Some animals feed on the bacteria directly, while others, such as certain tube worms, host them inside their bodies and depend on them entirely for food."
+  ],
+  "explanation": {
+   "steps": [
+    "The second paragraph says certain tube worms host bacteria inside their bodies and depend on them entirely for food: B.",
+    "Watch quantifiers (“many” is not “all”) and the status of claims (“proposed” is not “shown”)."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "cannot_be_determined",
+   "wrong_quantifier"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-018",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Economics",
+  "passage": "Central banks pay close attention not only to current inflation but also to what households and firms expect inflation to be. If people expect prices to rise quickly, workers may demand higher wages and firms may raise prices in advance, which can make the expectation self-fulfilling.\n\nA survey conducted every quarter in one country asks 2,000 households how much they think prices will rise over the next twelve months. Between 2021 and 2023, the average expectation rose from 2% to 7% and then fell back to 4%, following actual inflation with a delay of several months. Households with lower incomes consistently expected higher inflation than households with higher incomes. The survey’s authors suggest that this is because food and energy, whose prices rose fastest, make up a larger part of spending for lower-income households.\n\nThe survey also asks how confident respondents are in their answer. Confidence was lowest when actual inflation was changing fastest. The authors note that expectations held with little confidence may be revised quickly, which could make them less of a risk to price stability than firmly held expectations, although they add that the evidence for this is still limited.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "In the survey, lower-income households expected higher inflation than higher-income households throughout the period.",
+    "note": "Correct: they “consistently” expected higher inflation."
+   },
+   {
+    "key": "B",
+    "text": "Household expectations changed before actual inflation did.",
+    "trap": "reversed_relation",
+    "note": "Expectations followed actual inflation with a delay of several months."
+   },
+   {
+    "key": "C",
+    "text": "Expectations held with little confidence have been proven to pose no risk to price stability.",
+    "trap": "extreme_wording",
+    "note": "The authors say such expectations could be less of a risk, and that the evidence is limited."
+   },
+   {
+    "key": "D",
+    "text": "Higher wages were the main cause of the rise in inflation between 2021 and 2023.",
+    "trap": "outside_knowledge",
+    "note": "The passage describes a possible mechanism in general terms but says nothing about the causes of this rise."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Households with lower incomes consistently expected higher inflation than households with higher incomes."
+  ],
+  "explanation": {
+   "steps": [
+    "“Consistently” means throughout the period surveyed, so A restates the passage.",
+    "B reverses the time order. The passage says expectations lagged behind actual inflation."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "extreme_wording",
+   "outside_knowledge"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-019",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Law",
+  "passage": "Alongside binding legislation, public authorities increasingly issue guidelines, recommendations and codes of practice that are not legally binding. Such instruments are often called soft law. They can be adopted more quickly than legislation and revised easily when circumstances change, which makes them attractive in technical fields that evolve fast.\n\nTheir legal status is nonetheless ambiguous. Courts in several countries have held that, although guidelines cannot create obligations by themselves, an authority that departs from its own published guidelines must explain why, because citizens and firms are entitled to rely on them. In practice, therefore, guidelines can shape decisions almost as strongly as binding rules.\n\nCritics argue that this creates a problem of accountability. Legislation is debated and voted on by elected representatives, whereas guidelines are often drafted by officials with limited public consultation. If guidelines come to have effects similar to those of law, important choices may be made without the scrutiny that law-making normally involves.\n\nSupporters reply that guidelines usually interpret existing legislation rather than create new policy, and that the obligation to explain departures from them protects citizens. Several authorities have responded to the criticism by publishing draft guidelines for comment before adopting them.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Soft law should be replaced by binding legislation because it lacks democratic legitimacy.",
+    "trap": "extreme_wording",
+    "note": "The passage presents a debate between critics and supporters; it does not conclude that soft law should be replaced."
+   },
+   {
+    "key": "B",
+    "text": "Courts treat guidelines as legally binding obligations.",
+    "trap": "partially_true",
+    "note": "Courts say guidelines cannot create obligations by themselves, though authorities must explain departures from them."
+   },
+   {
+    "key": "C",
+    "text": "Guidelines are used mainly because they are cheaper to produce than legislation.",
+    "trap": "outside_knowledge",
+    "note": "Cost is never mentioned; the passage cites speed and flexibility."
+   },
+   {
+    "key": "D",
+    "text": "Non-binding guidelines are flexible and can have strong practical effects, which raises a debate about their accountability.",
+    "note": "Correct: this covers the advantages, the practical effect and the debate."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "In practice, therefore, guidelines can shape decisions almost as strongly as binding rules.",
+   "Critics argue that this creates a problem of accountability."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage has three moves: why soft law is attractive, why it matters in practice, and the accountability debate (with both sides). D summarises all three without taking sides.",
+    "A takes the critics’ side as if it were the author’s conclusion. In main-idea questions, an option that takes sides is usually wrong when the passage only reports a debate."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "partially_true",
+   "outside_knowledge"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-020",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Technology",
+  "passage": "Several public administrations have adopted open-source software, whose source code can be freely used, studied and modified. Supporters argue that it reduces dependence on individual suppliers and allows administrations to share solutions with one another.\n\nA study of thirty municipalities that switched their office software to open-source products found mixed results. Licence costs fell sharply, but most municipalities spent more than expected on training staff and on adapting documents created with the previous software. Over five years, twenty of the thirty municipalities reported lower total costs than before the switch, six reported similar costs, and four reported higher costs.\n\nThe study found that the municipalities with the best results had planned the change over at least a year and had appointed a dedicated team to support staff. Municipalities that switched quickly, often after a sudden increase in licence fees, more often encountered resistance from employees and problems exchanging files with other organisations.\n\nThe authors conclude that open-source software can lower costs for public administrations, but that savings depend heavily on how the transition is managed. They also note that their sample was small and limited to office software, so the findings may not apply to more specialised systems such as tax or health records.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Two thirds of the municipalities studied reported lower total costs after five years.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: 20 out of 30 is two thirds."
+   },
+   {
+    "key": "B",
+    "text": "Most municipalities spent more on training than they had expected.",
+    "trap": "partially_true",
+    "note": "Supported: most spent more than expected on training and on adapting documents."
+   },
+   {
+    "key": "C",
+    "text": "Switching to open-source software lowered costs in every municipality studied.",
+    "note": "This is the statement that is not correct: six reported similar costs and four reported higher costs."
+   },
+   {
+    "key": "D",
+    "text": "The findings may not apply to specialised systems such as tax records.",
+    "trap": "overgeneralisation",
+    "note": "Supported: the authors say exactly this."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Over five years, twenty of the thirty municipalities reported lower total costs than before the switch, six reported similar costs, and four reported higher costs."
+  ],
+  "explanation": {
+   "steps": [
+    "20 lower, 6 similar, 4 higher: costs did not fall everywhere, so C is false.",
+    "A converts 20/30 into “two thirds”. Check fractions carefully; here the conversion is exact."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "partially_true",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-021",
+  "category": "verbal",
+  "subtype": "explain_non_inference",
+  "difficulty": 3,
+  "mode": "reveal",
+  "topic": "History",
+  "passage": "In the first half of the nineteenth century, letters in one European country were charged according to the distance they travelled and the number of sheets they contained, and the fee was usually paid by the recipient. Charges were high enough that many people avoided sending letters or used informal methods, such as asking travellers to carry them.\n\nIn 1840 the government introduced a single low rate for letters below a certain weight, regardless of distance, paid in advance by the sender with an adhesive stamp. Critics predicted that postal revenue would collapse. In the first year, revenue did fall sharply, but the number of letters sent more than doubled. It took more than twenty years for revenue to return to its previous level, by which time the volume of letters had increased roughly eightfold.\n\nHistorians point out that the reform coincided with the expansion of the railways, which reduced the cost of carrying mail over long distances. They also note that literacy was rising during the period. Both developments make it difficult to say how much of the growth in letter-writing resulted from the new tariff itself.\n\nThe reform was nevertheless copied by many other countries over the following decades.",
+  "polarity": "correct",
+  "prompt": "Statement: “The single low rate was the main reason why the number of letters increased eightfold.” Explain why this statement cannot be inferred from the passage.",
+  "task": "Write one or two sentences explaining why the statement cannot be inferred. Name the trap. Then reveal the model answer.",
+  "correct": "The eightfold increase happened over more than twenty years, during which the railways expanded and literacy rose; the historians say these developments make it difficult to tell how much of the growth came from the tariff itself. The passage therefore does not allow us to call the tariff the main reason (trap: cause vs correlation).",
+  "evidence": [
+   "Both developments make it difficult to say how much of the growth in letter-writing resulted from the new tariff itself."
+  ],
+  "explanation": {
+   "steps": [
+    "The statement turns a sequence of events (reform, then growth) into a ranking of causes. The passage explicitly says the causes cannot be separated.",
+    "Also note the time frame: the eightfold figure refers to a twenty-year period, not to the immediate effect of the reform."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-022",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Health",
+  "passage": "Road traffic is the main source of environmental noise in most cities. Long-term exposure to high noise levels at night is associated with disturbed sleep, and several studies have linked it to higher blood pressure. One city measured noise levels outside every residential building in 2022 and found that about a quarter of residents were exposed at night to levels above the threshold recommended by health experts.\n\nThe city has tested two measures. On a number of streets, the speed limit was reduced from 50 to 30 kilometres per hour at night, which lowered average noise levels by about three decibels. On others, the road surface was replaced with a low-noise asphalt, with a similar effect at first, although the benefit declined as the surface aged and needed renewing after around eight years.\n\nThe city has also offered subsidies for noise-insulating windows to residents of the noisiest streets. Uptake has been low, partly because tenants must obtain their landlord’s permission. The city intends to combine the three measures in a new plan, giving priority to streets where many people are exposed to high levels at night.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Low-noise asphalt keeps its full effect for at least eight years.",
+    "trap": "time_shift",
+    "note": "The benefit declined as the surface aged; eight years is when it needed renewing."
+   },
+   {
+    "key": "B",
+    "text": "Lowering the night-time speed limit made the streets concerned quieter on average.",
+    "note": "Correct: average noise fell by about three decibels."
+   },
+   {
+    "key": "C",
+    "text": "Most residents of the city were exposed to excessive noise at night.",
+    "trap": "wrong_quantifier",
+    "note": "About a quarter were, not most."
+   },
+   {
+    "key": "D",
+    "text": "Noise-insulating windows have been installed in most of the noisiest streets.",
+    "trap": "reversed_relation",
+    "note": "Uptake of the subsidy has been low."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "On a number of streets, the speed limit was reduced from 50 to 30 kilometres per hour at night, which lowered average noise levels by about three decibels."
+  ],
+  "explanation": {
+   "steps": [
+    "The second paragraph reports that the lower night speed limit reduced average noise by about three decibels: B.",
+    "A confuses the renewal date with how long the full effect lasts; the passage says the benefit declined before that."
+   ]
+  },
+  "trap_tags": [
+   "time_shift",
+   "wrong_quantifier",
+   "reversed_relation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-023",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Culture",
+  "passage": "A fund created by six countries supports feature films produced jointly by companies from at least two of them. Since its launch in 2016, it has provided grants to 140 films. Grants cover up to a quarter of a film’s budget, and producers must spend at least as much as the grant in the countries that contributed to the fund.\n\nAn evaluation published in 2024 found that films supported by the fund were distributed in cinemas in an average of seven countries, compared with three for films produced in a single country with national support only. Supported films also won more awards at international festivals. The evaluators point out, however, that the fund selects projects partly on the basis of their international potential, so the films it supports might have travelled further even without its help.\n\nProducers interviewed for the evaluation praised the fund for making it easier to find partners abroad, but criticised the time it took to reach decisions, which averaged five months. Several said that delays had forced them to postpone filming. The fund has since introduced two decision rounds a year instead of one and has reduced the number of documents applicants must submit.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The fund now takes decisions on applications twice a year.",
+    "note": "Correct: it has introduced two decision rounds a year instead of one."
+   },
+   {
+    "key": "B",
+    "text": "Grants from the fund cover a quarter of every supported film’s budget.",
+    "trap": "wrong_quantifier",
+    "note": "Grants cover up to a quarter; some may cover less."
+   },
+   {
+    "key": "C",
+    "text": "The fund’s support caused its films to reach cinemas in more countries.",
+    "trap": "causal_vs_correlation",
+    "note": "The evaluators warn that supported films were selected for their international potential and might have travelled anyway."
+   },
+   {
+    "key": "D",
+    "text": "Producers said the fund made it harder to find partners abroad.",
+    "trap": "reversed_relation",
+    "note": "Producers praised the fund for making it easier."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "The fund has since introduced two decision rounds a year instead of one and has reduced the number of documents applicants must submit."
+  ],
+  "explanation": {
+   "steps": [
+    "The last sentence states that there are now two decision rounds a year: A.",
+    "C is the selection-effect trap: the films were chosen because they were likely to travel, so wider distribution does not prove that the fund caused it."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "causal_vs_correlation",
+   "reversed_relation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-024",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Energy",
+  "passage": "As the share of electricity generated from wind and solar power rises, grid operators need ways to balance supply and demand when generation does not match consumption. Large batteries can respond within seconds and are well suited to smoothing short fluctuations, but storing energy in them for days remains expensive. Pumped hydro storage, in which water is pumped uphill when electricity is plentiful and released through turbines when it is needed, can store energy for longer periods but requires suitable terrain.\n\nA grid operator’s planning study compared three scenarios for 2035. In the first, the shortfall on windless winter days would be covered mainly by gas-fired power stations kept in reserve. In the second, new interconnectors would allow the country to import electricity from neighbours whose weather patterns differ. In the third, large-scale storage would be built in the country itself.\n\nThe study found that the second scenario had the lowest total cost, provided that neighbouring countries did not experience windless periods at the same time. Its authors warn that, in the rare cases where calm weather affects the whole region, the interconnectors would be of little use, and some reserve capacity would still be needed. They therefore recommend combining interconnectors with a smaller reserve than the first scenario assumes.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Batteries are the cheapest way to store electricity for several days.",
+    "trap": "reversed_relation",
+    "note": "Storing energy in batteries for days remains expensive."
+   },
+   {
+    "key": "B",
+    "text": "The study recommends relying on interconnectors alone to cover shortfalls.",
+    "trap": "partially_true",
+    "note": "It recommends interconnectors combined with a smaller reserve."
+   },
+   {
+    "key": "C",
+    "text": "Pumped hydro storage can be built anywhere in the country.",
+    "trap": "overgeneralisation",
+    "note": "It requires suitable terrain."
+   },
+   {
+    "key": "D",
+    "text": "Under the study’s recommendation, the country would keep less reserve capacity than in the gas-based scenario.",
+    "note": "Correct: the recommended reserve is smaller than the first (gas-based) scenario assumes."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "In the first, the shortfall on windless winter days would be covered mainly by gas-fired power stations kept in reserve.",
+   "They therefore recommend combining interconnectors with a smaller reserve than the first scenario assumes."
+  ],
+  "explanation": {
+   "steps": [
+    "Link two sentences: the first scenario is the gas-reserve scenario, and the recommendation is a smaller reserve than the first scenario assumes. Hence D.",
+    "B is the half-truth: interconnectors are recommended, but not on their own."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "partially_true",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-025",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "EU policy",
+  "passage": "An EU-funded programme allows young people aged 18 to 30 to spend between two and twelve months working as volunteers on projects in another participating country. Volunteers receive travel costs, accommodation, insurance and a monthly allowance, but no salary. Projects must benefit a community, for example by supporting environmental conservation, social care or cultural activities.\n\nIn its first five years, the programme placed around 60,000 volunteers. A follow-up survey of former participants found that 72% felt more confident about working abroad, and 58% said the experience had helped them find a job or decide what to study. Participants from smaller towns were more likely than those from large cities to say they had never travelled abroad before taking part.\n\nThe programme’s managers have identified two challenges. First, the number of applications greatly exceeds the number of places, especially for projects lasting less than three months. Second, young people with disabilities or from low-income families remain under-represented, despite extra funding available to cover their additional costs. The managers plan to work with schools and local youth organisations to reach these groups.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Participants must be between 18 and 30 years old.",
+    "trap": "extreme_wording",
+    "note": "Supported: the programme is for people aged 18 to 30."
+   },
+   {
+    "key": "B",
+    "text": "More than half of the former participants surveyed said the programme helped them find a job or choose their studies.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: 58% is more than half."
+   },
+   {
+    "key": "C",
+    "text": "Volunteers are paid a salary in addition to their allowance.",
+    "note": "This is the statement that is not correct: volunteers receive an allowance but no salary."
+   },
+   {
+    "key": "D",
+    "text": "Short projects are particularly over-subscribed.",
+    "trap": "partially_true",
+    "note": "Supported: demand exceeds places especially for projects of less than three months."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Volunteers receive travel costs, accommodation, insurance and a monthly allowance, but no salary."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage says volunteers receive an allowance “but no salary”, which directly contradicts C.",
+    "In NOT-correct questions, check each option against the text and eliminate the supported ones; firm wording (“must”) can still be correct."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "wrong_quantifier",
+   "partially_true"
+  ],
+  "est_time_sec": 90
+ }
+]

@@ -1,0 +1,2619 @@
+[
+ {
+  "id": "NR-026",
+  "category": "numerical",
+  "subtype": "multi_period_growth",
+  "difficulty": 2,
+  "source": {
+   "kind": "text",
+   "caption": "Fictional figures",
+   "body": "The operating budget of a regional development agency was €330.4 million in 2019. It rose by 7% in 2020, rose by 9% in 2021, and fell by 17% in 2022.",
+   "facts": {
+    "base": 330.4,
+    "year0": 2019,
+    "g1": 7,
+    "g2": 9,
+    "g3": -17
+   }
+  },
+  "recipe": {
+   "name": "growth",
+   "seed": 105296,
+   "params": {
+    "fmt": {
+     "t": "num",
+     "dp": 1,
+     "prefix": "€",
+     "unit": "million"
+    },
+    "n": 3
+   }
+  },
+  "answer_value": 319.836782,
+  "answer_text": "€319.8 million",
+  "prompt": "What was the figure at the end of 2022?",
+  "mode": "reveal",
+  "task": "Before computing anything, write down the full calculation you would key into the calculator. Then reveal the solution.",
+  "correct": "Set-up: 330.4 × 1.07 × 1.09 × 0.83. Result: €319.8 million.",
+  "explanation": {
+   "steps": [
+    "Turn each change into a multiplier: 1.07, 1.09, 0.83.",
+    "Apply them in turn: 330.4 × 1.07 × 1.09 × 0.83 = €319.8 million."
+   ],
+   "shortcut": "Successive percentage changes multiply, they never add. Combine the multipliers first, then do one multiplication or division."
+  },
+  "trap_tags": [],
+  "est_time_sec": 60
+ },
+ {
+  "id": "NR-027",
+  "category": "numerical",
+  "subtype": "percentage_share",
+  "difficulty": 1,
+  "source": {
+   "kind": "table",
+   "caption": "Programme allocations, 2021 and 2022 (€ million; fictional figures)",
+   "columns": [
+    "Programme",
+    "2021",
+    "2022"
+   ],
+   "rows": [
+    [
+     "Neighbourhood policy",
+     2354,
+     2520
+    ],
+    [
+     "Climate action",
+     2190,
+     1935
+    ],
+    [
+     "Digital transition",
+     2000,
+     2268
+    ],
+    [
+     "Agriculture",
+     457,
+     505
+    ],
+    [
+     "Administration",
+     1171,
+     1084
+    ],
+    [
+     "Regional cohesion",
+     496,
+     479
+    ],
+    [
+     "Total",
+     8668,
+     8791
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "pct_share",
+   "seed": 101074,
+   "params": {
+    "row": "Agriculture",
+    "rows": [
+     "Neighbourhood policy",
+     "Climate action",
+     "Digital transition",
+     "Agriculture",
+     "Administration",
+     "Regional cohesion"
+    ],
+    "col": "2022",
+    "fmt": {
+     "t": "pct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 5.744511,
+  "answer_text": "5.7%",
+  "prompt": "What percentage of the 2022 total did Agriculture account for?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "5.7%",
+    "note": "Correct."
+   },
+   {
+    "key": "B",
+    "text": "6.1%",
+    "trap": "wrong_base",
+    "note": "Divides by the sum of the other rows instead of by the total."
+   },
+   {
+    "key": "C",
+    "text": "8.1%",
+    "trap": "misread_row",
+    "note": "Leaves Neighbourhood policy out when adding up the total."
+   },
+   {
+    "key": "D",
+    "text": "5.3%",
+    "trap": "wrong_period",
+    "note": "Uses the 2021 column instead of 2022."
+   },
+   {
+    "key": "E",
+    "text": "25.8%",
+    "trap": "misread_row",
+    "note": "Reads the Digital transition row."
+   }
+  ],
+  "correct": "A",
+  "explanation": {
+   "steps": [
+    "Read the 2022 values: Agriculture = 505, Total = 8,791.",
+    "Share = 505 ÷ 8,791 × 100 = 5.7%."
+   ],
+   "shortcut": "A share is always part ÷ whole. Check the size first: if the part is about a fifth of the total, the answer must be near 20%."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "wrong_period",
+   "misread_row"
+  ],
+  "est_time_sec": 80
+ },
+ {
+  "id": "NR-028",
+  "category": "numerical",
+  "subtype": "multi_period_growth",
+  "difficulty": 2,
+  "source": {
+   "kind": "text",
+   "caption": "Fictional figures",
+   "body": "The number of registered electric vans in one member state was 124.1 thousand vans in 2021. It rose by 16% in 2022, rose by 11% in 2023, and fell by 13% in 2024.",
+   "facts": {
+    "base": 124.1,
+    "year0": 2021,
+    "g1": 16,
+    "g2": 11,
+    "g3": -13
+   }
+  },
+  "recipe": {
+   "name": "growth",
+   "seed": 105185,
+   "params": {
+    "fmt": {
+     "t": "num",
+     "dp": 1,
+     "prefix": "",
+     "unit": "thousand vans"
+    },
+    "n": 3
+   }
+  },
+  "answer_value": 139.018309,
+  "answer_text": "139.0 thousand vans",
+  "prompt": "What was the figure at the end of 2024?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "180.6 thousand vans",
+    "trap": "reversed_operation",
+    "note": "Treats every change as an increase."
+   },
+   {
+    "key": "B",
+    "text": "125.2 thousand vans",
+    "trap": "wrong_period",
+    "note": "Skips the 2023 change."
+   },
+   {
+    "key": "C",
+    "text": "159.8 thousand vans",
+    "trap": "wrong_period",
+    "note": "Stops at 2023 and leaves out the last change."
+   },
+   {
+    "key": "D",
+    "text": "14.9 thousand vans",
+    "trap": "wrong_base",
+    "note": "Gives the change in value rather than the final value."
+   },
+   {
+    "key": "E",
+    "text": "139.0 thousand vans",
+    "note": "Correct."
+   }
+  ],
+  "correct": "E",
+  "explanation": {
+   "steps": [
+    "Turn each change into a multiplier: 1.16, 1.11, 0.87.",
+    "Apply them in turn: 124.1 × 1.16 × 1.11 × 0.87 = 139.0 thousand vans."
+   ],
+   "shortcut": "Successive percentage changes multiply, they never add. Combine the multipliers first, then do one multiplication or division."
+  },
+  "trap_tags": [
+   "wrong_period",
+   "reversed_operation",
+   "wrong_base"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-029",
+  "category": "numerical",
+  "subtype": "average",
+  "difficulty": 1,
+  "source": {
+   "kind": "table",
+   "caption": "New business registrations, 2019–2023 (thousand; fictional figures)",
+   "columns": [
+    "Country",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "rows": [
+    [
+     "Bulgaria",
+     13.8,
+     12,
+     11.4,
+     13.6,
+     14.1
+    ],
+    [
+     "Denmark",
+     15.2,
+     16.8,
+     19.2,
+     18.7,
+     22.1
+    ],
+    [
+     "Ireland",
+     31.3,
+     29.1,
+     26.3,
+     30.7,
+     36.8
+    ],
+    [
+     "Latvia",
+     33.7,
+     36,
+     41.1,
+     35,
+     42.3
+    ],
+    [
+     "Sweden",
+     76,
+     70.5,
+     77.9,
+     85.2,
+     78
+    ]
+   ],
+   "dp": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "recipe": {
+   "name": "average",
+   "seed": 103037,
+   "params": {
+    "rows": [
+     "Bulgaria",
+     "Denmark",
+     "Ireland",
+     "Latvia",
+     "Sweden"
+    ],
+    "cols": [
+     "2019"
+    ],
+    "fmt": {
+     "t": "num",
+     "dp": 2,
+     "unit": "thousand"
+    }
+   }
+  },
+  "answer_value": 34,
+  "answer_text": "34.00 thousand",
+  "prompt": "Across the five countries, what was the average value in 2019?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "23.50 thousand",
+    "trap": "misread_row",
+    "note": "Leaves out the highest country."
+   },
+   {
+    "key": "B",
+    "text": "34.00 thousand",
+    "note": "Correct."
+   },
+   {
+    "key": "C",
+    "text": "31.30 thousand",
+    "trap": "wrong_base",
+    "note": "Takes the middle value (median) instead of the mean."
+   },
+   {
+    "key": "D",
+    "text": "32.88 thousand",
+    "trap": "wrong_period",
+    "note": "Averages the 2020 column instead of 2019."
+   },
+   {
+    "key": "E",
+    "text": "42.50 thousand",
+    "trap": "wrong_base",
+    "note": "Divides the total by 4 instead of 5."
+   }
+  ],
+  "correct": "B",
+  "explanation": {
+   "steps": [
+    "Add the 2019 column: 13.8 + 15.2 + 31.3 + 33.7 + 76.0 = 170.0.",
+    "Divide by 5: 34.00 thousand."
+   ],
+   "shortcut": "Pick a round baseline near the values, average the differences from it, then add the baseline back."
+  },
+  "trap_tags": [
+   "wrong_period",
+   "wrong_base",
+   "misread_row"
+  ],
+  "est_time_sec": 80
+ },
+ {
+  "id": "NR-030",
+  "category": "numerical",
+  "subtype": "average",
+  "difficulty": 1,
+  "source": {
+   "kind": "table",
+   "caption": "Public research grants awarded, 2019–2023 (grants; fictional figures)",
+   "columns": [
+    "Country",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "rows": [
+    [
+     "Austria",
+     391,
+     333,
+     403,
+     414,
+     412
+    ],
+    [
+     "Bulgaria",
+     358,
+     337,
+     323,
+     280,
+     343
+    ],
+    [
+     "Latvia",
+     164,
+     187,
+     206,
+     189,
+     210
+    ],
+    [
+     "Luxembourg",
+     581,
+     600,
+     735,
+     735,
+     731
+    ],
+    [
+     "Slovakia",
+     262,
+     270,
+     229,
+     254,
+     276
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "average",
+   "seed": 110993,
+   "params": {
+    "rows": [
+     "Austria",
+     "Bulgaria",
+     "Latvia",
+     "Luxembourg",
+     "Slovakia"
+    ],
+    "cols": [
+     "2023"
+    ],
+    "fmt": {
+     "t": "num",
+     "dp": 1,
+     "unit": "grants"
+    }
+   }
+  },
+  "answer_value": 394.4,
+  "answer_text": "394.4 grants",
+  "prompt": "Across the five countries, what was the average value in 2023?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "310.3 grants",
+    "trap": "misread_row",
+    "note": "Leaves out the highest country."
+   },
+   {
+    "key": "B",
+    "text": "493.0 grants",
+    "trap": "wrong_base",
+    "note": "Divides the total by 4 instead of 5."
+   },
+   {
+    "key": "C",
+    "text": "394.4 grants",
+    "note": "Correct."
+   },
+   {
+    "key": "D",
+    "text": "343.0 grants",
+    "trap": "wrong_base",
+    "note": "Takes the middle value (median) instead of the mean."
+   },
+   {
+    "key": "E",
+    "text": "374.4 grants",
+    "trap": "wrong_period",
+    "note": "Averages the 2022 column instead of 2023."
+   }
+  ],
+  "correct": "C",
+  "explanation": {
+   "steps": [
+    "Add the 2023 column: 412 + 343 + 210 + 731 + 276 = 1,972.",
+    "Divide by 5: 394.4 grants."
+   ],
+   "shortcut": "Pick a round baseline near the values, average the differences from it, then add the baseline back."
+  },
+  "trap_tags": [
+   "wrong_period",
+   "wrong_base",
+   "misread_row"
+  ],
+  "est_time_sec": 80
+ },
+ {
+  "id": "NR-031",
+  "category": "numerical",
+  "subtype": "average",
+  "difficulty": 2,
+  "source": {
+   "kind": "table",
+   "caption": "Average household electricity price, 2018–2022 (cents per kWh; fictional figures)",
+   "columns": [
+    "Country",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "rows": [
+    [
+     "Cyprus",
+     15.8,
+     16.4,
+     15.7,
+     14.2,
+     17.3
+    ],
+    [
+     "Italy",
+     31.1,
+     33.8,
+     32.9,
+     28.3,
+     24.3
+    ],
+    [
+     "Latvia",
+     21.4,
+     19.1,
+     16.6,
+     15,
+     14.8
+    ],
+    [
+     "Romania",
+     32.6,
+     31.3,
+     37,
+     32.3,
+     32.7
+    ],
+    [
+     "Slovenia",
+     37.7,
+     44.3,
+     48.5,
+     57.7,
+     65.6
+    ]
+   ],
+   "dp": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "recipe": {
+   "name": "average",
+   "seed": 198176,
+   "params": {
+    "rows": [
+     "Latvia"
+    ],
+    "cols": [
+     "2018",
+     "2019",
+     "2020",
+     "2021",
+     "2022"
+    ],
+    "fmt": {
+     "t": "num",
+     "dp": 2,
+     "unit": "cents per kWh"
+    }
+   }
+  },
+  "answer_value": 17.38,
+  "answer_text": "17.38 cents per kWh",
+  "prompt": "What was the average annual value for Latvia over the period 2018–2022 (inclusive)?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "21.73 cents per kWh",
+    "trap": "wrong_base",
+    "note": "Divides by 4 (the number of yearly steps) instead of 5 years."
+   },
+   {
+    "key": "B",
+    "text": "30.08 cents per kWh",
+    "trap": "misread_row",
+    "note": "Reads the Italy row."
+   },
+   {
+    "key": "C",
+    "text": "16.38 cents per kWh",
+    "trap": "wrong_period",
+    "note": "Leaves out 2018 (counts 2019–2022 only)."
+   },
+   {
+    "key": "D",
+    "text": "17.38 cents per kWh",
+    "note": "Correct."
+   },
+   {
+    "key": "E",
+    "text": "18.10 cents per kWh",
+    "trap": "wrong_period",
+    "note": "Averages only the first and last year."
+   }
+  ],
+  "correct": "D",
+  "explanation": {
+   "steps": [
+    "Add the five values for Latvia: 21.4 + 19.1 + 16.6 + 15.0 + 14.8 = 86.9.",
+    "Divide by 5 years: 17.38 cents per kWh."
+   ],
+   "shortcut": "Pick a round baseline near the values, average the differences from it, then add the baseline back."
+  },
+  "trap_tags": [
+   "wrong_period",
+   "wrong_base",
+   "misread_row"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-032",
+  "category": "numerical",
+  "subtype": "percentage_share",
+  "difficulty": 3,
+  "source": {
+   "kind": "table",
+   "caption": "Programme allocations, 2020 and 2021 (€ million; fictional figures)",
+   "columns": [
+    "Programme",
+    "2020",
+    "2021"
+   ],
+   "rows": [
+    [
+     "Regional cohesion",
+     1406,
+     1365
+    ],
+    [
+     "Agriculture",
+     1856,
+     2108
+    ],
+    [
+     "Research and innovation",
+     248,
+     279
+    ],
+    [
+     "Digital transition",
+     518,
+     531
+    ],
+    [
+     "Administration",
+     1881,
+     1691
+    ],
+    [
+     "Climate action",
+     2121,
+     2387
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "pct_share",
+   "seed": 125090,
+   "params": {
+    "row": "Administration",
+    "rows": [
+     "Regional cohesion",
+     "Agriculture",
+     "Research and innovation",
+     "Digital transition",
+     "Administration",
+     "Climate action"
+    ],
+    "col": "both",
+    "fmt": {
+     "t": "pct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 21.792447,
+  "answer_text": "21.8%",
+  "prompt": "Taking 2020 and 2021 together, what percentage of the total did Administration account for?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "6.4%",
+    "trap": "misread_row",
+    "note": "Reads the Digital transition row."
+   },
+   {
+    "key": "B",
+    "text": "27.9%",
+    "trap": "wrong_base",
+    "note": "Compares with all the other rows instead of with the grand total."
+   },
+   {
+    "key": "C",
+    "text": "20.2%",
+    "trap": "wrong_period",
+    "note": "Uses 2021 only instead of both years combined."
+   },
+   {
+    "key": "D",
+    "text": "23.4%",
+    "trap": "wrong_period",
+    "note": "Uses 2020 only instead of both years combined."
+   },
+   {
+    "key": "E",
+    "text": "21.8%",
+    "note": "Correct."
+   }
+  ],
+  "correct": "E",
+  "explanation": {
+   "steps": [
+    "Administration, both years: 1,881 + 1,691 = 3,572.",
+    "Grand total, both years: 8,030 + 8,361 = 16,391.",
+    "Share = 3,572 ÷ 16,391 × 100 = 21.8%."
+   ],
+   "shortcut": "A share is always part ÷ whole. Check the size first: if the part is about a fifth of the total, the answer must be near 20%."
+  },
+  "trap_tags": [
+   "wrong_period",
+   "wrong_base",
+   "misread_row"
+  ],
+  "est_time_sec": 150
+ },
+ {
+  "id": "NR-033",
+  "category": "numerical",
+  "subtype": "currency_conversion",
+  "difficulty": 1,
+  "source": {
+   "kind": "table",
+   "caption": "Reference exchange rates on the day of payment (units of currency per €1; fictional rates)",
+   "columns": [
+    "Currency",
+    "Units per €1"
+   ],
+   "rows": [
+    [
+     "Czech koruna (CZK)",
+     24.82
+    ],
+    [
+     "Danish krone (DKK)",
+     7.618
+    ],
+    [
+     "Pound sterling (GBP)",
+     0.8458
+    ],
+    [
+     "Icelandic krona (ISK)",
+     152.5
+    ],
+    [
+     "Norwegian krone (NOK)",
+     11.4
+    ]
+   ]
+  },
+  "recipe": {
+   "name": "currency",
+   "seed": 104074,
+   "params": {
+    "dir": "from_eur",
+    "amount": 83150,
+    "cur": "Pound sterling (GBP)",
+    "fmt": {
+     "t": "num",
+     "dp": 0,
+     "unit": "GBP"
+    }
+   }
+  },
+  "answer_value": 70328.27,
+  "answer_text": "70,328 GBP",
+  "prompt": "A supplier is owed €83,150. How much is this in GBP?",
+  "mode": "reveal",
+  "task": "Before computing anything, write down the full calculation you would key into the calculator. Then reveal the solution.",
+  "correct": "Set-up: 83,150 × 0.8458. Result: 70,328 GBP.",
+  "explanation": {
+   "steps": [
+    "1 euro buys 0.8458 GBP, so multiply: 83,150 × 0.8458 = 70,328 GBP."
+   ],
+   "shortcut": "Rates are quoted per €1: going INTO the foreign currency you multiply, coming BACK to euros you divide. Check the answer is the right size for the currency."
+  },
+  "trap_tags": [],
+  "est_time_sec": 60
+ },
+ {
+  "id": "NR-034",
+  "category": "numerical",
+  "subtype": "percentage_share",
+  "difficulty": 1,
+  "source": {
+   "kind": "table",
+   "caption": "Household energy use by source, 2022 and 2023 (PJ; fictional figures)",
+   "columns": [
+    "Source",
+    "2022",
+    "2023"
+   ],
+   "rows": [
+    [
+     "District heating",
+     163,
+     145
+    ],
+    [
+     "Solar thermal",
+     242,
+     230
+    ],
+    [
+     "Natural gas",
+     191,
+     188
+    ],
+    [
+     "Oil products",
+     834,
+     908
+    ],
+    [
+     "Electricity",
+     595,
+     558
+    ],
+    [
+     "Biomass",
+     236,
+     238
+    ],
+    [
+     "Total",
+     2261,
+     2267
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "pct_share",
+   "seed": 109030,
+   "params": {
+    "row": "District heating",
+    "rows": [
+     "District heating",
+     "Solar thermal",
+     "Natural gas",
+     "Oil products",
+     "Electricity",
+     "Biomass"
+    ],
+    "col": "2022",
+    "fmt": {
+     "t": "pct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 7.209199,
+  "answer_text": "7.2%",
+  "prompt": "What percentage of the 2022 total did District heating account for?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "7.2%",
+    "note": "Correct."
+   },
+   {
+    "key": "B",
+    "text": "6.4%",
+    "trap": "wrong_period",
+    "note": "Uses the 2023 column instead of 2022."
+   },
+   {
+    "key": "C",
+    "text": "10.7%",
+    "trap": "misread_row",
+    "note": "Reads the Solar thermal row."
+   },
+   {
+    "key": "D",
+    "text": "11.4%",
+    "trap": "misread_row",
+    "note": "Leaves Oil products out when adding up the total."
+   },
+   {
+    "key": "E",
+    "text": "7.8%",
+    "trap": "wrong_base",
+    "note": "Divides by the sum of the other rows instead of by the total."
+   }
+  ],
+  "correct": "A",
+  "explanation": {
+   "steps": [
+    "Read the 2022 values: District heating = 163, Total = 2,261.",
+    "Share = 163 ÷ 2,261 × 100 = 7.2%."
+   ],
+   "shortcut": "A share is always part ÷ whole. Check the size first: if the part is about a fifth of the total, the answer must be near 20%."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "wrong_period",
+   "misread_row"
+  ],
+  "est_time_sec": 80
+ },
+ {
+  "id": "NR-035",
+  "category": "numerical",
+  "subtype": "average",
+  "difficulty": 2,
+  "source": {
+   "kind": "table",
+   "caption": "Public research grants awarded, 2019–2023 (grants; fictional figures)",
+   "columns": [
+    "Country",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "rows": [
+    [
+     "Croatia",
+     1169,
+     1452,
+     1664,
+     1769,
+     1637
+    ],
+    [
+     "Malta",
+     727,
+     622,
+     569,
+     507,
+     511
+    ],
+    [
+     "Portugal",
+     722,
+     662,
+     746,
+     665,
+     653
+    ],
+    [
+     "Slovenia",
+     763,
+     808,
+     871,
+     982,
+     1225
+    ],
+    [
+     "Spain",
+     1291,
+     1371,
+     1450,
+     1403,
+     1346
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "average",
+   "seed": 126942,
+   "params": {
+    "rows": [
+     "Croatia"
+    ],
+    "cols": [
+     "2019",
+     "2020",
+     "2021",
+     "2022",
+     "2023"
+    ],
+    "fmt": {
+     "t": "num",
+     "dp": 1,
+     "unit": "grants"
+    }
+   }
+  },
+  "answer_value": 1538.2,
+  "answer_text": "1,538.2 grants",
+  "prompt": "What was the average annual value for Croatia over the period 2019–2023 (inclusive)?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "1,403.0 grants",
+    "trap": "wrong_period",
+    "note": "Averages only the first and last year."
+   },
+   {
+    "key": "B",
+    "text": "1,922.8 grants",
+    "trap": "wrong_base",
+    "note": "Divides by 4 (the number of yearly steps) instead of 5 years."
+   },
+   {
+    "key": "C",
+    "text": "1,538.2 grants",
+    "note": "Correct."
+   },
+   {
+    "key": "D",
+    "text": "1,630.5 grants",
+    "trap": "wrong_period",
+    "note": "Leaves out 2019 (counts 2020–2023 only)."
+   },
+   {
+    "key": "E",
+    "text": "587.2 grants",
+    "trap": "misread_row",
+    "note": "Reads the Malta row."
+   }
+  ],
+  "correct": "C",
+  "explanation": {
+   "steps": [
+    "Add the five values for Croatia: 1,169 + 1,452 + 1,664 + 1,769 + 1,637 = 7,691.",
+    "Divide by 5 years: 1,538.2 grants."
+   ],
+   "shortcut": "Pick a round baseline near the values, average the differences from it, then add the baseline back."
+  },
+  "trap_tags": [
+   "wrong_period",
+   "wrong_base",
+   "misread_row"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-036",
+  "category": "numerical",
+  "subtype": "chart_reading",
+  "difficulty": 3,
+  "source": {
+   "kind": "bar",
+   "caption": "Onshore: wind power capacity installed, 2018–2024 (GW; fictional figures)",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Onshore",
+     "values": [
+      21,
+      27,
+      30,
+      32,
+      39,
+      47,
+      45
+     ]
+    }
+   ],
+   "unit": "GW"
+  },
+  "recipe": {
+   "name": "chart",
+   "seed": 264787,
+   "params": {
+    "q": "max_pct_increase",
+    "a": "Onshore",
+    "fmt": {
+     "t": "text"
+    }
+   }
+  },
+  "answer_value": "2019",
+  "answer_text": "2019",
+  "prompt": "In which year was the percentage increase on the previous year the largest?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "2022",
+    "trap": "rounding_trap",
+    "note": "The second-largest increase."
+   },
+   {
+    "key": "B",
+    "text": "2023",
+    "trap": "wrong_base",
+    "note": "Largest increase in absolute terms, not in percentage terms."
+   },
+   {
+    "key": "C",
+    "text": "2020",
+    "trap": "wrong_period",
+    "note": "Off by one year: the increase is credited to the year in which it ends."
+   },
+   {
+    "key": "D",
+    "text": "2019",
+    "note": "Correct."
+   },
+   {
+    "key": "E",
+    "text": "2024",
+    "trap": "reversed_operation",
+    "note": "The year with the largest fall (or smallest change)."
+   }
+  ],
+  "correct": "D",
+  "explanation": {
+   "steps": [
+    "Percentage change on the previous year: 2019: 28.6%; 2020: 11.1%; 2021: 6.7%; 2022: 21.9%; 2023: 20.5%; 2024: −4.3%.",
+    "The largest is 28.6% in 2019. A bigger absolute rise from a higher base can be a smaller percentage."
+   ],
+   "shortcut": "For percentage growth, compare rise ÷ starting value; a rise from a low bar is worth more."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "reversed_operation",
+   "rounding_trap",
+   "wrong_period"
+  ],
+  "est_time_sec": 150
+ },
+ {
+  "id": "NR-037",
+  "category": "numerical",
+  "subtype": "percentage_change",
+  "difficulty": 3,
+  "source": {
+   "kind": "table",
+   "caption": "Machinery exports to non-EU countries, 2019–2022 (€ million; fictional figures)",
+   "columns": [
+    "Country",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "rows": [
+    [
+     "Belgium",
+     2458,
+     2621,
+     2248,
+     2199
+    ],
+    [
+     "Cyprus",
+     6473,
+     5626,
+     5404,
+     5361
+    ],
+    [
+     "Germany",
+     4568,
+     4361,
+     5446,
+     4621
+    ],
+    [
+     "Hungary",
+     5438,
+     6477,
+     6258,
+     7829
+    ],
+    [
+     "Portugal",
+     7066,
+     6415,
+     6208,
+     5798
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "pct_change",
+   "seed": 100407,
+   "params": {
+    "rows": [
+     "Belgium",
+     "Portugal"
+    ],
+    "from": "2019",
+    "to": "2021",
+    "fmt": {
+     "t": "spct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": -11.213776,
+  "answer_text": "−11.2%",
+  "prompt": "By what percentage did the combined machinery exports to non-eu countries of Belgium and Portugal change between 2019 and 2021?",
+  "mode": "reveal",
+  "task": "Before computing anything, write down the full calculation you would key into the calculator. Then reveal the solution.",
+  "correct": "Set-up: (8,456 − 9,524) ÷ 9,524 × 100. Result: −11.2%.",
+  "explanation": {
+   "steps": [
+    "Add the two countries: 2019: 2,458 + 7,066 = 9,524; 2021: 2,248 + 6,208 = 8,456.",
+    "Change = 8,456 − 9,524 = -1,068.",
+    "Percentage change = -1,068 ÷ 9,524 × 100 = −11.2%."
+   ],
+   "shortcut": "Divide new by old: 8,456 ÷ 9,524 = 0.888; subtract 1 and read it as a percentage (−11.2%)."
+  },
+  "trap_tags": [],
+  "est_time_sec": 60
+ },
+ {
+  "id": "NR-038",
+  "category": "numerical",
+  "subtype": "combined_units",
+  "difficulty": 3,
+  "source": {
+   "kind": "text",
+   "caption": "Fictional figures",
+   "body": "A solar park has an installed capacity of 231 MW. Over a year (8,760 hours) it produces on average 13% of its maximum possible output. The electricity is sold at €69 per MWh. An average household uses 2,800 kWh of electricity a year.",
+   "facts": {
+    "mw": 231,
+    "cf": 13,
+    "price": 69,
+    "kwh_home": 2800
+   }
+  },
+  "recipe": {
+   "name": "combined",
+   "seed": 108370,
+   "params": {
+    "q": "solar_homes",
+    "fmt": {
+     "t": "num",
+     "dp": 0,
+     "unit": "households"
+    }
+   }
+  },
+  "answer_value": 93951,
+  "answer_text": "93,951 households",
+  "prompt": "How many average households could the park supply for a full year (whole households)?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "939,510 households",
+    "trap": "unit_slip",
+    "note": "Unit slip: a factor of 10."
+   },
+   {
+    "key": "B",
+    "text": "93,951 households",
+    "note": "Correct."
+   },
+   {
+    "key": "C",
+    "text": "93 households",
+    "trap": "unit_slip",
+    "note": "Forgets to convert MWh to kWh (× 1,000)."
+   },
+   {
+    "key": "D",
+    "text": "722,700 households",
+    "trap": "wrong_base",
+    "note": "Ignores the capacity factor."
+   },
+   {
+    "key": "E",
+    "text": "628,749 households",
+    "trap": "reversed_operation",
+    "note": "Uses the share of time NOT producing."
+   }
+  ],
+  "correct": "B",
+  "explanation": {
+   "steps": [
+    "Output: 231 × 8,760 × 13% = 263,063 MWh = 263,062,800 kWh.",
+    "Households: 263,062,800 ÷ 2,800 = 93,951.0, so 93,951 whole households."
+   ],
+   "shortcut": "MW × hours = MWh. Apply the capacity factor once, and convert MWh to kWh (× 1,000) only when comparing with household use."
+  },
+  "trap_tags": [
+   "unit_slip",
+   "wrong_base",
+   "reversed_operation"
+  ],
+  "est_time_sec": 150
+ },
+ {
+  "id": "NR-039",
+  "category": "numerical",
+  "subtype": "currency_conversion",
+  "difficulty": 1,
+  "source": {
+   "kind": "table",
+   "caption": "Reference exchange rates on the day of payment (units of currency per €1; fictional rates)",
+   "columns": [
+    "Currency",
+    "Units per €1"
+   ],
+   "rows": [
+    [
+     "Swiss franc (CHF)",
+     0.954
+    ],
+    [
+     "Czech koruna (CZK)",
+     25.73
+    ],
+    [
+     "Japanese yen (JPY)",
+     157.6
+    ],
+    [
+     "Polish zloty (PLN)",
+     4.376
+    ],
+    [
+     "US dollar (USD)",
+     1.066
+    ]
+   ]
+  },
+  "recipe": {
+   "name": "currency",
+   "seed": 111956,
+   "params": {
+    "dir": "from_eur",
+    "amount": 80900,
+    "cur": "Japanese yen (JPY)",
+    "fmt": {
+     "t": "num",
+     "dp": 0,
+     "unit": "JPY"
+    }
+   }
+  },
+  "answer_value": 12749840,
+  "answer_text": "12,749,840 JPY",
+  "prompt": "A supplier is owed €80,900. How much is this in JPY?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "1,274,984 JPY",
+    "trap": "unit_slip",
+    "note": "Decimal point slipped by one place."
+   },
+   {
+    "key": "B",
+    "text": "127,498,400 JPY",
+    "trap": "unit_slip",
+    "note": "Decimal point slipped by one place."
+   },
+   {
+    "key": "C",
+    "text": "2,081,557 JPY",
+    "trap": "misread_row",
+    "note": "Uses the CZK rate."
+   },
+   {
+    "key": "D",
+    "text": "513 JPY",
+    "trap": "reversed_operation",
+    "note": "Divides by the rate instead of multiplying."
+   },
+   {
+    "key": "E",
+    "text": "12,749,840 JPY",
+    "note": "Correct."
+   }
+  ],
+  "correct": "E",
+  "explanation": {
+   "steps": [
+    "1 euro buys 157.6 JPY, so multiply: 80,900 × 157.6 = 12,749,840 JPY."
+   ],
+   "shortcut": "Rates are quoted per €1: going INTO the foreign currency you multiply, coming BACK to euros you divide. Check the answer is the right size for the currency."
+  },
+  "trap_tags": [
+   "reversed_operation",
+   "misread_row",
+   "unit_slip"
+  ],
+  "est_time_sec": 80
+ },
+ {
+  "id": "NR-040",
+  "category": "numerical",
+  "subtype": "percentage_share",
+  "difficulty": 1,
+  "source": {
+   "kind": "table",
+   "caption": "Programme allocations, 2022 and 2023 (€ million; fictional figures)",
+   "columns": [
+    "Programme",
+    "2022",
+    "2023"
+   ],
+   "rows": [
+    [
+     "Digital transition",
+     1878,
+     2044
+    ],
+    [
+     "Neighbourhood policy",
+     677,
+     722
+    ],
+    [
+     "Climate action",
+     1214,
+     1247
+    ],
+    [
+     "Regional cohesion",
+     1550,
+     1394
+    ],
+    [
+     "Research and innovation",
+     1816,
+     2010
+    ],
+    [
+     "Total",
+     7135,
+     7417
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "pct_share",
+   "seed": 101000,
+   "params": {
+    "row": "Research and innovation",
+    "rows": [
+     "Digital transition",
+     "Neighbourhood policy",
+     "Climate action",
+     "Regional cohesion",
+     "Research and innovation"
+    ],
+    "col": "2023",
+    "fmt": {
+     "t": "pct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 27.099906,
+  "answer_text": "27.1%",
+  "prompt": "What percentage of the 2023 total did Research and innovation account for?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "27.1%",
+    "note": "Correct."
+   },
+   {
+    "key": "B",
+    "text": "25.5%",
+    "trap": "wrong_period",
+    "note": "Uses the 2022 column instead of 2023."
+   },
+   {
+    "key": "C",
+    "text": "37.2%",
+    "trap": "wrong_base",
+    "note": "Divides by the sum of the other rows instead of by the total."
+   },
+   {
+    "key": "D",
+    "text": "28.2%",
+    "trap": "wrong_base",
+    "note": "Divides by the 2022 total instead of the 2023 total."
+   },
+   {
+    "key": "E",
+    "text": "18.8%",
+    "trap": "misread_row",
+    "note": "Reads the Regional cohesion row."
+   }
+  ],
+  "correct": "A",
+  "explanation": {
+   "steps": [
+    "Read the 2023 values: Research and innovation = 2,010, Total = 7,417.",
+    "Share = 2,010 ÷ 7,417 × 100 = 27.1%."
+   ],
+   "shortcut": "A share is always part ÷ whole. Check the size first: if the part is about a fifth of the total, the answer must be near 20%."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "wrong_period",
+   "misread_row"
+  ],
+  "est_time_sec": 80
+ },
+ {
+  "id": "NR-041",
+  "category": "numerical",
+  "subtype": "average",
+  "difficulty": 3,
+  "source": {
+   "kind": "table",
+   "caption": "Unemployment rate and labour force (fictional figures)",
+   "columns": [
+    "Country",
+    "Unemployment rate (%)",
+    "Labour force (million)"
+   ],
+   "rows": [
+    [
+     "Czechia",
+     11.1,
+     14.6
+    ],
+    [
+     "Estonia",
+     3.5,
+     8.2
+    ],
+    [
+     "Finland",
+     8.3,
+     3.8
+    ],
+    [
+     "Poland",
+     11.3,
+     12.4
+    ]
+   ],
+   "dp": [
+    0,
+    1,
+    1
+   ]
+  },
+  "recipe": {
+   "name": "average",
+   "seed": 119171,
+   "params": {
+    "weighted": true,
+    "rows": [
+     "Czechia",
+     "Estonia",
+     "Finland",
+     "Poland"
+    ],
+    "rate": "Unemployment rate (%)",
+    "weight": "Labour force (million)",
+    "fmt": {
+     "t": "pct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 9.292821,
+  "answer_text": "9.3%",
+  "prompt": "Taking the four countries together, what was the overall unemployment rate?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "11.1%",
+    "trap": "misread_row",
+    "note": "Gives the rate of Czechia only."
+   },
+   {
+    "key": "B",
+    "text": "90.6%",
+    "trap": "wrong_base",
+    "note": "Divides the weighted total by the number of countries instead of by the total size."
+   },
+   {
+    "key": "C",
+    "text": "8.6%",
+    "trap": "wrong_base",
+    "note": "Takes the simple average of the four rates, ignoring that the countries differ in size."
+   },
+   {
+    "key": "D",
+    "text": "9.3%",
+    "note": "Correct."
+   },
+   {
+    "key": "E",
+    "text": "8.2%",
+    "trap": "misread_row",
+    "note": "Leaves out Czechia, the largest country."
+   }
+  ],
+  "correct": "D",
+  "explanation": {
+   "steps": [
+    "Weight each rate by its country size: 11.1 × 14.6 + 3.5 × 8.2 + 8.3 × 3.8 + 11.3 × 12.4 = 362.42.",
+    "Total weight: 14.6 + 8.2 + 3.8 + 12.4 = 39.0.",
+    "Overall rate = 362.42 ÷ 39.0 = 9.3%."
+   ],
+   "shortcut": "The overall rate must lie closest to the rate of the largest country (Czechia, 11.1%). The simple average (8.6%) is a trap."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "misread_row"
+  ],
+  "est_time_sec": 150
+ },
+ {
+  "id": "NR-042",
+  "category": "numerical",
+  "subtype": "percentage_change",
+  "difficulty": 1,
+  "source": {
+   "kind": "table",
+   "caption": "Patent applications filed, 2019–2022 (applications; fictional figures)",
+   "columns": [
+    "Country",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "rows": [
+    [
+     "Austria",
+     983,
+     1095,
+     1144,
+     1193
+    ],
+    [
+     "Czechia",
+     6613,
+     6365,
+     5501,
+     4677
+    ],
+    [
+     "Germany",
+     5023,
+     4475,
+     4459,
+     4388
+    ],
+    [
+     "Hungary",
+     9054,
+     9725,
+     9200,
+     8965
+    ],
+    [
+     "Lithuania",
+     1121,
+     1339,
+     1327,
+     1456
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "pct_change",
+   "seed": 100037,
+   "params": {
+    "rows": [
+     "Hungary"
+    ],
+    "from": "2019",
+    "to": "2020",
+    "fmt": {
+     "t": "spct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 7.411089,
+  "answer_text": "+7.4%",
+  "prompt": "By what percentage did patent applications filed in Hungary change between 2019 and 2020?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "+7.4%",
+    "note": "Correct."
+   },
+   {
+    "key": "B",
+    "text": "+1.6%",
+    "trap": "wrong_period",
+    "note": "Uses 2021 instead of 2020 as the end year."
+   },
+   {
+    "key": "C",
+    "text": "−7.4%",
+    "trap": "reversed_operation",
+    "note": "Subtracts in the wrong order, so the sign of the change is reversed."
+   },
+   {
+    "key": "D",
+    "text": "−10.9%",
+    "trap": "misread_row",
+    "note": "Reads the Germany row instead of Hungary."
+   },
+   {
+    "key": "E",
+    "text": "+6.9%",
+    "trap": "wrong_base",
+    "note": "Divides the change by the 2020 value instead of the 2019 value."
+   }
+  ],
+  "correct": "A",
+  "explanation": {
+   "steps": [
+    "Read Hungary: 2019 = 9,054, 2020 = 9,725.",
+    "Change = 9,725 − 9,054 = 671.",
+    "Percentage change = 671 ÷ 9,054 × 100 = +7.4%."
+   ],
+   "shortcut": "Divide new by old: 9,725 ÷ 9,054 = 1.074; subtract 1 and read it as a percentage (+7.4%)."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "reversed_operation",
+   "wrong_period",
+   "misread_row"
+  ],
+  "est_time_sec": 80
+ },
+ {
+  "id": "NR-043",
+  "category": "numerical",
+  "subtype": "combined_units",
+  "difficulty": 1,
+  "source": {
+   "kind": "text",
+   "caption": "Fictional figures",
+   "body": "A municipal transport company runs 31 diesel buses. Each bus covers 68,000 km a year and uses on average 32 litres of diesel per 100 km. Diesel costs €1.75 per litre; petrol costs €1.68 per litre.",
+   "facts": {
+    "buses": 31,
+    "km": 68000,
+    "l100": 32,
+    "diesel": 1.75,
+    "petrol": 1.68,
+    "saving": 14,
+    "diesel2": 1.91
+   }
+  },
+  "recipe": {
+   "name": "combined",
+   "seed": 108074,
+   "params": {
+    "q": "bus_cost",
+    "fmt": {
+     "t": "num",
+     "dp": 0,
+     "prefix": "€"
+    }
+   }
+  },
+  "answer_value": 38080,
+  "answer_text": "€38,080",
+  "prompt": "What is the annual fuel cost of one bus?",
+  "mode": "reveal",
+  "task": "Estimate the answer to within 10% in under 30 seconds, without the calculator. Write your estimate, then reveal the solution.",
+  "correct": "Quick estimate: Round each input to two significant figures and multiply; you land near €38,000. Exact answer: €38,080. Your estimate counts if it is within 10% of this.",
+  "explanation": {
+   "steps": [
+    "Litres a year: 68,000 × 32 ÷ 100 = 21,760 L.",
+    "Cost: 21,760 × €1.75 = €38,080."
+   ],
+   "shortcut": "Write the units next to each number (km × L/100 km × €/L = €) and cancel them; it shows at once where the ÷100 belongs."
+  },
+  "trap_tags": [],
+  "est_time_sec": 30
+ },
+ {
+  "id": "NR-044",
+  "category": "numerical",
+  "subtype": "percentage_change",
+  "difficulty": 1,
+  "source": {
+   "kind": "table",
+   "caption": "Patent applications filed, 2020–2023 (applications; fictional figures)",
+   "columns": [
+    "Country",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "rows": [
+    [
+     "Bulgaria",
+     2646,
+     3174,
+     3397,
+     3079
+    ],
+    [
+     "Cyprus",
+     11656,
+     10849,
+     12985,
+     14598
+    ],
+    [
+     "Finland",
+     4778,
+     4613,
+     4646,
+     4754
+    ],
+    [
+     "Romania",
+     1353,
+     1492,
+     1437,
+     1449
+    ],
+    [
+     "Sweden",
+     8957,
+     10139,
+     11977,
+     10628
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "pct_change",
+   "seed": 100111,
+   "params": {
+    "rows": [
+     "Bulgaria"
+    ],
+    "from": "2021",
+    "to": "2022",
+    "fmt": {
+     "t": "spct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 7.025835,
+  "answer_text": "+7.0%",
+  "prompt": "By what percentage did patent applications filed in Bulgaria change between 2021 and 2022?",
+  "mode": "reveal",
+  "task": "Estimate the answer to within 10% in under 30 seconds, without the calculator. Write your estimate, then reveal the solution.",
+  "correct": "Quick estimate: 3,400 ÷ 3,200 ≈ 1.06, so roughly 6%. Exact answer: +7.0%. Your estimate counts if it is within 10% of this.",
+  "explanation": {
+   "steps": [
+    "Read Bulgaria: 2021 = 3,174, 2022 = 3,397.",
+    "Change = 3,397 − 3,174 = 223.",
+    "Percentage change = 223 ÷ 3,174 × 100 = +7.0%."
+   ],
+   "shortcut": "Divide new by old: 3,397 ÷ 3,174 = 1.070; subtract 1 and read it as a percentage (+7.0%)."
+  },
+  "trap_tags": [],
+  "est_time_sec": 30
+ },
+ {
+  "id": "NR-045",
+  "category": "numerical",
+  "subtype": "per_capita",
+  "difficulty": 3,
+  "source": {
+   "kind": "table",
+   "caption": "Output and population (fictional figures)",
+   "columns": [
+    "Country",
+    "GDP (€ billion)",
+    "Population (million)",
+    "Land area (thousand km²)"
+   ],
+   "rows": [
+    [
+     "Austria",
+     935,
+     24.6,
+     91.5
+    ],
+    [
+     "Estonia",
+     151.2,
+     4,
+     19
+    ],
+    [
+     "Latvia",
+     137.6,
+     2.9,
+     22.6
+    ],
+    [
+     "Poland",
+     124.4,
+     5.2,
+     17.3
+    ],
+    [
+     "Sweden",
+     35.5,
+     0.6,
+     3
+    ]
+   ],
+   "dp": [
+    0,
+    1,
+    1,
+    1
+   ]
+  },
+  "recipe": {
+   "name": "per_capita",
+   "seed": 107333,
+   "params": {
+    "q": "compare",
+    "hi": "Sweden",
+    "lo": "Estonia",
+    "total": "GDP (€ billion)",
+    "pop": "Population (million)",
+    "factor": 1000,
+    "fmt": {
+     "t": "pct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 56.525573,
+  "answer_text": "56.5%",
+  "prompt": "By what percentage was the GDP per person in Sweden higher than in Estonia?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "76.5%",
+    "trap": "misread_row",
+    "note": "Compares the totals, not the per-person values."
+   },
+   {
+    "key": "B",
+    "text": "36.1%",
+    "trap": "wrong_base",
+    "note": "Divides the difference by Sweden's value instead of Estonia's."
+   },
+   {
+    "key": "C",
+    "text": "156.5%",
+    "trap": "unit_slip",
+    "note": "Gives the ratio as a percentage (forgets to subtract 100%)."
+   },
+   {
+    "key": "D",
+    "text": "85.0%",
+    "trap": "misread_row",
+    "note": "Compares the populations."
+   },
+   {
+    "key": "E",
+    "text": "56.5%",
+    "note": "Correct."
+   }
+  ],
+  "correct": "E",
+  "explanation": {
+   "steps": [
+    "Sweden: €59,167 per person; Estonia: €37,800 per person.",
+    "(59,166.7 − 37,800.0) ÷ 37,800.0 × 100 = 56.5%."
+   ],
+   "shortcut": "Settle the units once (billion ÷ million = thousand) and compare per-person values only; totals and populations alone are traps."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "misread_row",
+   "unit_slip"
+  ],
+  "est_time_sec": 150
+ },
+ {
+  "id": "NR-046",
+  "category": "numerical",
+  "subtype": "percentage_share",
+  "difficulty": 2,
+  "source": {
+   "kind": "table",
+   "caption": "Household energy use by source, 2022 and 2023 (PJ; fictional figures)",
+   "columns": [
+    "Source",
+    "2022",
+    "2023"
+   ],
+   "rows": [
+    [
+     "Biomass",
+     299,
+     292
+    ],
+    [
+     "Solar thermal",
+     783,
+     915
+    ],
+    [
+     "Oil products",
+     540,
+     593
+    ],
+    [
+     "Natural gas",
+     311,
+     308
+    ],
+    [
+     "District heating",
+     212,
+     207
+    ],
+    [
+     "Electricity",
+     458,
+     447
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "pct_share",
+   "seed": 101148,
+   "params": {
+    "row": "Oil products",
+    "rows": [
+     "Biomass",
+     "Solar thermal",
+     "Oil products",
+     "Natural gas",
+     "District heating",
+     "Electricity"
+    ],
+    "col": "2022",
+    "fmt": {
+     "t": "pct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 20.745294,
+  "answer_text": "20.7%",
+  "prompt": "What percentage of the 2022 total did Oil products account for?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "30.1%",
+    "trap": "misread_row",
+    "note": "Reads the Solar thermal row."
+   },
+   {
+    "key": "B",
+    "text": "20.7%",
+    "note": "Correct."
+   },
+   {
+    "key": "C",
+    "text": "19.6%",
+    "trap": "wrong_base",
+    "note": "Divides by the 2023 total instead of the 2022 total."
+   },
+   {
+    "key": "D",
+    "text": "26.2%",
+    "trap": "wrong_base",
+    "note": "Divides by the sum of the other rows instead of by the total."
+   },
+   {
+    "key": "E",
+    "text": "21.5%",
+    "trap": "wrong_period",
+    "note": "Uses the 2023 column instead of 2022."
+   }
+  ],
+  "correct": "B",
+  "explanation": {
+   "steps": [
+    "Add up the 2022 column to get the total: 2,603. Oil products = 540.",
+    "Share = 540 ÷ 2,603 × 100 = 20.7%."
+   ],
+   "shortcut": "A share is always part ÷ whole. Check the size first: if the part is about a fifth of the total, the answer must be near 20%."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "wrong_period",
+   "misread_row"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-047",
+  "category": "numerical",
+  "subtype": "combined_units",
+  "difficulty": 2,
+  "source": {
+   "kind": "text",
+   "caption": "Fictional figures",
+   "body": "A solar park has an installed capacity of 176 MW. Over a year (8,760 hours) it produces on average 22% of its maximum possible output. The electricity is sold at €46 per MWh. An average household uses 3,000 kWh of electricity a year.",
+   "facts": {
+    "mw": 176,
+    "cf": 22,
+    "price": 46,
+    "kwh_home": 3000
+   }
+  },
+  "recipe": {
+   "name": "combined",
+   "seed": 108111,
+   "params": {
+    "q": "solar_revenue",
+    "fmt": {
+     "t": "num",
+     "dp": 2,
+     "prefix": "€",
+     "unit": "million"
+    }
+   }
+  },
+  "answer_value": 15.602611,
+  "answer_text": "€15.60 million",
+  "prompt": "What is the park’s annual revenue from electricity sales (in € million)?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "€55.32 million",
+    "trap": "reversed_operation",
+    "note": "Uses the share of time NOT producing."
+   },
+   {
+    "key": "B",
+    "text": "€1.56 million",
+    "trap": "unit_slip",
+    "note": "Unit slip: a factor of 10."
+   },
+   {
+    "key": "C",
+    "text": "€15.60 million",
+    "note": "Correct."
+   },
+   {
+    "key": "D",
+    "text": "€156.03 million",
+    "trap": "unit_slip",
+    "note": "Unit slip: a factor of 10."
+   },
+   {
+    "key": "E",
+    "text": "€70.92 million",
+    "trap": "wrong_base",
+    "note": "Ignores the capacity factor."
+   }
+  ],
+  "correct": "C",
+  "explanation": {
+   "steps": [
+    "Output: 176 × 8,760 × 22% = 339,187 MWh.",
+    "Revenue: 339,187 × €46 = €15,602,611 = €15.60 million."
+   ],
+   "shortcut": "MW × hours = MWh. Apply the capacity factor once, and convert MWh to kWh (× 1,000) only when comparing with household use."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "unit_slip",
+   "reversed_operation"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-048",
+  "category": "numerical",
+  "subtype": "currency_conversion",
+  "difficulty": 2,
+  "source": {
+   "kind": "table",
+   "caption": "Reference exchange rates on the day of payment (units of currency per €1; fictional rates)",
+   "columns": [
+    "Currency",
+    "Units per €1"
+   ],
+   "rows": [
+    [
+     "Danish krone (DKK)",
+     7.184
+    ],
+    [
+     "Hungarian forint (HUF)",
+     380.9
+    ],
+    [
+     "Japanese yen (JPY)",
+     163.3
+    ],
+    [
+     "Romanian leu (RON)",
+     4.778
+    ],
+    [
+     "US dollar (USD)",
+     1.137
+    ]
+   ]
+  },
+  "recipe": {
+   "name": "currency",
+   "seed": 104222,
+   "params": {
+    "dir": "to_eur",
+    "amount": 52500,
+    "cur": "Romanian leu (RON)",
+    "fmt": {
+     "t": "num",
+     "dp": 0,
+     "prefix": "€"
+    }
+   }
+  },
+  "answer_value": 10987.86103,
+  "answer_text": "€10,988",
+  "prompt": "A grant of 52,500 RON is paid to a project partner. What is it worth in euros?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "€250,845",
+    "trap": "reversed_operation",
+    "note": "Multiplies by the rate instead of dividing."
+   },
+   {
+    "key": "B",
+    "text": "€1,099",
+    "trap": "unit_slip",
+    "note": "Decimal point slipped by one place."
+   },
+   {
+    "key": "C",
+    "text": "€10,988",
+    "note": "Correct."
+   },
+   {
+    "key": "D",
+    "text": "€321",
+    "trap": "misread_row",
+    "note": "Uses the JPY rate."
+   },
+   {
+    "key": "E",
+    "text": "€10,500",
+    "trap": "rounding_trap",
+    "note": "Rounds the exchange rate to a whole number before dividing."
+   }
+  ],
+  "correct": "C",
+  "explanation": {
+   "steps": [
+    "The rate is per euro, so divide: 52,500 ÷ 4.778 = €10,988."
+   ],
+   "shortcut": "Rates are quoted per €1: going INTO the foreign currency you multiply, coming BACK to euros you divide. Check the answer is the right size for the currency."
+  },
+  "trap_tags": [
+   "reversed_operation",
+   "misread_row",
+   "rounding_trap",
+   "unit_slip"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-049",
+  "category": "numerical",
+  "subtype": "chart_reading",
+  "difficulty": 2,
+  "source": {
+   "kind": "line",
+   "caption": "Visitors to EU-funded heritage sites, 2018–2024 (thousand; fictional figures)",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Northern region",
+     "values": [
+      265,
+      273,
+      341,
+      406,
+      427,
+      450,
+      516
+     ]
+    },
+    {
+     "name": "Southern region",
+     "values": [
+      220,
+      236,
+      261,
+      217,
+      201,
+      228,
+      253
+     ]
+    }
+   ],
+   "unit": "thousand"
+  },
+  "recipe": {
+   "name": "chart",
+   "seed": 137861,
+   "params": {
+    "q": "max_gap",
+    "a": "Northern region",
+    "b": "Southern region",
+    "fmt": {
+     "t": "text"
+    }
+   }
+  },
+  "answer_value": "2024",
+  "answer_text": "2024",
+  "prompt": "In which year was the gap between Northern region and Southern region the largest?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "2023",
+    "trap": "wrong_period",
+    "note": "Off by one year."
+   },
+   {
+    "key": "B",
+    "text": "2024",
+    "note": "Correct."
+   },
+   {
+    "key": "C",
+    "text": "2022",
+    "trap": "rounding_trap",
+    "note": "The second-largest gap (226 vs 263)."
+   },
+   {
+    "key": "D",
+    "text": "2019",
+    "trap": "reversed_operation",
+    "note": "The year with the smallest gap."
+   },
+   {
+    "key": "E",
+    "text": "2020",
+    "trap": "misread_row",
+    "note": "The year when Southern region peaked, not when the gap was largest."
+   }
+  ],
+  "correct": "B",
+  "explanation": {
+   "steps": [
+    "Gap each year: 2018: 45; 2019: 37; 2020: 80; 2021: 189; 2022: 226; 2023: 222; 2024: 263.",
+    "The largest is 263 in 2024."
+   ],
+   "shortcut": "Scan the labelled values pairwise; only the top two or three candidates need exact subtraction."
+  },
+  "trap_tags": [
+   "misread_row",
+   "reversed_operation",
+   "rounding_trap",
+   "wrong_period"
+  ],
+  "est_time_sec": 115
+ },
+ {
+  "id": "NR-050",
+  "category": "numerical",
+  "subtype": "percentage_share",
+  "difficulty": 2,
+  "source": {
+   "kind": "table",
+   "caption": "Household energy use by source, 2020 and 2021 (PJ; fictional figures)",
+   "columns": [
+    "Source",
+    "2020",
+    "2021"
+   ],
+   "rows": [
+    [
+     "Oil products",
+     741,
+     815
+    ],
+    [
+     "Natural gas",
+     471,
+     536
+    ],
+    [
+     "Biomass",
+     312,
+     316
+    ],
+    [
+     "District heating",
+     371,
+     357
+    ],
+    [
+     "Electricity",
+     203,
+     186
+    ]
+   ],
+   "dp": [
+    0,
+    0,
+    0
+   ]
+  },
+  "recipe": {
+   "name": "pct_share",
+   "seed": 101185,
+   "params": {
+    "row": "Natural gas",
+    "rows": [
+     "Oil products",
+     "Natural gas",
+     "Biomass",
+     "District heating",
+     "Electricity"
+    ],
+    "col": "2021",
+    "fmt": {
+     "t": "pct",
+     "dp": 1
+    }
+   }
+  },
+  "answer_value": 24.253394,
+  "answer_text": "24.3%",
+  "prompt": "What percentage of the 2021 total did Natural gas account for?",
+  "mode": "interactive",
+  "options": [
+   {
+    "key": "A",
+    "text": "25.5%",
+    "trap": "wrong_base",
+    "note": "Divides by the 2020 total instead of the 2021 total."
+   },
+   {
+    "key": "B",
+    "text": "36.9%",
+    "trap": "misread_row",
+    "note": "Reads the Oil products row."
+   },
+   {
+    "key": "C",
+    "text": "22.4%",
+    "trap": "wrong_period",
+    "note": "Uses the 2020 column instead of 2021."
+   },
+   {
+    "key": "D",
+    "text": "32.0%",
+    "trap": "wrong_base",
+    "note": "Divides by the sum of the other rows instead of by the total."
+   },
+   {
+    "key": "E",
+    "text": "24.3%",
+    "note": "Correct."
+   }
+  ],
+  "correct": "E",
+  "explanation": {
+   "steps": [
+    "Add up the 2021 column to get the total: 2,210. Natural gas = 536.",
+    "Share = 536 ÷ 2,210 × 100 = 24.3%."
+   ],
+   "shortcut": "A share is always part ÷ whole. Check the size first: if the part is about a fifth of the total, the answer must be near 20%."
+  },
+  "trap_tags": [
+   "wrong_base",
+   "wrong_period",
+   "misread_row"
+  ],
+  "est_time_sec": 115
+ }
+]
