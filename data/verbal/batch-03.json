@@ -1,0 +1,1192 @@
+[
+ {
+  "id": "VR-051",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Urban planning",
+  "passage": "Several cities have adopted the goal that residents should be able to reach everyday services, such as shops, schools, doctors and parks, within a fifteen-minute walk or bicycle ride from home. One city measured how far it was from this goal in 2020. It found that 55% of residents could reach all six categories of service it had defined within fifteen minutes on foot, but that the share varied from over 90% in central districts to under 20% in some outer housing estates.\n\nThe city has since changed its planning rules. New residential developments above a certain size must now include space for shops or services on the ground floor, and the city has relaxed restrictions that previously prevented small businesses from opening in mainly residential streets. It has also opened school playgrounds to the public outside school hours, which increased the number of residents living within walking distance of a public open space without creating new parks.\n\nCritics have raised two concerns. Some fear that improving local amenities will raise property values and push out lower-income residents. Others argue that the concept says little about access to jobs, since many residents of outer estates work in locations that cannot be reached within fifteen minutes by any means. City officials accept that the goal concerns everyday services and is not intended to address commuting.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "In 2020, most residents of the outer housing estates could reach all six categories of service on foot within fifteen minutes.",
+    "trap": "overgeneralisation",
+    "note": "In some outer estates the share was under 20%."
+   },
+   {
+    "key": "B",
+    "text": "Opening school playgrounds outside school hours increased access to open space without the city building new parks.",
+    "note": "Correct: stated in the second paragraph."
+   },
+   {
+    "key": "C",
+    "text": "The fifteen-minute goal is intended to bring residents’ jobs within fifteen minutes of their homes.",
+    "trap": "reversed_relation",
+    "note": "City officials say the goal concerns everyday services and is not meant to address commuting."
+   },
+   {
+    "key": "D",
+    "text": "The new planning rules have pushed lower-income residents out of improved neighbourhoods.",
+    "trap": "cannot_be_determined",
+    "note": "This is a fear raised by critics, not a reported result."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "It has also opened school playgrounds to the public outside school hours, which increased the number of residents living within walking distance of a public open space without creating new parks."
+  ],
+  "explanation": {
+   "steps": [
+    "The second paragraph says opening playgrounds increased access to open space without creating new parks: B.",
+    "D presents a concern as an outcome. Watch who is speaking and whether a statement is a fear, a prediction or a finding."
+   ]
+  },
+  "trap_tags": [
+   "overgeneralisation",
+   "reversed_relation",
+   "cannot_be_determined"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-052",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Science",
+  "passage": "Mountain glaciers in the region studied have lost a substantial part of their volume over the past century. Measurements of twenty glaciers show that their combined area has fallen by about half since 1900, with the rate of loss accelerating since the 1980s. Small glaciers at lower altitudes have shrunk fastest, and several have disappeared entirely.\n\nGlaciers act as natural water reservoirs. They store precipitation as ice in winter and release meltwater in summer, when rainfall is often low and demand for water from agriculture and hydropower is high. In the short term, faster melting increases summer river flows. Hydrologists expect, however, that as the glaciers continue to shrink, summer flows will eventually decline, because there will be less ice left to melt. For most rivers in the region, this turning point is expected within the next few decades, although the timing differs from one river basin to another.\n\nRetreating glaciers also expose loose rock and sediment that can become unstable, and several valleys have experienced rockfalls and debris flows in areas that were previously covered by ice. Local authorities have installed monitoring equipment at the most vulnerable sites and in some cases have closed hiking routes during periods of rapid melting.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Summer river flows in the region are already declining because of glacier loss.",
+    "trap": "time_shift",
+    "note": "In the short term faster melting increases summer flows; the decline is expected later."
+   },
+   {
+    "key": "B",
+    "text": "Large glaciers at high altitudes have shrunk the fastest.",
+    "trap": "reversed_relation",
+    "note": "Small glaciers at lower altitudes have shrunk fastest."
+   },
+   {
+    "key": "C",
+    "text": "The combined area of the glaciers measured is about half what it was in 1900.",
+    "note": "Correct: their combined area has fallen by about half since 1900."
+   },
+   {
+    "key": "D",
+    "text": "All hiking routes in the region are closed during periods of rapid melting.",
+    "trap": "overgeneralisation",
+    "note": "Only some routes, at vulnerable sites, have been closed in some cases."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Measurements of twenty glaciers show that their combined area has fallen by about half since 1900, with the rate of loss accelerating since the 1980s."
+  ],
+  "explanation": {
+   "steps": [
+    "The first paragraph states that the combined area has fallen by about half since 1900: C.",
+    "A confuses the short-term and long-term effects. The passage says flows rise first and decline only later."
+   ]
+  },
+  "trap_tags": [
+   "time_shift",
+   "reversed_relation",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-053",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Economics",
+  "passage": "Until 2021, goods worth less than 22 euros imported into the European Union by consumers were exempt from value added tax (VAT). Retailers based in the EU complained that this put them at a disadvantage, since the same goods sold from an EU warehouse were taxed. Customs authorities also suspected that many parcels were deliberately undervalued to benefit from the exemption.\n\nThe exemption was abolished in July 2021, so that VAT is now due on all imported goods regardless of value. To avoid customs delays for millions of small parcels, sellers and online marketplaces can register in a single electronic system, charge VAT at the point of sale, and declare it to one member state, which then distributes the revenue to the countries where the buyers live. Parcels from registered sellers are released quickly at the border because the tax has already been paid.\n\nIn the first year, more than 60% of the declared value of imported low-value parcels went through the new system. The remaining parcels were taxed at import, often with a handling fee charged by the delivery company, which some consumers found surprising. Customs authorities report that the share of parcels with suspiciously low declared values has fallen, although undervaluation has not disappeared.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Since July 2021, goods worth less than 22 euros can still be imported without VAT if they are sent through a registered seller.",
+    "note": "This is the statement that is not correct: VAT is now due on all imported goods; registered sellers simply collect it at the point of sale."
+   },
+   {
+    "key": "B",
+    "text": "Parcels from sellers that have not registered may be taxed when they arrive.",
+    "trap": "cannot_be_determined",
+    "note": "Supported: the remaining parcels were taxed at import."
+   },
+   {
+    "key": "C",
+    "text": "Undervaluation of parcels still occurs.",
+    "trap": "time_shift",
+    "note": "Supported: it has fallen but not disappeared."
+   },
+   {
+    "key": "D",
+    "text": "VAT collected through the single system is passed on to the buyers’ countries.",
+    "trap": "partially_true",
+    "note": "Supported: the member state of declaration distributes revenue to the buyers’ countries."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "The exemption was abolished in July 2021, so that VAT is now due on all imported goods regardless of value."
+  ],
+  "explanation": {
+   "steps": [
+    "The exemption was abolished: VAT is due regardless of value. The single system only changes when and how the tax is paid. A is false.",
+    "B, C and D each paraphrase a sentence of the passage."
+   ]
+  },
+  "trap_tags": [
+   "cannot_be_determined",
+   "time_shift",
+   "partially_true"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-054",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Culture",
+  "passage": "Literary works written in less widely spoken languages often struggle to reach readers abroad, because publishers are reluctant to pay for translations of books whose commercial success is uncertain. Since 2014, a grant programme has covered up to half of the translation costs for fiction and poetry translated from one of these languages into another.\n\nAn evaluation of the programme found that it had supported more than 1,500 translations. Around two thirds of these were the first translation of the author’s work into the target language. Publishers said that the grants made the difference between publishing and not publishing in most cases, particularly for small publishing houses with limited budgets.\n\nThe evaluation also found that sales of supported books were generally modest. A small number became bestsellers or won prizes, which in some cases led publishers in other countries to commission further translations without any grant. Most, however, sold fewer than a thousand copies.\n\nThe evaluators conclude that the programme is achieving its main aim of making literature from smaller languages available to readers in other countries, even if most of the books concerned do not become commercial successes. They recommend that publishers should receive more support for promoting translated books after publication, since many lack the resources to market them effectively.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Most books supported by the programme have become bestsellers.",
+    "trap": "wrong_quantifier",
+    "note": "Only a small number became bestsellers; most sold fewer than a thousand copies."
+   },
+   {
+    "key": "B",
+    "text": "The programme should stop funding books that are unlikely to sell well.",
+    "trap": "reversed_relation",
+    "note": "The evaluators judge the programme successful even though most books are not commercial successes."
+   },
+   {
+    "key": "C",
+    "text": "Large publishers benefit most from the translation grants.",
+    "trap": "outside_knowledge",
+    "note": "The passage says grants mattered particularly for small publishers."
+   },
+   {
+    "key": "D",
+    "text": "Translation grants have made literature from smaller languages available abroad, though most of the books sell modestly and need more promotion.",
+    "note": "Correct: this captures the achievement, the limit and the recommendation."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "The evaluators conclude that the programme is achieving its main aim of making literature from smaller languages available to readers in other countries, even if most of the books concerned do not become commercial successes."
+  ],
+  "explanation": {
+   "steps": [
+    "The final paragraph states the overall judgement (aim achieved despite modest sales) and adds a recommendation on promotion. D reflects this.",
+    "A reverses the proportion: bestsellers are the exception."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "reversed_relation",
+   "outside_knowledge"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-055",
+  "category": "verbal",
+  "subtype": "summary",
+  "difficulty": 1,
+  "mode": "reveal",
+  "topic": "Health",
+  "passage": "Regular physical activity helps older people maintain muscle strength and balance, which reduces the risk of falls. A regional health service offered people aged 70 and over a free twelve-week programme of group exercise classes, held twice a week in community centres. The classes combined strength exercises, balance training and walking.\n\nOf the 2,400 people who started the programme, about 70% attended at least three quarters of the sessions. Participants who completed it improved on average in tests of leg strength and balance, and they reported feeling more confident when walking outside. Those who attended fewer sessions showed smaller improvements.\n\nThe health service also compared the number of falls requiring medical treatment in the year after the programme with the year before. Falls among participants decreased by about a fifth. The evaluators note, however, that there was no comparison group of similar people who did not take part, so part of this change could reflect other factors, such as differences between the two years in weather or in other services.\n\nThe main reasons participants gave for stopping were illness, caring responsibilities and difficulty travelling to the community centre. The health service is now testing whether shorter sessions held closer to participants’ homes improve attendance among those who live in rural areas.",
+  "polarity": "correct",
+  "prompt": "Summarise the passage in one sentence.",
+  "task": "Write one sentence that states only what the passage strictly claims, keeping its limits and adding nothing. Then reveal the model answer and compare.",
+  "correct": "A free twelve-week exercise programme for people aged 70 and over was well attended and improved participants’ strength, balance and confidence, and falls among participants fell by about a fifth, although without a comparison group this drop cannot be attributed with certainty to the programme.",
+  "evidence": [
+   "Falls among participants decreased by about a fifth.",
+   "The evaluators note, however, that there was no comparison group of similar people who did not take part, so part of this change could reflect other factors, such as differences between the two years in weather or in other services."
+  ],
+  "explanation": {
+   "steps": [
+    "The key limit is the missing comparison group: the fall in falls is reported, but the passage does not let you claim the programme caused all of it.",
+    "Including the improvements in strength and balance is fine; they were measured directly in participants."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-056",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "EU policy",
+  "passage": "Public support for regional airports is subject to rules designed to prevent subsidies from distorting competition between airports and between airlines. Under the guidelines described here, operating aid, which covers an airport’s day-to-day losses, may be granted to airports with fewer than three million passengers a year, but only for a transitional period, after which the airport is expected to cover its operating costs. Investment aid, for example for runways or terminals, may be granted to airports of up to five million passengers, provided there is a genuine transport need and the investment does not simply duplicate a nearby airport.\n\nThe amount of investment aid allowed depends on the airport’s size: the smaller the airport, the larger the share of investment costs that public funds may cover. Airports with fewer than one million passengers may receive aid covering up to 75% of eligible costs, while larger airports within the limit may receive a lower share.\n\nAgreements between airports and airlines, such as discounts on airport charges, must also respect the rules. Such agreements are acceptable if a private investor running the airport would have offered the same terms in the expectation of making a profit. Investigations have found cases in which airports paid airlines marketing fees that exceeded the revenue the airlines generated, which a private investor would not have done.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "An airport with four million passengers a year may receive operating aid during a transitional period.",
+    "trap": "wrong_quantifier",
+    "note": "Operating aid is limited to airports with fewer than three million passengers."
+   },
+   {
+    "key": "B",
+    "text": "An airport with 800,000 passengers a year could, in principle, receive public funding for a larger share of a new terminal’s eligible costs than an airport with four million passengers.",
+    "note": "Correct: aid intensity falls as airport size rises; under one million may receive up to 75%."
+   },
+   {
+    "key": "C",
+    "text": "Paying marketing fees to airlines is prohibited under the rules.",
+    "trap": "overgeneralisation",
+    "note": "Only fees that a private investor would not have paid are a problem."
+   },
+   {
+    "key": "D",
+    "text": "Investment aid may be granted to any airport that wants to build a new runway.",
+    "trap": "extreme_wording",
+    "note": "There must be a genuine transport need, no duplication, and the airport must have up to five million passengers."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "The amount of investment aid allowed depends on the airport’s size: the smaller the airport, the larger the share of investment costs that public funds may cover."
+  ],
+  "explanation": {
+   "steps": [
+    "Investment aid is allowed up to five million passengers, and smaller airports may receive a larger share. Both airports in B are within the limit, so the smaller one can receive a larger share.",
+    "A mixes up the two thresholds: three million for operating aid, five million for investment aid."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "overgeneralisation",
+   "extreme_wording"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-057",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Technology",
+  "passage": "A national railway operator has begun producing some spare parts by 3D printing instead of ordering them from suppliers. Many of its trains are more than thirty years old, and the original manufacturers no longer make parts for them. Previously, the operator either kept large stocks of rarely needed parts or waited months for small production runs, during which trains could be out of service.\n\nThe operator now scans the worn or broken part, prepares a digital model and prints a replacement in plastic or metal, depending on the use. Printing takes between a few hours and several days. So far, around 400 different parts have been approved for printing, mostly interior components such as handles, cover plates and seat fittings. Parts that are critical for safety, such as those in the braking system, are still produced by conventional methods and must undergo extensive testing before use.\n\nThe operator estimates that waiting times for the parts concerned have fallen from an average of eight weeks to under one week. Costs per part vary: printing is usually cheaper for small numbers of complex parts, but conventional manufacturing remains cheaper when large quantities of the same part are needed. The operator plans to share its digital models with other railway companies that use the same types of trains.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Brake components are now 3D-printed by the operator.",
+    "trap": "reversed_relation",
+    "note": "Safety-critical parts such as brake components are still produced conventionally."
+   },
+   {
+    "key": "B",
+    "text": "3D printing is cheaper than conventional manufacturing for any number of parts.",
+    "trap": "overgeneralisation",
+    "note": "Conventional manufacturing remains cheaper for large quantities."
+   },
+   {
+    "key": "C",
+    "text": "The original manufacturers have started printing parts for the operator.",
+    "trap": "outside_knowledge",
+    "note": "The operator prints the parts itself; manufacturers no longer make them."
+   },
+   {
+    "key": "D",
+    "text": "Waiting times for the parts concerned fell from about eight weeks to less than one week.",
+    "note": "Correct: stated in the third paragraph."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "The operator estimates that waiting times for the parts concerned have fallen from an average of eight weeks to under one week."
+  ],
+  "explanation": {
+   "steps": [
+    "The third paragraph gives the fall in waiting times: from eight weeks to under one week. D restates it.",
+    "B drops a condition. The passage limits the cost advantage to small numbers of complex parts."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "overgeneralisation",
+   "outside_knowledge"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-058",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Environment",
+  "passage": "Artificial light at night affects many animals. Nocturnal insects are attracted to street lamps, where many die from exhaustion or are eaten by predators, and some migrating birds become disoriented near brightly lit buildings. In one country, satellite measurements show that the area affected by significant artificial light increased by around 2% a year between 2012 and 2022.\n\nThe switch from older street lamps to light-emitting diodes (LEDs) has had mixed effects. LEDs use far less electricity and can be directed more precisely, so that less light escapes upwards. However, because they are cheaper to run, some municipalities have installed more lamps or kept them on longer. In addition, many early LED lamps emitted a high proportion of blue light, which studies associate with greater disturbance to insects and to human sleep than the warmer light of older lamps.\n\nSeveral municipalities have adopted measures to reduce light pollution. These include dimming street lights or switching some of them off between midnight and five in the morning, using warmer light colours, and fitting shields that prevent light from shining above the horizontal. One municipality that dimmed its lights by half after midnight reported no increase in recorded traffic accidents or burglaries in the following two years, while its electricity costs for street lighting fell by about a third.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Switching to LEDs did not automatically reduce the amount of light emitted at night.",
+    "note": "Correct: cheaper running costs led some municipalities to install more lamps or keep them on longer."
+   },
+   {
+    "key": "B",
+    "text": "Dimming street lights after midnight reduces burglaries.",
+    "trap": "causal_vs_correlation",
+    "note": "One municipality reported no increase in burglaries; this does not show a reduction, let alone a causal one."
+   },
+   {
+    "key": "C",
+    "text": "All LED lamps emit more blue light than older lamps.",
+    "trap": "overgeneralisation",
+    "note": "The passage refers to many early LED lamps, not all of them."
+   },
+   {
+    "key": "D",
+    "text": "The area affected by artificial light doubled between 2012 and 2022.",
+    "trap": "wrong_quantifier",
+    "note": "Growth of around 2% a year over ten years is far less than a doubling."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "However, because they are cheaper to run, some municipalities have installed more lamps or kept them on longer."
+  ],
+  "explanation": {
+   "steps": [
+    "LEDs are more efficient, but some municipalities used the savings to install more lamps or keep them on longer. So the switch did not automatically mean less light: A.",
+    "D needs a quick estimate: 2% a year for ten years is roughly 22% in total, nowhere near 100%."
+   ]
+  },
+  "trap_tags": [
+   "causal_vs_correlation",
+   "overgeneralisation",
+   "wrong_quantifier"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-059",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Law",
+  "passage": "In one country, landlords may ask tenants for a security deposit when a residential lease begins. The law limits the deposit to three months’ rent, excluding service charges. The landlord must keep the deposit in a separate bank account in the tenant’s name, or in a special account managed by a public body, and any interest earned belongs to the tenant.\n\nAt the end of the lease, the landlord must return the deposit within two months, unless the tenant has unpaid rent or has caused damage going beyond normal wear and tear. Normal wear and tear includes, for example, slightly worn floor coverings or faded paint after several years of occupation. If the landlord retains any part of the deposit, he or she must give the tenant a written statement of the amounts and the reasons.\n\nTo reduce disputes, the law recommends that landlord and tenant draw up a detailed description of the property’s condition when the lease begins and again when it ends. Where no such description was made at the start of the lease, the property is presumed to have been in the same condition as when the tenant left it, which makes it difficult for the landlord to claim compensation for damage.\n\nDisputes may be brought before a conciliation committee free of charge before going to court.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A landlord who did not record the property’s condition at the start of the lease may find it hard to obtain compensation for damage.",
+    "trap": "causal_vs_correlation",
+    "note": "Supported: the property is then presumed to have been in the same condition as when the tenant left."
+   },
+   {
+    "key": "B",
+    "text": "Interest earned on the deposit goes to the tenant.",
+    "trap": "reversed_relation",
+    "note": "Supported: stated in the first paragraph."
+   },
+   {
+    "key": "C",
+    "text": "A landlord may keep part of the deposit to repaint walls whose paint has faded after several years.",
+    "note": "This is the statement that is not correct: faded paint after several years is given as an example of normal wear and tear, which does not justify retention."
+   },
+   {
+    "key": "D",
+    "text": "The deposit may not exceed three months’ rent excluding service charges.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: this is the legal limit."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Normal wear and tear includes, for example, slightly worn floor coverings or faded paint after several years of occupation."
+  ],
+  "explanation": {
+   "steps": [
+    "Deposits may be retained only for unpaid rent or damage beyond normal wear and tear, and faded paint is an example of normal wear and tear. C is therefore not correct.",
+    "A is the hardest true statement: it follows from the presumption that applies when no initial description exists."
+   ]
+  },
+  "trap_tags": [
+   "causal_vs_correlation",
+   "reversed_relation",
+   "wrong_quantifier"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-060",
+  "category": "verbal",
+  "subtype": "explain_non_inference",
+  "difficulty": 2,
+  "mode": "reveal",
+  "topic": "Education",
+  "passage": "About a quarter of students who start a bachelor’s degree at universities in one country leave without completing it. Dropout is highest in the first year and varies considerably between subjects: it is lower in medicine and law, where entry is selective, and higher in mathematics, engineering and some humanities subjects.\n\nA study that followed 12,000 students found that the strongest predictors of dropping out were low marks in the final years of secondary school and working more than fifteen hours a week alongside study. Students who were the first in their family to attend university were also more likely to leave, even when their school results were similar to those of other students. The authors suggest that these students may have less information about what university study involves and fewer people to turn to for advice.\n\nNot all students who leave consider it a failure. In interviews, a significant number said they had realised that a different subject or a vocational course suited them better, and many had enrolled in another programme within a year.\n\nSeveral universities have introduced mentoring by older students for first-year students. Early evaluations show that mentored students attend more classes, but it is too soon to know whether mentoring reduces dropout.",
+  "polarity": "correct",
+  "prompt": "Statement: “Mentoring by older students reduces the number of students who drop out.” Explain why this statement cannot be inferred from the passage.",
+  "task": "Write one or two sentences explaining why the statement cannot be inferred. Name the trap. Then reveal the model answer.",
+  "correct": "The passage reports only that mentored students attend more classes and says explicitly that it is too soon to know whether mentoring reduces dropout. Better attendance is not the same outcome as lower dropout (trap: cannot be determined / time shift).",
+  "evidence": [
+   "Early evaluations show that mentored students attend more classes, but it is too soon to know whether mentoring reduces dropout."
+  ],
+  "explanation": {
+   "steps": [
+    "Separate the measured outcome (attendance) from the outcome in the statement (dropout). The passage says the second is not yet known.",
+    "Treating an intermediate effect as the final result is a common trap in EPSO verbal items."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-061",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "History",
+  "passage": "After the invention of printing with movable type in the mid-fifteenth century, printing presses spread rapidly across the continent. Within fifty years, presses had been established in more than two hundred towns. Their distribution was uneven: they appeared first in commercial cities and university towns, where there were both customers for books and merchants able to finance the considerable cost of paper and type.\n\nEarly printers faced serious financial risks. A print run had to be paid for long before the books were sold, and many printers went bankrupt. To reduce risk, printers often relied on predictable markets, producing religious texts, school grammars, legal handbooks and official documents for city and church authorities, rather than new or controversial works.\n\nHistorians disagree about how quickly printing changed society. Some emphasise that the cost of books fell substantially, making written material available to a much wider public within a few decades. Others point out that literacy rates remained low for a long time and that handwritten copies continued to be produced and used, especially for administrative records and texts with small audiences. Most agree, however, that printing made it much easier to produce identical copies of a text, which helped to standardise spelling, legal texts and scientific diagrams over the following centuries.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Printing immediately made most of the population literate.",
+    "trap": "time_shift",
+    "note": "Some historians point out that literacy remained low for a long time."
+   },
+   {
+    "key": "B",
+    "text": "Printing spread quickly but unevenly and under financial constraints; historians debate its pace of social impact, while agreeing that it helped standardise texts.",
+    "note": "Correct: this covers the spread, the risks, the debate and the point of agreement."
+   },
+   {
+    "key": "C",
+    "text": "Early printers mainly published new and controversial works.",
+    "trap": "reversed_relation",
+    "note": "To limit risk they relied on predictable markets rather than new or controversial works."
+   },
+   {
+    "key": "D",
+    "text": "Handwritten copies disappeared soon after printing was invented.",
+    "trap": "reversed_relation",
+    "note": "Handwritten copies continued to be produced and used."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "Historians disagree about how quickly printing changed society.",
+   "Most agree, however, that printing made it much easier to produce identical copies of a text, which helped to standardise spelling, legal texts and scientific diagrams over the following centuries."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage describes the spread, the economics, a debate and a point of consensus. B is the only option that covers more than one detail and stays neutral on the debate.",
+    "A takes one side of the debate and adds “immediately”, which neither side claims."
+   ]
+  },
+  "trap_tags": [
+   "time_shift",
+   "reversed_relation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-062",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Agriculture",
+  "passage": "Food sold as organic in the European Union must be produced according to common rules, which limit the use of synthetic pesticides and fertilisers and set standards for animal welfare. Farms are inspected at least once a year, and products may carry the organic logo only if at least 95% of their agricultural ingredients are organic.\n\nA farm converting from conventional to organic production must go through a transition period, usually two years for annual crops and three years for permanent crops such as fruit trees. During this period, the farm must follow organic rules but cannot sell its products as organic. Many farmers find the transition financially difficult, because their costs often rise and their yields may fall before they can obtain organic prices.\n\nIn one country, the area farmed organically doubled between 2012 and 2022 and now accounts for about 12% of agricultural land. Organic products account for a smaller share of food sales, about 6%, partly because organic land is concentrated in grassland and livestock farming, whose products make up a smaller part of what consumers buy than fresh produce and processed foods. Surveys indicate that price is the main reason consumers give for not buying organic food more often.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A product containing 90% organic agricultural ingredients may carry the organic logo.",
+    "trap": "wrong_quantifier",
+    "note": "At least 95% is required."
+   },
+   {
+    "key": "B",
+    "text": "During the transition period, farmers may sell their products as organic at reduced prices.",
+    "trap": "partially_true",
+    "note": "During transition, products cannot be sold as organic at all."
+   },
+   {
+    "key": "C",
+    "text": "A farmer converting an apple orchard to organic production would usually wait longer before selling organic fruit than a farmer converting wheat fields.",
+    "note": "Correct: permanent crops such as fruit trees usually have a three-year transition, annual crops two years."
+   },
+   {
+    "key": "D",
+    "text": "Organic products account for 12% of food sales in the country.",
+    "trap": "partially_true",
+    "note": "12% is the share of agricultural land; the share of food sales is about 6%."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "A farm converting from conventional to organic production must go through a transition period, usually two years for annual crops and three years for permanent crops such as fruit trees."
+  ],
+  "explanation": {
+   "steps": [
+    "Fruit trees are permanent crops (three years); wheat is an annual crop (two years). So the orchard farmer usually waits longer: C.",
+    "D swaps two figures from the same paragraph: share of land (12%) and share of sales (6%)."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "partially_true"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-063",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Energy",
+  "passage": "Offshore wind turbines are installed far from the coast, where winds are stronger and more regular than on land. Their remoteness, however, makes maintenance difficult and expensive. Technicians usually reach the turbines by boat, which is only possible when waves are below a certain height. In winter, when winds and therefore electricity production are highest, bad weather can prevent access for days or weeks.\n\nOperators have adopted several approaches to reduce downtime. Larger wind farms now use service vessels that remain at sea for several weeks and carry technicians, spare parts and a motion-compensated gangway that allows safe transfer to a turbine in higher waves. Helicopters are used for urgent repairs, although they are costly and can carry only small parts.\n\nOperators also increasingly rely on sensors that monitor vibration, temperature and other indicators in each turbine. Data analysis can reveal early signs of faults, allowing repairs to be planned for periods of calm weather rather than carried out after a breakdown. One operator reports that predictive maintenance reduced unplanned stoppages by about a quarter over three years.\n\nDespite these improvements, operation and maintenance still account for roughly a third of the lifetime cost of an offshore wind farm, compared with around a fifth for wind farms on land.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Helicopters are the cheapest way of reaching offshore turbines.",
+    "trap": "reversed_relation",
+    "note": "Helicopters are costly and are used for urgent repairs."
+   },
+   {
+    "key": "B",
+    "text": "Bad weather is most likely to prevent access in summer.",
+    "trap": "time_shift",
+    "note": "Access problems are greatest in winter."
+   },
+   {
+    "key": "C",
+    "text": "Predictive maintenance has eliminated unplanned stoppages at one operator’s wind farms.",
+    "trap": "extreme_wording",
+    "note": "It reduced them by about a quarter."
+   },
+   {
+    "key": "D",
+    "text": "Operation and maintenance make up a larger share of lifetime costs offshore than on land.",
+    "note": "Correct: roughly a third offshore against around a fifth on land."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "Despite these improvements, operation and maintenance still account for roughly a third of the lifetime cost of an offshore wind farm, compared with around a fifth for wind farms on land."
+  ],
+  "explanation": {
+   "steps": [
+    "A third is more than a fifth, so maintenance is a larger share of lifetime cost offshore: D.",
+    "C turns “reduced by about a quarter” into “eliminated”, a classic extreme-wording trap."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "time_shift",
+   "extreme_wording"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-064",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Transport",
+  "passage": "A city public transport company replaced 120 of its 400 diesel buses with battery-electric buses between 2019 and 2023. The electric buses cost almost twice as much to buy, but their energy and maintenance costs are considerably lower, because electric motors have fewer moving parts and braking recovers some energy.\n\nThe company charges most buses overnight at its depots. On the longest routes, however, a full battery was not always sufficient for a whole day of service in winter, when heating the passenger compartment uses a large amount of energy. The company therefore installed fast chargers at two terminal stops, where buses can recharge for a few minutes while drivers take their scheduled breaks.\n\nDrivers reported that the electric buses are quieter and accelerate more smoothly, and passenger surveys show higher satisfaction on routes served by them. Breakdowns have been less frequent than with diesel buses of a similar age, although the company notes that the electric fleet is still young.\n\nThe company plans to replace the remaining diesel buses by 2030. Its main concern is the capacity of the electricity grid at its largest depot, which would need to be upgraded before many more buses could be charged there at the same time.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Electric buses cost more to buy than diesel buses.",
+    "trap": "partially_true",
+    "note": "Supported: almost twice as much."
+   },
+   {
+    "key": "B",
+    "text": "All of the company’s buses are now electric.",
+    "note": "This is the statement that is not correct: 120 of 400 buses were replaced; the rest are to follow by 2030."
+   },
+   {
+    "key": "C",
+    "text": "Heating can reduce the range of electric buses in winter.",
+    "trap": "causal_vs_correlation",
+    "note": "Supported: heating uses a large amount of energy, so a full battery was not always enough."
+   },
+   {
+    "key": "D",
+    "text": "Some buses recharge during drivers’ breaks.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: buses recharge at terminal stops during scheduled breaks."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "A city public transport company replaced 120 of its 400 diesel buses with battery-electric buses between 2019 and 2023."
+  ],
+  "explanation": {
+   "steps": [
+    "Only 120 of 400 buses are electric so far, so B is false.",
+    "C is a correct inference: heating uses a lot of energy, which is why a full battery was sometimes insufficient in winter."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "causal_vs_correlation",
+   "wrong_quantifier"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-065",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Economics",
+  "passage": "Economists have long debated how much a shared currency increases trade between the countries that adopt it. Early studies, based on data for many countries over several decades, suggested that currency unions could double or even triple trade between members. Later research has produced much smaller estimates.\n\nOne reason for the difference is that early studies drew mainly on unions between very small countries or territories and larger partners, often former colonies and their former colonial powers. These unions had usually existed for a long time and were associated with close political and historical ties, which may themselves have encouraged trade. When researchers controlled for such ties, the estimated effect of the shared currency fell considerably.\n\nStudies of a large currency union formed by several advanced economies found that trade among members grew somewhat faster than trade with non-members after the union was created, with most estimates ranging between 5% and 15%. Some of this increase began before the currency was introduced, as countries prepared for membership, which makes the effect of the currency itself harder to isolate.\n\nResearchers also note that a shared currency may affect the type of trade rather than only its volume, for instance by making it easier for small firms to sell abroad. Such effects are not captured well by aggregate trade figures.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Early estimates of the trade effect of currency unions may have been inflated by the influence of political and historical ties.",
+    "note": "Correct: when researchers controlled for such ties, the estimated effect fell considerably."
+   },
+   {
+    "key": "B",
+    "text": "The large currency union of advanced economies doubled trade among its members.",
+    "trap": "reversed_relation",
+    "note": "Most estimates for that union range between 5% and 15%."
+   },
+   {
+    "key": "C",
+    "text": "All of the faster growth in trade among members happened after the currency was introduced.",
+    "trap": "time_shift",
+    "note": "Some of the increase began before the currency was introduced."
+   },
+   {
+    "key": "D",
+    "text": "A shared currency has no effect on small firms’ ability to export.",
+    "trap": "extreme_wording",
+    "note": "Researchers suggest it may make it easier for small firms to sell abroad."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "When researchers controlled for such ties, the estimated effect of the shared currency fell considerably."
+  ],
+  "explanation": {
+   "steps": [
+    "Early studies relied on unions with close political and historical ties; controlling for those ties reduced the estimated effect. So part of the early estimates reflected the ties, not the currency: A.",
+    "B transfers the early, large estimates to the later union, for which the passage gives 5–15%."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "time_shift",
+   "extreme_wording"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-066",
+  "category": "verbal",
+  "subtype": "summary",
+  "difficulty": 2,
+  "mode": "reveal",
+  "topic": "Environment",
+  "passage": "Heavy rainstorms increasingly overwhelm the drainage systems of many cities, causing streets and basements to flood. Enlarging underground sewers is expensive and disruptive, so a number of cities are adopting an approach sometimes described as making the city act like a sponge: absorbing, storing and slowing down rainwater where it falls.\n\nOne city has begun replacing sealed surfaces in public spaces with permeable paving and planted areas, creating shallow basins in parks that fill during storms and drain slowly afterwards, and requiring new buildings with flat roofs to install green roofs that retain rainwater. It also offers subsidies to homeowners who disconnect their roof drainage from the sewer and lead the water into gardens instead.\n\nModelling by the city’s engineers suggests that, once the planned measures are completed, the volume of water entering the sewers during a heavy storm will fall by around a quarter in the districts concerned. The engineers stress that these measures are designed for frequent heavy storms and will not prevent flooding during the most extreme events, for which the city still relies on its sewers, pumping stations and emergency plans.\n\nThe measures also bring other benefits, according to the city: more green space, cooler streets in summer and better conditions for trees. Maintenance needs are different from those of conventional drainage, and the city has trained additional staff for this purpose.",
+  "polarity": "correct",
+  "prompt": "Summarise the passage in one sentence.",
+  "task": "Write one sentence that states only what the passage strictly claims, keeping its limits and adding nothing. Then reveal the model answer and compare.",
+  "correct": "To cope with heavy rain without enlarging its sewers, a city is making surfaces absorb and store rainwater, which its engineers model will cut sewer inflow during heavy storms by about a quarter in the districts concerned, though it will not prevent flooding in the most extreme events.",
+  "evidence": [
+   "Modelling by the city’s engineers suggests that, once the planned measures are completed, the volume of water entering the sewers during a heavy storm will fall by around a quarter in the districts concerned.",
+   "The engineers stress that these measures are designed for frequent heavy storms and will not prevent flooding during the most extreme events, for which the city still relies on its sewers, pumping stations and emergency plans."
+  ],
+  "explanation": {
+   "steps": [
+    "The quarter reduction is a model projection for the districts concerned once the measures are completed, not a measured result for the whole city.",
+    "Keep the explicit limit: extreme events still depend on sewers and emergency plans."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-067",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Health",
+  "passage": "Infections acquired in hospital affect a significant number of patients each year, and the hands of healthcare workers are one of the main routes by which bacteria are passed from one patient to another. Guidelines therefore require staff to clean their hands before and after contact with each patient, as well as after contact with a patient’s surroundings.\n\nA hospital that wanted to improve compliance with these guidelines first measured how often staff actually cleaned their hands. Trained observers recorded that this happened on only about half of the occasions when it was required. Compliance was higher before procedures such as inserting a catheter than after routine contacts such as checking a patient’s pulse.\n\nThe hospital then introduced several measures: dispensers of alcohol-based hand rub were placed at every bedside, staff received training and regular feedback on their ward’s results, and senior doctors and nurses were asked to set an example. After a year, observed compliance had risen to about 80%. Over the same period, the number of infections caused by one particular resistant bacterium fell by around a third.\n\nThe hospital acknowledges that staff may clean their hands more often when they know they are being observed, so the true level of compliance may be lower than the measured figure.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Before the measures, staff cleaned their hands more often after routine contacts than before procedures.",
+    "trap": "reversed_relation",
+    "note": "Compliance was higher before procedures than after routine contacts."
+   },
+   {
+    "key": "B",
+    "text": "Dispensers of alcohol-based hand rub were placed at every bedside.",
+    "note": "Correct: this was one of the measures introduced."
+   },
+   {
+    "key": "C",
+    "text": "The true level of compliance is certainly above 80%.",
+    "trap": "reversed_relation",
+    "note": "The hospital says the true level may be lower than the measured figure."
+   },
+   {
+    "key": "D",
+    "text": "The number of all hospital infections fell by a third.",
+    "trap": "overgeneralisation",
+    "note": "The fall concerned infections caused by one particular resistant bacterium."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "The hospital then introduced several measures: dispensers of alcohol-based hand rub were placed at every bedside, staff received training and regular feedback on their ward’s results, and senior doctors and nurses were asked to set an example."
+  ],
+  "explanation": {
+   "steps": [
+    "The third paragraph lists bedside dispensers among the measures: B.",
+    "D widens a result about one bacterium to all infections."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-068",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Demography",
+  "passage": "The average number of children per woman in one country fell from 1.9 in 2008 to 1.5 in 2022. Demographers distinguish between two possible explanations: women may be having fewer children over their lifetime, or they may be having the same number of children at later ages. In the second case, the annual figure falls temporarily while births are postponed, and recovers once the postponement stops.\n\nData on completed family size, which can only be measured for women who have reached their mid-forties, show that women born in 1975 had on average 1.8 children. It is not yet possible to know the completed family size of women born in the 1990s. Surveys indicate, however, that younger adults still say they would like to have about two children, a figure that has changed little over two decades.\n\nThe gap between the number of children people say they want and the number they have has prompted interest in obstacles. In surveys, young adults most often mention the cost and availability of housing, insecure employment and the difficulty of combining work and childcare. Regions where housing costs rose fastest also saw the largest falls in births to women under thirty, although many other factors differed between these regions.\n\nGovernment measures so far have included increased childcare places and longer paid parental leave for fathers.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Women born in the 1990s will have fewer children over their lifetime than women born in 1975.",
+    "trap": "time_shift",
+    "note": "Their completed family size is not yet known."
+   },
+   {
+    "key": "B",
+    "text": "High housing costs caused the fall in births to women under thirty.",
+    "trap": "causal_vs_correlation",
+    "note": "There is a regional association, but many other factors differed between the regions."
+   },
+   {
+    "key": "C",
+    "text": "Young adults now say they want fewer children than young adults did twenty years ago.",
+    "trap": "reversed_relation",
+    "note": "The desired number has changed little over two decades."
+   },
+   {
+    "key": "D",
+    "text": "The fall in the annual figure since 2008 could, at least in part, reflect births being postponed rather than forgone.",
+    "note": "Correct: the passage presents postponement as one possible explanation, and completed family size for younger women is not yet known."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "In the second case, the annual figure falls temporarily while births are postponed, and recovers once the postponement stops.",
+   "It is not yet possible to know the completed family size of women born in the 1990s."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage explains that a falling annual figure can result from postponement and that completed family size for younger women is unknown. So postponement cannot be ruled out: D, which is carefully hedged (“could, at least in part”).",
+    "A states as fact something the passage says cannot yet be known."
+   ]
+  },
+  "trap_tags": [
+   "time_shift",
+   "causal_vs_correlation",
+   "reversed_relation"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-069",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Public administration",
+  "passage": "Governments frequently set numerical targets for public services, such as maximum waiting times in hospital emergency departments or the share of tax returns processed within a month. Targets can focus attention on problems that matter to citizens and make it easier to hold managers accountable. In one country, the introduction of a four-hour target for emergency departments was followed by a substantial fall in the number of patients who waited longer than this.\n\nTargets also have known drawbacks. When performance is judged mainly on a single figure, staff may concentrate on what is measured at the expense of what is not. Studies of the emergency department target found evidence that some patients were admitted to hospital wards shortly before the four-hour limit, apparently to stop the clock, even when admission was not clinically necessary. Other organisations have been found to reclassify cases or to delay the start of the measured period.\n\nSuch behaviour does not mean that targets are useless. Researchers suggest several ways of limiting their side effects: using a small set of indicators rather than one, combining numerical targets with inspections and professional judgement, and checking data for unusual patterns, such as a cluster of cases just inside a limit. Some governments have also replaced fixed targets with published comparisons between organisations, on the assumption that transparency creates pressure to improve without encouraging manipulation to the same extent.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Numerical targets should be abolished because staff manipulate them.",
+    "trap": "extreme_wording",
+    "note": "The passage says such behaviour does not mean targets are useless."
+   },
+   {
+    "key": "B",
+    "text": "The four-hour target improved patient care in every respect.",
+    "trap": "overgeneralisation",
+    "note": "Waiting times fell, but some patients were admitted unnecessarily to stop the clock."
+   },
+   {
+    "key": "C",
+    "text": "Published comparisons have been proven to eliminate manipulation of performance data.",
+    "trap": "cannot_be_determined",
+    "note": "This is an assumption of some governments, and only “to the same extent”, not a proven result."
+   },
+   {
+    "key": "D",
+    "text": "Targets can improve measured performance but can also encourage gaming, which can be limited through a mix of indicators, checks and judgement.",
+    "note": "Correct: this covers the benefit, the drawback and the remedies."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "Such behaviour does not mean that targets are useless.",
+   "Researchers suggest several ways of limiting their side effects: using a small set of indicators rather than one, combining numerical targets with inspections and professional judgement, and checking data for unusual patterns, such as a cluster of cases just inside a limit."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage is structured as benefit → drawbacks → remedies. D is the only option that keeps all three.",
+    "A is the opposite of the passage’s explicit judgement; C converts an assumption into a proven fact."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "overgeneralisation",
+   "cannot_be_determined"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-070",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Science",
+  "passage": "Every winter, thousands of volunteers in one country spend an hour counting the birds that visit their gardens and send the results to a national ornithological society. The survey, which began in 2005, now receives more than 50,000 submissions a year and has become an important source of information on common species.\n\nBecause volunteers differ in experience, the society takes several steps to improve data quality. Participants receive an identification guide with pictures of the most common species, and records of rare birds are checked by experts, who may ask for a photograph. Statistical methods are used to account for differences in the number and location of participating gardens from year to year.\n\nThe survey has recorded clear trends. Sightings of some small birds, such as one species of finch, have fallen by more than half since 2005, while sightings of several species that were once uncommon in gardens have increased. The society notes that changes in garden sightings do not necessarily mirror changes in total populations, since birds may visit gardens more when food in the wider countryside is scarce, for example after cold or snowy spells.\n\nResearchers have used the survey to investigate the effects of disease, garden feeding and urban development on birds, often combining it with data from professional surveys carried out in other habitats.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A fall in garden sightings of a species proves that its total population has fallen.",
+    "note": "This is the statement that is not correct: the society notes that garden sightings do not necessarily mirror total populations."
+   },
+   {
+    "key": "B",
+    "text": "Experts may ask for a photograph before accepting a record of a rare bird.",
+    "trap": "partially_true",
+    "note": "Supported: records of rare birds are checked and a photograph may be requested."
+   },
+   {
+    "key": "C",
+    "text": "The survey receives more than 50,000 submissions a year.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: stated in the first paragraph."
+   },
+   {
+    "key": "D",
+    "text": "Birds may visit gardens more often when food elsewhere is scarce.",
+    "trap": "causal_vs_correlation",
+    "note": "Supported: given as the reason why garden sightings and populations can diverge."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "The society notes that changes in garden sightings do not necessarily mirror changes in total populations, since birds may visit gardens more when food in the wider countryside is scarce, for example after cold or snowy spells."
+  ],
+  "explanation": {
+   "steps": [
+    "The society explicitly warns that garden sightings do not necessarily mirror total populations, so A (“proves”) is not correct.",
+    "D states a cause, but it is the passage’s own explanation, so it is supported."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "wrong_quantifier",
+   "causal_vs_correlation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-071",
+  "category": "verbal",
+  "subtype": "explain_non_inference",
+  "difficulty": 3,
+  "mode": "reveal",
+  "topic": "Law",
+  "passage": "Courts in one country may impose community service instead of a short prison sentence for certain offences. An offender sentenced to community service must carry out a set number of hours of unpaid work, such as maintaining parks or helping in charitable organisations, under supervision. If the work is not completed, the court may replace it with a prison sentence.\n\nA study compared offenders who received community service with offenders who received short prison sentences for similar offences between 2015 and 2018. Two years after their sentence, 34% of those given community service had been convicted of a new offence, compared with 47% of those sent to prison. The authors used statistical methods to compare offenders with similar criminal records, ages and types of offence.\n\nThe authors nevertheless caution that judges decide which sentence to impose, and that they may take into account factors that are not recorded in the data, such as an offender’s attitude in court, stable employment or family support. If judges tend to give community service to offenders who are less likely to reoffend for these reasons, part of the difference could reflect the selection of offenders rather than the effect of the sentence itself.\n\nCommunity service is also considerably cheaper than imprisonment. The government plans to extend its use to a wider range of offences.",
+  "polarity": "correct",
+  "prompt": "Statement: “Replacing short prison sentences with community service would cut reoffending by thirteen percentage points.” Explain why this statement cannot be inferred from the passage.",
+  "task": "Write one or two sentences explaining why the statement cannot be inferred. Name the trap. Then reveal the model answer.",
+  "correct": "The 34% versus 47% gap compares offenders whom judges chose for each sentence, and the authors warn that judges may give community service to offenders who are less likely to reoffend for unrecorded reasons, so part of the gap may reflect selection rather than the sentence. The passage also gives no evidence about extending it to other offences (traps: cause vs correlation, overgeneralisation).",
+  "evidence": [
+   "If judges tend to give community service to offenders who are less likely to reoffend for these reasons, part of the difference could reflect the selection of offenders rather than the effect of the sentence itself."
+  ],
+  "explanation": {
+   "steps": [
+    "The 13-point gap is real in the data, but it is a comparison of groups chosen differently. The statement treats it as the causal effect of a policy change.",
+    "It also generalises to a wider range of offences than those studied."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-072",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Culture",
+  "passage": "A small coastal town has held a festival celebrating its fishing heritage every August since 1998. The four-day event includes boat parades, demonstrations of traditional net-making, concerts and stalls selling local food. It was originally organised entirely by volunteers from the town’s fishing families.\n\nAttendance has grown from a few thousand visitors in the early years to around 40,000 today, most of whom come from elsewhere in the region. Local hotels and restaurants report that the festival weekend is their busiest of the year. The town council now contributes to the cost of security, cleaning and temporary toilets, which have grown with the number of visitors.\n\nSome residents feel that the festival has lost part of its original character. Only a few fishing boats now operate from the harbour, and many of the stalls are run by traders from outside the area. The organising committee has responded by reserving a section of the festival for local producers and by inviting older fishermen to give talks about their work.\n\nThe committee is also concerned about the festival’s dependence on volunteers. Many of those who founded it are now retired, and younger residents, many of whom work outside the town, have less time to help with organisation.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Most festival visitors live in the town itself.",
+    "trap": "reversed_relation",
+    "note": "Most come from elsewhere in the region."
+   },
+   {
+    "key": "B",
+    "text": "The festival now receives public money for some of its costs.",
+    "note": "Correct: the town council contributes to the cost of security, cleaning and toilets."
+   },
+   {
+    "key": "C",
+    "text": "The number of fishing boats operating from the harbour has increased since the festival began.",
+    "trap": "outside_knowledge",
+    "note": "Only a few boats now operate; nothing suggests an increase."
+   },
+   {
+    "key": "D",
+    "text": "All stalls at the festival are now run by traders from outside the area.",
+    "trap": "extreme_wording",
+    "note": "Many stalls are; a section is reserved for local producers."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "The town council now contributes to the cost of security, cleaning and temporary toilets, which have grown with the number of visitors."
+  ],
+  "explanation": {
+   "steps": [
+    "A town council contribution is public money, and the passage says the council now contributes to several costs: B.",
+    "D turns “many” into “all”, contradicted by the section reserved for local producers."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "outside_knowledge",
+   "extreme_wording"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-073",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Technology",
+  "passage": "Under rules adopted in one country, operators of essential services, such as energy suppliers, hospitals and water companies, must report significant cybersecurity incidents to a national authority. An initial notification must be sent within twenty-four hours of the operator becoming aware of the incident, followed by a more detailed report within one month.\n\nThe authority uses the reports to warn other organisations about threats and to identify weaknesses that affect several sectors. It does not publish the names of the organisations concerned, which officials say encourages operators to report incidents they might otherwise keep quiet about.\n\nIn the first year, the authority received about 600 notifications. The most common type of incident was ransomware, in which attackers encrypt an organisation’s data and demand payment to restore it, followed by attacks that overloaded websites to make them unavailable. In around a third of the ransomware cases, the attackers had entered the organisation’s systems through an account protected only by a password, without a second form of verification.\n\nThe authority strongly advises operators not to pay ransoms, since payment does not guarantee that data will be restored and may encourage further attacks. It also recommends that operators keep offline backups of essential data and test regularly whether they can restore their systems from them.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Operators must send a detailed incident report within twenty-four hours.",
+    "trap": "partially_true",
+    "note": "The initial notification is due within twenty-four hours; the detailed report within one month."
+   },
+   {
+    "key": "B",
+    "text": "The authority publishes the names of organisations that report incidents.",
+    "trap": "reversed_relation",
+    "note": "It does not publish their names."
+   },
+   {
+    "key": "C",
+    "text": "In about a third of ransomware cases, attackers entered through an account protected only by a password.",
+    "note": "Correct: stated in the third paragraph."
+   },
+   {
+    "key": "D",
+    "text": "Paying a ransom guarantees that encrypted data will be restored.",
+    "trap": "reversed_relation",
+    "note": "The authority says payment does not guarantee restoration."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "In around a third of the ransomware cases, the attackers had entered the organisation’s systems through an account protected only by a password, without a second form of verification."
+  ],
+  "explanation": {
+   "steps": [
+    "The third paragraph gives the figure: around a third of ransomware cases began with a password-only account. C restates it.",
+    "A merges the two deadlines; the detailed report is due within one month."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "reversed_relation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-074",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Agriculture",
+  "passage": "A study of food waste in one country estimated that around 1.8 million tonnes of food are discarded each year across the supply chain, from farms to households. Households account for just over half of this total. Food service, including restaurants and canteens, accounts for about 15%, processing for about 20%, and retail and primary production for the remainder.\n\nThe causes differ between stages. On farms, produce may be left unharvested when market prices are too low to cover the cost of harvesting, or rejected because it does not meet buyers’ standards for size and appearance. In households, the main reasons are buying more than needed, poor storage and confusion about date labels. The study found that many consumers did not understand the difference between a “use by” date, which relates to safety, and a “best before” date, which relates to quality, and so threw away food that was still safe to eat.\n\nSeveral measures are under way. Some supermarkets now sell imperfectly shaped fruit and vegetables at lower prices, and a national campaign explains date labels. A law adopted in 2022 requires large food retailers to offer unsold food that is still safe to charities rather than discarding it. Early figures suggest that donations to charities have increased, though it is not yet clear how much of the donated food is actually eaten.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Retailers are the largest source of food waste in the country.",
+    "trap": "reversed_relation",
+    "note": "Households account for just over half; retail and primary production share the small remainder."
+   },
+   {
+    "key": "B",
+    "text": "The 2022 law has reduced the total amount of food wasted.",
+    "trap": "cannot_be_determined",
+    "note": "Donations have increased, but it is unclear how much donated food is eaten; no total is reported."
+   },
+   {
+    "key": "C",
+    "text": "Food past its “best before” date is always unsafe to eat.",
+    "trap": "extreme_wording",
+    "note": "“Best before” relates to quality, not safety."
+   },
+   {
+    "key": "D",
+    "text": "Retail and primary production together account for less than a fifth of food waste.",
+    "note": "Correct: households just over 50%, food service about 15% and processing about 20% leave less than 15% for retail and primary production."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "Households account for just over half of this total.",
+   "Food service, including restaurants and canteens, accounts for about 15%, processing for about 20%, and retail and primary production for the remainder."
+  ],
+  "explanation": {
+   "steps": [
+    "Add the stated shares: just over 50% + about 15% + about 20% = about 85% or more. The remainder for retail and primary production is therefore below 15%, which is less than a fifth: D.",
+    "B confuses an intermediate result (more donations) with the final outcome (less waste)."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "cannot_be_determined",
+   "extreme_wording"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-075",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Public administration",
+  "passage": "In 2019 a national government moved two of its agencies, employing about 1,500 staff in total, from the capital to two regional cities. The stated aims were to reduce office costs, to support economic activity outside the capital and to bring public employment closer to citizens in the regions.\n\nThe relocation was planned over three years. Staff were offered financial help with moving, and those who did not wish to move were offered posts in other public bodies in the capital. In the end, around 40% of the agencies’ employees moved, and the remainder took other posts or left public service. The agencies therefore had to recruit and train a large number of new staff, and their output fell temporarily: one agency took about 25% longer to process applications in the first year after the move.\n\nBy the third year, processing times had returned to their previous levels. Annual office costs were about 30% lower than in the capital. The regional cities reported new demand for housing and services, though the effect on their overall economies was small given their size.\n\nAn audit report concluded that the relocation had achieved its cost objective but that the one-off costs of moving and recruitment would take around ten years to be recovered through lower running costs.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Most of the agencies’ staff moved with them to the regional cities.",
+    "note": "This is the statement that is not correct: only around 40% moved."
+   },
+   {
+    "key": "B",
+    "text": "Processing times rose for a time after the move and later returned to previous levels.",
+    "trap": "time_shift",
+    "note": "Supported: about 25% longer in the first year, back to previous levels by the third."
+   },
+   {
+    "key": "C",
+    "text": "The one-off costs of the move are expected to be recovered only after about a decade.",
+    "trap": "partially_true",
+    "note": "Supported: the audit puts this at around ten years."
+   },
+   {
+    "key": "D",
+    "text": "The relocation had only a small effect on the economies of the regional cities as a whole.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: the effect on their overall economies was small."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "In the end, around 40% of the agencies’ employees moved, and the remainder took other posts or left public service."
+  ],
+  "explanation": {
+   "steps": [
+    "Around 40% moved, which is less than half, so A is false.",
+    "B and C each summarise a change over time correctly; check the time markers (“first year”, “third year”, “ten years”)."
+   ]
+  },
+  "trap_tags": [
+   "time_shift",
+   "partially_true",
+   "wrong_quantifier"
+  ],
+  "est_time_sec": 105
+ }
+]
