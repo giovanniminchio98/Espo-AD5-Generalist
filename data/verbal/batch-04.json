@@ -1,0 +1,1194 @@
+[
+ {
+  "id": "VR-076",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Environment",
+  "passage": "Agricultural soils contain large amounts of carbon in the form of organic matter, and farming practices can increase or decrease this store. Practices such as adding compost, keeping soil covered with plants all year and reducing ploughing tend to increase soil carbon, while intensive tillage and leaving soil bare tend to reduce it. Because of this, some governments have proposed paying farmers for storing additional carbon in their soils.\n\nMeasuring soil carbon accurately is difficult. Concentrations vary considerably within a single field, and changes from one year to the next are small compared with this natural variation, so many samples are needed to detect a real change. Some schemes therefore estimate carbon gains from the practices farmers adopt, using models, rather than measuring the soil directly. Critics argue that model estimates may not reflect actual conditions on a particular farm.\n\nThere is also the question of permanence. Carbon stored in soil can be released again if a farmer later returns to intensive ploughing, or if the climate becomes warmer and drier. Most schemes address this by requiring farmers to maintain the practices for a minimum period, often ten years or more, and by holding back part of the payments as a reserve in case stored carbon is lost.\n\nSoils also have a limit: after several decades under the same practices, the amount of carbon they hold tends to stabilise.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Once carbon has been stored in soil, it cannot be released again.",
+    "trap": "reversed_relation",
+    "note": "Stored carbon can be released by renewed ploughing or a warmer, drier climate."
+   },
+   {
+    "key": "B",
+    "text": "Model estimates of soil carbon are more accurate than direct measurement.",
+    "trap": "outside_knowledge",
+    "note": "Models are used because measurement is difficult; critics doubt their accuracy on particular farms."
+   },
+   {
+    "key": "C",
+    "text": "Soil carbon can increase indefinitely as long as good practices continue.",
+    "trap": "extreme_wording",
+    "note": "After several decades the amount of carbon tends to stabilise."
+   },
+   {
+    "key": "D",
+    "text": "A single soil sample from a field is unlikely to show reliably whether its carbon content has changed over a year.",
+    "note": "Correct: year-to-year changes are small compared with variation within a field, so many samples are needed."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "Concentrations vary considerably within a single field, and changes from one year to the next are small compared with this natural variation, so many samples are needed to detect a real change."
+  ],
+  "explanation": {
+   "steps": [
+    "Many samples are needed because year-to-year changes are small relative to variation within a field. It follows that one sample would not reliably show a change: D.",
+    "C ignores the final sentence about soils stabilising after several decades."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "outside_knowledge",
+   "extreme_wording"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-077",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "EU policy",
+  "passage": "A programme funded by the European Union enables school teachers to spend between two weeks and two months observing lessons in a school in another participating country. Teachers apply through their school, which must explain how the experience will be shared with colleagues on the teacher’s return. The programme covers travel, accommodation and a daily allowance, while the teacher’s salary continues to be paid by the home school.\n\nIn its first three years, around 9,000 teachers took part. A survey found that most participants had tried at least one new teaching method after returning, most often ways of organising group work or of assessing pupils’ progress during lessons rather than only through tests. Teachers of foreign languages were the largest group of participants, followed by teachers of science.\n\nSchools reported two main difficulties. Finding a replacement teacher for the period of absence was often hard, particularly in small schools and in subjects with teacher shortages. In addition, some participants found it difficult to apply what they had learned because their own school’s timetable or curriculum did not allow it.\n\nTo address the first problem, the programme now allows shorter stays of one week and encourages exchanges during periods when pupils are taking examinations and fewer lessons are taught.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Teachers’ salaries continue to be paid by their home school during the stay.",
+    "note": "Correct: stated in the first paragraph."
+   },
+   {
+    "key": "B",
+    "text": "Science teachers were the largest group of participants.",
+    "trap": "reversed_relation",
+    "note": "Language teachers were the largest group; science teachers came second."
+   },
+   {
+    "key": "C",
+    "text": "Stays must last at least two weeks.",
+    "trap": "time_shift",
+    "note": "This was the original minimum; shorter stays of one week are now allowed."
+   },
+   {
+    "key": "D",
+    "text": "All participants applied new teaching methods after their return.",
+    "trap": "wrong_quantifier",
+    "note": "Most participants did, not all."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "The programme covers travel, accommodation and a daily allowance, while the teacher’s salary continues to be paid by the home school."
+  ],
+  "explanation": {
+   "steps": [
+    "The first paragraph says the teacher’s salary continues to be paid by the home school: A.",
+    "C is a time-shift trap: the rule changed in the last paragraph."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "time_shift",
+   "wrong_quantifier"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-078",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Transport",
+  "passage": "In 2018 a city introduced a charge for driving into its centre on weekdays between 7 a.m. and 7 p.m. Vehicles are identified by cameras that read number plates, and drivers pay online or by phone. Residents of the charging zone receive a 90% discount, and vehicles used by people with disabilities are exempt.\n\nIn the first year, the number of vehicles entering the zone during charging hours fell by 18%. Average traffic speeds inside the zone rose, and bus journeys became more reliable. Traffic increased on some roads just outside the boundary, as drivers sought to avoid the zone, and the city later adjusted traffic lights on these roads to reduce congestion.\n\nThe net revenue from the charge, after the costs of operating the system, must by law be spent on transport. Most of it has been used to increase bus frequencies and to build cycle lanes. Opinion polls show that public support for the charge, which was below 40% before its introduction, rose to around 55% after two years.\n\nRetailers in the centre had feared a loss of customers. Sales data for the first two years showed no significant difference between shops inside the zone and comparable shops elsewhere in the city, although the retailers’ association notes that changes in online shopping make such comparisons difficult.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Residents of the zone pay only a tenth of the normal charge.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: residents receive a 90% discount."
+   },
+   {
+    "key": "B",
+    "text": "Support for the charge was higher after two years than before it was introduced.",
+    "trap": "time_shift",
+    "note": "Supported: from below 40% to around 55%."
+   },
+   {
+    "key": "C",
+    "text": "The charge reduced traffic on all roads in and around the city.",
+    "note": "This is the statement that is not correct: traffic increased on some roads just outside the boundary."
+   },
+   {
+    "key": "D",
+    "text": "The law requires net revenue from the charge to be spent on transport.",
+    "trap": "partially_true",
+    "note": "Supported: stated in the third paragraph."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Traffic increased on some roads just outside the boundary, as drivers sought to avoid the zone, and the city later adjusted traffic lights on these roads to reduce congestion."
+  ],
+  "explanation": {
+   "steps": [
+    "Traffic rose on some roads just outside the zone, so C’s “all roads” is false.",
+    "A converts a 90% discount into “a tenth of the normal charge”: an equivalent expression."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "time_shift",
+   "partially_true"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-079",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Economics",
+  "passage": "Online platforms that match customers with people offering services, such as food delivery, transport or household tasks, have grown rapidly. Platforms generally classify the people who work through them as self-employed, which means that they do not receive the protections that employees have, such as a minimum wage, paid holidays or sick pay.\n\nPlatforms argue that this reflects the flexibility of the work: people can choose when and how much to work, and many use platform work to supplement other income. Surveys support this in part. A majority of platform workers in one survey said they valued being able to choose their hours, and for many the work was not their main source of income.\n\nOther evidence points in a different direction. In some services, platforms set prices, assign tasks through algorithms and can deactivate workers whose ratings fall below a certain level, which critics say amounts to the kind of control that employers exercise. Courts in several countries have reached different conclusions about whether particular platform workers should be treated as employees, often depending on how much control the platform exercised in practice.\n\nRecent legislative proposals would presume that platform workers are employees when certain signs of control are present, while allowing platforms to prove otherwise. Supporters say this would provide legal certainty; platforms warn that it could reduce the number of jobs available.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "All platform workers should be classified as employees.",
+    "trap": "extreme_wording",
+    "note": "The passage presents arguments on both sides and a proposal based on signs of control, not a blanket rule."
+   },
+   {
+    "key": "B",
+    "text": "Whether platform workers are self-employed or employees is contested, because the work combines flexibility with forms of platform control, and legislators are proposing a presumption based on control.",
+    "note": "Correct: this covers both sides and the proposed response."
+   },
+   {
+    "key": "C",
+    "text": "Most platform workers depend on platform work as their main source of income.",
+    "trap": "reversed_relation",
+    "note": "For many, the work was not their main source of income."
+   },
+   {
+    "key": "D",
+    "text": "Courts have consistently ruled that platform workers are self-employed.",
+    "trap": "overgeneralisation",
+    "note": "Courts have reached different conclusions."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "Courts in several countries have reached different conclusions about whether particular platform workers should be treated as employees, often depending on how much control the platform exercised in practice.",
+   "Recent legislative proposals would presume that platform workers are employees when certain signs of control are present, while allowing platforms to prove otherwise."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage sets the platforms’ view (flexibility) against the critics’ view (control), notes divided courts and describes a proposal. B captures this balance.",
+    "A and D each pick one side and make it absolute."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "reversed_relation",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-080",
+  "category": "verbal",
+  "subtype": "summary",
+  "difficulty": 3,
+  "mode": "reveal",
+  "topic": "Science",
+  "passage": "To test whether a new medicine works, researchers usually carry out a randomised controlled trial. Participants are assigned at random either to receive the medicine or to a control group that receives a placebo, an inactive substance that looks the same, or the current standard treatment. Random assignment means that, on average, the groups differ only in the treatment they receive, so differences in outcomes can be attributed to the treatment.\n\nIdeally, neither participants nor the researchers assessing them know who is in which group until the end of the trial. This prevents expectations from influencing how participants report symptoms or how researchers interpret results. Such trials are described as double-blind.\n\nPlacebos raise ethical questions when an effective treatment already exists, because patients in the control group would be denied it. In such cases, new medicines are usually compared with the existing treatment instead. A trial may then aim to show that the new medicine is better, or only that it is not unacceptably worse, which can be useful if it has fewer side effects or is easier to take.\n\nTrials have limits. They usually last months rather than years and may exclude older patients or people with several illnesses, so rare side effects or effects in these groups may only become apparent after a medicine is in wide use. For this reason, authorities continue to monitor medicines after approval.",
+  "polarity": "correct",
+  "prompt": "Summarise the passage in one sentence.",
+  "task": "Write one sentence that states only what the passage strictly claims, keeping its limits and adding nothing. Then reveal the model answer and compare.",
+  "correct": "Randomised, ideally double-blind trials compare a new medicine with a placebo or, where an effective treatment exists, with that treatment, so that outcome differences can be attributed to the medicine; because trials are short and may exclude some groups, medicines continue to be monitored after approval.",
+  "evidence": [
+   "Random assignment means that, on average, the groups differ only in the treatment they receive, so differences in outcomes can be attributed to the treatment.",
+   "For this reason, authorities continue to monitor medicines after approval."
+  ],
+  "explanation": {
+   "steps": [
+    "Cover the logic (randomisation lets differences be attributed to the treatment), the ethical exception (comparison with existing treatment) and the limits (short, selective trials, so monitoring continues).",
+    "Avoid saying trials “prove a medicine is safe”: the passage stresses that rare side effects may appear only later."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-081",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Law",
+  "passage": "Cartels, in which competing firms secretly agree to fix prices or share markets, are difficult to detect because the participants have strong reasons to keep them hidden. To uncover them, competition authorities in many countries operate leniency programmes. A firm that is part of a cartel and is the first to report it, providing evidence that allows the authority to investigate, can obtain complete immunity from fines.\n\nFirms that come forward later may still obtain a reduction of their fines, provided they supply evidence that adds significant value to what the authority already has. The size of the reduction depends on the order in which they apply and the value of their evidence: the second firm can typically obtain a larger reduction than the third. Firms receiving immunity or a reduction must cooperate fully throughout the investigation and must end their involvement in the cartel.\n\nLeniency programmes have led to the discovery of a large share of the cartels punished in recent decades. Their effectiveness depends on firms believing that the authority may discover the cartel by other means, since a firm has little reason to confess if it thinks the cartel will stay hidden. Authorities therefore also invest in other detection methods, including the analysis of bidding patterns in public tenders.\n\nImmunity from fines does not protect a firm from claims for compensation brought by customers who were harmed by the cartel.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A firm that obtains immunity from fines cannot be required to compensate customers harmed by the cartel.",
+    "trap": "partially_true",
+    "note": "Immunity from fines does not protect the firm from compensation claims."
+   },
+   {
+    "key": "B",
+    "text": "Every firm that reports its participation in a cartel receives complete immunity.",
+    "trap": "overgeneralisation",
+    "note": "Only the first firm can obtain complete immunity; later firms may obtain reductions."
+   },
+   {
+    "key": "C",
+    "text": "Improving other methods of detecting cartels may make leniency programmes more effective.",
+    "note": "Correct: firms are more likely to confess if they believe the authority may discover the cartel by other means."
+   },
+   {
+    "key": "D",
+    "text": "The third firm to apply will usually obtain a larger reduction than the second.",
+    "trap": "reversed_relation",
+    "note": "The second firm can typically obtain a larger reduction than the third."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Their effectiveness depends on firms believing that the authority may discover the cartel by other means, since a firm has little reason to confess if it thinks the cartel will stay hidden."
+  ],
+  "explanation": {
+   "steps": [
+    "Leniency works when firms fear detection by other means. Better detection by other means raises that fear, so it can make leniency more effective: C.",
+    "A is the trap that splits two kinds of liability; the last sentence keeps compensation claims separate from fines."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "overgeneralisation",
+   "reversed_relation"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-082",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Environment",
+  "passage": "Marine protected areas are parts of the sea where human activities are restricted in order to conserve ecosystems. The level of protection varies widely. In some areas, all fishing and extraction are banned; in others, most activities continue with only minor restrictions.\n\nA review of studies from many coastal regions found that fully protected areas, where no fishing is allowed, contained on average several times more fish biomass than nearby unprotected waters. Areas with only partial protection showed much smaller differences, and in some cases none at all. Benefits also took time to appear: fish populations in newly protected areas often needed five to ten years to recover substantially.\n\nFishing communities are often concerned that protected areas reduce their catches. The review found evidence that, in some cases, fish moving out of fully protected areas increased catches in neighbouring waters, partly offsetting the loss of fishing grounds. This effect depended on the species, since some fish move little during their lives.\n\nThe review also highlighted the importance of enforcement. Protected areas that were not monitored or in which rules were not enforced showed little difference from unprotected waters. In one country, only about a tenth of the marine area designated as protected was found to be under full protection with active enforcement.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Partially protected areas show the same benefits as fully protected areas.",
+    "trap": "reversed_relation",
+    "note": "They showed much smaller differences, and sometimes none."
+   },
+   {
+    "key": "B",
+    "text": "Fish populations recover fully within a year of an area being protected.",
+    "trap": "time_shift",
+    "note": "Recovery often took five to ten years."
+   },
+   {
+    "key": "C",
+    "text": "Fish leaving protected areas always increase catches in nearby waters.",
+    "trap": "extreme_wording",
+    "note": "This happened in some cases and depended on the species."
+   },
+   {
+    "key": "D",
+    "text": "Protected areas without enforcement showed little difference from unprotected waters.",
+    "note": "Correct: stated in the last paragraph."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "Protected areas that were not monitored or in which rules were not enforced showed little difference from unprotected waters."
+  ],
+  "explanation": {
+   "steps": [
+    "The last paragraph states that unenforced areas showed little difference from unprotected waters: D.",
+    "C turns “in some cases” into “always”."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "time_shift",
+   "extreme_wording"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-083",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Technology",
+  "passage": "Between 2015 and 2022, an electricity distributor replaced the meters in about three million homes with smart meters, which record consumption every fifteen minutes and transmit the data automatically. Households no longer need to submit meter readings, and bills are based on actual rather than estimated consumption.\n\nThe distributor hoped that smart meters would also encourage households to save energy. Customers can view their consumption online, and those who choose a time-of-use tariff pay less for electricity used at night and at weekends. A study of 20,000 households found that those who regularly looked at their consumption data used about 3% less electricity than similar households who did not, but only about one in six households looked at the data more than once a month.\n\nTime-of-use tariffs had a clearer effect on when electricity was used than on how much. Households on these tariffs shifted part of their consumption, such as running washing machines, to cheaper periods, but their total consumption changed little. Shifting demand away from peak times can nevertheless reduce costs for the electricity system, since less generation and network capacity is needed to meet the highest demand.\n\nSome customers have raised concerns about privacy, because detailed consumption data can reveal when people are at home. Data are therefore transmitted in encrypted form, and detailed readings are shared with suppliers only with the customer’s consent.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Time-of-use tariffs can benefit the electricity system even without reducing total household consumption.",
+    "note": "Correct: shifting demand away from peaks reduces the capacity needed, even though total consumption changed little."
+   },
+   {
+    "key": "B",
+    "text": "Most households regularly check their consumption data online.",
+    "trap": "wrong_quantifier",
+    "note": "Only about one in six looked more than once a month."
+   },
+   {
+    "key": "C",
+    "text": "Looking at consumption data caused households to cut their electricity use by 3%.",
+    "trap": "causal_vs_correlation",
+    "note": "Households who looked used 3% less than similar households, but the passage does not establish that looking caused the difference."
+   },
+   {
+    "key": "D",
+    "text": "Suppliers automatically receive detailed readings for all customers.",
+    "trap": "reversed_relation",
+    "note": "Detailed readings are shared only with the customer’s consent."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Shifting demand away from peak times can nevertheless reduce costs for the electricity system, since less generation and network capacity is needed to meet the highest demand."
+  ],
+  "explanation": {
+   "steps": [
+    "Time-of-use tariffs changed timing rather than total use, and the passage explains that shifting demand away from peaks still lowers system costs: A.",
+    "C is subtle: the study compares groups (households who looked vs did not); keen viewers may differ in other ways."
+   ]
+  },
+  "trap_tags": [
+   "wrong_quantifier",
+   "causal_vs_correlation",
+   "reversed_relation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-084",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Health",
+  "passage": "Video consultations between patients and doctors expanded rapidly when in-person visits were restricted during the pandemic, and many health systems have kept them as a permanent option. In one country, about 15% of general practitioner consultations in 2023 took place by video, compared with less than 1% before 2020.\n\nA study of 50,000 consultations found that video was used most often for follow-up appointments, prescription renewals and mental health support, and least often for new symptoms requiring physical examination. Patients who used video consultations were on average younger and lived further from their practice than those who did not. Older patients and those without a reliable internet connection were less likely to use them, which some researchers fear could widen inequalities in access to care.\n\nPatient satisfaction with video consultations was generally high, mainly because they saved travel time. Doctors were more divided: some valued the flexibility, while others felt less confident about their assessments without a physical examination. In about 7% of video consultations, the patient was asked to attend in person afterwards, which the study’s authors note could duplicate work and increase total consultation time for those patients.\n\nThe study did not find evidence that video consultations led to more emergency hospital admissions in the following month, although its authors caution that rare missed diagnoses would be difficult to detect in a study of this size.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Video consultations were used least often for new symptoms requiring physical examination.",
+    "trap": "partially_true",
+    "note": "Supported: stated in the second paragraph."
+   },
+   {
+    "key": "B",
+    "text": "Patients mainly appreciated video consultations because they saved travel time.",
+    "trap": "causal_vs_correlation",
+    "note": "Supported: satisfaction was high mainly for this reason."
+   },
+   {
+    "key": "C",
+    "text": "In a small share of video consultations, the patient then had to be seen in person.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: about 7%."
+   },
+   {
+    "key": "D",
+    "text": "The study showed that video consultations never lead to missed diagnoses.",
+    "note": "This is the statement that is not correct: the authors say rare missed diagnoses would be difficult to detect in a study of this size."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "The study did not find evidence that video consultations led to more emergency hospital admissions in the following month, although its authors caution that rare missed diagnoses would be difficult to detect in a study of this size."
+  ],
+  "explanation": {
+   "steps": [
+    "Not finding evidence of harm is not the same as showing that harm never occurs. The authors explicitly say rare missed diagnoses could go undetected, so D is not correct.",
+    "C translates “about 7%” into “a small share”; that is a fair paraphrase."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "causal_vs_correlation",
+   "wrong_quantifier"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-085",
+  "category": "verbal",
+  "subtype": "explain_non_inference",
+  "difficulty": 1,
+  "mode": "reveal",
+  "topic": "Demography",
+  "passage": "Life expectancy at birth differs considerably between regions within one country. In 2022, it was about 84 years in the region with the highest figure and about 78 years in the region with the lowest, a gap of six years. The gap has widened slightly since 2000, because life expectancy rose faster in the regions that already had higher figures.\n\nThe regions with the lowest life expectancy share several characteristics: lower average incomes, higher unemployment, higher rates of smoking and a larger share of jobs in heavy industry in the past. Researchers caution that these factors are closely linked to each other, so it is difficult to say how much each contributes on its own.\n\nAccess to healthcare also differs. Regions with lower life expectancy tend to have fewer doctors per inhabitant and longer travel times to hospitals. However, a study comparing districts with similar incomes found that differences in the number of doctors explained only a small part of the gap in life expectancy, suggesting that living conditions and behaviour play a larger role.\n\nThe national government has set a goal of reducing the gap by one year by 2035. Its strategy combines measures to encourage doctors to work in underserved regions with programmes on smoking, diet and physical activity.",
+  "polarity": "correct",
+  "prompt": "Statement: “People in the region with the lowest life expectancy die younger because they smoke more.” Explain why this statement cannot be inferred from the passage.",
+  "task": "Write one or two sentences explaining why the statement cannot be inferred. Name the trap. Then reveal the model answer.",
+  "correct": "Smoking is listed as one of several characteristics shared by low-life-expectancy regions, alongside lower incomes, unemployment and past heavy industry, and researchers warn that these factors are linked, so their separate contributions cannot be identified. The passage does not single out smoking as the cause (trap: cause vs correlation).",
+  "evidence": [
+   "Researchers caution that these factors are closely linked to each other, so it is difficult to say how much each contributes on its own."
+  ],
+  "explanation": {
+   "steps": [
+    "A factor that occurs alongside an outcome is not thereby its cause, especially when the passage lists several linked factors.",
+    "The statement also turns a regional average into a statement about individual people."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-086",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Culture",
+  "passage": "Small independent cinemas in towns and villages faced a difficult decade. Audiences fell as more people watched films at home through streaming services, and the switch from film reels to digital projection required investments that many small cinemas could not afford. In one country, around a fifth of cinemas in towns with fewer than 20,000 inhabitants closed between 2010 and 2020.\n\nSome of the cinemas that survived changed the way they operate. Many now combine films with other activities, such as live broadcasts of opera and theatre, talks with directors, film clubs for schools and cafés that stay open during the day. Several are run by non-profit associations relying partly on volunteers, which reduces staff costs.\n\nPublic support has also played a role. A national fund helped about 300 small cinemas pay for digital equipment, and some municipalities provide buildings rent-free or cover part of the running costs, on the grounds that a cinema contributes to the life of a town centre. Cinema operators say that such support was often decisive, although some cinemas that received it later closed nonetheless.\n\nAttendance at the surviving small cinemas has recovered partly in recent years, especially among older people and families, though it remains below the level of the early 2000s.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Streaming services have caused all small-town cinemas to close.",
+    "trap": "extreme_wording",
+    "note": "Around a fifth closed; others survived and adapted."
+   },
+   {
+    "key": "B",
+    "text": "Small cinemas faced serious pressures, but many survived by diversifying their activities and with public support.",
+    "note": "Correct: this covers the pressures, the adaptations and the support."
+   },
+   {
+    "key": "C",
+    "text": "Attendance at small cinemas is now higher than in the early 2000s.",
+    "trap": "time_shift",
+    "note": "It has recovered partly but remains below the early 2000s level."
+   },
+   {
+    "key": "D",
+    "text": "Public support guaranteed the survival of every cinema that received it.",
+    "trap": "overgeneralisation",
+    "note": "Some cinemas that received support closed nonetheless."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "Some of the cinemas that survived changed the way they operate.",
+   "Cinema operators say that such support was often decisive, although some cinemas that received it later closed nonetheless."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage covers decline, adaptation, public support and partial recovery. B summarises it without exaggerating either the decline or the recovery.",
+    "A, C and D each distort a single detail."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "time_shift",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-087",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Energy",
+  "passage": "Energy poverty describes a situation in which a household cannot afford to keep its home adequately warm or meet other basic energy needs. It results from a combination of low income, high energy prices and poor energy efficiency of the home. In one country, about 8% of households reported in a 2022 survey that they were unable to keep their home adequately warm, up from 5% in 2020.\n\nThe government responded to the rise in energy prices with two types of measures. First, it reduced taxes on electricity and gas for all households, which lowered bills immediately but also benefited wealthier households with high consumption. Second, it provided direct payments to households receiving certain social benefits. Analysts estimated that the tax cuts cost about four times as much as the direct payments, while the direct payments reached a larger share of households in energy poverty relative to their cost.\n\nIn the longer term, the government aims to reduce energy poverty by improving the efficiency of homes. Grants cover most of the cost of insulation and new heating systems for low-income homeowners. Tenants are harder to reach, since landlords pay for improvements while tenants benefit from lower bills; a new rule will require rented homes to meet a minimum efficiency standard by 2030.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The tax cuts reached more households in energy poverty than the direct payments did.",
+    "trap": "cannot_be_determined",
+    "note": "The passage compares reach relative to cost, not absolute numbers reached."
+   },
+   {
+    "key": "B",
+    "text": "Energy poverty is caused solely by high energy prices.",
+    "trap": "extreme_wording",
+    "note": "It results from low income, high prices and poor efficiency combined."
+   },
+   {
+    "key": "C",
+    "text": "Relative to their cost, the direct payments were better targeted at households in energy poverty than the tax cuts.",
+    "note": "Correct: direct payments reached a larger share of energy-poor households relative to their cost."
+   },
+   {
+    "key": "D",
+    "text": "Tenants already benefit from a rule requiring rented homes to meet an efficiency standard.",
+    "trap": "time_shift",
+    "note": "The rule will apply from 2030."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Analysts estimated that the tax cuts cost about four times as much as the direct payments, while the direct payments reached a larger share of households in energy poverty relative to their cost."
+  ],
+  "explanation": {
+   "steps": [
+    "The analysts say the direct payments reached a larger share of energy-poor households relative to their cost, which is what “better targeted” means: C.",
+    "A asks for an absolute comparison that the passage does not provide."
+   ]
+  },
+  "trap_tags": [
+   "cannot_be_determined",
+   "extreme_wording",
+   "time_shift"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-088",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "History",
+  "passage": "The epidemic that struck the continent in the mid-fourteenth century killed a large share of the population, with estimates for many regions ranging between a third and a half. Historians have studied its economic consequences using records of wages, prices and land rents kept by estates, towns and religious institutions.\n\nIn the decades that followed, the wages of agricultural labourers and craftsmen rose substantially in many areas, because there were fewer workers available. Land, by contrast, became relatively plentiful, and rents fell in many places as landlords struggled to find tenants. Some landlords responded by converting arable land to pasture for sheep, which required less labour.\n\nAuthorities in several countries tried to prevent wages from rising by issuing laws that fixed maximum wages at the levels that had applied before the epidemic and that restricted workers’ freedom to move in search of better pay. Records of court cases show that these laws were enforced in some places, but the persistence of higher wages suggests that they were widely evaded.\n\nThe effects were not the same everywhere. In parts of eastern Europe, landowners used their political power to impose greater obligations on peasants, so that labour shortages led to tighter control rather than higher wages. Historians continue to debate why the outcomes differed so markedly between regions.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Some landlords turned arable land into sheep pasture because it needed fewer workers.",
+    "note": "Correct: stated in the second paragraph."
+   },
+   {
+    "key": "B",
+    "text": "Land rents rose in most places after the epidemic.",
+    "trap": "reversed_relation",
+    "note": "Rents fell in many places as land became relatively plentiful."
+   },
+   {
+    "key": "C",
+    "text": "Laws fixing maximum wages succeeded in keeping wages at their previous levels.",
+    "trap": "reversed_relation",
+    "note": "Wages stayed higher, suggesting the laws were widely evaded."
+   },
+   {
+    "key": "D",
+    "text": "Labour shortages led to higher wages in every region of the continent.",
+    "trap": "overgeneralisation",
+    "note": "In parts of eastern Europe they led to tighter control instead."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Some landlords responded by converting arable land to pasture for sheep, which required less labour."
+  ],
+  "explanation": {
+   "steps": [
+    "The second paragraph says some landlords converted arable land to pasture, which required less labour: A.",
+    "D ignores the regional exception described in the last paragraph."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-089",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Education",
+  "passage": "In a dual apprenticeship system, young people combine work in a company with part-time study at a vocational school, typically spending three or four days a week at the workplace. Apprentices receive a wage from the company, which is lower than that of a qualified worker, and complete their training with an examination organised jointly by employers’ organisations and public authorities.\n\nIn one country, about 40% of young people choose an apprenticeship after compulsory schooling. Around two thirds of apprentices are offered a job by their training company after completing their apprenticeship. Unemployment among young people is low by international standards, which supporters attribute partly to the apprenticeship system, although other features of the labour market also play a role.\n\nThe system depends on companies being willing to offer training places. Companies bear the costs of training and of apprentices’ wages, but they also benefit from apprentices’ work and from the opportunity to train future employees in their own methods. In recent years, the number of training places offered has exceeded the number of applicants in some occupations, particularly in construction and hospitality, while in others, such as information technology and office work, there are more applicants than places.\n\nCritics note that the choice between an apprenticeship and academic education is made at a young age and can be difficult to reverse.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Apprentices earn less than qualified workers.",
+    "trap": "partially_true",
+    "note": "Supported: their wage is lower than that of a qualified worker."
+   },
+   {
+    "key": "B",
+    "text": "There are more applicants than training places in every occupation.",
+    "note": "This is the statement that is not correct: in construction and hospitality, places have exceeded applicants."
+   },
+   {
+    "key": "C",
+    "text": "Most apprentices are offered a job by the company that trained them.",
+    "trap": "wrong_quantifier",
+    "note": "Supported: around two thirds are."
+   },
+   {
+    "key": "D",
+    "text": "Apprentices usually spend more of the week at work than at school.",
+    "trap": "cannot_be_determined",
+    "note": "Supported: three or four days a week at the workplace."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "In recent years, the number of training places offered has exceeded the number of applicants in some occupations, particularly in construction and hospitality, while in others, such as information technology and office work, there are more applicants than places."
+  ],
+  "explanation": {
+   "steps": [
+    "The imbalance runs both ways depending on the occupation, so “every occupation” in B is false.",
+    "C: two thirds is “most”, so it is supported."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "wrong_quantifier",
+   "cannot_be_determined"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-090",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Economics",
+  "passage": "Rents in one capital city rose by around 45% between 2013 and 2023, much faster than average incomes. Economists generally agree that the main reason is that the number of households grew faster than the number of homes, as people moved to the city for work and study and households became smaller on average.\n\nThe city has tried several approaches. It has increased the number of homes owned by public housing companies, which are let at below-market rents to households with incomes below a certain level. It has also introduced a cap on rent increases for existing tenancies, limiting them to 10% over three years. Rents for new tenancies, however, remain largely free.\n\nThe effects of the cap are debated. It protects existing tenants from sharp increases, but critics argue that it encourages landlords to charge more when a flat changes hands, and that it may reduce mobility, since tenants with capped rents are reluctant to move. A study of the city found that the share of tenants who had moved in the previous five years fell after the cap was introduced, although construction slowed during the same period, which also reduced the availability of flats.\n\nMost economists consulted for a city report agreed that, in the long run, rents can only be stabilised if housing construction increases substantially. They differed on whether this requires mainly changes to planning rules, public investment or incentives for private developers.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The cap on rent increases applies equally to new and existing tenancies.",
+    "trap": "partially_true",
+    "note": "Rents for new tenancies remain largely free."
+   },
+   {
+    "key": "B",
+    "text": "The rent cap was the reason why fewer tenants moved.",
+    "trap": "causal_vs_correlation",
+    "note": "Construction also slowed in the same period, which reduced the flats available."
+   },
+   {
+    "key": "C",
+    "text": "Economists agree that changing planning rules is the main way to increase construction.",
+    "trap": "overgeneralisation",
+    "note": "They agreed on the need for more construction but differed on how to achieve it."
+   },
+   {
+    "key": "D",
+    "text": "A tenant who stays in the same flat for three years can face a rent increase of at most 10% over that period.",
+    "note": "Correct: increases for existing tenancies are limited to 10% over three years."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "It has also introduced a cap on rent increases for existing tenancies, limiting them to 10% over three years."
+  ],
+  "explanation": {
+   "steps": [
+    "The cap limits increases on existing tenancies to 10% over three years. A sitting tenant over three years is exactly that case: D.",
+    "C reflects the area of agreement (more construction) but then claims agreement on the method, where the economists differed."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "causal_vs_correlation",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-091",
+  "category": "verbal",
+  "subtype": "summary",
+  "difficulty": 2,
+  "mode": "reveal",
+  "topic": "Agriculture",
+  "passage": "A national plan adopted in 2010 aimed to halve the use of chemical pesticides in agriculture within ten years. By 2020 the target had not been met: the quantity of pesticides sold had fallen by only about 10%, and an indicator that also takes into account the toxicity of the substances used had fallen somewhat more.\n\nAn evaluation identified several reasons. Farmers’ use of pesticides depends heavily on the crops they grow and on weather conditions, which vary from year to year. Many farmers were unwilling to accept the risk of lower yields without compensation, and the advice available on alternative methods, such as crop rotation, mechanical weeding and the use of natural predators of pests, was uneven across regions. In addition, the plan relied mainly on voluntary measures.\n\nThe evaluation did find substantial reductions on a network of around 3,000 demonstration farms that received intensive advice. On average, these farms reduced pesticide use by about a third without a significant loss of income, although results varied widely between types of farm. The evaluators caution that farmers who volunteered for the network may have been more motivated than average.\n\nA revised plan now combines advice with a tax on pesticides whose revenue funds the advisory services, and it sets targets for each type of crop rather than a single national figure.",
+  "polarity": "correct",
+  "prompt": "Summarise the passage in one sentence.",
+  "task": "Write one sentence that states only what the passage strictly claims, keeping its limits and adding nothing. Then reveal the model answer and compare.",
+  "correct": "A plan to halve pesticide use by 2020 largely failed, mainly because it relied on voluntary measures in the face of farmers’ risks and uneven advice, although intensively advised (and possibly more motivated) demonstration farms cut use by about a third without significant income loss, and a revised plan now adds a pesticide tax and crop-specific targets.",
+  "evidence": [
+   "By 2020 the target had not been met: the quantity of pesticides sold had fallen by only about 10%, and an indicator that also takes into account the toxicity of the substances used had fallen somewhat more.",
+   "The evaluators caution that farmers who volunteered for the network may have been more motivated than average."
+  ],
+  "explanation": {
+   "steps": [
+    "Report the overall failure (about 10% instead of 50%) before the success story of the demonstration farms.",
+    "Keep the selection caveat: volunteer farms may not be representative, so their one-third reduction cannot simply be generalised."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-092",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Science",
+  "passage": "Volcanic eruptions are usually preceded by changes that scientists can detect. As molten rock, or magma, rises towards the surface, it can cause small earthquakes, make the ground swell slightly, and release gases such as sulphur dioxide. Observatories therefore monitor active volcanoes with networks of seismometers, satellite and ground-based instruments that measure deformation, and gas sensors.\n\nThese signals do not make it possible to predict the exact time of an eruption. Magma may rise and then stop without erupting, and some volcanoes show warning signs for months or years before erupting, while others erupt after only hours of unrest. Scientists therefore express forecasts as probabilities and use alert levels that indicate the degree of concern, rather than precise dates.\n\nAt one volcano, the observatory raised the alert level after a sharp increase in small earthquakes and ground swelling of several centimetres over a month. Authorities closed hiking trails near the summit. No eruption followed, and after three months of declining activity the alert level was lowered. A year later, a smaller eruption occurred after only two days of increased seismic activity.\n\nScientists say that communicating uncertainty to the public is one of their main challenges, since false alarms can reduce trust, while failing to warn can have serious consequences.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Monitoring allows scientists to predict the exact day of an eruption.",
+    "trap": "reversed_relation",
+    "note": "The signals do not make it possible to predict the exact time."
+   },
+   {
+    "key": "B",
+    "text": "The first raised alert at the volcano was followed by an eruption within three months.",
+    "trap": "time_shift",
+    "note": "No eruption followed; the eruption came a year later after only two days of activity."
+   },
+   {
+    "key": "C",
+    "text": "Forecasts of eruptions are expressed as probabilities rather than precise dates.",
+    "note": "Correct: stated in the second paragraph."
+   },
+   {
+    "key": "D",
+    "text": "Rising magma always leads to an eruption.",
+    "trap": "extreme_wording",
+    "note": "Magma may rise and then stop without erupting."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Scientists therefore express forecasts as probabilities and use alert levels that indicate the degree of concern, rather than precise dates."
+  ],
+  "explanation": {
+   "steps": [
+    "The second paragraph says forecasts are expressed as probabilities and alert levels, not precise dates: C.",
+    "B mixes two separate episodes described in the third paragraph."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "time_shift",
+   "extreme_wording"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-093",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Public administration",
+  "passage": "A freedom of information law gives anyone the right to request documents held by public authorities in one country. Authorities must respond within twenty working days, which may be extended by a further twenty days for complex requests. They may refuse to disclose information only on grounds listed in the law, such as the protection of personal data, national security or ongoing investigations, and they must explain any refusal.\n\nIn 2023, authorities received about 45,000 requests. Around 60% were granted in full and a further 20% in part. Requests from journalists and non-governmental organisations accounted for a minority of the total; most came from individuals seeking information about matters that affected them personally, such as planning decisions or the handling of their own cases.\n\nApplicants who are refused can ask an independent information commissioner to review the decision. The commissioner overturned or modified about a third of the refusals reviewed in 2023. The commissioner’s annual report also criticised several authorities for frequently missing the response deadline, noting that late answers can make the information less useful, particularly for journalists.\n\nTo reduce the number of requests, some authorities have begun publishing frequently requested categories of documents, such as contracts above a certain value and the agendas of senior officials, without waiting for a request.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "In 2023, about one in five requests was refused entirely.",
+    "note": "Correct: 60% granted in full and 20% in part leaves about 20% not granted at all."
+   },
+   {
+    "key": "B",
+    "text": "Most requests came from journalists and non-governmental organisations.",
+    "trap": "reversed_relation",
+    "note": "They accounted for a minority; most came from individuals."
+   },
+   {
+    "key": "C",
+    "text": "The commissioner overturned most of the refusals reviewed.",
+    "trap": "wrong_quantifier",
+    "note": "About a third were overturned or modified."
+   },
+   {
+    "key": "D",
+    "text": "Authorities may refuse requests for any reason they consider appropriate.",
+    "trap": "extreme_wording",
+    "note": "Refusals are allowed only on grounds listed in the law."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Around 60% were granted in full and a further 20% in part."
+  ],
+  "explanation": {
+   "steps": [
+    "100% − 60% (full) − 20% (partial) = about 20% not granted at all, i.e. about one in five: A.",
+    "Inferences in EPSO items often require this kind of simple arithmetic on figures in the passage."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "wrong_quantifier",
+   "extreme_wording"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-094",
+  "category": "verbal",
+  "subtype": "main_idea",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Environment",
+  "passage": "Companies and individuals can buy carbon credits to compensate for their greenhouse gas emissions. Each credit is meant to represent one tonne of carbon dioxide that has been removed from the atmosphere or that would otherwise have been emitted, for example through forest protection, tree planting or the replacement of polluting cooking stoves.\n\nThe quality of credits varies considerably. For a credit to be meaningful, the reduction must be additional, meaning that it would not have happened without the money from the credit, and it must be durable. Studies of some forest protection projects have concluded that the deforestation they claimed to prevent was overestimated, because the projects assumed higher rates of forest loss than were likely to occur. Planted forests can store carbon for decades, but fire or disease may release it again.\n\nCritics also argue that credits can delay direct reductions, if companies buy them instead of cutting their own emissions. Supporters reply that credits channel money to projects with real environmental and social benefits, and that some emissions cannot yet be eliminated at reasonable cost.\n\nIn response, initiatives have emerged to set quality standards for credits and to guide how companies should use them. Most recommend that companies first reduce their own emissions as far as possible and use credits only for the remainder, and that they describe clearly what their credits represent.",
+  "polarity": "correct",
+  "prompt": "Which statement best expresses the main point of the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Carbon credits are a fraud and should be banned.",
+    "trap": "extreme_wording",
+    "note": "The passage presents quality problems and both sides of the debate; it does not call for a ban."
+   },
+   {
+    "key": "B",
+    "text": "Forest protection credits always overestimate the emissions they prevent.",
+    "trap": "overgeneralisation",
+    "note": "Studies found this for some projects, not all."
+   },
+   {
+    "key": "C",
+    "text": "Buying credits is an effective substitute for reducing a company’s own emissions.",
+    "trap": "reversed_relation",
+    "note": "Most initiatives recommend reducing own emissions first and using credits only for the remainder."
+   },
+   {
+    "key": "D",
+    "text": "Carbon credits vary widely in quality and are debated, so standards now urge companies to cut their own emissions first and use credible credits only for the rest.",
+    "note": "Correct: this covers quality, the debate and the response."
+   }
+  ],
+  "correct": "D",
+  "evidence": [
+   "The quality of credits varies considerably.",
+   "Most recommend that companies first reduce their own emissions as far as possible and use credits only for the remainder, and that they describe clearly what their credits represent."
+  ],
+  "explanation": {
+   "steps": [
+    "The passage explains what credits are, why quality varies, the arguments for and against, and the emerging standards. D summarises all of this in balance.",
+    "A and C each take one side of the debate and push it further than the passage does."
+   ]
+  },
+  "trap_tags": [
+   "extreme_wording",
+   "overgeneralisation",
+   "reversed_relation"
+  ],
+  "est_time_sec": 120
+ },
+ {
+  "id": "VR-095",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Urban planning",
+  "passage": "In 2021 a city closed a two-kilometre stretch of its main shopping street to private cars, allowing access only for pedestrians, cyclists, buses, taxis and delivery vehicles before 11 a.m. The city widened pavements, planted trees and installed benches along the street.\n\nMeasurements a year later showed that concentrations of nitrogen dioxide on the street had fallen by about 40%. On parallel streets, where some of the traffic was diverted, concentrations rose slightly at first but returned to previous levels after the city changed traffic light timings and reduced speed limits.\n\nThe number of pedestrians on the street rose by about a quarter on weekdays and by more at weekends. Shop owners were initially divided. A survey after two years found that most shops on the street reported stable or higher turnover, but businesses that depended on customers collecting heavy or bulky goods, such as a hardware store and a furniture shop, reported falls, and one of them has since moved to the outskirts of the city.\n\nResidents with reduced mobility raised concerns about the greater distance to car parks. The city responded by introducing an on-demand electric shuttle and by reserving parking places for disabled drivers at the ends of the street. It now plans to apply a similar approach to two other central streets.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Delivery vehicles may enter the street in the early morning.",
+    "trap": "cannot_be_determined",
+    "note": "Supported: deliveries are allowed before 11 a.m."
+   },
+   {
+    "key": "B",
+    "text": "Pollution on parallel streets returned to previous levels after traffic measures were adjusted.",
+    "trap": "time_shift",
+    "note": "Supported: after the changes to lights and speed limits."
+   },
+   {
+    "key": "C",
+    "text": "All shops on the street reported higher turnover after the closure.",
+    "note": "This is the statement that is not correct: some shops selling bulky goods reported falls."
+   },
+   {
+    "key": "D",
+    "text": "Pedestrian numbers rose more at weekends than on weekdays.",
+    "trap": "reversed_relation",
+    "note": "Supported: by about a quarter on weekdays and by more at weekends."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "A survey after two years found that most shops on the street reported stable or higher turnover, but businesses that depended on customers collecting heavy or bulky goods, such as a hardware store and a furniture shop, reported falls, and one of them has since moved to the outskirts of the city."
+  ],
+  "explanation": {
+   "steps": [
+    "Most shops reported stable or higher turnover, and some reported falls. C (“all … higher”) is false on two counts.",
+    "A is supported: “before 11 a.m.” includes the early morning."
+   ]
+  },
+  "trap_tags": [
+   "cannot_be_determined",
+   "time_shift",
+   "reversed_relation"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-096",
+  "category": "verbal",
+  "subtype": "explain_non_inference",
+  "difficulty": 3,
+  "mode": "reveal",
+  "topic": "Economics",
+  "passage": "A trade agreement between the European Union and a partner country entered into force in 2019, removing most tariffs on industrial goods and reducing tariffs on many agricultural products over a transition period. Both sides also agreed to recognise each other’s safety certificates for certain products, which reduces the cost of testing goods twice.\n\nIn the four years after the agreement took effect, exports from one member state to the partner country rose by 28%. Exports of machinery and chemicals grew fastest, while exports of some agricultural products grew more slowly, partly because their tariffs were being reduced in stages. Over the same period, the member state’s exports to all non-EU countries rose by 19%.\n\nThe national trade ministry attributes the faster growth to the agreement. Economists caution that other factors may have contributed, including the partner country’s relatively strong economic growth during the period and exchange rate movements that made the member state’s goods cheaper there. A survey of exporting firms found that only about a third of firms exporting to the partner country used the agreement’s reduced tariffs, often because the paperwork required to prove that their goods qualified was considered too burdensome for small consignments.\n\nThe ministry has since launched an information campaign on the agreement’s rules of origin aimed at small and medium-sized firms.",
+  "polarity": "correct",
+  "prompt": "Statement: “The trade agreement increased the member state’s exports to the partner country by 9 percentage points more than they would otherwise have grown.” Explain why this statement cannot be inferred from the passage.",
+  "task": "Write one or two sentences explaining why the statement cannot be inferred. Name the trap. Then reveal the model answer.",
+  "correct": "The 9-point gap (28% versus 19%) compares exports to the partner with exports to all non-EU countries, but economists point to other factors, namely the partner’s strong growth and favourable exchange rates, and only about a third of exporters even used the reduced tariffs. So the whole gap cannot be attributed to the agreement (trap: cause vs correlation).",
+  "evidence": [
+   "Economists caution that other factors may have contributed, including the partner country’s relatively strong economic growth during the period and exchange rate movements that made the member state’s goods cheaper there."
+  ],
+  "explanation": {
+   "steps": [
+    "The comparison group (all non-EU exports) is not a true “what would have happened otherwise”, because the partner country differed in growth and exchange rates.",
+    "The low take-up of reduced tariffs is a further reason to doubt that the agreement explains the whole difference."
+   ]
+  },
+  "trap_tags": [],
+  "est_time_sec": 150
+ },
+ {
+  "id": "VR-097",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 1,
+  "mode": "interactive",
+  "topic": "Health",
+  "passage": "Small changes in the environment can influence everyday behaviour. In a study at a large office building, researchers placed signs next to the lifts encouraging people to use the stairs, pointing out that climbing stairs for a few minutes a day contributes to fitness. The share of people using the stairs rather than the lift rose from 12% to 19% while the signs were in place.\n\nIn a second phase, the researchers also improved the stairwell, which had been poorly lit and hard to find, by adding better lighting, music and artwork. Stair use rose further, to 26%. When the signs were removed but the improvements to the stairwell were kept, stair use fell to 22%.\n\nThe researchers note several limitations. The study took place in a single building, with mostly young and healthy employees, and lasted only six months, so it is not known whether the changes would last or would have the same effect elsewhere. In addition, people who used the stairs more might have been less active in other ways, for example by walking less at lunchtime, but the study did not measure overall physical activity.\n\nThe building’s management has decided to keep both the signs and the improved stairwell, at modest cost.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The signs had no effect on stair use.",
+    "trap": "reversed_relation",
+    "note": "Stair use rose from 12% to 19% with the signs alone."
+   },
+   {
+    "key": "B",
+    "text": "After the signs were removed, stair use remained higher than before the study began.",
+    "note": "Correct: it fell to 22%, still above the original 12%."
+   },
+   {
+    "key": "C",
+    "text": "The study showed that employees became more physically active overall.",
+    "trap": "cannot_be_determined",
+    "note": "Overall physical activity was not measured."
+   },
+   {
+    "key": "D",
+    "text": "The same measures will increase stair use in all office buildings.",
+    "trap": "overgeneralisation",
+    "note": "The researchers say it is unknown whether the effect would be the same elsewhere."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "When the signs were removed but the improvements to the stairwell were kept, stair use fell to 22%."
+  ],
+  "explanation": {
+   "steps": [
+    "Before the study, 12% used the stairs; after the signs were removed, 22% did. 22% is still higher than 12%: B.",
+    "C goes beyond what was measured; the study tracked stair use only."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "cannot_be_determined",
+   "overgeneralisation"
+  ],
+  "est_time_sec": 90
+ },
+ {
+  "id": "VR-098",
+  "category": "verbal",
+  "subtype": "explicit_detail",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Technology",
+  "passage": "A postal operator has tested the delivery of small parcels by drone to several islands that are otherwise served by a ferry running twice a day. Drones carried parcels of up to two kilograms from a mainland depot and lowered them by cable onto designated landing points, without landing themselves.\n\nDuring the eighteen-month trial, drones completed about 4,000 deliveries. The average delivery time fell from more than a day to under two hours. Flights were cancelled on about 15% of scheduled days, mostly because of strong winds or poor visibility, in which case parcels were sent by ferry as before. Urgent medical supplies for the islands’ pharmacies accounted for around a quarter of deliveries.\n\nThe operator found that the cost per parcel was considerably higher than for ferry transport, mainly because each flight required a trained pilot to monitor it, even though flights followed pre-programmed routes. The operator believes costs could fall substantially if the rules were changed to allow one pilot to supervise several drones at once, which the aviation authority is currently considering.\n\nResidents generally welcomed the service, particularly for medicines, but some raised concerns about noise and about drones flying over their homes. The operator adjusted routes to fly over the sea wherever possible.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Drone delivery was cheaper per parcel than delivery by ferry.",
+    "trap": "reversed_relation",
+    "note": "The cost per parcel was considerably higher."
+   },
+   {
+    "key": "B",
+    "text": "The aviation authority has already allowed one pilot to supervise several drones.",
+    "trap": "time_shift",
+    "note": "This rule change is only being considered."
+   },
+   {
+    "key": "C",
+    "text": "Flights did not take place on about 15% of scheduled days, mostly because of the weather.",
+    "note": "Correct: stated in the second paragraph."
+   },
+   {
+    "key": "D",
+    "text": "Most of the deliveries were urgent medical supplies.",
+    "trap": "wrong_quantifier",
+    "note": "Medical supplies accounted for around a quarter."
+   }
+  ],
+  "correct": "C",
+  "evidence": [
+   "Flights were cancelled on about 15% of scheduled days, mostly because of strong winds or poor visibility, in which case parcels were sent by ferry as before."
+  ],
+  "explanation": {
+   "steps": [
+    "The second paragraph says flights were cancelled on about 15% of scheduled days, mostly due to wind or poor visibility: C.",
+    "B turns a rule that is under consideration into one already adopted."
+   ]
+  },
+  "trap_tags": [
+   "reversed_relation",
+   "time_shift",
+   "wrong_quantifier"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-099",
+  "category": "verbal",
+  "subtype": "inference",
+  "difficulty": 2,
+  "mode": "interactive",
+  "topic": "Culture",
+  "passage": "Music streaming services pay rights holders according to how often songs are played. Under the model most services use, all subscription revenue in a country is pooled, and each artist receives a share equal to their share of all plays on the service. As a result, a subscriber who listens only to one niche artist still contributes mostly to the income of the most popular artists, since the pooled revenue is divided according to total plays.\n\nSome musicians and researchers have proposed an alternative, often called a user-centric model, under which each subscriber’s payment would be divided only among the artists that subscriber actually listened to. Simulations based on real listening data suggest that such a model would shift some income from the most-streamed artists towards artists with smaller but dedicated audiences, although the changes for most artists would be modest.\n\nThe proposal also has drawbacks. It would be more complex to administer, and critics argue that it would mainly benefit genres whose fans listen to fewer different artists, rather than independent musicians as a whole. Some services have also raised concerns that the model could be exploited by people who create fake accounts to stream particular songs, although this problem also affects the current model.\n\nOne streaming service has begun testing a version of the user-centric model in a single country.",
+  "polarity": "correct",
+  "prompt": "Which of the following statements is correct, based only on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Under the user-centric model, every independent musician would earn substantially more.",
+    "trap": "overgeneralisation",
+    "note": "Changes for most artists would be modest, and critics doubt that independent musicians as a whole would benefit."
+   },
+   {
+    "key": "B",
+    "text": "Under the current model, a subscriber’s fee can end up paying artists that the subscriber never listens to.",
+    "note": "Correct: revenue is pooled and divided by total plays, so a niche listener’s fee mostly goes to the most popular artists."
+   },
+   {
+    "key": "C",
+    "text": "Fake accounts are a problem only under the user-centric model.",
+    "trap": "partially_true",
+    "note": "The passage says the problem also affects the current model."
+   },
+   {
+    "key": "D",
+    "text": "Most streaming services have already adopted the user-centric model.",
+    "trap": "time_shift",
+    "note": "One service is testing it in a single country."
+   }
+  ],
+  "correct": "B",
+  "evidence": [
+   "As a result, a subscriber who listens only to one niche artist still contributes mostly to the income of the most popular artists, since the pooled revenue is divided according to total plays."
+  ],
+  "explanation": {
+   "steps": [
+    "Because revenue is pooled and shared by total plays, a subscriber who listens to one niche artist mostly funds the most popular artists, whom they never play. B follows.",
+    "A uses two extreme words (“every”, “substantially”) contradicted by “modest” and by the critics’ view."
+   ]
+  },
+  "trap_tags": [
+   "overgeneralisation",
+   "partially_true",
+   "time_shift"
+  ],
+  "est_time_sec": 105
+ },
+ {
+  "id": "VR-100",
+  "category": "verbal",
+  "subtype": "incorrect_statement",
+  "difficulty": 3,
+  "mode": "interactive",
+  "topic": "Science",
+  "passage": "Light from screens and lamps in the evening can delay the body’s internal clock, which regulates when people feel sleepy. The effect is strongest for light with a high proportion of blue wavelengths, to which certain cells in the eye are particularly sensitive. In laboratory studies, participants exposed to bright blue-rich light for several hours before bedtime produced less melatonin, a hormone associated with sleep, and fell asleep later than participants exposed to dim light.\n\nThe practical importance of evening screen use is less clear. The light emitted by phones and tablets is much less intense than that used in many laboratory studies, and studies outside the laboratory have found that heavy evening screen users sleep on average only slightly less than light users. Researchers point out that the content of what people do on screens, such as engaging games or messages, may affect sleep through alertness, independently of light.\n\nMany devices now offer a night mode that reduces blue light in the evening. Studies of these settings have produced mixed results: some found small improvements in the time taken to fall asleep, while others found no measurable effect. Researchers suggest that reducing the brightness of the screen and stopping use some time before bed may matter more than the colour of the light.\n\nExposure to bright daylight in the morning, by contrast, helps to keep the internal clock aligned with the day.",
+  "polarity": "incorrect",
+  "prompt": "Which of the following statements is NOT correct, based on the passage?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Studies have consistently shown that night mode settings shorten the time needed to fall asleep.",
+    "note": "This is the statement that is not correct: results were mixed, with some studies finding no measurable effect."
+   },
+   {
+    "key": "B",
+    "text": "Phone screens are less intense light sources than the light used in many laboratory studies.",
+    "trap": "partially_true",
+    "note": "Supported: stated in the second paragraph."
+   },
+   {
+    "key": "C",
+    "text": "What people do on their screens may affect sleep regardless of the light emitted.",
+    "trap": "causal_vs_correlation",
+    "note": "Supported: content may affect sleep through alertness, independently of light."
+   },
+   {
+    "key": "D",
+    "text": "Morning daylight helps keep the body’s internal clock in step with the day.",
+    "trap": "time_shift",
+    "note": "Supported: stated in the last sentence."
+   }
+  ],
+  "correct": "A",
+  "evidence": [
+   "Studies of these settings have produced mixed results: some found small improvements in the time taken to fall asleep, while others found no measurable effect."
+  ],
+  "explanation": {
+   "steps": [
+    "“Mixed results”, with some studies finding no effect, cannot be described as “consistently shown”. A is not correct.",
+    "C may look like an overreach, but it closely restates the researchers’ point about alertness."
+   ]
+  },
+  "trap_tags": [
+   "partially_true",
+   "causal_vs_correlation",
+   "time_shift"
+  ],
+  "est_time_sec": 120
+ }
+]
